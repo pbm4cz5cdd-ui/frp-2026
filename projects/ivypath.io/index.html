@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ivypath.io — поступление за рубеж</title>
+<meta name="description" content="Требования университетов, экзамены и пошаговый план поступления за рубеж.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#ffffff; --tint:#f4f4f4; --text:#111111; --muted:#666666; --line:#e2e2e2;
+  --brand:#2f4bd8; --go:#2f4bd8; --warn:#2f4bd8; --stop:#666666; --inv-bg:#111111; --inv-fg:#ffffff;
+  --pad:clamp(20px,5vw,64px);
+  --sans:"Geist","Inter","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --serif:var(--sans);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b0b0b; --surface:#0b0b0b; --tint:#171717; --text:#f2f2f2; --muted:#a0a0a0; --line:#2c2c2c;
+  --brand:#9fb0ff; --go:#9fb0ff; --warn:#9fb0ff; --stop:#a0a0a0; --inv-bg:#f2f2f2; --inv-fg:#111111;
+}}
+:root[data-theme="dark"]{
+  --bg:#0b0b0b; --surface:#0b0b0b; --tint:#171717; --text:#f2f2f2; --muted:#a0a0a0; --line:#2c2c2c;
+  --brand:#9fb0ff; --go:#9fb0ff; --warn:#9fb0ff; --stop:#a0a0a0; --inv-bg:#f2f2f2; --inv-fg:#111111;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(100px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16.5px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+h1,h2,h3,h4{margin:0}
+.muted{color:var(--muted)} .small{font-size:15px}
+
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;align-items:center;flex-wrap:wrap;gap:8px 28px;padding:14px max(var(--pad),calc((100% - 1200px)/2));background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font:800 19px/1 var(--sans);letter-spacing:-.02em;margin-right:auto}
+.site-nav{display:flex;flex-wrap:wrap;gap:0 14px}
+.site-nav button{font:600 15px/1 var(--sans);padding:10px 2px;border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);cursor:pointer}
+.site-nav button:hover{color:var(--text)}
+.site-nav button[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand)}
+.site-nav button span:first-child{display:none}
+.tools{display:flex;gap:8px;align-items:center}
+.tools select,.tools button.icon{font:600 14px var(--sans);padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);cursor:pointer}
+
+.hero{position:relative;display:flex;align-items:flex-end;min-height:clamp(340px,34vw,500px);background:#111 center/cover no-repeat;color:#fff;padding:0 var(--pad)}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.56)}
+.hero-inner{position:relative;width:100%;max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,100px) 0 clamp(34px,5vw,56px)}
+.hero h1{font:800 clamp(38px,6.4vw,80px)/1.02 var(--sans);letter-spacing:-.035em}
+.hero p{margin:16px 0 0;max-width:46ch;font-size:clamp(17px,1.7vw,20px);color:rgba(255,255,255,.88)}
+.pill{margin-top:16px;padding-left:12px;border-left:3px solid #fff;font-weight:600;font-size:15px}
+.hero-credit{position:absolute;right:var(--pad);bottom:10px;font-size:12px;color:rgba(255,255,255,.7)}
+.statsbar{border-bottom:1px solid var(--line);padding:0 var(--pad)}
+.statsbar-inner{max-width:1200px;margin:0 auto;padding:22px 0;display:flex;flex-wrap:wrap;gap:14px 56px}
+.stat{display:flex;align-items:baseline;gap:10px}
+.stat b{font:800 30px/1 var(--sans);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat small{font-size:15px;color:var(--muted)}
+
+main{max-width:calc(1200px + 2*var(--pad));margin:0 auto;padding:0 var(--pad)}
+.section{display:none;padding:12px 0 32px}
+.section.active{display:block}
+.section h2{font:800 clamp(28px,3.6vw,40px)/1.12 var(--sans);letter-spacing:-.03em;margin:0 0 8px}
+.section>p.muted{margin:10px 0 22px;max-width:66ch}
+.trust-box{margin:0 0 22px;padding:14px 18px;background:var(--tint);border-radius:8px;font-size:15px;max-width:76ch}
+.trust-box b{font-weight:700}
+
+.match-box{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;margin:0 0 28px;padding:22px 24px;background:var(--inv-bg);color:var(--inv-fg);border-radius:6px}
+.match-text{margin-right:auto;display:flex;flex-direction:column;gap:2px}
+.match-text b{font:700 20px/1.25 var(--sans)}
+.match-text .muted{font-size:15px;color:inherit;opacity:.72}
+#myScore,#myToefl,#mySat{-moz-appearance:textfield;appearance:textfield;width:100px;font:600 22px var(--sans);text-align:center;padding:10px 8px;border:0;border-radius:6px;background:var(--inv-fg);color:var(--inv-bg)}
+#myScore::-webkit-inner-spin-button,#myToefl::-webkit-inner-spin-button,#mySat::-webkit-inner-spin-button{display:none}
+.match-hint{flex-basis:100%;font-size:13.5px;opacity:.72}
+
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.filters select,.filters input{flex:1 1 190px;min-width:0;font:500 15px var(--sans);padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text)}
+.fav-toggle{font:600 14px var(--sans);padding:11px 16px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);cursor:pointer;white-space:nowrap}
+.fav-toggle[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:var(--bg)}
+
+.grid{display:grid;gap:28px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.card{position:relative}
+.card h3{font:700 18px/1.3 var(--sans)}
+.card p{margin:8px 0 12px;color:var(--muted);font-size:15.5px}
+.place{color:var(--muted);font-size:14.5px;margin:2px 0 4px}
+.tags{display:flex;flex-direction:column;gap:2px;margin:0}
+.tag{font-size:14.5px}
+.tag.grey{color:var(--muted)}
+a.link{font-weight:600;font-size:15px;color:var(--brand);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.star-btn{background:none;border:0;cursor:pointer;font-size:20px;line-height:1;color:var(--muted);padding:2px}
+.star-btn[aria-pressed="true"]{color:var(--brand)}
+.match-badge{display:inline-flex;align-items:center;gap:8px;font:600 14px var(--sans);margin-top:6px}
+.match-badge::before{content:"";width:10px;height:10px;border-radius:50%;border:1.5px solid currentColor;box-sizing:border-box}
+.m-yes::before{background:currentColor}
+.m-close::before{background:linear-gradient(90deg,currentColor 50%,transparent 50%)}
+.m-no,.m-unknown{color:var(--muted)}
+.money{display:grid;gap:8px;margin:0}
+.money div{display:flex;flex-direction:column}
+.money span,.money small{font-size:13px;color:var(--muted)}
+.money b{font:600 15.5px/1.3 var(--sans)}
+.money.none{font-size:14px;color:var(--muted)}
+.aid-bf{color:var(--text)} .aid-aware{color:var(--muted)}
+.code{display:none}
+
+#uniGrid,#examGrid,#courseGrid{display:block;border-top:1px solid var(--line)}
+#uniGrid .card{display:grid;padding:24px 0;border-bottom:1px solid var(--line);column-gap:32px;row-gap:2px;grid-template-columns:minmax(200px,1.2fr) minmax(0,1.2fr) minmax(0,1.5fr) 170px;grid-template-areas:"name tags money act" "place tags money act" "badge tags money act"}
+#uniGrid h3{grid-area:name}
+#uniGrid .place{grid-area:place}
+#uniGrid .match-badge{grid-area:badge;align-self:start}
+#uniGrid .tags{grid-area:tags}
+#uniGrid .money{grid-area:money}
+#uniGrid .star-btn{grid-area:act;justify-self:end;align-self:start}
+#uniGrid a.link{grid-area:act;justify-self:end;align-self:end}
+#empty{display:none;text-align:center;padding:36px;color:var(--muted)}
+
+#examGrid .card{display:grid;grid-template-columns:minmax(150px,230px) 1fr;gap:6px 28px;padding:20px 0;border-bottom:1px solid var(--line)}
+#examGrid .card p{margin:0}
+#courseGrid .card{padding:22px 0;border-bottom:1px solid var(--line);max-width:72ch}
+#resGrid .card{border-top:1px solid var(--line);padding-top:16px}
+#costGrid .card{background:var(--tint);border-radius:10px;padding:26px}
+.badge-official{display:inline-block;font:600 13px var(--sans);padding:2px 9px;background:var(--tint);color:var(--brand);border-radius:4px;margin-bottom:10px}
+.city{color:var(--muted);font-size:15px;margin:2px 0 10px}
+.price{font:800 38px/1.1 var(--sans);letter-spacing:-.02em;color:var(--text);margin:8px 0 10px}
+
+.steps{list-style:none;counter-reset:s;padding:0;margin:24px 0 0;border-top:1px solid var(--line)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:2px 16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);grid-row:1/3;font:800 28px/1 var(--sans);color:var(--text)}
+.steps b{font:700 18px/1.3 var(--sans)}
+.steps span{color:var(--muted);font-size:16px}
+.bullets{list-style:none;margin:0;padding:0}
+.bullets li{position:relative;padding:0 0 12px 22px}
+.bullets li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--brand)}
+
+.calc{margin:26px 0;padding:22px 24px;background:var(--tint);border-radius:10px}
+.calc>b{font:700 19px var(--sans)}
+.calc-row{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0}
+.calc label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px;flex:1 1 150px}
+.calc input{font:600 17px var(--sans);padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);width:100%}
+.calc-out{font:700 18px var(--sans)}
+.faq-h{font:800 26px var(--sans);letter-spacing:-.02em;margin:36px 0 12px}
+#faqList details,.article{border-bottom:1px solid var(--line)}
+#faqList{border-top:1px solid var(--line)}
+#faqList summary,.article>summary{cursor:pointer;list-style:none;position:relative;padding:18px 40px 18px 0;font-weight:600}
+#faqList summary::-webkit-details-marker,.article>summary::-webkit-details-marker{display:none}
+#faqList summary::after,.article>summary::after{content:"+";position:absolute;right:4px;top:14px;font:400 26px var(--serif);color:var(--text)}
+#faqList details[open]>summary::after,.article[open]>summary::after{content:"\2212"}
+#faqList p{margin:0;padding:0 0 18px;color:var(--muted);max-width:68ch}
+.article>summary{padding:22px 40px 22px 0}
+.article>summary b{display:block;font:700 clamp(19px,2.2vw,24px)/1.25 var(--sans);letter-spacing:-.015em}
+.article>summary span{display:block;margin-top:4px;font-weight:400;font-size:15.5px;color:var(--muted)}
+.articles-wrap,#articleList{border-top:1px solid var(--line)}
+.article-body{padding:0 0 28px;max-width:70ch}
+.article-body h4{font:700 17px var(--sans);margin:26px 0 6px}
+.article-body p{margin:0 0 10px;line-height:1.65}
+.article-body ul{margin:0 0 10px;padding-left:20px}
+.article-body li{margin-bottom:6px}
+.tbl{overflow-x:auto;margin:10px 0}
+.tbl table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+.tbl th,.tbl td{padding:10px 14px 10px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.tbl th{font-weight:700;color:var(--muted);font-size:14px}
+.lang-note{font-size:14px;color:var(--muted);margin:10px 0}
+
+.site-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:64px;padding:28px max(var(--pad),calc((100% - 1200px)/2));border-top:1px solid var(--line);color:var(--muted);font-size:14.5px}
+.site-footer a{color:var(--brand);font-weight:600}
+
+@media (max-width:1360px){
+  .site-nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+  .site-nav button{white-space:nowrap}
+}
+@media (max-width:960px){
+  #uniGrid .card{grid-template-columns:1fr;grid-template-areas:"name" "place" "badge" "tags" "money" "act";row-gap:6px;padding-right:36px}
+  #uniGrid .star-btn{grid-area:auto;position:absolute;top:22px;right:0}
+  #uniGrid a.link{justify-self:start}
+  #examGrid .card{grid-template-columns:1fr}
+}
+@media (max-width:700px){.brand{font-size:18px}}
+
+body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="home"]) .statsbar{display:none}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{font:700 16px var(--sans);padding:13px 24px;border-radius:999px;border:2px solid #fff;background:#fff;color:#111;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;color:#fff}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--bg)}
+.section .hh{margin:48px 0 8px}
+.cards4{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:24px 0 8px}
+.feat{display:block;text-decoration:none;border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--tint);transition:transform .15s}
+.feat:hover{transform:translateY(-3px);border-color:var(--brand)}
+.feat h3{font:700 19px/1.3 var(--sans);margin-bottom:8px}.feat p{margin:0;color:var(--muted);font-size:15.5px}
+.split{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center;margin:56px 0}
+.split h2{margin-bottom:12px}
+.panel{border:1px solid var(--line);border-radius:20px;padding:26px;background:var(--tint)}
+.panel input{font:700 24px var(--sans);width:110px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);text-align:center}
+#hOut{margin-top:14px;font-weight:600;color:var(--brand)}
+.ugrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.ucard{border:1px solid var(--line);border-radius:18px;padding:22px}
+.ucard h3{font:700 19px var(--sans)}.ucard .money{margin:12px 0}
+.gcard{display:flex;flex-direction:column;gap:6px;text-decoration:none;border:1px solid var(--line);border-radius:18px;padding:22px}
+.gcard b{font:700 18px/1.3 var(--sans)}.gcard span{color:var(--muted);font-size:15px}
+.cta-band{background:var(--brand);color:var(--bg);border-radius:24px;padding:44px 28px;text-align:center;margin:56px 0 0}
+.cta-band h2{font:800 clamp(26px,4vw,38px) var(--sans);margin:0 0 8px}.cta-band p{opacity:.85;margin:0 0 20px}
+.cta-band .btn{background:var(--bg);color:var(--brand);border-color:var(--bg)}
+.foot-cols{display:grid;gap:28px;grid-template-columns:2fr 1fr 1fr;width:100%}
+.foot-cols h4{margin:0 0 10px;color:var(--text)}.foot-cols a{display:block;margin:6px 0;font-weight:500;text-decoration:none}
+.foot-bot{width:100%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);padding-top:18px}
+@media(max-width:700px){.foot-cols{grid-template-columns:1fr}}
+.hero{background:none!important;color:var(--text);min-height:0;display:block;padding:0 var(--pad)}
+.hero::before{display:none}
+.hero-inner{display:grid;gap:40px;grid-template-columns:1.1fr 1fr;align-items:center;padding:clamp(40px,6vw,72px) 0}
+.hero h1{font-size:clamp(40px,5.6vw,68px)}
+.hero p{color:var(--muted)}
+.hero-credit{position:static;color:var(--muted);display:block;margin-top:6px}
+#heroImg{aspect-ratio:16/10;border-radius:24px;background:#111 center/cover no-repeat}
+.hero-list{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px}
+.hero-list li::before{content:"✓";color:var(--brand);font-weight:800;margin-right:10px}
+.btn{border-color:var(--text);background:var(--text);color:var(--bg)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}}
+.hero-inner{grid-template-columns:1fr;max-width:820px;margin:0}
+.insta{text-align:center;margin:28px 0 0;color:var(--muted);font-weight:500}.insta a{margin-left:10px;color:var(--text);font-weight:700;text-decoration:none}
+#uniGrid{display:grid;border-top:0;gap:16px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+#uniGrid .card{display:flex;flex-direction:column;gap:8px;grid-template-columns:none;grid-template-areas:none;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--bg);cursor:pointer;position:relative;transition:transform .15s,border-color .15s}
+#uniGrid .card:hover{transform:translateY(-3px);border-color:var(--brand)}
+#uniGrid h3{font:700 19px/1.3 var(--sans);padding-right:34px;margin:0}
+#uniGrid .star-btn{grid-area:auto;position:absolute;top:16px;right:16px}
+#uniGrid .money,#uniGrid a.link,#uniGrid .code{display:none}
+#uniGrid .tags{flex-direction:row;flex-wrap:wrap;gap:6px 14px;margin:4px 0}
+#uniGrid .tag:nth-child(n+4){display:none}
+.more{margin-top:auto;padding-top:10px;font-weight:600;color:var(--brand);font-size:15px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top)) 16px 16px;z-index:200}
+.modal[hidden]{display:none}
+.sheet{background:var(--bg);color:var(--text);border-radius:20px;max-width:560px;width:100%;max-height:85vh;overflow:auto;padding:28px;position:relative}
+.sheet h3{font:700 24px/1.25 var(--sans);margin:0 34px 4px 0}.sheet h4{margin:20px 0 8px;font:700 15px var(--sans);color:var(--muted)}
+.sheet .x{position:absolute;top:14px;right:16px;border:0;background:none;color:var(--text);font-size:28px;cursor:pointer}
+.chips span{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;margin:0 6px 6px 0;font-size:14px}
+#qsGrid .qcard{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--bg);cursor:default;transition:border-color .15s}
+#qsGrid .qcard[data-uni]{cursor:pointer}
+#qsGrid .qcard:hover{border-color:var(--brand)}
+#qsGrid .rank{font:800 20px/1 var(--sans);color:var(--brand)}
+#qsGrid h3{font:700 17px/1.3 var(--sans)}
+#qsGrid .meta{font-size:14px;color:var(--muted)}
+#qsGrid .score{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600}
+#qsGrid .more{padding-top:0;font-size:14px}
+.chat-panel{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:160;width:min(390px,calc(100vw - 36px));height:min(560px,calc(100vh - 36px));display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:20px;box-shadow:0 18px 60px rgba(0,0,0,.28);overflow:hidden}
+.chat-panel[hidden]{display:none}
+.chat-head{display:flex;align-items:flex-start;gap:10px;padding:16px 16px 12px;border-bottom:1px solid var(--line)}
+.chat-head b{font:700 16px/1.3 var(--sans);display:block}
+.chat-head span{font-size:13px;color:var(--muted)}
+.chat-x{margin-left:auto;border:0;background:none;color:var(--muted);font-size:24px;line-height:1;cursor:pointer;padding:0 4px}
+.chat-log{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{max-width:88%;padding:10px 13px;border-radius:14px;font-size:15px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.chat-msg.bot{background:var(--tint);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.chat-msg.me{background:var(--text);color:var(--bg);align-self:flex-end;border-bottom-right-radius:4px}
+.chat-msg.err{background:#fdecec;color:#8a1c1c;border:1px solid #f3c4c4;align-self:stretch;max-width:100%}
+.chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}
+.chat-form input{flex:1;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:12px;padding:11px 13px;font:400 15px var(--sans)}
+.chat-form button{border:0;background:var(--text);color:var(--bg);border-radius:12px;padding:0 16px;font:700 15px var(--sans);cursor:pointer}
+.chat-form button:disabled{opacity:.5;cursor:default}
+@media(max-width:560px){#qsGrid .qcard{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--bg);cursor:default;transition:border-color .15s}
+#qsGrid .qcard[data-uni]{cursor:pointer}
+#qsGrid .qcard:hover{border-color:var(--brand)}
+#qsGrid .rank{font:800 20px/1 var(--sans);color:var(--brand)}
+#qsGrid h3{font:700 17px/1.3 var(--sans)}
+#qsGrid .meta{font-size:14px;color:var(--muted)}
+#qsGrid .score{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600}
+#qsGrid .more{padding-top:0;font-size:14px}
+.chat-panel{right:0;left:0;bottom:0;width:100%;height:min(82vh,620px);border-radius:20px 20px 0 0}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand" data-go="home" style="cursor:pointer">ivypath.io</div>
+  <nav class="site-nav" id="nav" role="tablist"></nav>
+  <div class="tools">
+    <button class="icon" id="themeBtn" type="button" title="Тема">◐</button>
+    <select id="lang" aria-label="Язык">
+      <option value="ru">RU</option><option value="kk">KZ</option><option value="en">EN</option>
+    </select>
+  </div>
+</header>
+
+<section class="hero" id="hero"><div class="hero-inner">
+  <div><h1 data-key="heroTitle"></h1><p data-key="heroSubtitle"></p>
+  <div class="cta-row"><button class="btn" type="button" data-go="universities" data-key="ctaA"></button><button class="btn ghost" type="button" data-go="articles" data-key="ctaB"></button></div>
+  <ul class="hero-list"><li><b id="statUni">0</b> университетов в <b id="statCountry">0</b> странах</li><li>Требования IELTS и SAT по каждому вузу</li><li>Стоимость, доля иностранцев и финансовая помощь</li><li>Фильтр по стране и специальности</li></ul></div>
+</div></section>
+
+<main>
+  <section id="home" class="section active">
+    <h2 class="hh" style="margin-top:36px">Платформа</h2>
+    <div class="cards4">
+      <a class="feat" href="#" data-go="universities"><h3>Университеты</h3><p>Требования, стоимость и помощь по каждому вузу.</p></a>
+      <a class="feat" href="#" data-go="guide"><h3>План поступления</h3><p>Шаги от выбора страны до визы.</p></a>
+      <a class="feat" href="#" data-go="exams"><h3>Экзамены</h3><p>IELTS, TOEFL, SAT: что сдавать и сколько стоит.</p></a>
+      <a class="feat" href="#" data-go="articles"><h3>Гайды</h3><p>Статьи о поступлении, деньгах и стипендиях.</p></a>
+    </div>
+    <h2 class="hh">Университеты</h2>
+    <div class="ugrid" id="homeUnis"></div>
+    <p><button class="btn primary" type="button" data-go="universities">Все университеты</button></p>
+    <h2 class="hh">Гайды</h2>
+    <div class="ugrid" id="homeGuides"></div>
+    <h3 class="faq-h" data-key="faqTitle"></h3>
+    <div id="faqList"></div>
+    <div class="cta-band"><h2>Начать поиск</h2><button class="btn" type="button" data-go="universities">Смотреть университеты</button></div>
+    <p class="insta">inst: <a href="https://instagram.com/m_maadiiiii" target="_blank" rel="noopener">@m_maadiiiii</a> <a href="https://instagram.com/saintwithoutgod" target="_blank" rel="noopener">@saintwithoutgod</a></p>
+  </section>
+
+  <section id="universities" class="section">
+    <h2 data-key="universitiesTitle"></h2>
+    <p class="muted small" data-key="noteText"></p>
+    <div class="trust-box">
+      
+      <div><b data-key="trustTitle"></b><br><span class="muted small" data-key="trustText"></span></div>
+    </div>
+    <div class="match-box">
+      
+      <div class="match-text"><b data-key="matchTitle"></b><span class="muted small" data-key="matchSubtitle"></span></div>
+      <input id="myScore" type="number" min="0" max="9" step="0.5" data-key-ph="matchPh">
+      <input id="myToefl" type="number" min="0" max="120" step="1" placeholder="TOEFL">
+      <input id="mySat" type="number" min="400" max="1600" step="10" data-key-ph="matchSatPh">
+      <span class="match-hint" data-key="matchHint"></span>
+    </div>
+    <p class="muted small" data-key="moneyNote"></p>
+    <div class="filters">
+      <input id="q" type="search" data-key-ph="searchPh">
+      <select id="countryFilter"></select>
+      <select id="majorFilter"></select>
+      <button type="button" id="favToggle" class="fav-toggle" aria-pressed="false">☆ <span data-key="favOnly"></span></button>
+      <button type="button" id="aidToggle" class="fav-toggle" aria-pressed="false"><span data-key="aidOnly"></span></button>
+    </div>
+    <div class="grid" id="uniGrid"></div>
+    <p id="empty" data-key="noResults"></p>
+  </section>
+
+  <section id="qs" class="section">
+    <h2 data-key="qsTitle"></h2>
+    <p class="muted small"><span data-key="qsNote"></span> <a class="link" href="https://www.topuniversities.com/qs-top-uni-wur" target="_blank" rel="noopener">topuniversities.com</a></p>
+    <div class="grid" id="qsGrid"></div>
+  </section>
+
+  <section id="guide" class="section">
+    <h2 data-key="guideTitle"></h2>
+    <ol class="steps" id="steps"></ol>
+  </section>
+
+  <section id="exams" class="section">
+    <h2 data-key="examsTitle"></h2>
+    <div class="grid" id="examGrid"></div>
+  </section>
+
+  <section id="tips" class="section">
+    <h2 data-key="tipsTitle"></h2>
+    <article class="card"><ul class="bullets" id="tipsList"></ul></article>
+  </section>
+
+  <section id="resources" class="section">
+    <h2 data-key="resourcesTitle"></h2>
+    <div class="grid" id="resGrid"></div>
+  </section>
+
+  <section id="courses" class="section">
+    <h2 data-key="coursesTitle"></h2>
+    <p class="muted small" data-key="coursesNote"></p>
+    <div class="grid" id="courseGrid"></div>
+  </section>
+
+  <section id="costs" class="section">
+    <h2 data-key="costsTitle"></h2>
+    <p class="muted small" data-key="costsNote"></p>
+    <div class="grid" id="costGrid"></div>
+    <div class="calc">
+      <b data-key="calcTitle"></b>
+      <div class="calc-row">
+        <label><span data-key="calcIelts"></span><input id="calcI" type="number" min="0" max="10" value="1"></label>
+        <label><span data-key="calcSat"></span><input id="calcS" type="number" min="0" max="10" value="1"></label>
+        <label><span data-key="calcRate"></span><input id="calcR" type="number" min="0" step="0.1" placeholder="—"></label>
+      </div>
+      <div id="calcOut" class="calc-out"></div>
+    </div>
+    </section>
+
+  <section id="articles" class="section">
+    <h2 data-key="articlesTitle"></h2>
+    <p class="muted small" data-key="articlesNote"></p>
+    <div id="langNote" class="lang-note"></div>
+    <div id="articleList"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-cols">
+    <div><b style="color:var(--text)">ivypath.io</b><p style="margin:8px 0 0;max-width:38ch">Помогаем школьникам из Казахстана и СНГ разобраться в поступлении на бакалавриат за рубежом.</p></div>
+    <div><h4>Платформа</h4><a href="#" data-go="universities">Университеты</a><a href="#" data-go="guide">Пошагово</a><a href="#" data-go="exams">Экзамены</a><a href="#" data-go="articles">Гайды</a></div>
+    <div><h4>Ресурсы</h4><a href="#" data-go="tips">Советы</a><a href="#" data-go="resources">Полезные ресурсы</a><a href="#" data-go="courses">Курсы</a><a href="#" data-go="costs">Стоимость</a></div>
+  </div>
+  <div class="foot-bot"><div data-key="footerText"></div><a href="#" id="top" data-key="backTop"></a></div>
+</footer>
+
+<section class="chat-panel" id="chatPanel" hidden aria-label="AI assistant">
+  <div class="chat-head"><div><b id="chatTitle"></b><span id="chatSub"></span></div><button class="chat-x" id="chatX" type="button" aria-label="Закрыть">×</button></div>
+  <div class="chat-log" id="chatLog" aria-live="polite"></div>
+  <form class="chat-form" id="chatForm"><input id="chatInput" type="text" autocomplete="off" maxlength="1000"><button id="chatSend" type="submit">→</button></form>
+</section>
+
+<div class="modal" id="modal" hidden><div class="sheet"><button class="x" type="button" id="mx" aria-label="Закрыть">×</button><div id="modalBody"></div></div></div>
+<script>
+const COUNTRIES={usa:["США","АҚШ","USA"],uk:["Великобритания","Ұлыбритания","United Kingdom"],canada:["Канада","Канада","Canada"],germany:["Германия","Германия","Germany"],switzerland:["Швейцария","Швейцария","Switzerland"],netherlands:["Нидерланды","Нидерланды","Netherlands"],france:["Франция","Франция","France"],italy:["Италия","Италия","Italy"],sweden:["Швеция","Швеция","Sweden"],ireland:["Ирландия","Ирландия","Ireland"],singapore:["Сингапур","Сингапур","Singapore"],hongkong:["Гонконг","Гонконг","Hong Kong"],japan:["Япония","Жапония","Japan"],korea:["Южная Корея","Оңтүстік Корея","South Korea"],china:["Китай","Қытай","China"],australia:["Австралия","Австралия","Australia"],nz:["Новая Зеландия","Жаңа Зеландия","New Zealand"],uae:["ОАЭ","БАӘ","UAE"],turkey:["Турция","Түркия","Turkey"],czech:["Чехия","Чехия","Czechia"],poland:["Польша","Польша","Poland"],finland:["Финляндия","Финляндия","Finland"],austria:["Австрия","Австрия","Austria"],malaysia:["Малайзия","Малайзия","Malaysia"],taiwan:["Тайвань","Тайвань","Taiwan"],belgium:["Бельгия","Бельгия","Belgium"],denmark:["Дания","Дания","Denmark"],norway:["Норвегия","Норвегия","Norway"],spain:["Испания","Испания","Spain"],saudi:["Саудовская Аравия","Сауд Арабиясы","Saudi Arabia"],qatar:["Катар","Катар","Qatar"],chile:["Чили","Чили","Chile"],brazil:["Бразилия","Бразилия","Brazil"],mexico:["Мексика","Мексика","Mexico"],argentina:["Аргентина","Аргентина","Argentina"],southafrica:["ЮАР","ОАР","South Africa"],russia:["Россия","Ресей","Russia"],india:["Индия","Үндістан","India"],indonesia:["Индонезия","Индонезия","Indonesia"],kazakhstan:["Казахстан","Қазақстан","Kazakhstan"]};
+
+const GUIDES=[
+ {t:"США из Казахстана: путь от 11 класса до кампуса",l:"Как устроен приём, тесты, дедлайны, эссе, виза и частые ошибки.",b:[
+  {h:"Как устроен приём"},
+  {p:"В США нет единых вступительных экзаменов и проходного балла. Каждый университет читает заявку целиком: оценки, тесты, эссе, рекомендации, занятия вне школы. Слабое место одной части можно уравновесить другой, но результат нельзя предсказать точно — поэтому подают сразу в несколько университетов."},
+  {p:"Казахстанский аттестат принимается на бакалавриат напрямую: нужен транскрипт (оценки за 9–11 классы) с переводом на английский, заверенный школой. Некоторые университеты хотят видеть 12 лет школы и просят дополнительные экзамены (например, AP) — это указано в их требованиях для иностранцев."},
+  {h:"Тесты"},
+  {ul:["IELTS или TOEFL нужны почти всегда. У избирательных вузов типичный ориентир — IELTS 7.0 или TOEFL 100, у остальных ниже. Результат действует два года, поэтому сдавайте осенью 11 класса или раньше.","SAT/ACT: многие вузы test-optional, часть вернула требование. Правило: отправляйте балл, если он в диапазоне принятых студентов или выше; если ниже и вуз допускает test-optional — не отправляйте.","Призовые места на международных олимпиадах ценятся выше любого теста."]},
+  {h:"Список университетов — три ряда"},
+  {p:"Рабочий список — 8–12 вузов: амбициозные (ваш профиль ниже диапазона принятых или приём ниже 10%), реалистичные (профиль внутри диапазона) и надёжные (профиль выше). Список из одних амбициозных — главная причина «никуда не поступил». Вторым фильтром поставьте деньги: вуз, который семья не потянет и который не даёт помощи иностранцам, лучше не включать."},
+  {h:"Common App и эссе"},
+  {p:"Common App — единая платформа подачи в большинство частных и многие государственные вузы: одна анкета, одно главное эссе (до 650 слов) и дополнительные вопросы каждого университета. Рекомендации учителей и школьный отчёт отправляет школа — договоритесь с учителями в начале осени."},
+  {p:"Главное эссе не про достижения (они уже в анкете), а про то, как вы думаете: один конкретный эпизод, ваша роль, что изменилось. Слабые эссе — общие слова про «мечту с детства». В эссе «почему именно мы» называйте конкретные программы, курсы, лаборатории. Чужой текст видно по несовпадению с остальной заявкой; помощь допустима как вопросы и разбор, но не как написание."},
+  {h:"Дедлайны"},
+  {table:[["Раунд","Срок","Что значит"],["Early Decision (ED)","около 1 ноября (ED II — январь)","Обязывает поступить, если приняли; подавать можно в один вуз. Рискованно, если нужна финансовая помощь: не успеете сравнить предложения."],["Early Action (EA)","около 1 ноября","Без обязательств, ответ в декабре; обычно можно подавать в несколько вузов."],["Regular Decision (RD)","1–15 января","Основной раунд, ответы к концу марта — началу апреля."],["Ответ вузу","1 мая","Выбираете один вуз и вносите депозит. Депозит сразу в два вуза — нарушение правил."]]},
+  {h:"После приёма: виза"},
+  {p:"После депозита вуз выдаёт форму I-20 — основание для студенческой визы F-1. Дальше: сбор SEVIS, анкета DS-160, собеседование в консульстве США (летом запись расписана заранее), подтверждение финансов на первый год, страховка и жильё. На собеседовании спросят о планах и оплате обучения; предложение помощи от университета — лучший аргумент."},
+  {h:"Частые ошибки"},
+  {ul:["Поздний старт: тесты, эссе и рекомендации нужны уже к осени 11 класса.","Список из одних амбициозных вузов.","Не подана финансовая форма (CSS Profile или форма вуза) — приняли, а помощи нет.","Эссе общими словами или написанное не вами.","Оценки по пятибалльной шкале «переведены» в GPA 4.0 без пояснений.","Запрос на полное финансирование в need-aware вуз при среднем профиле.","Виза в последний момент."]},
+  {h:"План на два года"},
+  {ul:["10 класс: английский всерьёз, выбор направления, 1–2 занятия вне школы.","Лето перед 11-м: первый список в три ряда, черновик главного эссе, договорённость о рекомендациях.","Сентябрь–октябрь 11-го: IELTS/TOEFL, SAT/ACT.","1 ноября: ED/EA и финансовые формы вместе с заявкой.","1 января: RD; проверьте, что школа отправила транскрипт и рекомендации.","Март–апрель: решения; сравнивайте чистую стоимость, а не ценники.","1 мая: выбор и депозит; май–июль: I-20, SEVIS, DS-160, собеседование."]}
+ ]},
+ {t:"Деньги: как учиться за рубежом дёшево или бесплатно",l:"Need-blind, need-aware, merit-стипендии, «Болашак» и что не подходит школьнику.",b:[
+  {h:"Смотрите на «сколько заплатим мы», а не на ценник"},
+  {p:"У вуза есть цена (обучение, проживание, страховка, учебники) и три способа её снизить: помощь по нужде (need-based aid), стипендия за достижения (merit) и государственная программа вашей страны. Дорогой частный университет с полной помощью по нужде иногда обходится дешевле вуза без помощи. Почти все истории про «бесплатную учёбу в США» — про помощь по нужде: вуз сам закрывает разницу между ценой и тем, что семья может платить."},
+  {h:"Need-blind и need-aware"},
+  {ul:["Need-blind: при решении о приёме комиссия не смотрит на финансы семьи, обычно в паре с обещанием покрыть всю подтверждённую нужду. Для иностранцев в США таких вузов очень мало (например, Гарвард, Йель, Принстон, MIT), и все они крайне избирательны.","Need-aware: помощь есть, но при равных кандидатах предпочтут того, кому нужно меньше. Сильный профиль с запросом на полное финансирование проходит, средний — часто нет.","Просите ровно столько, сколько реально нужно, и подтверждайте документами. Заранее посчитайте на калькуляторе чистой стоимости (net price calculator) на сайте вуза."]},
+  {h:"Merit-стипендии"},
+  {p:"Главный инструмент государственных вузов США, канадских и многих британских университетов. Суммы — от нескольких тысяч долларов до полной стоимости, но полные дают редко и по конкурсу: отдельная заявка, ранний дедлайн (часто 1 ноября или 1 декабря), иногда интервью. Помогают высокий SAT/ACT там, где его учитывают, ранняя подача (фонды расходуются по мере приёма) и международные олимпиады."},
+  {h:"«Болашак» на бакалавриате"},
+  {p:"По правилам, опубликованным на момент написания, бакалавриат по «Болашаку» открыт только победителям и призёрам международных олимпиад и научных конкурсов из утверждённого перечня. Правила и даты меняются каждый год — проверяйте на bolashak.gov.kz. Относитесь к «Болашаку» как к плану Б рядом с помощью вуза, а не вместо неё."},
+  {h:"Что не подходит после 11 класса"},
+  {ul:["Fulbright — магистратура и исследования, нужен диплом бакалавра.","Global UGRAD — семестровый обмен для действующих студентов.","Chevening — магистратура в Великобритании, нужен опыт работы.","DAAD — в основном магистратура и докторантура; бакалавриат в Германии обычно почти бесплатный, но на немецком.","Erasmus Mundus — совместные магистерские программы."]},
+  {h:"Термины"},
+  {ul:["CSS Profile и ISFAA — формы о доходах и активах семьи; без них помощь по нужде не назначат.","Full ride — покрывает всё, включая проживание; full tuition — только обучение."]}
+ ]},
+ {t:"Родителям: что делать семье",l:"Расходы на подачу, где теряются деньги и время, чем родитель реально полезен.",b:[
+  {h:"Сколько стоит сама подача"},
+  {p:"Помимо обучения есть расходы на подачу: тесты (IELTS/TOEFL, SAT/ACT), взносы за заявки (у многих вузов США обычно примерно $30–90 за вуз; семьям с низким доходом их часто отменяют по запросу), перевод и заверение документов, визовые сборы. На 10–12 вузов это легко сотни тысяч тенге ещё до первого ответа. Цены экзаменов — на вкладке «Стоимость»."},
+  {h:"Где семьи теряют деньги и время"},
+  {ul:["Агентство с «гарантией поступления»: гарантий нет, решает университет. Просите договор с перечнем услуг и ценой за каждую.","Восемь заявок только в вузы с приёмом ниже 10% — это лотерея, а не план.","Пропущенная финансовая форма — самая дорогая ошибка.","Депозит сразу в два университета — нарушение правил.","Эссе, написанное не ребёнком.","Виза в последний момент."]},
+  {h:"Чем родитель полезен"},
+  {ul:["Определить честный бюджет семьи — к осени 11 класса.","Собрать документы для финансовых форм.","Вовремя оплатить тесты и взносы.","Знать ближайший дедлайн и спрашивать про него, а не «ну как, поступаешь?»."]},
+  {p:"Лучше не делать: писать эссе, звонить в приёмную комиссию вместо ребёнка, требовать только «топ-10»."},
+  {h:"Стоит ли вообще ехать"},
+  {p:"Зависит от трёх вещей: есть ли направление, которого нет или которое слабо в Казахстане; готов ли ребёнок жить один в 17–18 лет в другой языковой среде; сходится ли бюджет с учётом помощи, а не без неё. Если хоть на один вопрос ответ «нет» — рассмотрите сильные местные вузы, двойные дипломы или магистратуру за рубежом после бакалавриата дома, где стипендий гораздо больше. Плюсы известны (язык, связи, исследования), минусы называют реже: удалённость, стоимость перелётов, ограничения на работу по студенческой визе."},
+  {h:"Когда начинать"},
+  {p:"Идеально — в 10 классе, реально — летом перед 11-м. К декабрю 11 класса ранние раунды в США уже прошли."}
+ ]}
+];
+
+const IELTS_PRICE=110250, SAT_PRICE=111;
+const COSTS=[
+ {k:"ielts",price:"≈ 110 250 ₸",u:"https://kazakhstan.britishcouncil.org/sites/default/files/bc_public_offer_annex_07-2026.pdf"},
+ {k:"sat",price:"≈ $111",u:"https://collegereadiness.collegeboard.org/sat/register/international/fees"}
+];
+
+const CODES={usa:"US",uk:"GB",canada:"CA",germany:"DE",switzerland:"CH",netherlands:"NL",france:"FR",italy:"IT",sweden:"SE",ireland:"IE",singapore:"SG",hongkong:"HK",japan:"JP",korea:"KR",china:"CN",australia:"AU",nz:"NZ",uae:"AE",turkey:"TR",czech:"CZ",poland:"PL",finland:"FI",austria:"AT",malaysia:"MY"};
+const MONEY={
+ "MIT":{cost:{v:"≈ $92 760",k:"full",y:"2026–27"},intl:{v:"≈ 11%",s:"u"},aid:"bf"},
+ "Stanford University":{cost:{v:"≈ $87 800",k:"full",y:"2025–26"},intl:{v:"≈ 11%",s:"u"},aid:"aware"},
+ "Harvard University":{cost:{v:"≈ $86 900",k:"full",y:"2025–26"},intl:{v:"≈ 12–15%",s:"u"},aid:"bf"},
+ "Yale University":{cost:{v:"≈ $94 400",k:"full",y:"2025–26"},intl:{v:"≈ 12%",s:"u"},aid:"bf"},
+ "Princeton University":{cost:{v:"≈ $90 700",k:"full",y:"2025–26"},aid:"bf"},
+ "Columbia University":{cost:{v:"≈ $96 300",k:"full",y:"2025–26"},intl:{v:"≈ 17%",s:"u"},aid:"aware"},
+ "Carnegie Mellon University":{intl:{v:"≈ 22%",s:"u"}},
+ "New York University":{intl:{v:"≈ 22%",s:"u"}},
+ "Dartmouth College":{cost:{v:"≈ $98 950",k:"full",y:"2026–27"},aid:"bf"},
+ "Amherst College":{cost:{v:"≈ $96 360",k:"full",y:"2026–27"},aid:"bf"},
+ "Bowdoin College":{aid:"bf"},
+ "Brown University":{aid:"bf"},
+ "University of Notre Dame":{aid:"bf"},
+ "Washington and Lee University":{aid:"bf"},
+ "University of Oxford":{cost:{v:"£37 380–62 820",k:"tuition",y:"2026/27"},intl:{v:"≈ 43%",s:"a"}},
+ "University of Cambridge":{cost:{v:"£29 052–70 554 (+ college fee)",k:"tuition",y:"2026/27"},intl:{v:"≈ 38%",s:"a"}},
+ "Imperial College London":{intl:{v:"≈ 60%",s:"a"}},
+ "UCL":{intl:{v:"≈ 63%",s:"a"}},
+ "ETH Zurich":{intl:{v:"≈ 44%",s:"a"}},
+ "EPFL":{intl:{v:"≈ 64%",s:"a"}},
+ "TU Delft":{intl:{v:"≈ 35%",s:"a"}},
+ "University of Toronto":{intl:{v:"≈ 39%",s:"a"}},
+ "University of Melbourne":{intl:{v:"≈ 51%",s:"a"}},
+ "HKU":{intl:{v:"≈ 43%",s:"a"}}
+};
+
+const COURSES=[
+ {n:"British Council Kazakhstan",city:"Алматы, Астана, Атырау и др.",official:true,tags:["IELTS","Официальный партнёр IELTS"],d:"Официальный экзаменационный партнёр IELTS в Казахстане; тестовые центры в нескольких городах и подготовительные материалы.",u:"https://kazakhstan.britishcouncil.org/exam/ielts"},
+ {n:"IDP IELTS Kazakhstan",city:"Алматы",official:true,tags:["IELTS","Официальный партнёр IELTS"],d:"Второй официальный оператор экзамена IELTS в Казахстане (совладелец теста наравне с British Council); собственный тестовый центр в Алматы.",u:"https://ielts.org/test-centres/idp-ielts-kazakhstan-almaty-test-room"},
+ {n:"Manhattan Review",city:"Алматы, Астана",official:false,tags:["IELTS","SAT","ACT"],d:"Международная сеть подготовки к стандартизированным экзаменам с офисами в Алматы и Астане; групповые курсы и индивидуальные занятия по IELTS, SAT, ACT.",u:"https://www.manhattanreview.com/almaty/"},
+ {n:"GSC Study",city:"Астана",official:true,tags:["IELTS","Официальный партнёр IELTS"],d:"Официальный региональный партнёр British Council по регистрации и подготовке к IELTS в Астане.",u:"https://gscstudy.kz/"},
+ {n:"Crimson Education",city:"Алматы (+ офисы в 20+ странах)",official:false,tags:["Поступление в топ-вузы","Менторство","SAT/эссе"],d:"Международная консалтинговая компания по поступлению в элитные университеты (включая Лигу плюща); есть офис в Алматы, сопровождение от выбора вузов до эссе и подготовки к экзаменам.",u:"https://www.crimsoneducation.org/"}
+];
+
+const UNIS=[
+ {n:"MIT",c:"usa",ielts:7,sat:1520,tags:["SAT/ACT required","IELTS 7.0","SAT ~1520+"],u:"https://mitadmissions.org/apply/firstyear/requirements-deadlines/"},
+ {n:"Stanford University",c:"usa",ielts:7,sat:1500,tags:["TOEFL 100","IELTS 7.0","SAT ~1500+"],u:"https://admission.stanford.edu/apply/"},
+ {n:"Harvard University",c:"usa",ielts:7,sat:1500,tags:["SAT ~1500+","ACT 34+","TOEFL 100"],u:"https://college.harvard.edu/admissions/apply"},
+ {n:"Yale University",c:"usa",ielts:7,sat:1500,tags:["SAT/ACT required","TOEFL 100","IELTS 7.0"],u:"https://admissions.yale.edu/standardized-testing"},
+ {n:"Princeton University",c:"usa",ielts:7.5,sat:1510,tags:["TOEFL 100","IELTS 7.5","SAT ~1510+"],u:"https://admission.princeton.edu/how-apply"},
+ {n:"Columbia University",c:"usa",ielts:7,sat:null,tags:["TOEFL 100","IELTS 7.0","SAT optional"],u:"https://undergrad.admissions.columbia.edu/apply"},
+ {n:"UC Berkeley",c:"usa",ielts:6.5,sat:null,tags:["TOEFL 80","IELTS 6.5","SAT not used"],u:"https://admissions.berkeley.edu/international-applicants/"},
+ {n:"UCLA",c:"usa",ielts:7,sat:null,tags:["TOEFL 100","IELTS 7.0","SAT not used"],u:"https://admission.ucla.edu/apply/international"},
+ {n:"Carnegie Mellon University",c:"usa",ielts:7.5,sat:1500,tags:["TOEFL 102","IELTS 7.5","SAT ~1500+"],u:"https://www.cmu.edu/admission/admission/apply"},
+ {n:"University of Oxford",c:"uk",ielts:7,tags:["IELTS 7.0 (6.5)","TOEFL 100","Interview"],u:"https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/for-international-students"},
+ {n:"University of Cambridge",c:"uk",ielts:7.5,tags:["IELTS 7.5 (7.0)","TOEFL 110","Interview"],u:"https://www.undergraduate.study.cam.ac.uk/international-students"},
+ {n:"Imperial College London",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 92","DET 115"],u:"https://www.imperial.ac.uk/study/apply/undergraduate/entry-requirements/english-language/"},
+ {n:"UCL",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 92","UCAS"],u:"https://www.ucl.ac.uk/prospective-students/undergraduate/application-and-entry"},
+ {n:"LSE",c:"uk",ielts:7,tags:["IELTS 7.0 (6.5)","TOEFL 100","UCAS"],u:"https://www.lse.ac.uk/study-at-lse/Undergraduate/degree-programmes"},
+ {n:"University of Edinburgh",c:"uk",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 92","UCAS"],u:"https://www.ed.ac.uk/studying/undergraduate/entry-requirements"},
+ {n:"University of Manchester",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","UCAS"],u:"https://www.manchester.ac.uk/study/international/admissions/"},
+ {n:"University of Toronto",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 100","OUAC"],u:"https://future.utoronto.ca/apply/english-language-requirements/"},
+ {n:"UBC",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","Essays"],u:"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},
+ {n:"McGill University",c:"canada",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","No SAT"],u:"https://www.mcgill.ca/undergraduate-admissions/apply/english"},
+ {n:"University of Waterloo",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","Math contests"],u:"https://uwaterloo.ca/future-students/admissions/english-language-requirements"},
+ {n:"TU Munich",c:"germany",ielts:6.5,tags:["IELTS 6.5","Deutsch C1 (DE-track)","Uni-Assist"],u:"https://www.tum.de/en/studies/application"},
+ {n:"RWTH Aachen",c:"germany",ielts:6.5,tags:["Deutsch C1","IELTS 6.5 (EN-track)","Uni-Assist"],u:"https://www.rwth-aachen.de/go/id/bdvo"},
+ {n:"Heidelberg University",c:"germany",ielts:6.5,tags:["Deutsch C1 / DSH-2","Studienkolleg"],u:"https://www.uni-heidelberg.de/en/study/application"},
+ {n:"ETH Zurich",c:"switzerland",ielts:null,tags:["Deutsch C1","Entrance exam"],u:"https://ethz.ch/en/studies/bachelor/application.html"},
+ {n:"EPFL",c:"switzerland",ielts:null,tags:["Français B2+","Entrance exam"],u:"https://www.epfl.ch/education/bachelor/admission-criteria/"},
+ {n:"TU Delft",c:"netherlands",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","Studielink"],u:"https://www.tudelft.nl/en/education/admission-and-application"},
+ {n:"University of Amsterdam",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 92","Studielink"],u:"https://www.uva.nl/en/education/bachelor-s/application-and-admission"},
+ {n:"Eindhoven University of Technology",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","Math + Physics"],u:"https://www.tue.nl/en/education/admission-and-enrolment"},
+ {n:"Sciences Po",c:"france",ielts:7,tags:["IELTS 7.0","TOEFL 100","Interview"],u:"https://www.sciencespo.fr/students/en/admissions"},
+ {n:"Sorbonne Université",c:"france",ielts:6.5,tags:["Français B2–C1","Campus France"],u:"https://www.sorbonne-universite.fr/en/education"},
+ {n:"Politecnico di Milano",c:"italy",ielts:6,tags:["IELTS 6.0","TOEFL 78","Online TOL test"],u:"https://www.polimi.it/en/programmes/admission-and-enrolment"},
+ {n:"Bocconi University",c:"italy",ielts:6.5,tags:["IELTS 6.5","TOEFL 88","SAT/Bocconi test"],u:"https://www.unibocconi.it/en/programs/bachelor-science/admissions"},
+ {n:"KTH Royal Institute of Technology",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90","universityadmissions.se"],u:"https://www.kth.se/en/studies/bachelor"},
+ {n:"Lund University",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90","Free for EU"],u:"https://www.lunduniversity.lu.se/admissions"},
+ {n:"Trinity College Dublin",c:"ireland",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","CAO"],u:"https://www.tcd.ie/study/international/admission-requirements/"},
+ {n:"NUS",c:"singapore",ielts:6.5,tags:["IELTS 6.5","SAT recommended","Strong maths"],u:"https://www.nus.edu.sg/oam/apply-to-nus"},
+ {n:"NTU Singapore",c:"singapore",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","SAT accepted"],u:"https://www.ntu.edu.sg/admissions/undergraduate"},
+ {n:"HKU",c:"hongkong",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 80","Interview"],u:"https://admissions.hku.hk/international-students"},
+ {n:"University of Tokyo (PEAK)",c:"japan",ielts:7,tags:["IELTS 7.0","TOEFL 100","SAT/IB"],u:"https://www.u-tokyo.ac.jp/en/prospective-students/admissions.html"},
+ {n:"Kyoto University (iUP)",c:"japan",ielts:6.5,tags:["IELTS 6.5","EJU / JLPT","Japanese year 1"],u:"https://www.kyoto-u.ac.jp/en/education-campus/education/admissions"},
+ {n:"KAIST",c:"korea",ielts:6.5,tags:["IELTS 6.5","TOEFL 83","Full scholarships"],u:"https://admission.kaist.ac.kr/international/"},
+ {n:"Seoul National University",c:"korea",ielts:6.5,tags:["TOEFL 80+","TOPIK 3+","Interview"],u:"https://en.snu.ac.kr/admission/undergraduate/international"},
+ {n:"Tsinghua University",c:"china",ielts:6.5,tags:["IELTS 6.5","HSK 5 (CN-track)","CSC scholarships"],u:"https://www.tsinghua.edu.cn/en/Admissions.htm"},
+ {n:"Peking University",c:"china",ielts:6.5,tags:["HSK 5","IELTS 6.5 (EN-track)","Interview"],u:"https://english.pku.edu.cn/admissions/"},
+ {n:"University of Melbourne",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 79","No SAT"],u:"https://study.unimelb.edu.au/how-to-apply/international-students"},
+ {n:"University of Sydney",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 85","UAC"],u:"https://www.sydney.edu.au/study/how-to-apply.html"},
+ {n:"Australian National University",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 80"],u:"https://www.anu.edu.au/study/apply"},
+ {n:"University of Auckland",c:"nz",ielts:6,tags:["IELTS 6.0 (5.5)","TOEFL 80"],u:"https://www.auckland.ac.nz/en/study/applications-and-admissions.html"},
+ {n:"Khalifa University",c:"uae",ielts:6.5,sat:1300,tags:["IELTS 6.5","SAT ~1300+","Scholarships"],u:"https://www.ku.ac.ae/admissions"},
+ {n:"Koç University",c:"turkey",ielts:6.5,tags:["IELTS 6.5","TOEFL 80","SAT accepted"],u:"https://global.ku.edu.tr/admissions/"},
+ {n:"Bilkent University",c:"turkey",ielts:6.5,tags:["IELTS 6.5","TOEFL 87","YÖS/SAT"],u:"https://stars.bilkent.edu.tr/homepage/international"},
+ {n:"Charles University",c:"czech",ielts:6.5,tags:["IELTS 6.5","Čeština free track","Entrance exam"],u:"https://cuni.cz/UKEN-4.html"},
+ {n:"Georgia Institute of Technology",c:"usa",ielts:7,sat:1450,tags:["TOEFL 90","IELTS 7.0","SAT optional"],u:"https://admission.gatech.edu/apply/international-students"},
+ {n:"University of Michigan",c:"usa",ielts:6.5,sat:null,tags:["TOEFL 100","IELTS 6.5","SAT not used"],u:"https://admissions.umich.edu/apply/international-students"},
+ {n:"New York University",c:"usa",ielts:7,sat:null,tags:["TOEFL 100","IELTS 7.0","SAT optional"],u:"https://www.nyu.edu/admissions/undergraduate-admissions/international-applicants.html"},
+ {n:"King's College London",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.5)","TOEFL 92","UCAS"],u:"https://www.kcl.ac.uk/study/undergraduate/apply/international-students"},
+ {n:"University of Bristol",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 88","UCAS"],u:"https://www.bristol.ac.uk/international/students/entry-requirements/"},
+ {n:"University of Alberta",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90"],u:"https://www.ualberta.ca/en/admissions/undergraduate/requirements/international-requirements/index.html"},
+ {n:"Queen's University",c:"canada",ielts:6.5,tags:["IELTS 6.5","TOEFL 88"],u:"https://www.queensu.ca/admission/international"},
+ {n:"Humboldt-Universität zu Berlin",c:"germany",ielts:null,tags:["Deutsch C1","TestDaF/DSH","Uni-Assist"],u:"https://www.hu-berlin.de/en/studies/counselling/application"},
+ {n:"University of Stuttgart",c:"germany",ielts:6.5,tags:["IELTS 6.5 (EN-track)","Deutsch B2+ (DE-track)"],u:"https://www.uni-stuttgart.de/en/study/international-applicants/"},
+ {n:"Erasmus University Rotterdam",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","Studielink"],u:"https://www.eur.nl/en/education/practical-matters/admission-and-application/international-students"},
+ {n:"École Polytechnique",c:"france",ielts:null,tags:["Bilingue FR/EN","Entrance exam","Interview"],u:"https://www.polytechnique.edu/en/admissions"},
+ {n:"University of Zurich",c:"switzerland",ielts:null,tags:["Deutsch C1","Matura/entrance exam"],u:"https://www.uzh.ch/en/studies/application.html"},
+ {n:"Chalmers University of Technology",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90"],u:"https://www.chalmers.se/en/education/admission/"},
+ {n:"University College Dublin",c:"ireland",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","CAO"],u:"https://www.ucd.ie/international/apply/"},
+ {n:"Singapore Management University",c:"singapore",ielts:6.5,tags:["IELTS 6.5","SAT recommended"],u:"https://admissions.smu.edu.sg/undergraduate/international-students"},
+ {n:"Waseda University",c:"japan",ielts:6.5,tags:["IELTS 6.5","EJU/SAT accepted"],u:"https://www.waseda.jp/inst/admission/en/"},
+ {n:"Yonsei University",c:"korea",ielts:6.5,tags:["IELTS 6.5","TOEFL 80","TOPIK 3+ (KR-track)"],u:"https://admission.yonsei.ac.kr/"},
+ {n:"Fudan University",c:"china",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","HSK 5 (CN-track)"],u:"https://iso.fudan.edu.cn"},
+ {n:"UNSW Sydney",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90"],u:"https://www.unsw.edu.au/study/how-to-apply/international-applicants"},
+ {n:"Monash University",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 79"],u:"https://www.monash.edu/study/apply/international-students"},
+ {n:"University of Otago",c:"nz",ielts:6,tags:["IELTS 6.0 (6.0)","TOEFL 80"],u:"https://www.otago.ac.nz/international/study/apply"},
+ {n:"NYU Abu Dhabi",c:"uae",ielts:7,sat:1450,tags:["IELTS 7.0","SAT optional ~1450+","Full scholarships"],u:"https://nyuad.nyu.edu/en/admissions.html"},
+ {n:"Sabancı University",c:"turkey",ielts:6.5,tags:["IELTS 6.5","TOEFL 87","SAT/YÖS accepted"],u:"https://www.sabanciuniv.edu/en/undergraduate-admission"},
+ {n:"Czech Technical University in Prague",c:"czech",ielts:6,tags:["IELTS 6.0","Entrance exam"],u:"https://www.cvut.cz/en/admission-procedure"},
+ {n:"University of Warsaw",c:"poland",ielts:6.5,tags:["IELTS 6.5","TOEFL 87"],u:"https://en.uw.edu.pl/candidates/"},
+ {n:"Aalto University",c:"finland",ielts:6.5,tags:["IELTS 6.5","TOEFL 92"],u:"https://www.aalto.fi/en/admission-services"},
+ {n:"University of Vienna",c:"austria",ielts:6.5,tags:["IELTS 6.5","Matura/entrance exam"],u:"https://www.univie.ac.at/en/studying/before-your-studies/international-applicants/"},
+ {n:"University of Malaya",c:"malaysia",ielts:6,tags:["IELTS 6.0","TOEFL 70"],u:"https://um.edu.my/admission"},
+ {n:"Dartmouth College",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://admissions.dartmouth.edu"},
+ {n:"Amherst College",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://www.amherst.edu/admission"},
+ {n:"Bowdoin College",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://www.bowdoin.edu/admissions"},
+ {n:"Brown University",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://admission.brown.edu"},
+ {n:"University of Notre Dame",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://admissions.nd.edu"},
+ {n:"Washington and Lee University",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://www.wlu.edu/admissions-and-aid"}
+];
+
+COUNTRIES.denmark=["Дания","Дания","Denmark"];
+UNIS.push(
+{n:"Duke University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.duke.edu"},
+{n:"University of Pennsylvania",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.upenn.edu"},
+{n:"Cornell University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.cornell.edu"},
+{n:"Johns Hopkins University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://apply.jhu.edu"},
+{n:"Northwestern University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.northwestern.edu"},
+{n:"University of Chicago",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://collegeadmissions.uchicago.edu"},
+{n:"Caltech",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://www.admissions.caltech.edu"},
+{n:"Rice University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admission.rice.edu"},
+{n:"Vanderbilt University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.vanderbilt.edu"},
+{n:"UC San Diego",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 80","SAT not used"],u:"https://admissions.ucsd.edu"},
+{n:"Purdue University",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 80"],u:"https://www.admissions.purdue.edu"},
+{n:"University of Illinois Urbana-Champaign",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 79"],u:"https://admissions.illinois.edu"},
+{n:"University of Warwick",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://warwick.ac.uk/study/undergraduate"},
+{n:"University of Glasgow",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://www.gla.ac.uk/undergraduate"},
+{n:"University of St Andrews",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://www.st-andrews.ac.uk/subjects"},
+{n:"Durham University",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://www.durham.ac.uk/study"},
+{n:"McMaster University",c:"canada",ielts:6.5,tags:["IELTS 6.5","OUAC"],u:"https://future.mcmaster.ca"},
+{n:"LMU Munich",c:"germany",ielts:null,tags:["Deutsch C1","Uni-Assist"],u:"https://www.lmu.de/en/study"},
+{n:"University of Copenhagen",c:"denmark",ielts:6.5,tags:["IELTS 6.5","TOEFL 83"],u:"https://studies.ku.dk/bachelors"},
+{n:"Aarhus University",c:"denmark",ielts:6.5,tags:["IELTS 6.5","TOEFL 83"],u:"https://international.au.dk/education"},
+{n:"University of Helsinki",c:"finland",ielts:6.5,tags:["IELTS 6.5","TOEFL 92"],u:"https://www.helsinki.fi/en/admissions-and-education"},
+{n:"Uppsala University",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90"],u:"https://www.uu.se/en/admissions"},
+{n:"University of Groningen",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90"],u:"https://www.rug.nl/education"},
+{n:"Utrecht University",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90"],u:"https://www.uu.nl/en/bachelors"},
+{n:"HKUST",c:"hongkong",ielts:6.5,tags:["IELTS 6.5","TOEFL 80"],u:"https://join.hkust.edu.hk"},
+{n:"CUHK",c:"hongkong",ielts:6.5,tags:["IELTS 6.5","TOEFL 80"],u:"https://admission.cuhk.edu.hk/international"}
+);
+UNIS.push(
+{n:"Embry-Riddle Aeronautical University",c:"usa",ielts:6,tags:["IELTS 6.0","TOEFL 79"],u:"https://www.erau.edu/admissions"},
+{n:"University of North Dakota",c:"usa",ielts:6,tags:["IELTS 6.0","TOEFL 71"],u:"https://admissions.und.edu"},
+{n:"Western Michigan University",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 79"],u:"https://wmich.edu/admissions"}
+);
+UNIS.forEach(u=>{if(u.toefl===undefined){const m=u.tags.join(" ").match(/TOEFL\s*(?:iBT\s*)?(\d{2,3})/);u.toefl=m?+m[1]:null;}});
+const PILOT=["Purdue University","Embry-Riddle Aeronautical University","University of North Dakota","Western Michigan University"];
+const AVIA=["Embry-Riddle Aeronautical University","University of North Dakota","Western Michigan University"];
+const MAJ={cs:"Информатика",eng:"Инженерия",biz:"Бизнес и экономика",med:"Медицина и биология",sci:"Естественные науки",soc:"Социальные науки и право",art:"Искусство и дизайн",pilot:"Пилот / авиация"};
+const TECH=["ETH Zurich","EPFL","TU Delft","TU Munich","RWTH Aachen","Eindhoven University of Technology","KAIST","Politecnico di Milano","KTH Royal Institute of Technology","Chalmers University of Technology","Georgia Institute of Technology","Carnegie Mellon University","University of Waterloo","École Polytechnique","Aalto University","University of Stuttgart","Czech Technical University in Prague","Khalifa University","Caltech","Purdue University","HKUST"];
+const BIZ=["LSE","Bocconi University","Sciences Po","Singapore Management University","Erasmus University Rotterdam"];
+function majorsOf(u){const b=AVIA.includes(u.n)?["eng"]:TECH.includes(u.n)?["cs","eng","sci"]:u.n==="Imperial College London"?["cs","eng","sci","med"]:BIZ.includes(u.n)?["biz","soc"]:Object.keys(MAJ).filter(k=>k!=="pilot");return PILOT.includes(u.n)?[...b,"pilot"]:b;}
+function majorLabel(u){const m=majorsOf(u);return m.length===7?"Все направления":m.map(k=>MAJ[k]).join(", ");}
+const T={
+ ru:{navUniversities:"Университеты",navGuide:"Пошагово",navExams:"Экзамены",navTips:"Советы",navResources:"Ресурсы",navCourses:"Курсы",navCosts:"Стоимость",navArticles:"Гайды",
+  pill:"Для абитуриентов из Казахстана и СНГ",heroTitle:"Поступление за рубеж",
+  heroSubtitle:"Требования топовых университетов, нужные экзамены и понятный план подачи — в одном месте.",
+  statUniLabel:"университетов",statCountryLabel:"стран",statStepsLabel:"шагов до оффера",
+  universitiesTitle:"Университеты и требования",searchPh:"Поиск по названию…",
+  countryAll:"Все страны",ieltsAll:"Любой IELTS",
+  noteText:"Ниже — краткие ориентиры. Всегда проверяйте детали на официальном сайте программы: требования меняются каждый год.",
+  trustTitle:"Это ориентиры, а не гарантия поступления.",
+  trustText:"Баллы и требования собраны вручную с официальных страниц приёма и могут отличаться по программе. Перед подачей всегда сверяйтесь с сайтом вуза — ссылка есть на каждой карточке.",
+  favOnly:"Только избранное",
+  matchTitle:"Проверь себя по всем вузам разом",
+  matchSubtitle:"Введи свой балл IELTS и/или SAT — карточки покажут, куда ты уже проходишь",
+  matchPh:"IELTS",matchSatPh:"SAT",
+  matchHint:"SAT — ориентировочный конкурентный балл, а не жёсткий проходной минимум: многие вузы США рассматривают заявки комплексно.",
+  mYes:"Обычно хватает",mClose:"Близко, реально дотянуть",mNo:"Нужно подтянуть балл",mUnknown:"Нет данных по этому критерию — см. теги",
+  coursesTitle:"Курсы подготовки в Казахстане",
+  coursesNote:"Несколько проверенных вариантов с реальными сайтами. Это не полный список и не реклама — уточняйте актуальные даты и цены напрямую у организатора.",
+  officialPartner:"Официальный партнёр IELTS",courseSite:"Сайт курса",
+  costsTitle:"Стоимость и вопросы",
+  moneyCost:"Стоимость года",moneyIntl:"Иностранцев",moneyAid:"Помощь иностранцам",
+  intlU:"среди бакалавров",intlA:"среди всех студентов",
+  cost_full:"полная (обучение + проживание)",cost_tuition:"только обучение",
+  aid_bf:"Приём без учёта финансов, закрывают 100% нужды",aid_aware:"Помощь есть, но финансы влияют на решение о приёме",
+  moneyNone:"Стоимость, долю иностранцев и помощь смотрите на сайте вуза",
+  moneyNote:"Деньги и доля иностранцев — ориентировочно, по данным вузов, THE и HESA за 2025–27 учебный год. Заполнено не для всех вузов: у остальных смотрите сайт. «Полная» стоимость включает проживание и сборы.",
+  aidOnly:"Полная помощь",
+  articlesTitle:"Гайды",articlesNote:"Подробные разборы: поступление в США, деньги и стипендии, план для родителей. Раскрывайте нужный.",articlesLang:"",
+  costsNote:"Цены экзаменов проверены в октябре 2026 по официальным источникам. Они меняются — сверяйтесь с сайтом организатора перед оплатой.",
+  cost_ielts_t:"IELTS (Academic / General Training)",
+  cost_ielts_d:"По прайсу British Council Казахстан с 1 июля 2026 (с НДС). Версия UKVI дороже. В разных центрах и датах сумма при регистрации может отличаться.",
+  cost_sat_t:"SAT",
+  cost_sat_d:"Базовый взнос плюс региональный сбор College Board для Казахстана — ориентировочно $111 на сезон 2026–27. Точную сумму смотрите на странице College Board до оплаты.",
+  costSource:"Источник",
+  calcTitle:"Калькулятор расходов на экзамены",calcIelts:"Попыток IELTS",calcSat:"Попыток SAT",calcRate:"Курс, ₸ за $1",calcTotal:"всего",
+  faqTitle:"Частые вопросы",
+  faq:[["Сайт платный?","Нет. Всё бесплатно, регистрация не нужна. Избранное и тема хранятся только в вашем браузере."],["Откуда берутся данные?","Требования вузов собраны вручную со страниц приёма на их официальных сайтах; ссылка есть на каждой карточке. Автоматического обновления нет, поэтому перед подачей всегда сверяйтесь с сайтом вуза."],["Как работает подбор по баллу?","Сайт сравнивает ваш IELTS и SAT с ориентирами вуза: «хватает», если балл не ниже, «близко» — если не хватает до 0,5 IELTS или 50 баллов SAT. SAT у вузов США — ориентир, а не жёсткий порог."],["Почему у некоторых вузов нет баллов IELTS?","Там обучение на другом языке (например, немецком или французском) или вход идёт через собственный вступительный экзамен — смотрите теги на карточке."],["Это гарантия поступления?","Нет. Сайт помогает отобрать вузы, но решение принимает приёмная комиссия, учитывая оценки, эссе и другие части заявки."]],
+  noResults:"По этим фильтрам ничего не найдено.",site:"Сайт университета",
+  guideTitle:"Пошаговое руководство",examsTitle:"Основные экзамены",tipsTitle:"Советы",resourcesTitle:"Полезные ресурсы",
+  footerText:"© 2026 ivypath.io · информация носит справочный характер",backTop:"Наверх ↑",
+  steps:[["Страна и специальность","Определитесь с направлением и 5–8 университетами: 2 мечты, 3 реальных, 2 запасных."],["Требования","Выпишите для каждого: баллы, экзамены, дедлайны, стоимость и стипендии."],["Экзамены","IELTS/TOEFL — за 6–9 месяцев до подачи. SAT/ACT — если нужен для США."],["Эссе и рекомендации","Черновик эссе за 2 месяца до дедлайна, учителей предупредите заранее."],["Подача","Common App, UCAS, Studielink или портал университета. Проверьте всё дважды."],["Оффер и виза","Подтвердите место, оплатите депозит, соберите документы на визу."]],
+  exams:[["IELTS","Академический английский. Результат действует 2 года."],["TOEFL iBT","Альтернатива IELTS, чаще просят в США."],["SAT / ACT","Стандартизированный тест для США. Многие вузы — test-optional."],["Duolingo English Test","Дешевле и быстрее, принимают не везде."],["PTE Academic","Компьютерный тест, результат быстрее, чем у IELTS (обычно 48 часов)."],["Cambridge C1 Advanced","Бессрочный сертификат, иногда заменяет IELTS/TOEFL."]],
+  tips:["Начинайте за 12–18 месяцев до подачи.","Ведите таблицу дедлайнов — их пропускают чаще всего.","Ищите стипендии одновременно с подачей, а не после.","Просите рекомендации у тех, кто знает вас по проектам.","Не копируйте чужие эссе — проверка на плагиат есть везде.","Сделайте запасной вариант в своей стране на случай отказа.","Проверьте визовые сроки заранее — некоторые визы ждут месяцами.","Сохраняйте копии всех документов и переписки с приёмной комиссией."],
+  res:[["Порталы подачи",["Common App — США","UCAS — Великобритания","Studielink — Нидерланды","Uni-Assist — Германия"]],["Экзамены и подготовка",["IELTS / TOEFL official","Khan Academy — SAT","MIT OpenCourseWare"]],["Стипендии и помощь",["Помощь самих вузов (need-based) и merit-стипендии — основной путь на бакалавриате","«Болашак» — на бакалавриате только для призёров международных олимпиад (bolashak.gov.kz)","Chevening, DAAD, Fulbright, Erasmus Mundus — магистратура, школьникам не подходят"]]]},
+ kk:{navUniversities:"Университеттер",navGuide:"Қадамдар",navExams:"Емтихандар",navTips:"Кеңестер",navResources:"Ресурстар",navCourses:"Курстар",navCosts:"Құны",navArticles:"Гайдтар",
+  pill:"Қазақстан мен ТМД түлектеріне",heroTitle:"Шетелге түсу",
+  heroSubtitle:"Үздік университеттердің талаптары, қажет емтихандар және нақты жоспар бір жерде.",
+  statUniLabel:"университет",statCountryLabel:"ел",statStepsLabel:"қадам",
+  universitiesTitle:"Университеттер және талаптар",searchPh:"Атауы бойынша іздеу…",
+  countryAll:"Барлық елдер",ieltsAll:"Кез келген IELTS",
+  noteText:"Төменде қысқаша бағдар берілген. Нақты талаптарды әрқашан ресми сайттан тексеріңіз.",
+  trustTitle:"Бұл — бағдар, түсуге кепілдік емес.",
+  trustText:"Баллдар мен талаптар ресми қабылдау беттерінен қолмен жиналған және бағдарлама бойынша өзгеше болуы мүмкін. Құжат тапсырар алдында әрқашан университет сайтын тексеріңіз — сілтеме әр карточкада бар.",
+  favOnly:"Тек таңдаулылар",
+  matchTitle:"Барлық университет бойынша өзіңді тексер",
+  matchSubtitle:"IELTS және/немесе SAT балыңды енгіз — карточкалар қайда өтетініңді көрсетеді",
+  matchPh:"IELTS",matchSatPh:"SAT",
+  matchHint:"SAT — бағдарлық бәсекелестік балл, қатаң өту шегі емес: АҚШ университеттерінің көбі өтінімді кешенді қарайды.",
+  mYes:"Әдетте жеткілікті",mClose:"Жақын, жетуге болады",mNo:"Балды көтеру керек",mUnknown:"Бұл критерий бойынша деректер жоқ — тегтерді қара",
+  coursesTitle:"Қазақстандағы дайындық курстары",
+  coursesNote:"Бірнеше тексерілген нұсқа, нақты сайттарымен. Бұл толық тізім емес және жарнама емес — нақты күні мен бағасын ұйымдастырушыдан тексеріңіз.",
+  officialPartner:"IELTS ресми серіктесі",courseSite:"Курс сайты",
+  costsTitle:"Құны және сұрақтар",
+  moneyCost:"Жылдық құны",moneyIntl:"Шетелдіктер",moneyAid:"Шетелдіктерге көмек",
+  intlU:"бакалавриат студенттері арасында",intlA:"барлық студенттер арасында",
+  cost_full:"толық (оқу + тұру)",cost_tuition:"тек оқу",
+  aid_bf:"Қабылдау қаржыны ескермейді, қажеттіліктің 100%-ын жабады",aid_aware:"Көмек бар, бірақ қаржы қабылдау шешіміне әсер етеді",
+  moneyNone:"Құны, шетелдіктер үлесі және көмек — университет сайтында",
+  moneyNote:"Ақша мен шетелдіктер үлесі шамамен, университеттер, THE және HESA деректері бойынша (2025–27 оқу жылы). Барлық университет үшін толтырылмаған: қалғанын сайттан қараңыз. «Толық» құнға тұру мен алымдар кіреді.",
+  aidOnly:"Толық көмек",
+  articlesTitle:"Гайдтар",articlesNote:"Толық талдаулар: АҚШ-қа түсу, ақша мен стипендиялар, ата-аналарға арналған жоспар.",articlesLang:"Гайдтар әзірге орыс тілінде ғана қолжетімді.",
+  costsNote:"Емтихан бағалары 2026 жылдың қазан айында ресми дереккөздер бойынша тексерілді. Бағалар өзгереді — төлемес бұрын ұйымдастырушы сайтынан тексеріңіз.",
+  cost_ielts_t:"IELTS (Academic / General Training)",
+  cost_ielts_d:"British Council Қазақстанның 2026 жылғы 1 шілдеден бастап прайсы бойынша (ҚҚС-пен). UKVI нұсқасы қымбатырақ. Түрлі орталықтар мен күндерде тіркелу кезінде сома өзгеше болуы мүмкін.",
+  cost_sat_t:"SAT",
+  cost_sat_d:"Қазақстан үшін College Board-тың негізгі жарнасы мен аймақтық алымы — 2026–27 маусымында шамамен $111. Нақты соманы төлемес бұрын College Board бетінен қараңыз.",
+  costSource:"Дереккөз",
+  calcTitle:"Емтихан шығындарының калькуляторы",calcIelts:"IELTS әрекеттері",calcSat:"SAT әрекеттері",calcRate:"Бағам, ₸ / $1",calcTotal:"барлығы",
+  faqTitle:"Жиі қойылатын сұрақтар",
+  faq:[["Сайт ақылы ма?","Жоқ. Бәрі тегін, тіркелу қажет емес. Таңдаулылар мен тақырып тек сіздің браузеріңізде сақталады."],["Деректер қайдан алынады?","Университет талаптары ресми сайттардағы қабылдау беттерінен қолмен жиналған; сілтеме әр карточкада бар. Автоматты жаңарту жоқ, сондықтан құжат тапсырар алдында әрқашан университет сайтын тексеріңіз."],["Баллмен іріктеу қалай жұмыс істейді?","Сайт IELTS пен SAT балыңызды университет бағдарларымен салыстырады: балл төмен болмаса — «жеткілікті», IELTS-тен 0,5-ке немесе SAT-тан 50 балға дейін жетпесе — «жақын». АҚШ университеттерінде SAT — бағдар, қатаң шек емес."],["Неге кейбір университеттерде IELTS балы жоқ?","Онда оқыту басқа тілде (мысалы, неміс немесе француз) немесе қабылдау өз емтиханы арқылы өтеді — карточкадағы тегтерді қараңыз."],["Бұл түсуге кепілдік пе?","Жоқ. Сайт университеттерді іріктеуге көмектеседі, бірақ шешімді қабылдау комиссиясы бағаларды, эссені және өтінімнің басқа бөліктерін ескеріп қабылдайды."]],
+  noResults:"Бұл сүзгілер бойынша ештеңе табылмады.",site:"Ресми сайт",
+  guideTitle:"Қадамдық нұсқаулық",examsTitle:"Негізгі емтихандар",tipsTitle:"Кеңестер",resourcesTitle:"Пайдалы ресурстар",
+  footerText:"© 2026 ivypath.io · ақпарат анықтамалық сипатта",backTop:"Жоғары ↑",
+  steps:[["Ел және мамандық","Бағытты таңдап, 5–8 университет тізімін жасаңыз."],["Талаптар","Әрқайсысы үшін баллдар, емтихандар, дедлайндар мен құнын жазып алыңыз."],["Емтихандар","IELTS/TOEFL — тапсырудан 6–9 ай бұрын. SAT/ACT — АҚШ үшін."],["Эссе және ұсыныс хаттар","Эссе жобасын 2 ай бұрын бастаңыз."],["Құжат тапсыру","Common App, UCAS, Studielink немесе университет порталы."],["Оффер және виза","Орынды растап, депозит төлеп, виза құжаттарын жинаңыз."]],
+  exams:[["IELTS","Академиялық ағылшын тілі. Нәтиже 2 жыл жарамды."],["TOEFL iBT","IELTS баламасы, АҚШ-та жиі сұралады."],["SAT / ACT","АҚШ үшін стандартталған тест."],["Duolingo English Test","Арзан әрі жылдам, бірақ бәрі қабылдамайды."],["PTE Academic","Компьютерлік тест, нәтиже жылдамырақ келеді (әдетте 48 сағат)."],["Cambridge C1 Advanced","Мерзімсіз сертификат, кейде IELTS/TOEFL орнына қабылданады."]],
+  tips:["Дайындықты 12–18 ай бұрын бастаңыз.","Дедлайн кестесін жүргізіңіз.","Стипендияны құжат тапсырумен қатар іздеңіз.","Ұсыныс хатты сізді жақсы білетін мұғалімнен сұраңыз.","Бөтен эссені көшірмеңіз — плагиат тексеріледі.","Бас тартылған жағдайға өз еліңде қосалқы нұсқа дайындаңыз.","Виза мерзімін алдын ала тексеріңіз — кейбір визалар айлап күттіреді.","Барлық құжат пен хат-хабар көшірмесін сақтаңыз."],
+  res:[["Тапсыру порталдары",["Common App — АҚШ","UCAS — Ұлыбритания","Studielink — Нидерланды","Uni-Assist — Германия"]],["Емтихан және дайындық",["IELTS / TOEFL official","Khan Academy — SAT","MIT OpenCourseWare"]],["Стипендиялар мен көмек",["Университеттердің өз көмегі (need-based) және merit-стипендиялар — бакалавриаттағы негізгі жол","«Болашақ» — бакалавриатта тек халықаралық олимпиада жүлдегерлеріне (bolashak.gov.kz)","Chevening, DAAD, Fulbright, Erasmus Mundus — магистратура, мектеп түлектеріне сәйкес келмейді"]]]},
+ en:{navUniversities:"Universities",navGuide:"Step by step",navExams:"Exams",navTips:"Tips",navResources:"Resources",navCourses:"Courses",navCosts:"Costs",navArticles:"Guides",
+  pill:"For applicants from Kazakhstan & the CIS",heroTitle:"Studying abroad",
+  heroSubtitle:"Requirements of top universities, the exams you need and a clear application plan — in one place.",
+  statUniLabel:"universities",statCountryLabel:"countries",statStepsLabel:"steps to an offer",
+  universitiesTitle:"Universities and requirements",searchPh:"Search by name…",
+  countryAll:"All countries",ieltsAll:"Any IELTS",
+  noteText:"These are short guidelines. Always verify details on the official programme website — requirements change every year.",
+  trustTitle:"These are guidelines, not a guarantee of admission.",
+  trustText:"Scores and requirements are collected by hand from official admissions pages and can vary by programme. Always double-check with the university before applying — the link is on every card.",
+  favOnly:"Favourites only",
+  matchTitle:"Check yourself against every university at once",
+  matchSubtitle:"Enter your IELTS and/or SAT score — cards show where you already qualify",
+  matchPh:"IELTS",matchSatPh:"SAT",
+  matchHint:"SAT is an indicative competitive score, not a hard cutoff — most US schools review applications holistically.",
+  mYes:"Usually enough",mClose:"Close, doable",mNo:"Need a higher score",mUnknown:"No data for this metric — see tags",
+  coursesTitle:"Prep courses in Kazakhstan",
+  coursesNote:"A few vetted options with real websites. Not an exhaustive list or an ad — confirm current dates and prices directly with the provider.",
+  officialPartner:"Official IELTS partner",courseSite:"Course website",
+  costsTitle:"Costs and FAQ",
+  moneyCost:"Annual cost",moneyIntl:"International students",moneyAid:"Aid for internationals",
+  intlU:"of undergraduates",intlA:"of all students",
+  cost_full:"full (tuition + living)",cost_tuition:"tuition only",
+  aid_bf:"Admission ignores finances; 100% of need met",aid_aware:"Aid available, but finances can affect admission",
+  moneyNone:"See the university site for cost, international share and aid",
+  moneyNote:"Costs and international shares are approximate, from university, THE and HESA data for 2025–27. Not filled for every university: check the rest on their sites. “Full” cost includes living and fees.",
+  aidOnly:"Full aid",
+  articlesTitle:"Guides",articlesNote:"In-depth write-ups: applying to the US, money and scholarships, a plan for parents.",articlesLang:"Guides are currently available in Russian only.",
+  costsNote:"Exam prices were checked in October 2026 against official sources. They change — confirm with the organiser before paying.",
+  cost_ielts_t:"IELTS (Academic / General Training)",
+  cost_ielts_d:"Per the British Council Kazakhstan price list effective 1 July 2026 (VAT included). The UKVI version costs more. The amount at registration can differ by centre and date.",
+  cost_sat_t:"SAT",
+  cost_sat_d:"College Board base fee plus the regional fee for Kazakhstan — roughly $111 for 2026–27. Check the exact amount on the College Board page before paying.",
+  costSource:"Source",
+  calcTitle:"Exam budget calculator",calcIelts:"IELTS attempts",calcSat:"SAT attempts",calcRate:"Rate, ₸ per $1",calcTotal:"total",
+  faqTitle:"Frequently asked questions",
+  faq:[["Is the site paid?","No. Everything is free and no sign-up is needed. Favourites and theme are stored only in your browser."],["Where does the data come from?","University requirements are collected by hand from the admissions pages on their official sites; every card links to the source. There is no automatic updating, so always double-check with the university before applying."],["How does score matching work?","The site compares your IELTS and SAT with the university's guideline: «usually enough» if your score is at or above it, «close» if you are within 0.5 IELTS or 50 SAT points. For US universities SAT is a guideline, not a hard cutoff."],["Why do some universities have no IELTS score?","They teach in another language (for example German or French) or admit through their own entrance exam — see the tags on the card."],["Is this a guarantee of admission?","No. The site helps you shortlist, but the admissions committee decides based on grades, essays and the rest of your application."]],
+  noResults:"Nothing matches these filters.",site:"Official site",
+  guideTitle:"Step-by-step guide",examsTitle:"Main exams",tipsTitle:"Tips",resourcesTitle:"Useful resources",
+  footerText:"© 2026 ivypath.io · for reference only",backTop:"Back to top ↑",
+  steps:[["Country & major","Pick a field and shortlist 5–8 universities: 2 reach, 3 match, 2 safety."],["Requirements","For each one note scores, exams, deadlines, tuition and scholarships."],["Exams","IELTS/TOEFL 6–9 months before applying. SAT/ACT if the US needs it."],["Essays & references","Draft essays 2 months early; ask teachers well in advance."],["Apply","Common App, UCAS, Studielink or the university portal. Double-check everything."],["Offer & visa","Accept the offer, pay the deposit, prepare visa documents."]],
+  exams:[["IELTS","Academic English test, valid for 2 years."],["TOEFL iBT","IELTS alternative, common in the US."],["SAT / ACT","Standardised US test. Many schools are test-optional."],["Duolingo English Test","Cheaper and faster, but not accepted everywhere."],["PTE Academic","Computer-based test, usually faster results (around 48 hours)."],["Cambridge C1 Advanced","Never expires; sometimes accepted instead of IELTS/TOEFL."]],
+  tips:["Start 12–18 months before the deadline.","Keep a deadline tracker — missed dates are the top reason for rejection.","Look for scholarships while you apply, not after.","Ask for references from teachers who know your projects.","Never copy essays — plagiarism checks are everywhere.","Keep a backup option at home in case of rejection.","Check visa timelines early — some visas take months.","Keep copies of every document and admissions email."],
+  res:[["Application portals",["Common App — USA","UCAS — UK","Studielink — Netherlands","Uni-Assist — Germany"]],["Exams & prep",["IELTS / TOEFL official","Khan Academy — SAT","MIT OpenCourseWare"]],["Scholarships & aid",["University need-based aid and merit scholarships — the main route for bachelor's","Bolashak — for bachelor's only international olympiad medallists (bolashak.gov.kz)","Chevening, DAAD, Fulbright, Erasmus Mundus — master's level, not for school leavers"]]]}
+};
+
+Object.assign(T.ru,{matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"ИИ-помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →"});
+Object.assign(T.kk,{navHome:"Басты бет",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"ИИ-көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →"});
+Object.assign(T.en,{navHome:"Home",ctaA:"Find a university",ctaB:"Read the guides",navChat:"AI assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →"});
+const SECTIONS=["home","universities","qs","guide","exams","articles"];
+const ICONS={home:"",universities:"",guide:"",exams:"",tips:"",resources:"",courses:"",costs:"",articles:""};
+const LI={ru:0,kk:1,en:2};
+let lang="ru";try{lang=localStorage.getItem("an_lang")||"ru";}catch(e){}
+if(!T[lang])lang="ru";
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let favs=new Set();
+try{favs=new Set(JSON.parse(localStorage.getItem("an_favs")||"[]"));}catch(e){}
+function saveFavs(){try{localStorage.setItem("an_favs",JSON.stringify([...favs]));}catch(e){}}
+let favOnly=false, aidOnly=false;
+
+function buildNav(){
+  $("#nav").innerHTML=SECTIONS.map(id=>
+    `<button type="button" role="tab" data-target="${id}" aria-selected="${id==='home'}"><span aria-hidden="true">${ICONS[id]}</span> <span data-key="nav${id[0].toUpperCase()+id.slice(1)}"></span></button>`).join("")
+    +`<button type="button" class="nav-chat" data-chat="1"><span aria-hidden="true">✦</span> <span data-key="navChat"></span></button>`;
+  $("#nav").addEventListener("click",e=>{
+    const c=e.target.closest("[data-chat]"); if(c){openChat();return;}
+    const b=e.target.closest("button[data-target]"); if(!b)return; show(b.dataset.target);
+  });
+}
+function show(id){
+  document.body.dataset.page=id;
+  document.querySelectorAll(".section").forEach(s=>s.classList.toggle("active",s.id===id));
+  document.querySelectorAll("#nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.target===id));
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function buildFilters(){
+  $("#majorFilter").innerHTML='<option value="all">Все специальности</option>'+Object.keys(MAJ).map(k=>`<option value="${k}">${MAJ[k]}</option>`).join("");
+  const t=T[lang],i=LI[lang];
+  $("#countryFilter").innerHTML=`<option value="all">${esc(t.countryAll)}</option>`+
+    Object.keys(COUNTRIES).map(k=>`<option value="${k}">${esc(COUNTRIES[k][i])}</option>`).join("");
+}
+
+function moneyHtml(t,u){
+  const m=MONEY[u.n]||{};
+  if(!m.cost&&!m.intl&&!m.aid)return `<div class="money none">${esc(t.moneyNone)}</div>`;
+  let h='<div class="money">';
+  if(m.cost)h+=`<div><span>${esc(t.moneyCost)}</span><b>${esc(m.cost.v)}</b><small>${esc(t["cost_"+m.cost.k])}, ${esc(m.cost.y)}</small></div>`;
+  if(m.intl)h+=`<div><span>${esc(t.moneyIntl)}</span><b>${esc(m.intl.v)}</b><small>${esc(m.intl.s==="u"?t.intlU:t.intlA)}</small></div>`;
+  if(m.aid)h+=`<div><span>${esc(t.moneyAid)}</span><b class="aid-${m.aid}">${esc(t["aid_"+m.aid])}</b></div>`;
+  return h+"</div>";
+}
+function scoreRank(t,myIelts,mySat,u,myToefl){
+  const parts=[];
+  if(!isNaN(myIelts) && u.ielts!=null) parts.push(myIelts>=u.ielts?0:(myIelts>=u.ielts-0.5?1:2));
+  if(!isNaN(myToefl) && u.toefl!=null) parts.push(myToefl>=u.toefl?0:(myToefl>=u.toefl-5?1:2));
+  if(!isNaN(mySat) && u.sat!=null) parts.push(mySat>=u.sat?0:(mySat>=u.sat-50?1:2));
+  if(parts.length===0){
+    if(isNaN(myIelts)&&isNaN(mySat)&&isNaN(myToefl))return null;
+    return -1;
+  }
+  return Math.max(...parts);
+}
+function matchBadge(t,rank){
+  if(rank===null)return "";
+  if(rank===-1)return `<span class="match-badge m-unknown">${esc(t.mUnknown)}</span>`;
+  if(rank===0)return `<span class="match-badge m-yes">${esc(t.mYes)}</span>`;
+  if(rank===1)return `<span class="match-badge m-close">${esc(t.mClose)}</span>`;
+  return `<span class="match-badge m-no">${esc(t.mNo)}</span>`;
+}
+
+function render(){
+  const t=T[lang],i=LI[lang];
+  const c=$("#countryFilter").value||"all", q=($("#q").value||"").trim().toLowerCase();
+  const myI=parseFloat($("#myScore").value), myS=parseFloat($("#mySat").value), myT=parseFloat($("#myToefl").value);
+  let list=UNIS.filter(u=>
+    (c==="all"||u.c===c) && (($("#majorFilter").value||"all")==="all"||majorsOf(u).includes($("#majorFilter").value)) &&
+    (!q||u.n.toLowerCase().includes(q)) &&
+    (!favOnly||favs.has(u.n)) &&
+    (!aidOnly||(MONEY[u.n]&&MONEY[u.n].aid==="bf")));
+  const hasInput=!isNaN(myI)||!isNaN(myS)||!isNaN(myT);
+  if(hasInput){
+    const rankOf=u=>{const r=scoreRank(t,myI,myS,u,myT); return r===null?4:(r===-1?2.5:r);};
+    list=[...list].sort((a,b)=>rankOf(a)-rankOf(b));
+  }
+  $("#uniGrid").innerHTML=list.map(u=>`
+    <article class="card">
+      <span class="code" aria-hidden="true">${CODES[u.c]||""}</span>
+      <button type="button" class="star-btn" data-fav="${esc(u.n)}" aria-pressed="${favs.has(u.n)}" title="${favs.has(u.n)?'★':'☆'}">${favs.has(u.n)?'★':'☆'}</button>
+      ${matchBadge(t,scoreRank(t,myI,myS,u,myT))}
+      <h3>${esc(u.n)}</h3>
+      <div class="place">${esc(COUNTRIES[u.c][i])} · ${esc(majorLabel(u))}</div>
+      <div class="tags">${u.tags.map(x=>`<span class="tag${/optional|not used|recommended|accepted|free/i.test(x)?" grey":""}">${esc(x)}</span>`).join("")}</div>
+      ${moneyHtml(t,u)}
+      <span class="more">Подробнее →</span>
+    </article>`).join("");
+  document.querySelectorAll("#uniGrid .card").forEach((el,k)=>el.addEventListener("click",ev=>{if(!ev.target.closest(".star-btn"))openUni(list[k]);}));
+  $("#empty").style.display=list.length?"none":"block";
+  document.querySelectorAll(".star-btn").forEach(b=>b.addEventListener("click",()=>{
+    const n=b.dataset.fav;
+    if(favs.has(n))favs.delete(n); else favs.add(n);
+    saveFavs(); render();
+  }));
+}
+function openUni(u){const t=T[lang],i=LI[lang];
+  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div><h4>Направления</h4><div class="chips">${majorsOf(u).map(k=>`<span>${MAJ[k]}</span>`).join("")}</div>${PILOT.includes(u.n)?'<p class="muted small">Лётная подготовка для иностранных студентов в США требует проверки TSA (Alien Flight Student Program) и медицинского сертификата FAA. Условия уточняйте в приёмной комиссии.</p>':""}<h4>Требования</h4><div class="tags">${u.tags.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div><h4>Стоимость и помощь</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(t.site)}</a></p>`;
+  $("#modal").hidden=false;}
+const _rh=renderHome;renderHome=function(){_rh();const N=["MIT","Stanford University","Harvard University"];document.querySelectorAll("#homeUnis .ucard").forEach((el,k)=>{el.style.cursor="pointer";el.addEventListener("click",ev=>{if(!ev.target.closest("a"))openUni(UNIS.find(x=>x.n===N[k]));});});};
+function blockHtml(b){
+  if(b.h)return `<h4>${esc(b.h)}</h4>`;
+  if(b.p)return `<p>${esc(b.p)}</p>`;
+  if(b.ul)return `<ul>${b.ul.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+  if(b.table)return `<div class="tbl"><table><thead><tr>${b.table[0].map(x=>`<th>${esc(x)}</th>`).join("")}</tr></thead><tbody>${b.table.slice(1).map(r=>`<tr>${r.map(x=>`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  return "";
+}
+function renderArticles(){
+  $("#langNote").textContent=lang==="ru"?"":T[lang].articlesLang;
+  $("#articleList").innerHTML=GUIDES.map((a,i)=>`<details class="article"${i===0?" open":""}><summary><b>${esc(a.t)}</b><span>${esc(a.l)}</span></summary><div class="article-body">${a.b.map(blockHtml).join("")}</div></details>`).join("");
+}
+function calcUpdate(){
+  const t=T[lang];
+  const i=Math.max(0,parseInt($("#calcI").value)||0), n=Math.max(0,parseInt($("#calcS").value)||0), r=parseFloat($("#calcR").value);
+  const ie=i*IELTS_PRICE, se=n*SAT_PRICE;
+  let out="IELTS: "+ie.toLocaleString("ru-RU")+" ₸ · SAT: $"+se.toLocaleString("en-US");
+  if(!isNaN(r)&&r>0) out+=" — "+t.calcTotal+": ≈ "+Math.round(ie+se*r).toLocaleString("ru-RU")+" ₸";
+  $("#calcOut").textContent=out;
+}
+function renderCosts(){
+  const t=T[lang];
+  $("#costGrid").innerHTML=COSTS.map(c=>`
+    <article class="card">
+      <h3>${esc(t["cost_"+c.k+"_t"])}</h3>
+      <div class="price">${esc(c.price)}</div>
+      <p>${esc(t["cost_"+c.k+"_d"])}</p>
+      <a class="link" href="${c.u}" target="_blank" rel="noopener">${esc(t.costSource)}</a>
+    </article>`).join("");
+  $("#faqList").innerHTML=t.faq.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
+  calcUpdate();
+}
+function renderCourses(){
+  $("#courseGrid").innerHTML=COURSES.map(c=>`
+    <article class="card course-card">
+      ${c.official?`<span class="badge-official">${esc(T[lang].officialPartner)}</span>`:""}
+      <h3>${esc(c.n)}</h3>
+      <div class="city">${esc(c.city)}</div>
+      <div class="tags">${c.tags.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>
+      <p>${esc(c.d)}</p>
+      <a class="link" href="${c.u}" target="_blank" rel="noopener">${esc(T[lang].courseSite)}</a>
+    </article>`).join("");
+}
+
+const QS_RAW=`1|Massachusetts Institute of Technology (MIT)|usa|100
+2|Imperial College London|uk|99.2
+2|Stanford University|usa|99.2
+4|University of Oxford|uk|98.6
+5|Harvard University|usa|97.4
+6|University of Cambridge|uk|97.1
+7|California Institute of Technology (Caltech)|usa|96.6
+8|ETH Zurich|switzerland|96.3
+8|UCL|uk|96.3
+10|National University of Singapore (NUS)|singapore|96.2
+11|The University of Hong Kong|hongkong|95.9
+12|Nanyang Technological University (NTU)|singapore|93.6
+13|Peking University|china|92.6
+14|Tsinghua University|china|92.1
+15|University of Pennsylvania|usa|91.7
+16|Cornell University|usa|91.5
+16|Yale University|usa|91.5
+18|The Chinese University of Hong Kong (CUHK)|hongkong|89.9
+19|University of New South Wales (UNSW)|australia|89.8
+20|Johns Hopkins University|usa|89.7
+20|University of California, Berkeley|usa|89.7
+22|EPFL|switzerland|89.6
+22|University of Melbourne|australia|89.6
+24|University of Chicago|usa|89.2
+25|Technical University of Munich|germany|89.1
+26|Fudan University|china|89
+27|Princeton University|usa|88.9
+28|University of Sydney|australia|88.4
+29|Australian National University (ANU)|australia|87.6
+30|McGill University|canada|87.5
+31|Monash University|australia|87
+32|University of Toronto|canada|86.8
+33|Hong Kong University of Science and Technology|hongkong|86.4
+34|Universite PSL|france|86
+35|University of Edinburgh|uk|85.9
+36|Shanghai Jiao Tong University|china|85.8
+37|King's College London|uk|85.7
+38|Seoul National University|korea|85.4
+39|University of Tokyo|japan|84.8
+40|University of Manchester|uk|84.6
+40|University of Queensland|australia|84.6
+42|Yonsei University|korea|84.2
+43|Columbia University|usa|84
+43|Institut Polytechnique de Paris|france|84
+45|Northwestern University|usa|83.8
+45|University of British Columbia|canada|83.9
+47|Zhejiang University|china|83.5
+48|Delft University of Technology|netherlands|83.1
+49|University of California, Los Angeles (UCLA)|usa|82.7
+50|The Hong Kong Polytechnic University|hongkong|82.3
+51|University of Michigan-Ann Arbor|usa|82.2
+52|City University of Hong Kong|hongkong|81.9
+52|Korea University|korea|81.9
+54|National Taiwan University|taiwan|81.7
+55|Carnegie Mellon University|usa|81.4
+56|Universiti Malaya (UM)|malaysia|81.2
+57|University of Bristol|uk|80.9
+58|New York University (NYU)|usa|80.8
+59|KU Leuven|belgium|80.5
+60|University of Amsterdam|netherlands|80.2
+61|Ludwig-Maximilians-Universitat Munchen|germany|79.6
+62|The London School of Economics and Political Science (LSE)|uk|78.8
+63|King Fahd University of Petroleum and Minerals (KFUPM)|saudi|78.3
+64|Kyoto University|japan|78.2
+65|KAIST|korea|77.7
+66|Brown University|usa|77.4
+67|The University of Auckland|nz|77
+68|University of Warwick|uk|75.9
+68|University of Birmingham|uk|75.9
+70|Duke University|usa|75.8
+71|Lund University|sweden|75.7
+72|University of Texas at Austin|usa|75.3
+73|Sorbonne University|france|74.8
+74|University of Illinois Urbana-Champaign|usa|74.7
+75|Trinity College Dublin, The University of Dublin|ireland|74.4
+76|Universite Paris-Saclay|france|73.8
+77|The University of Western Australia|australia|73.7
+77|University of Leeds|uk|73.7
+79|Adelaide University|australia|73.6
+80|University of Glasgow|uk|73.4
+81|University of California, San Diego (UCSD)|usa|73.3
+82|KTH Royal Institute of Technology|sweden|72.7
+82|The University of Sheffield|uk|72.7
+84|Universidad de Buenos Aires (UBA)|argentina|72.3
+85|Durham University|uk|71.7
+86|Universitat Heidelberg|germany|70.6
+87|Politecnico di Milano|italy|70.5
+87|University of Technology Sydney (UTS)|australia|70.5
+87|Uppsala University|sweden|70.5
+90|Nanjing University|china|70.4
+90|University of Copenhagen|denmark|70.4
+92|Pennsylvania State University|usa|70.2
+92|University of Washington|usa|70.2
+94|Boston University|usa|70
+95|The University of Osaka|japan|69.5
+96|University of Alberta|canada|69.3
+97|Institute of Science Tokyo|japan|69.2
+97|University of Nottingham|uk|69.2
+98|Freie Universitat Berlin|germany|69
+98|University of Zurich|switzerland|69
+99|Purdue University|usa|68.7
+100|University College Dublin|ireland|68.7
+102|Tohoku University|japan|68.4
+103|Queen Mary University of London|uk|68.3
+104|RWTH Aachen University|germany|68
+105|Technical University of Denmark|denmark|67.8
+106|Pohang University of Science and Technology (POSTECH)|korea|67.7
+107|King Saud University|saudi|67.4
+108|Sungkyunkwan University (SKKU)|korea|67.3
+109|Qatar University|qatar|67.2
+110|Karlsruhe Institute of Technology (KIT)|germany|67
+111|Sapienza University of Rome|italy|66.7
+111|University of Southampton|uk|66.7
+113|University of Waterloo|canada|66.6
+113|Utrecht University|netherlands|66.6
+115|Lomonosov Moscow State University|russia|65.9
+115|University of St Andrews|uk|65.9
+118|Indian Institute of Technology Delhi (IITD)|india|65.7
+119|Leiden University|netherlands|65.6
+119|Pontificia Universidad Catolica de Chile|chile|65.6
+119|RMIT University|australia|65.6
+122|Rice University|usa|65.5
+123|University of Bologna|italy|65.3
+123|University of Helsinki|finland|65.3
+125|University of Bath|uk|65.1
+126|Aalto University|finland|65
+126|Macquarie University|australia|65
+128|Aarhus University|denmark|64.9
+128|Universiti Sains Malaysia (USM)|malaysia|64.9
+130|Universiti Kebangsaan Malaysia (UKM)|malaysia|64.6
+131|University of Oslo|norway|64.3
+131|University of Wisconsin-Madison|usa|64.3
+133|Universidade de Sao Paulo|brazil|64.1
+134|Indian Institute of Technology Bombay (IITB)|india|63.9
+134|University of Science and Technology of China|china|63.9
+136|University of Exeter|uk|63.5
+137|University of California, Davis|usa|63
+138|Universiti Putra Malaysia (UPM)|malaysia|62.9
+139|University of Liverpool|uk|62.8
+140|Humboldt-Universitat zu Berlin|germany|62.6
+140|University of Vienna|austria|62.6
+142|Georgia Institute of Technology|usa|62.5
+142|National Tsing Hua University|taiwan|62.5
+142|Western University|canada|62.5
+145|Universidad Nacional Autonoma de Mexico (UNAM)|mexico|62.3
+146|Tongji University|china|62.2
+147|Khalifa University|uae|62
+148|Erasmus University Rotterdam|netherlands|61.9
+149|Newcastle University|uk|61.6
+150|Ghent University|belgium|61.5
+150|University of Basel|switzerland|61.5
+152|Eindhoven University of Technology|netherlands|61.4
+153|University of Southern California|usa|61.3
+154|Wageningen University & Research|netherlands|61.1
+155|Hanyang University|korea|60.9
+156|Nagoya University|japan|60.8
+157|University of Groningen|netherlands|60.7
+158|Technische Universitat Berlin|germany|60.6
+158|Universiti Teknologi Malaysia (UTM)|malaysia|60.6
+158|University of North Carolina at Chapel Hill|usa|60.6
+158|University of York|uk|60.6
+162|Universite de Montreal|canada|60.4
+162|Washington University in St. Louis|usa|60.4
+164|Lancaster University|uk|60.3
+165|Universitat de Barcelona|spain|60.1
+165|Wuhan University|china|60.1
+167|Stockholm University|sweden|59.8
+168|University of Geneva|switzerland|59.7
+169|Texas A&M University|usa|59.5
+170|Indian Institute of Technology Madras (IITM)|india|59.3
+171|Kyushu University|japan|58.8
+172|Arizona State University|usa|58.4
+173|University of California, Santa Barbara (UCSB)|usa|58.3
+174|Chalmers University of Technology|sweden|58.2
+174|McMaster University|canada|58.2
+174|Queen's University Belfast|uk|58.2
+177|Farabi University|kazakhstan|57.9
+177|National Yang Ming Chiao Tung University|taiwan|57.9
+179|Cardiff University|uk|57.6
+179|Hokkaido University|japan|57.6
+179|Queen's University at Kingston|canada|57.6
+182|Michigan State University|usa|57.4
+183|Emory University|usa|57.3
+184|University of Cape Town|southafrica|57.2
+185|Technische Universitat Dresden|germany|57.1
+185|Universidad de Chile|chile|57.1
+185|Vrije Universiteit Amsterdam|netherlands|57.1
+188|Tecnologico de Monterrey|mexico|57
+189|Curtin University|australia|56.9
+190|Harbin Institute of Technology|china|56.8
+191|National Cheng Kung University|taiwan|56.7
+191|Technische Universitat Wien|austria|56.7
+191|Universitas Indonesia|indonesia|56.7
+191|University of Bern|switzerland|56.7
+195|University of Wollongong|australia|56.6
+196|Universite catholique de Louvain|belgium|56.5
+196|University of Reading|uk|56.5
+198|University of Otago|nz|56.3
+199|Complutense University of Madrid|spain|56.2
+200|King Abdulaziz University|saudi|55.9`;
+const QS=QS_RAW.trim().split("\n").map(l=>{const p=l.split("|");return[+p[0],p[1],p[2],+p[3]];});
+const QS_ALIAS={"MIT":"Massachusetts Institute of Technology (MIT)","Caltech":"California Institute of Technology (Caltech)","NUS":"National University of Singapore (NUS)","HKU":"The University of Hong Kong","NTU Singapore":"Nanyang Technological University (NTU)","HKUST":"Hong Kong University of Science and Technology","CUHK":"The Chinese University of Hong Kong (CUHK)","EPFL":"EPFL","ETH Zurich":"ETH Zurich","TU Delft":"Delft University of Technology","TU Munich":"Technical University of Munich","LMU Munich":"Ludwig-Maximilians-Universitat Munchen","UC Berkeley":"University of California, Berkeley","UCLA":"University of California, Los Angeles (UCLA)","UC San Diego":"University of California, San Diego (UCSD)","UBC":"University of British Columbia","UNSW Sydney":"University of New South Wales (UNSW)","Australian National University":"Australian National University (ANU)","LSE":"The London School of Economics and Political Science (LSE)","KTH Royal Institute of Technology":"KTH Royal Institute of Technology","KAIST":"KAIST","Sorbonne Universite":"Sorbonne University","Trinity College Dublin":"Trinity College Dublin, The University of Dublin","University of Michigan":"University of Michigan-Ann Arbor","University of Malaya":"Universiti Malaya (UM)","New York University":"New York University (NYU)","Heidelberg University":"Universitat Heidelberg","RWTH Aachen":"RWTH Aachen University","University of Tokyo (PEAK)":"University of Tokyo","Sorbonne Université":"Sorbonne University","Humboldt-Universität zu Berlin":"Humboldt-Universitat zu Berlin","Queen's University":"Queen's University at Kingston","Kyoto University (iUP)":"Kyoto University"};
+function normName(s){return s.toLowerCase().replace(/[^a-z0-9]+/g," ").replace(/\b(the|of|at|and)\b/g," ").replace(/\s+/g," ").trim();}
+function qsMatchMap(){
+  const byNorm={},m={};
+  QS.forEach(q=>{byNorm[normName(q[1])]=q;});
+  UNIS.forEach(u=>{
+    let q=byNorm[normName(u.n)];
+    if(!q&&QS_ALIAS[u.n])q=QS.find(x=>x[1]===QS_ALIAS[u.n]);
+    if(q)m[q[1]]=u.n;
+  });
+  return m;
+}
+function renderQs(){
+  const t=T[lang],i=LI[lang],grid=$("#qsGrid"),m=qsMatchMap();
+  grid.innerHTML=QS.map(q=>{
+    const [rank,n,c,score]=q, site=m[n];
+    return `<article class="card qcard"${site?` data-uni="${esc(site)}"`:""}><div class="rank">#${rank}</div><h3>${esc(n)}</h3><div class="meta">${esc(COUNTRIES[c]?COUNTRIES[c][i]:c)}</div><div class="score">${esc(t.qsScore)}: ${score}</div>${site?`<div class="more">${esc(t.qsOpen)}</div>`:""}</article>`;
+  }).join("");
+  grid.onclick=e=>{
+    const card=e.target.closest("[data-uni]"); if(!card)return;
+    const u=UNIS.find(x=>x.n===card.dataset.uni); if(u)openUni(u);
+  };
+}
+function applyLang(){
+  const t=T[lang];
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-key]").forEach(el=>{const v=t[el.dataset.key]; if(typeof v==="string")el.textContent=v;});
+  $("#q").placeholder=t.searchPh;
+  $("#myScore").placeholder=t.matchPh;
+  $("#mySat").placeholder=t.matchSatPh;
+  $("#steps").innerHTML=t.steps.map(([a,b])=>`<li><b>${esc(a)}</b><span>${esc(b)}</span></li>`).join("");
+  $("#examGrid").innerHTML=t.exams.map(([a,b])=>`<article class="card"><h3>${esc(a)}</h3><p style="margin-top:10px">${esc(b)}</p></article>`).join("");
+  $("#tipsList").innerHTML=t.tips.map(x=>`<li>${esc(x)}</li>`).join("");
+  $("#resGrid").innerHTML=t.res.map(([h,items])=>`<article class="card"><h3>${esc(h)}</h3><ul class="bullets" style="margin-top:12px">${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></article>`).join("");
+  renderCourses();
+  renderCosts();
+  renderArticles();
+  $("#statUni").textContent=UNIS.length;
+  $("#statCountry").textContent=new Set(UNIS.map(u=>u.c)).size;
+  buildFilters(); render(); renderHome(); renderQs();
+  updateChatLang();
+}
+function renderHome(){
+  const t=T[lang],i=LI[lang];
+  $("#homeUnis").innerHTML=["MIT","Stanford University","Harvard University"].map(n=>{const u=UNIS.find(x=>x.n===n);return `<article class="ucard"><h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])} · ${esc(majorLabel(u))}</div><div class="tags">${u.tags.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>${moneyHtml(t,u)}<a class="link" href="${u.u}" target="_blank" rel="noopener">${esc(t.site)}</a></article>`;}).join("");
+  $("#homeGuides").innerHTML=GUIDES.map(a=>`<a class="gcard" href="#" data-go="articles"><b>${esc(a.t)}</b><span>${esc(a.l)}</span></a>`).join("");
+}
+
+function initTheme(){
+  let th; try{th=localStorage.getItem("an_theme");}catch(e){}
+  if(th)document.documentElement.dataset.theme=th;
+  const sync=()=>{const d=document.documentElement.dataset.theme
+    ||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
+    $("#themeBtn").textContent="◐";};
+  sync();
+  $("#themeBtn").addEventListener("click",()=>{
+    const cur=document.documentElement.dataset.theme
+      ||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
+    const next=cur==="dark"?"light":"dark";
+    document.documentElement.dataset.theme=next;
+    try{localStorage.setItem("an_theme",next);}catch(e){}
+    sync();
+  });
+}
+
+const HERO_IMG="";
+function initHero(){
+  if(HERO_IMG)document.getElementById("heroImg").style.backgroundImage='url("'+HERO_IMG+'")';
+}
+initHero(); buildNav(); initTheme();
+$("#lang").value=lang;
+$("#lang").addEventListener("change",e=>{lang=e.target.value;try{localStorage.setItem("an_lang",lang);}catch(e){}applyLang();});
+$("#countryFilter").addEventListener("change",render);
+$("#q").addEventListener("input",render);
+$("#myScore").addEventListener("input",render);
+$("#mySat").addEventListener("input",render);
+["#calcI","#calcS","#calcR"].forEach(x=>$(x).addEventListener("input",calcUpdate));
+$("#aidToggle").addEventListener("click",()=>{aidOnly=!aidOnly;$("#aidToggle").setAttribute("aria-pressed",aidOnly);render();});
+$("#favToggle").addEventListener("click",()=>{
+  favOnly=!favOnly;
+  $("#favToggle").setAttribute("aria-pressed",favOnly);
+  $("#favToggle").firstChild.textContent=favOnly?"★ ":"☆ ";
+  render();
+});
+$("#top").addEventListener("click",e=>{e.preventDefault();window.scrollTo({top:0,behavior:"smooth"});});
+$("#majorFilter").addEventListener("change",render);
+$("#myToefl").addEventListener("input",render);
+$("#mx").addEventListener("click",()=>{$("#modal").hidden=true;});
+$("#modal").addEventListener("click",e=>{if(e.target.id==="modal")$("#modal").hidden=true;});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#modal").hidden=true;});
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){e.preventDefault();show(g.dataset.go);}});
+const API=location.pathname.split('/proxy/')[0]+'/proxy/19040/v1';
+const CHAT_TEXT={
+ ru:{title:"Помощник по поступлению",sub:"Отвечает на вопросы о вузах и подаче",open:"Спросить ИИ",send:"Отправить",ph:"Ваш вопрос…",err:"Ошибка: ",empty:"Напишите вопрос.",
+  hello:"Здравствуйте! Я помощник ivypath.io. Помогу разобраться с поступлением за рубеж. Для начала три коротких вопроса — можно ответить на все сразу: 1) в какой стране или регионе вы хотите учиться и какое направление интересно? 2) какие у вас IELTS/TOEFL и SAT? 3) какой у семьи бюджет на год и нужна ли финансовая помощь?"},
+ kk:{title:"Оқуға түсу көмекшісі",sub:"Университеттер мен өтінім туралы жауап береді",open:"ИИ-ден сұрау",send:"Жіберу",ph:"Сұрағыңыз…",err:"Қате: ",empty:"Сұрағыңызды жазыңыз.",
+  hello:"Сәлеметсіз бе! Мен ivypath.io көмекшісімін. Шетелде оқуға түсуге көмектесемін. Басында үш қысқа сұрақ — бәріне бірге жауап беруге болады: 1) қай елде немесе аймақта оқығыңыз келеді және қандай бағыт қызықтырады? 2) IELTS/TOEFL және SAT балыңыз қандай? 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе?"},
+ en:{title:"Admissions assistant",sub:"Answers questions about universities and applying",open:"Ask AI",send:"Send",ph:"Your question…",err:"Error: ",empty:"Type a question.",
+  hello:"Hello! I'm the ivypath.io assistant and I'll help you plan studying abroad. To start, three short questions — you can answer all at once: 1) which country or region do you want to study in, and which field interests you? 2) what are your IELTS/TOEFL and SAT scores? 3) what is your family's yearly budget, and do you need financial aid?"}
+};
+const CHAT_SYSTEM={
+ ru:"Ты — дружелюбный помощник сайта ivypath.io о поступлении на бакалавриат за рубеж для школьников из Казахстана и СНГ. В начале знакомства задай по одному короткому вопросу: 1) в какой стране или регионе хочет учиться пользователь и какое направление ему интересно; 2) какие у него IELTS/TOEFL и SAT; 3) какой бюджет семьи на год и нужна ли финансовая помощь. После этого отвечай по существу: кратко (3–6 предложений), простыми словами, по шагам. Сравнения вузов и шансы давай как ориентир, без обещаний. Не выдумывай точные цены, дедлайны и баллы — говори, что их нужно проверить на официальном сайте вуза. Отвечай на языке пользователя.",
+ kk:"Сен — ivypath.io сайтының көмекшісісің, Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсу туралы кеңес бересің. Танысудың басында бір-бірден қысқа сұрақ қой: 1) қай елде немесе аймақта оқығысы келеді және қандай бағыт қызықтырады; 2) IELTS/TOEFL және SAT балы қандай; 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе. Содан кейін сұрақтарға нақты жауап бер: қысқа (3–6 сөйлем), қарапайым тілмен, қадам-қадам. Университеттерді салыстыру мен мүмкіндікті болжам ретінде айт, уәде берме. Нақты бағаны, дедлайнды және баллды ойдан шығарма: оларды университеттің ресми сайтынан тексеру керек деп айт. Пайдаланушының тілінде жауап бер.",
+ en:"You are the friendly assistant of ivypath.io, a site about applying to bachelor's programmes abroad for students from Kazakhstan and Central Asia. When you first meet the user, ask one short question at a time: 1) which country or region they want to study in and which field interests them; 2) their IELTS/TOEFL and SAT scores; 3) the family's yearly budget and whether they need financial aid. After that, answer their questions concisely (3–6 sentences), in plain words, step by step. Treat comparisons and chances as guidance, never a promise. Never invent exact prices, deadlines or score cut-offs — tell them to check the university's official site. Answer in the user's language."
+};
+const chatMsgs=[];
+let chatBusy=false;
+function chatT(){return CHAT_TEXT[lang]||CHAT_TEXT.ru;}
+function updateChatLang(){
+  const c=chatT();
+  document.getElementById("chatTitle").textContent=c.title;
+  document.getElementById("chatSub").textContent=c.sub;
+  document.getElementById("chatInput").placeholder=c.ph;
+  document.getElementById("chatSend").textContent=c.send;
+  document.querySelectorAll("#chatLog .chat-msg.bot[data-greet]").forEach(el=>{el.textContent=c.hello;});
+}
+function chatAdd(text,cls,greet){
+  const d=document.createElement("div");
+  d.className="chat-msg "+cls;
+  d.textContent=text;
+  if(greet)d.dataset.greet="1";
+  const log=document.getElementById("chatLog");
+  log.appendChild(d); log.scrollTop=log.scrollHeight;
+  return d;
+}
+async function chatReply(text){
+  const c=chatT();
+  if(chatBusy)return;
+  chatBusy=true;
+  const btn=document.getElementById("chatSend");
+  btn.disabled=true;
+  chatMsgs.push({role:"user",content:text});
+  chatAdd(text,"me");
+  const wait=chatAdd("…","bot");
+  try{
+    const r=await fetch(API+"/chat/completions",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"DeepSeek-V4.1-Flash",max_tokens:600,temperature:0.6,messages:[{role:"system",content:CHAT_SYSTEM[lang]||CHAT_SYSTEM.ru}].concat(chatMsgs.slice(-10))})});
+    wait.remove();
+    if(!r.ok){chatMsgs.pop();chatAdd(c.err+await r.text(),"err");return;}
+    const j=await r.json();
+    const answer=((j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content)||"").trim();
+    if(!answer){chatMsgs.pop();chatAdd(c.err+"empty answer","err");return;}
+    chatMsgs.push({role:"assistant",content:answer});
+    chatAdd(answer,"bot");
+  }catch(e){
+    wait.remove();chatMsgs.pop();chatAdd(c.err+(e.message||e),"err");
+  }finally{
+    chatBusy=false;btn.disabled=false;
+  }
+}
+function openChat(){
+  const panel=document.getElementById("chatPanel");
+  const log=document.getElementById("chatLog");
+  if(!panel)return;
+  panel.hidden=false;
+  if(!log.children.length)chatAdd(chatT().hello,"bot",true);
+  document.getElementById("chatInput").focus();
+}
+function closeChat(){
+  document.getElementById("chatPanel").hidden=true;
+}
+function initChat(){
+  document.getElementById("chatX").addEventListener("click",closeChat);
+  document.getElementById("chatForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const input=document.getElementById("chatInput");
+    const text=input.value.trim();
+    if(!text){input.focus();return;}
+    input.value="";
+    chatReply(text);
+  });
+  document.getElementById("chatInput").addEventListener("keydown",e=>{
+    if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();document.getElementById("chatForm").requestSubmit();}
+  });
+}
+initChat();
+
+document.body.dataset.page="home";
+applyLang();
+</script>
+</body>
+</html>
