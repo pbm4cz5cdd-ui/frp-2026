@@ -255,6 +255,7 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
 .chat-msg.bot{background:var(--tint);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
 .chat-msg.me{background:var(--text);color:var(--bg);align-self:flex-end;border-bottom-right-radius:4px}
 .chat-msg.err{background:#fdecec;color:#8a1c1c;border:1px solid #f3c4c4;align-self:stretch;max-width:100%}
+.chat-msg.bot a{color:inherit;font-weight:600}
 .chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}
 .chat-form input{flex:1;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:12px;padding:11px 13px;font:400 15px var(--sans)}
 .chat-form button{border:0;background:var(--text);color:var(--bg);border-radius:12px;padding:0 16px;font:700 15px var(--sans);cursor:pointer}
@@ -786,9 +787,9 @@ const T={
   res:[["Application portals",["Common App — USA","UCAS — UK","Studielink — Netherlands","Uni-Assist — Germany"]],["Exams & prep",["IELTS / TOEFL official","Khan Academy — SAT","MIT OpenCourseWare"]],["Scholarships & aid",["University need-based aid and merit scholarships — the main route for bachelor's","Bolashak — for bachelor's only international olympiad medallists (bolashak.gov.kz)","Chevening, DAAD, Fulbright, Erasmus Mundus — master's level, not for school leavers"]]]}
 };
 
-Object.assign(T.ru,{fFacts:"Ключевые факты",fAcc:"Приём",fCost:"Стоимость в год",fStudents:"Студенты",fFounded:"Основан",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Помощь",aidShortBf:"Need-blind",aidShortAware:"Need-aware",matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",mySource:"Источник: myedline",accShort:"Приём",modalAreas:"Специальности",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"ИИ-помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →"});
-Object.assign(T.kk,{fFacts:"Негізгі фактілер",fAcc:"Қабылдау",fCost:"Жылына құны",fStudents:"Студенттер",fFounded:"Құрылған",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Көмек",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Басты бет",mySource:"Дереккөз: myedline",accShort:"Қабылдау",modalAreas:"Мамандықтар",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"ИИ-көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →"});
-Object.assign(T.en,{fFacts:"Key facts",fAcc:"Acceptance",fCost:"Cost per year",fStudents:"Students",fFounded:"Founded",fRank:"Ranking",fDeadline:"Deadline",fAid:"Aid",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Home",mySource:"Source: myedline",accShort:"Acceptance",modalAreas:"Majors",ctaA:"Find a university",ctaB:"Read the guides",navChat:"AI assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →"});
+Object.assign(T.ru,{fFacts:"Ключевые факты",fAcc:"Приём",fCost:"Стоимость в год",fStudents:"Студенты",fFounded:"Основан",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Помощь",aidShortBf:"Need-blind",aidShortAware:"Need-aware",matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",mySource:"Источник: myedline",accShort:"Приём",modalAreas:"Специальности",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"Помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →"});
+Object.assign(T.kk,{fFacts:"Негізгі фактілер",fAcc:"Қабылдау",fCost:"Жылына құны",fStudents:"Студенттер",fFounded:"Құрылған",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Көмек",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Басты бет",mySource:"Дереккөз: myedline",accShort:"Қабылдау",modalAreas:"Мамандықтар",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"Көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →"});
+Object.assign(T.en,{fFacts:"Key facts",fAcc:"Acceptance",fCost:"Cost per year",fStudents:"Students",fFounded:"Founded",fRank:"Ranking",fDeadline:"Deadline",fAid:"Aid",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Home",mySource:"Source: myedline",accShort:"Acceptance",modalAreas:"Majors",ctaA:"Find a university",ctaB:"Read the guides",navChat:"Assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →"});
 Object.assign(T.ru,{homePlat:"Платформа",feat1T:"Университеты",feat1D:"Требования, стоимость и помощь по каждому вузу.",feat2T:"План поступления",feat2D:"Шаги от выбора страны до визы.",feat3T:"Экзамены",feat3D:"IELTS, TOEFL, SAT: что сдавать и сколько стоит.",feat4T:"Гайды",feat4D:"Статьи о поступлении, деньгах и стипендиях.",homeUniTitle:"Университеты",btnAllUnis:"Все университеты",homeGuidesTitle:"Гайды",ctaTitle:"Начать поиск",ctaBtn:"Смотреть университеты",footAbout:"Помогаем школьникам из Казахстана и СНГ разобраться в поступлении на бакалавриат за рубежом.",footPlat:"Платформа",footRes:"Ресурсы",footUnis:"Университеты",footSteps:"Пошагово",footExams:"Экзамены",footGuides:"Гайды",footTips:"Советы",footResLink:"Полезные ресурсы",footCourses:"Курсы",footCosts:"Стоимость",heroLi1:"Требования IELTS и SAT по каждому вузу",heroLi2:"Стоимость, доля иностранцев и финансовая помощь",heroLi3:"Фильтр по стране и специальности",statLine:"{u} вузов · {c} стран",majorAll:"Все специальности",allMajors:"Все направления",more:"Подробнее →",modalMajors:"Направления",modalReqs:"Требования",modalMoney:"Стоимость и помощь",pilotNote:"Лётная подготовка для иностранных студентов в США требует проверки TSA (Alien Flight Student Program) и медицинского сертификата FAA. Условия уточняйте в приёмной комиссии.",theme:"Тема",closeAria:"Закрыть",langAria:"Язык",pageTitle:"ivypath.io — поступление за рубеж"});
 Object.assign(T.kk,{homePlat:"Платформа",feat1T:"Университеттер",feat1D:"Әр университеттің талаптары, құны және көмегі.",feat2T:"Түсу жоспары",feat2D:"Ел таңдаудан визаға дейінгі қадамдар.",feat3T:"Емтихандар",feat3D:"IELTS, TOEFL, SAT: не тапсыру керек және қанша тұрады.",feat4T:"Гайдтар",feat4D:"Түсу, ақша және стипендиялар туралы мақалалар.",homeUniTitle:"Университеттер",btnAllUnis:"Барлық университеттер",homeGuidesTitle:"Гайдтар",ctaTitle:"Іздеуді бастау",ctaBtn:"Университеттерді қарау",footAbout:"Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсуді түсінуге көмектесеміз.",footPlat:"Платформа",footRes:"Ресурстар",footUnis:"Университеттер",footSteps:"Қадамдар",footExams:"Емтихандар",footGuides:"Гайдтар",footTips:"Кеңестер",footResLink:"Пайдалы ресурстар",footCourses:"Курстар",footCosts:"Құны",heroLi1:"Әр университеттің IELTS және SAT талаптары",heroLi2:"Құны, шетелдіктер үлесі және қаржылық көмек",heroLi3:"Ел және мамандық бойынша сүзгі",statLine:"{u} университет · {c} ел",majorAll:"Барлық мамандықтар",allMajors:"Барлық бағыттар",more:"Толығырақ →",modalMajors:"Бағыттар",modalReqs:"Талаптар",modalMoney:"Құны және көмек",pilotNote:"АҚШ-та шетелдік студенттер үшін ұшу дайындығы TSA (Alien Flight Student Program) тексеруін және FAA медициналық сертификатын талап етеді. Шарттарын қабылдау комиссиясынан нақтылаңыз.",theme:"Тақырып",closeAria:"Жабу",langAria:"Тіл",pageTitle:"ivypath.io — шетелге түсу"});
 Object.assign(T.en,{homePlat:"Platform",feat1T:"Universities",feat1D:"Requirements, cost and aid for every university.",feat2T:"Application plan",feat2D:"Steps from choosing a country to the visa.",feat3T:"Exams",feat3D:"IELTS, TOEFL, SAT: what to take and what it costs.",feat4T:"Guides",feat4D:"Articles on applying, money and scholarships.",homeUniTitle:"Universities",btnAllUnis:"All universities",homeGuidesTitle:"Guides",ctaTitle:"Start your search",ctaBtn:"Browse universities",footAbout:"We help school students from Kazakhstan and the CIS make sense of applying for a bachelor's abroad.",footPlat:"Platform",footRes:"Resources",footUnis:"Universities",footSteps:"Step by step",footExams:"Exams",footGuides:"Guides",footTips:"Tips",footResLink:"Useful resources",footCourses:"Courses",footCosts:"Costs",heroLi1:"IELTS and SAT requirements for every university",heroLi2:"Cost, share of international students and financial aid",heroLi3:"Filter by country and major",statLine:"{u} universities · {c} countries",majorAll:"All majors",allMajors:"All fields",more:"Details →",modalMajors:"Fields",modalReqs:"Requirements",modalMoney:"Cost and aid",pilotNote:"Flight training for international students in the US requires TSA clearance (Alien Flight Student Program) and an FAA medical certificate. Confirm the conditions with the admissions office.",theme:"Theme",closeAria:"Close",langAria:"Language",pageTitle:"ivypath.io — study abroad"});
@@ -824,7 +825,7 @@ const TAGMAP={
 "Менторство":["Менторство","Менторлық","Mentoring"]
 };
 Object.assign(TAGMAP,{"Need-blind":["Приём без учёта финансов","Қаржыға қарамай қабылдау","Need-blind"],"Need-aware":["Приём с учётом финансов","Қаржыны ескере отырып қабылдау","Need-aware"],"Merit aid only":["Только стипендии за заслуги","Тек еңбегі үшін стипендиялар","Merit aid only"],"Government funding only":["Только госфинансирование","Тек мемлекеттік қаржыландыру","Government funding only"],"No need-based aid":["Нет помощи по нужде","Мұқтаждық бойынша көмек жоқ","No need-based aid"],"Branch campus":["Филиал кампуса","Кампус филиалы","Branch campus"]});
-function tagLabel(x){const m=TAGMAP[x];return m?m[LI[lang]]:x;}
+function tagLabel(x,l){const m=TAGMAP[x];return m?m[LI[l||lang]]:x;}
 const COURSE_T={
 kk:[{city:"Алматы, Астана, Атырау және т.б.",d:"Қазақстандағы IELTS ресми емтихан серіктесі; бірнеше қалада тест орталықтары және дайындық материалдары."},{city:"Алматы",d:"Қазақстандағы IELTS емтиханының екінші ресми операторы (British Council-мен қатар тесттің тең иесі); Алматыда өз тест орталығы бар."},{city:"Алматы, Астана",d:"Алматы мен Астанада кеңселері бар стандартталған емтихандарға дайындықтың халықаралық желісі; IELTS, SAT, ACT бойынша топтық курстар және жеке сабақтар."},{city:"Астана",d:"Астанада IELTS-ке тіркелу және дайындалу бойынша British Council-дың ресми аймақтық серіктесі."},{city:"Алматы (+20-дан астам елде кеңсе)",d:"Элиталық университеттерге (оның ішінде Ivy League) түсу бойынша халықаралық консалтингтік компания; Алматыда кеңсесі бар, университет таңдаудан эссе мен емтихан дайындығына дейін сүйемелдейді."}],
 en:[{city:"Almaty, Astana, Atyrau and more",d:"Official IELTS exam partner in Kazakhstan; test centres in several cities and preparation materials."},{city:"Almaty",d:"The second official IELTS operator in Kazakhstan (co-owner of the test alongside the British Council); its own test centre in Almaty."},{city:"Almaty, Astana",d:"International test-prep network with offices in Almaty and Astana; group courses and one-to-one lessons for IELTS, SAT and ACT."},{city:"Astana",d:"Official British Council regional partner for IELTS registration and preparation in Astana."},{city:"Almaty (+ offices in 20+ countries)",d:"International consulting company for admission to elite universities (including the Ivy League); an Almaty office, support from shortlisting to essays and exam prep."}]
@@ -1711,13 +1712,15 @@ $("#mx").addEventListener("click",()=>{$("#modal").hidden=true;});
 $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")$("#modal").hidden=true;});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#modal").hidden=true;});
 document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){e.preventDefault();show(g.dataset.go);}});
-const API=location.pathname.split('/proxy/')[0]+'/proxy/19040/v1';
+const FORCE_PUBLIC=/[?&]public=1/.test(location.search);
+const IN_PROXY=location.pathname.includes('/proxy/')&&!FORCE_PUBLIC;
+const API=IN_PROXY?location.pathname.split('/proxy/')[0]+'/proxy/19040/v1':null;
 const CHAT_TEXT={
- ru:{title:"Помощник по поступлению",sub:"Отвечает на вопросы о вузах и подаче",open:"Спросить ИИ",send:"Отправить",ph:"Ваш вопрос…",err:"Ошибка: ",empty:"Напишите вопрос.",
+ ru:{title:"Помощник по поступлению",sub:"Отвечает на вопросы о вузах и подаче",open:"Спросить ИИ",send:"Отправить",ph:"Ваш вопрос…",err:"Ошибка: ",empty:"Напишите вопрос.",thinking:"Думаю…",retry:"Сервер занят, пробую ещё раз…",timeout:"Сервер не ответил. Попробуйте ещё раз.",net:"Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.",noanswer:"Сервер вернул пустой ответ. Попробуйте ещё раз.",busy:"Дождитесь ответа.",offline:"",load:"",loadPct:"",modelFail:"Советчик не смог ответить. Обновите страницу и попробуйте ещё раз.",publicFooter:"",publicNote:"Публичный советчик: подбирает вузы по данным сайта — без скачивания и без сервера. Точные баллы и дедлайны проверяйте на сайте вуза.",
   hello:"Здравствуйте! Я помощник ivypath.io. Помогу разобраться с поступлением за рубеж. Для начала три коротких вопроса — можно ответить на все сразу: 1) в какой стране или регионе вы хотите учиться и какое направление интересно? 2) какие у вас IELTS/TOEFL и SAT? 3) какой у семьи бюджет на год и нужна ли финансовая помощь?"},
- kk:{title:"Оқуға түсу көмекшісі",sub:"Университеттер мен өтінім туралы жауап береді",open:"ИИ-ден сұрау",send:"Жіберу",ph:"Сұрағыңыз…",err:"Қате: ",empty:"Сұрағыңызды жазыңыз.",
+ kk:{title:"Оқуға түсу көмекшісі",sub:"Университеттер мен өтінім туралы жауап береді",open:"ИИ-ден сұрау",send:"Жіберу",ph:"Сұрағыңыз…",err:"Қате: ",empty:"Сұрағыңызды жазыңыз.",thinking:"Ойлап жатырмын…",retry:"Сервер бос емес, қайта көріп жатырмын…",timeout:"Сервер жауап бермеді. Қайта көріңіз.",net:"Сервермен байланыс жоқ. Интернетті тексеріп, қайта көріңіз.",noanswer:"Сервер бос жауап қайтарды. Қайта көріңіз.",busy:"Жауапты күтіңіз.",offline:"",load:"",loadPct:"",modelFail:"Кеңесші жауап бере алмады. Бетті жаңартып, қайта көріңіз.",publicFooter:"",publicNote:"Жария кеңесші: сайт деректері бойынша университет таңдайды — жүктеусіз және серверсіз. Нақты балл мен дедлайнды университет сайтынан тексеріңіз.",
   hello:"Сәлеметсіз бе! Мен ivypath.io көмекшісімін. Шетелде оқуға түсуге көмектесемін. Басында үш қысқа сұрақ — бәріне бірге жауап беруге болады: 1) қай елде немесе аймақта оқығыңыз келеді және қандай бағыт қызықтырады? 2) IELTS/TOEFL және SAT балыңыз қандай? 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе?"},
- en:{title:"Admissions assistant",sub:"Answers questions about universities and applying",open:"Ask AI",send:"Send",ph:"Your question…",err:"Error: ",empty:"Type a question.",
+ en:{title:"Admissions assistant",sub:"Answers questions about universities and applying",open:"Ask AI",send:"Send",ph:"Your question…",err:"Error: ",empty:"Type a question.",thinking:"Thinking…",retry:"Server is busy, retrying…",timeout:"The server did not answer. Please try again.",net:"No connection to the server. Check the internet and try again.",noanswer:"The server returned an empty answer. Please try again.",busy:"Please wait for the answer.",offline:"",load:"",loadPct:"",modelFail:"The advisor could not answer. Reload the page and try again.",publicFooter:"",publicNote:"Public advisor: shortlists universities from the site data — no download and no server. Check exact scores and deadlines on the university site.",
   hello:"Hello! I'm the ivypath.io assistant and I'll help you plan studying abroad. To start, three short questions — you can answer all at once: 1) which country or region do you want to study in, and which field interests you? 2) what are your IELTS/TOEFL and SAT scores? 3) what is your family's yearly budget, and do you need financial aid?"}
 };
 const CHAT_SYSTEM={
@@ -1745,28 +1748,411 @@ function chatAdd(text,cls,greet){
   log.appendChild(d); log.scrollTop=log.scrollHeight;
   return d;
 }
+function chatAddRich(html,cls){
+  const d=document.createElement("div");
+  d.className="chat-msg "+cls;
+  d.innerHTML=html;
+  const log=document.getElementById("chatLog");
+  log.appendChild(d); log.scrollTop=log.scrollHeight;
+  return d;
+}
+const chatSleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function chatOnce(timeoutMs){
+  const ctl=new AbortController();
+  const timer=setTimeout(()=>ctl.abort(),timeoutMs);
+  try{
+    const r=await fetch(API+"/chat/completions",{method:"POST",headers:{"Content-Type":"application/json"},signal:ctl.signal,body:JSON.stringify({model:"dsv41",max_tokens:600,temperature:0.6,chat_template_kwargs:{enable_thinking:false},messages:[{role:"system",content:CHAT_SYSTEM[lang]||CHAT_SYSTEM.ru}].concat(chatMsgs.slice(-10))})});
+    if(!r.ok){
+      const txt=await r.text().catch(()=>"");
+      const err=new Error(txt||("HTTP "+r.status));
+      err.status=r.status;
+      throw err;
+    }
+    const j=await r.json();
+    let answer=j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content;
+    if(Array.isArray(answer))answer=answer.map(p=>p&&p.text||"").join("");
+    answer=(answer||"").trim();
+    if(!answer){const err=new Error("empty answer");err.code="empty";throw err;}
+    return answer;
+  }finally{
+    clearTimeout(timer);
+  }
+}
+const PUBLIC_TEXT={
+ ru:{
+  hello:"Привет! Я советчик ivypath.io. Могу подобрать вузы по стране, направлению, баллам и бюджету или ответить про IELTS, SAT, стоимость, дедлайны, визу и стипендии. Напиши, что важно.",
+  thanks:"Пожалуйста! Если хочешь, подберу ещё варианты — напиши страну, направление, баллы и бюджет.",
+  askCountry:"С чего начнём: из какой страны или региона хочешь учиться? Например: США, Великобритания, Европа, Азия. Можно написать «не важно».",
+  askMajor:"Какое направление? IT, инженерия, бизнес, медицина, дизайн, гуманитарные. Можно «не знаю».",
+  askExams:"Какие у тебя IELTS/TOEFL и SAT? Например: «IELTS 7.0, SAT 1500». Если не сдавал — напиши «нет».",
+  askBudget:"Какой бюджет семьи на год? Например: «до $20k», «$20–40k» или «не важно».",
+  found:"Вот {n} вариантов по твоим данным ({country}):",
+  anyCountry:"любая страна",overBudget:"⚠ дороже твоего бюджета",budgetUnknown:"У части вузов нет цены в данных — проверь стоимость на официальном сайте.",
+  disclaimer:"Это ориентир по данным сайта. Точные требования и дедлайны проверь на официальном сайте вуза.",
+  noFound:"По этим условиям ничего не нашёл. Попробуй другую страну или направление — или напиши «не важно».",
+  checkSite:"Проверь точные требования на официальном сайте.",
+  regions:{europe:"Европа",asia:"Азия",cis:"СНГ",middleeast:"Ближний Восток"},
+  faq:{
+   ielts:"IELTS/TOEFL — экзамен по английскому. Для бакалавриата за рубежом чаще нужен IELTS 6.0–7.0; точный минимум зависит от вуза. Напиши свои баллы — подберу вузы, где их хватит.",
+   sat:"SAT/ACT — американский вступительный экзамен. Он нужен в основном в США; многие вузы сделали его необязательным. Напиши свой SAT — учту при подборе.",
+   cost:"Стоимость зависит от страны и вуза: от ~$5–10k в год в Азии и Европе до $60–90k в США. В карточках вузов указана ориентировочная цена. Напиши бюджет — покажу подходящие.",
+   deadline:"Дедлайны разные: США — обычно ноябрь–январь, Великобритания — январь, Европа — весна. Точные даты смотри в карточке вуза и на официальном сайте.",
+   visa:"Для учёбы нужна студенческая виза. Обычно нужны письмо о зачислении, подтверждение оплаты и страховка. Правила зависят от страны — проверь на сайте посольства.",
+   aid:"Стипендии и финансовая помощь есть, но для иностранцев их мало. Ищи раздел Scholarships / Financial Aid на сайте вуза. В карточках есть пометки про aid.",
+   docs:"Обычно нужны аттестат, транскрипт, IELTS/TOEFL, SAT (если нужен), эссе, рекомендации и паспорт. Список зависит от вуза.",
+   help:"Я умею: подбирать вузы по стране, направлению, баллам и бюджету; показывать требования, стоимость и дедлайны; отвечать на частые вопросы. Скажи, что важно."
+  }
+ },
+ kk:{
+  hello:"Сәлем! Мен ivypath.io кеңесшісімін. Ел, бағыт, балл және бюджет бойынша университет таңдай аламын немесе IELTS, SAT, құны, дедлайн, виза, стипендия туралы айтамын. Не маңызды екенін жазыңыз.",
+  thanks:"Оқасы жоқ! Тағы нұсқа керек болса, ел, бағыт, балл және бюджетті жазыңыз.",
+  askCountry:"Қай елде немесе аймақта оқығыңыз келеді? Мысалы: АҚШ, Ұлыбритания, Еуропа, Азия. «Маңызды емес» деп те жазуға болады.",
+  askMajor:"Қандай бағыт? IT, инженерия, бизнес, медицина, дизайн, гуманитарлық. «Білмеймін» деп жазсаңыз болады.",
+  askExams:"IELTS/TOEFL және SAT балыңыз қандай? Мысалы: «IELTS 7.0, SAT 1500». Тапсырмаған болсаңыз — «жоқ» деп жазыңыз.",
+  askBudget:"Отбасының жылына бөлетін бюджеті қандай? Мысалы: «$20k дейін», «$20–40k» немесе «маңызды емес».",
+  found:"Сіздің деректеріңіз бойынша {n} нұсқа ({country}):",
+  anyCountry:"кез келген ел",overBudget:"⚠ бюджетіңізден қымбат",budgetUnknown:"Кейбір университеттерде баға деректерде жоқ — құнын ресми сайттан тексеріңіз.",
+  disclaimer:"Бұл сайттағы деректер бойынша бағдар. Нақты талаптар мен дедлайнды университеттің ресми сайтынан тексеріңіз.",
+  noFound:"Бұл шарттар бойынша ештеңе табылмады. Басқа ел немесе бағыт көріңіз — немесе «маңызды емес» деп жазыңыз.",
+  checkSite:"Нақты талаптарды ресми сайттан тексеріңіз.",
+  regions:{europe:"Еуропа",asia:"Азия",cis:"ТМД",middleeast:"Таяу Шығыс"},
+  faq:{
+   ielts:"IELTS/TOEFL — ағылшын тілі емтиханы. Шетелде бакалавриатқа көбіне IELTS 6.0–7.0 керек; нақты минимум университетке байланысты. Баллдарыңызды жазыңыз — жететін университеттерді таңдаймын.",
+   sat:"SAT/ACT — американдық кіру емтиханы. Ол негізінен АҚШ-та керек; көп университет оны міндетті емес етті. SAT балыңызды жазыңыз — таңдауда ескеремін.",
+   cost:"Құны ел мен университетке байланысты: Азия мен Еуропада жылына ~$5–10k-тан АҚШ-та $60–90k-қа дейін. Университет карточкаларында шамамен бағасы бар. Бюджетіңізді жазыңыз — сәйкестерін көрсетемін.",
+   deadline:"Дедлайндар әртүрлі: АҚШ — әдетте қараша–қаңтар, Ұлыбритания — қаңтар, Еуропа — көктем. Нақты күндерді карточкадан және ресми сайттан қараңыз.",
+   visa:"Оқу үшін студенттік виза керек. Әдетте қабылдау хаты, төлем растамасы және сақтандыру қажет. Ережелер елге байланысты — елшілік сайтынан тексеріңіз.",
+   aid:"Стипендиялар мен қаржылық көмек бар, бірақ шетелдіктерге аз. Университет сайтынан Scholarships / Financial Aid бөлімін іздеңіз. Карточкаларда aid белгілері бар.",
+   docs:"Әдетте аттестат, транскрипт, IELTS/TOEFL, SAT (керек болса), эссе, ұсыныстар және паспорт керек. Тізім университетке байланысты.",
+   help:"Мен: ел, бағыт, балл және бюджет бойынша университет таңдаймын; талаптар, құны мен дедлайнды көрсетемін; жиі сұрақтарға жауап беремін. Не маңызды екенін айтыңыз."
+  }
+ },
+ en:{
+  hello:"Hi! I'm the ivypath.io advisor. I can shortlist universities by country, field, scores and budget, or answer questions about IELTS, SAT, cost, deadlines, visas and scholarships. Tell me what matters.",
+  thanks:"You're welcome! If you want more options, send your country, field, scores and budget.",
+  askCountry:"Which country or region do you want to study in? For example: USA, UK, Europe, Asia. You can also say \"not sure\".",
+  askMajor:"Which field? IT, engineering, business, medicine, design, humanities. You can say \"not sure\".",
+  askExams:"What are your IELTS/TOEFL and SAT scores? For example: \"IELTS 7.0, SAT 1500\". If you have not taken them, say \"no\".",
+  askBudget:"What is your family's yearly budget? For example: \"under $20k\", \"$20–40k\" or \"not sure\".",
+  found:"Here are {n} options for your profile ({country}):",
+  anyCountry:"any country",overBudget:"⚠ above your budget",budgetUnknown:"Some universities have no price in the data — check the cost on the official site.",
+  disclaimer:"This is guidance from the site's data. Check exact requirements and deadlines on the university's official site.",
+  noFound:"I found nothing for these conditions. Try another country or field — or say \"not sure\".",
+  checkSite:"Check the exact requirements on the official site.",
+  regions:{europe:"Europe",asia:"Asia",cis:"CIS",middleeast:"Middle East"},
+  faq:{
+   ielts:"IELTS/TOEFL is an English exam. For a bachelor's abroad you usually need IELTS 6.0–7.0; the exact minimum depends on the university. Send your scores and I will shortlist places where they are enough.",
+   sat:"SAT/ACT is a US entrance exam. It is mainly needed in the USA; many universities made it optional. Send your SAT score and I will use it in the shortlist.",
+   cost:"Cost depends on the country and university: from about $5–10k a year in Asia and Europe to $60–90k in the USA. Each university card shows an estimate. Send your budget and I will show matches.",
+   deadline:"Deadlines differ: USA — usually November–January, UK — January, Europe — spring. Check exact dates in the university card and on its official site.",
+   visa:"You need a student visa. Usually you need an offer letter, proof of payment and insurance. Rules depend on the country — check the embassy site.",
+   aid:"Scholarships and financial aid exist, but there is little for international students. Look for the Scholarships / Financial Aid section on the university site. Cards show aid notes.",
+   docs:"Usually you need a school certificate, transcript, IELTS/TOEFL, SAT (if required), essays, references and a passport. The list depends on the university.",
+   help:"I can shortlist universities by country, field, scores and budget; show requirements, cost and deadlines; and answer common questions. Tell me what matters."
+  }
+ }
+};
+const REGIONS={
+  europe:["uk","germany","switzerland","netherlands","france","italy","sweden","ireland","hungary","czech","poland","finland","austria","belgium","denmark","norway","spain","portugal","bulgaria","croatia"],
+  asia:["singapore","hongkong","japan","korea","china","malaysia","taiwan","india","indonesia","thailand","vietnam"],
+  cis:["kazakhstan","kyrgyzstan","uzbekistan","armenia","russia","azerbaijan","belarus","moldova"],
+  middleeast:["uae","qatar","saudi","turkey","israel","jordan","lebanon"]
+};
+const COUNTRY_EXTRA={
+  usa:["сша","америка","соединённые штаты","соединенные штаты","usa","united states","america","ақш"],
+  uk:["великобритания","британия","англия","uk","united kingdom","britain","england","ұлыбритания"],
+  canada:["канада","canada"],germany:["германия","germany","deutschland"],france:["франция","france"],
+  italy:["италия","italy"],spain:["испания","spain"],portugal:["португалия","portugal"],
+  netherlands:["нидерланды","голландия","netherlands","holland"],switzerland:["швейцария","switzerland"],
+  sweden:["швеция","sweden"],norway:["норвегия","norway"],denmark:["дания","denmark"],
+  finland:["финляндия","finland"],ireland:["ирландия","ireland"],poland:["польша","poland"],
+  czech:["чехия","czech","czechia"],hungary:["венгрия","hungary"],austria:["австрия","austria"],
+  belgium:["бельгия","belgium"],bulgaria:["болгария","bulgaria"],croatia:["хорватия","croatia"],
+  singapore:["сингапур","singapore"],hongkong:["гонконг","hong kong","hongkong"],japan:["япония","japan"],
+  korea:["корея","korea","south korea"],china:["китай","china"],malaysia:["малайзия","malaysia"],
+  taiwan:["тайвань","taiwan"],india:["индия","india"],indonesia:["индонезия","indonesia"],
+  uae:["оаэ","эмираты","uae","emirates","баӘ"],qatar:["катар","qatar"],saudi:["саудовская аравия","saudi"],
+  turkey:["турция","turkey","türkiye"],australia:["австралия","australia"],nz:["новая зеландия","new zealand"],
+  kazakhstan:["казахстан","kazakhstan","қазақстан"],kyrgyzstan:["кыргызстан","kyrgyzstan","қырғызстан"],
+  uzbekistan:["узбекистан","uzbekistan","өзбекстан"],armenia:["армения","armenia"],russia:["россия","russia"],
+  azerbaijan:["азербайджан","azerbaijan"],belarus:["беларусь","belarus"],moldova:["молдова","moldova"],
+  thailand:["тайланд","thailand"],vietnam:["вьетнам","vietnam"],israel:["израиль","israel"],
+  jordan:["иордания","jordan"],lebanon:["ливан","lebanon"],chechnya:[]
+};
+const MAJOR_EXTRA={
+  cs:["it","айти","информатик","программ","computer science","software","компьютер","бағдарлама","coding"],
+  eng:["инженер","engineering","инженерия","техника","engineer","mechanical","electrical","civil"],
+  biz:["бизнес","business","экономик","economy","finance","финанс","маркетинг","marketing","менеджмент","management"],
+  med:["медицин","medicine","биолог","biology","doctor","дәрігер","биология","health"],
+  sci:["естественн","natural science","физик","physics","хими","chemistry","математик","math","science"],
+  soc:["право","law","юрист","социал","social","полит","politics","құқық","international relations"],
+  art:["искусств","art","дизайн","design","музык","music","өнер","архитектур","architecture"],
+  hum:["гуманитар","humanities","истор","history","филолог","language","тіл","тарих","психолог","psychology"],
+  pilot:["пилот","авиац","pilot","aviation","ұшқыш"]
+};
+const CUR={"CHF":1.12,"CAD":0.73,"AUD":0.66,"SGD":0.74,"HKD":0.128,"CNY":0.14,"JPY":0.0067,"KRW":0.00073,"QAR":0.275,"AED":0.272,"TRY":0.029,"INR":0.012,"MYR":0.22,"TWD":0.031,"THB":0.028,"RUB":0.011,"KZT":0.0021,"BRL":0.18,"MXN":0.05,"CLP":0.001,"ZAR":0.055,"$":1,"£":1.27,"€":1.08};
+const UNI_ALIASES={mit:"MIT",harvard:"Harvard University",stanford:"Stanford University",yale:"Yale University",princeton:"Princeton University",columbia:"Columbia University",oxford:"University of Oxford",cambridge:"University of Cambridge",ucl:"University College London",imperial:"Imperial College London",eth:"ETH Zurich",nus:"National University of Singapore",nyu:"New York University",kaist:"KAIST",ucla:"University of California, Los Angeles",berkeley:"University of California, Berkeley"};
+const publicProfile={country:null,countryAny:false,major:null,majorDone:false,ielts:null,toefl:null,sat:null,examsDone:false,budget:null,budgetDone:false};
+let publicAsk=null;
+let advisorLang=lang;
+function advisorLanguage(text){
+  const t=text||"";
+  if(/[әғқңөұүһі]/i.test(t))return "kk";
+  if(/[а-яё]/i.test(t))return "ru";
+  if(/[a-z]/i.test(t)){
+    const words=(t.match(/[a-z]+/gi)||[]).length;
+    if(words>=3||/\b(what|which|how|hello|hi|cost|deadline|need|want|study|budget|sat|ielts)\b/i.test(t))return "en";
+  }
+  return advisorLang||lang;
+}
+
+function countryFromText(low){
+  if(/(европ|europe|еуроп)/.test(low))return "europe";
+  if(/(ази|asia)/.test(low))return "asia";
+  if(/(снг|cis)/.test(low))return "cis";
+  if(/(ближн|middle east|орта шығыс)/.test(low))return "middleeast";
+  for(const [code,names] of Object.entries(COUNTRIES))for(const n of names)if(low.includes(String(n).toLowerCase()))return code;
+  for(const [code,words] of Object.entries(COUNTRY_EXTRA))for(const w of words)if(low.includes(w))return code;
+  return null;
+}
+function majorFromText(low){
+  for(const [code,words] of Object.entries(MAJOR_EXTRA))for(const w of words){
+    if(w.length<=3?new RegExp("(^|[^a-zа-яёәғқңөұүһі])"+w+"([^a-zа-яёәғқңөұүһі]|$)").test(low):low.includes(w))return code;
+  }
+  return null;
+}
+function budgetFromText(low){
+  let m=low.match(/(?:бюджет|budget|бюджеті|қаржы)[^\d]{0,30}(\d[\d\s.,]*)\s*(k|тыс|000)?/i);
+  if(!m)m=low.match(/(?:до|under|up to|max|максимум)[^\d]{0,12}\$?\s*(\d[\d\s.,]*)\s*(k|тыс)?/i);
+  if(!m)m=low.match(/\$\s*(\d[\d\s.,]*)\s*(k|тыс)?/i);
+  if(!m)return null;
+  let raw=m[1].replace(/\s/g,"");
+  if(/^\d{1,3}([.,]\d{3})+$/.test(raw))raw=raw.replace(/[.,]/g,"");
+  else raw=raw.replace(",",".");
+  let n=parseFloat(raw);
+  if(isNaN(n))return null;
+  if((m[2]&&/^(k|тыс)$/i.test(m[2]))||n<1000)n*=1000;
+  return Math.round(n);
+}
+function parseProfile(text){
+  const low=text.toLowerCase();const p=publicProfile;let changed=false;
+  const any=/(не важно|не знаю|любой|any|not sure|маңызды емес|білмеймін)/i.test(low);
+  const no=/(^|[^a-zа-яёәғқңөұүһі])(нет|жоқ|no|not yet|не сдавал|тапсырмаған)([^a-zа-яёәғқңөұүһі]|$)/i.test(low);
+  let ask=publicAsk;
+  if(!ask&&any){
+    if(!p.country&&!p.countryAny)ask="country";
+    else if(!p.majorDone&&!p.major)ask="major";
+    else if(!p.examsDone)ask="exams";
+    else if(!p.budgetDone)ask="budget";
+  }
+  const c=countryFromText(low);
+  if(c){p.country=c;p.countryAny=(c==="any");changed=true;}
+  else if(any&&ask==="country"){p.country="any";p.countryAny=true;changed=true;}
+  if(!p.majorDone){
+    const m=majorFromText(low);
+    if(m){p.major=m;p.majorDone=true;changed=true;}
+    else if(any&&ask==="major"){p.majorDone=true;changed=true;}
+  }
+  if(!p.examsDone){
+    const im=low.match(/ielts\s*[:\-–]?\s*(\d(?:[.,]\d)?)/i)||low.match(/(\d(?:[.,]\d)?)\s*(?:ielts|айлтс)/i);
+    const tm=low.match(/toefl\s*[:\-–]?\s*(\d{2,3})/i)||low.match(/(\d{2,3})\s*toefl/i);
+    const sm=low.match(/\bsat\b\s*[:\-–]?\s*(\d{3,4})/i)||low.match(/(\d{3,4})\s*\bsat\b/i);
+    if(im){p.ielts=parseFloat(im[1].replace(",","."));changed=true;}
+    if(tm){p.toefl=parseInt(tm[1],10);changed=true;}
+    if(sm){p.sat=parseInt(sm[1],10);changed=true;}
+    if(im||tm||sm||(no&&ask==="exams")){p.examsDone=true;changed=true;}
+  }
+  if(!p.budgetDone){
+    const b=budgetFromText(low);
+    if(b!=null){p.budget=b;p.budgetDone=true;changed=true;}
+    else if(any&&ask==="budget"||no&&ask==="budget"){p.budgetDone=true;changed=true;}
+  }
+  return changed;
+}
+function nextPublicQuestion(p){
+  const P=PUBLIC_TEXT[advisorLang];
+  if(!p.country&&!p.countryAny)return {key:"country",text:P.askCountry};
+  if(!p.majorDone&&!p.major)return {key:"major",text:P.askMajor};
+  if(!p.examsDone)return {key:"exams",text:P.askExams};
+  if(!p.budgetDone)return {key:"budget",text:P.askBudget};
+  return null;
+}
+function costUsd(u){
+  const v=u&&u.m&&u.m.cost&&u.m.cost.v;if(!v)return null;
+  const m=String(v).match(/(CHF|CAD|AUD|SGD|HKD|CNY|JPY|KRW|QAR|AED|TRY|INR|MYR|TWD|THB|RUB|KZT|BRL|MXN|CLP|ZAR|[$£€])\s*([\d\s,]+)/);
+  if(!m)return null;
+  let raw=m[2].replace(/\s/g,"");
+  if(/^\d{1,3}([.,]\d{3})+$/.test(raw))raw=raw.replace(/[.,]/g,"");
+  else raw=raw.replace(",",".");
+  const n=parseFloat(raw);
+  return isNaN(n)?null:n*(CUR[m[1]]||1);
+}
+function matchesCountry(u,p){
+  if(!p.country||p.country==="any")return true;
+  if(REGIONS[p.country])return REGIONS[p.country].includes(u.c);
+  return u.c===p.country;
+}
+function countryName(u){
+  const i=LI[advisorLang];
+  return COUNTRIES[u.c]?COUNTRIES[u.c][i]:u.c;
+}
+function publicScore(u,p){
+  let s=0;
+  if(p.country&&p.country!=="any"&&matchesCountry(u,p))s+=50;
+  if(p.major&&majorsOf(u).includes(p.major))s+=30;
+  if(p.ielts!=null&&u.ielts!=null)s+=u.ielts<=p.ielts?20:-25;
+  if(p.toefl!=null&&u.toefl!=null)s+=u.toefl<=p.toefl?15:-15;
+  if(p.sat!=null&&u.sat!=null)s+=u.sat<=p.sat?20:-20;
+  if(p.budget){const c=costUsd(u);if(c)s+=c<=p.budget?15:-15;}
+  if(u.acc){const a=parseInt(u.acc,10);if(a>=50)s+=8;else if(a<=15)s+=3;}
+  if(u.m&&u.m.aid)s+=3;
+  return s;
+}
+function publicCandidates(p){
+  let list=UNIS.filter(u=>matchesCountry(u,p));
+  if(p.major){const m=list.filter(u=>majorsOf(u).includes(p.major));if(m.length)list=m;}
+  if(p.ielts!=null){const m=list.filter(u=>u.ielts==null||u.ielts<=p.ielts);if(m.length)list=m;}
+  if(p.toefl!=null){const m=list.filter(u=>u.toefl==null||u.toefl<=p.toefl);if(m.length)list=m;}
+  if(p.sat!=null){const m=list.filter(u=>u.sat==null||u.sat<=p.sat);if(m.length)list=m;}
+  if(p.budget){const m=list.filter(u=>{const c=costUsd(u);return c==null||c<=p.budget*1.15;});if(m.length)list=m;}
+  return list.map(u=>({u,s:publicScore(u,p)})).sort((a,b)=>b.s-a.s||((costUsd(a.u)||1e9)-(costUsd(b.u)||1e9))).slice(0,5).map(x=>x.u);
+}
+function findUni(text){
+  const low=text.toLowerCase();
+  for(const [alias,name] of Object.entries(UNI_ALIASES)){
+    const hit=alias.length<=4?new RegExp("(^|[^a-z0-9])"+alias+"([^a-z0-9]|$)","i").test(low):low.includes(alias);
+    if(hit){const u=UNIS.find(x=>x.n===name);if(u)return u;}
+  }
+  const sorted=[...UNIS].sort((a,b)=>b.n.length-a.n.length);
+  for(const u of sorted){
+    const n=u.n.toLowerCase();
+    let hit;
+    if(n.length<=4){const q=n.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");hit=new RegExp("(^|[^a-z0-9])"+q+"([^a-z0-9]|$)","i").test(low);}
+    else hit=low.includes(n);
+    if(hit)return u;
+  }
+  return null;
+}
+function uniAnswer(u){
+  const t=T[advisorLang],P=PUBLIC_TEXT[advisorLang];
+  const lines=[`<b>${esc(u.n)}</b> · ${esc(countryName(u))}`];
+  if(u.tags&&u.tags.length)lines.push(esc(t.modalReqs)+": "+u.tags.map(x=>esc(tagLabel(x,advisorLang))).join("; "));
+  if(u.dl)lines.push(esc(t.fDeadline)+": "+esc(u.dl));
+  if(u.m&&u.m.cost)lines.push(esc(t.moneyCost)+": "+esc(u.m.cost.v)+(u.m.cost.y?" ("+esc(u.m.cost.y)+")":""));
+  if(u.acc)lines.push(esc(t.fAcc)+": "+esc(u.acc));
+  lines.push(`<a href="${esc(u.u)}" target="_blank" rel="noopener">${esc(t.site)}</a>`);
+  lines.push(esc(P.checkSite));
+  return lines.join("\n");
+}
+function recommendHtml(p){
+  const P=PUBLIC_TEXT[advisorLang],t=T[advisorLang];
+  const cards=publicCandidates(p);
+  if(!cards.length)return esc(P.noFound);
+  const cname=p.country==="any"?P.anyCountry:(REGIONS[p.country]?P.regions[p.country]:(COUNTRIES[p.country]?COUNTRIES[p.country][LI[advisorLang]]:p.country));
+  const out=[esc(P.found.replace("{n}",cards.length).replace("{country}",cname))];
+  cards.forEach((u,k)=>{
+    const lines=[`<b>${k+1}. ${esc(u.n)}</b> · ${esc(countryName(u))}`];
+    const tags=(u.tags||[]).slice(0,3).map(x=>tagLabel(x,advisorLang));
+    if(tags.length)lines.push(esc(t.modalReqs)+": "+esc(tags.join(" · ")));
+    if(u.m&&u.m.cost)lines.push(esc(t.moneyCost)+": "+esc(u.m.cost.v));
+    if(u.dl)lines.push(esc(t.fDeadline)+": "+esc(u.dl));
+    if(u.acc)lines.push(esc(t.fAcc)+": "+esc(u.acc));
+    const c=costUsd(u);
+    if(p.budget&&c&&c>p.budget*1.05)lines.push(esc(P.overBudget));
+    lines.push(`<a href="${esc(u.u)}" target="_blank" rel="noopener">${esc(t.site)}</a>`);
+    out.push(lines.join("\n"));
+  });
+  if(p.budget&&cards.some(u=>costUsd(u)==null))out.push(esc(P.budgetUnknown));
+  out.push(esc(P.disclaimer));
+  return out.join("\n\n");
+}
+function faqKey(low){
+  if(/\b(ielts|toefl|айлтс)\b/i.test(low))return "ielts";
+  if(/\b(sat|act)\b/i.test(low))return "sat";
+  if(/(стоимост|сколько стоит|цена|cost|tuition|құны)/i.test(low))return "cost";
+  if(/(дедлайн|deadline|когда пода|мерзім)/i.test(low))return "deadline";
+  if(/(виза|visa|виза)/i.test(low))return "visa";
+  if(/(стипенд|scholarship|финанс|aid|грант|қаржы)/i.test(low))return "aid";
+  if(/(документ|эссе|essay|рекомендац|document)/i.test(low))return "docs";
+  if(/(что ты|кто ты|помощь|help|что умеешь|мүмкіндік)/i.test(low))return "help";
+  return null;
+}
+function publicReply(text){
+  advisorLang=advisorLanguage(text);
+  const P=PUBLIC_TEXT[advisorLang],low=text.toLowerCase().trim();
+  const changed=parseProfile(text);
+  const uni=findUni(text);
+  if(uni)return {html:uniAnswer(uni)};
+  if(changed){
+    const q=nextPublicQuestion(publicProfile);
+    if(q){publicAsk=q.key;return {html:esc(q.text)};}
+    publicAsk=null;return {html:recommendHtml(publicProfile)};
+  }
+  if(/^(привет|сәлем|салам|hello|hi|здравствуй|добрый день)/i.test(low))return {html:esc(P.hello)};
+  if(/^(спасибо|рахмет|thank)/i.test(low))return {html:esc(P.thanks)};
+  const f=faqKey(low);
+  if(f){
+    const q=nextPublicQuestion(publicProfile);
+    if(q)publicAsk=q.key;
+    return {html:esc(P.faq[f]+(q?"\n\n"+q.text:""))};
+  }
+  const q=nextPublicQuestion(publicProfile);
+  if(q){publicAsk=q.key;return {html:esc(q.text)};}
+  publicAsk=null;return {html:recommendHtml(publicProfile)};
+}
+
 async function chatReply(text){
   const c=chatT();
   if(chatBusy)return;
   chatBusy=true;
   const btn=document.getElementById("chatSend");
-  btn.disabled=true;
+  const input=document.getElementById("chatInput");
+  btn.disabled=true;input.disabled=true;
   chatMsgs.push({role:"user",content:text});
   chatAdd(text,"me");
-  const wait=chatAdd("…","bot");
+  const wait=chatAdd(c.thinking,"bot");
+  let lastErr=null;
   try{
-    const r=await fetch(API+"/chat/completions",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"DeepSeek-V4.1-Flash",max_tokens:600,temperature:0.6,messages:[{role:"system",content:CHAT_SYSTEM[lang]||CHAT_SYSTEM.ru}].concat(chatMsgs.slice(-10))})});
-    wait.remove();
-    if(!r.ok){chatMsgs.pop();chatAdd(c.err+await r.text(),"err");return;}
-    const j=await r.json();
-    const answer=((j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content)||"").trim();
-    if(!answer){chatMsgs.pop();chatAdd(c.err+"empty answer","err");return;}
-    chatMsgs.push({role:"assistant",content:answer});
-    chatAdd(answer,"bot");
+    if(!API){
+      const ans=publicReply(text);
+      wait.remove();
+      const plain=ans&&ans.html?ans.html.replace(/<[^>]*>/g,""):"";
+      chatMsgs.push({role:"assistant",content:plain});
+      chatAddRich(ans.html,"bot");
+    }else{
+      for(let attempt=1;attempt<=3;attempt++){
+        try{
+          if(attempt>1)wait.textContent=c.retry;
+          const answer=await chatOnce(attempt===1?30000:45000);
+          wait.remove();
+          chatMsgs.push({role:"assistant",content:answer});
+          chatAdd(answer,"bot");
+          lastErr=null;
+          break;
+        }catch(e){
+          lastErr=e;
+          const st=e.status;
+          if(st&&st>=400&&st<500&&st!==429)break;
+          if(attempt<3)await chatSleep(1000*attempt);
+        }
+      }
+    }
+    if(lastErr){
+      wait.remove();
+      let msg=lastErr.message||String(lastErr);
+      if(lastErr.name==="AbortError")msg=c.timeout;
+      else if(lastErr.code==="empty")msg=c.noanswer;
+      else if(lastErr.status)msg="HTTP "+lastErr.status+": "+msg;
+      else msg=c.net;
+      chatAdd(c.err+msg,"err");
+    }
   }catch(e){
-    wait.remove();chatMsgs.pop();chatAdd(c.err+(e.message||e),"err");
+    wait.remove();
+    const detail=e&&e.message?String(e.message).slice(0,180):String(e);
+    chatAdd(c.err+(API?detail:c.modelFail+" "+detail),"err");
+    console.error(e);
   }finally{
-    chatBusy=false;btn.disabled=false;
+    chatBusy=false;btn.disabled=false;input.disabled=false;input.focus();
   }
 }
 function openChat(){
@@ -1775,6 +2161,7 @@ function openChat(){
   if(!panel)return;
   panel.hidden=false;
   if(!log.children.length)chatAdd(chatT().hello,"bot",true);
+  if(!API&&!log.dataset.publicnote){chatAdd(chatT().publicNote,"bot");log.dataset.publicnote="1";}
   document.getElementById("chatInput").focus();
 }
 function closeChat(){

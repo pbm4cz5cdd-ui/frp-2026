@@ -39,6 +39,7 @@ More (Flask apps, problems): `materials/DEPLOY.md`.
 
 ## Extra
 
+- Other agents on the same class model: type `claude` (Claude Code) or `codex` (OpenAI Codex) instead of `opencode`.
 - The agent with browser tools (it can open and click your page itself): type `opencode-mcp` instead of `opencode`.
 - The internet works here: `pip install`, `npm install` and `git` are allowed.
 
