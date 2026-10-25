@@ -1,0 +1,6 @@
+name,fact,status,value,note,quote,source,checked
+University of Manchester,ielts,value,5.5,"минимум; зависит от программы, до 7.5+",IELTS overall score 5.5 6 6.5 7 7.5+,https://www.manchester.ac.uk/study/international/admissions/language-requirements/,2026-10-25
+University of Manchester,toefl,value,72,"минимум; зависит от программы, до 109–120","TOEFL iBT (note, we do not accept TOEFL iBT Home) 72 80 90 100 109–120",https://www.manchester.ac.uk/study/international/admissions/language-requirements/,2026-10-25
+Yale University,ielts,value,7,минимум для наиболее конкурентоспособных,Yale’s most competitive applicants have IELTS scores of 7 or higher.,https://admissions.yale.edu/standardized-testing,2026-10-25
+Yale University,toefl,value,100,минимум; для тестов после 21.01.2026 — 5,"Yale’s most competitive applicants typically earn a score of 5 or higher (for tests taken after January 21, 2026) or at least 100 (for tests taken before January 21, 2026).",https://admissions.yale.edu/standardized-testing,2026-10-25
+Yale University,sat,not_required,,требуется ACT или SAT,Yale’s testing policy requires applicants to submit scores from either the ACT or SAT.,https://admissions.yale.edu/standardized-testing,2026-10-25

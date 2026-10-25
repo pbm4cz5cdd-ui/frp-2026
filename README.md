@@ -55,6 +55,7 @@ Start the agent: type `opencode` in the terminal. Then use these commands in thi
 | 4 | `/check` | It tests its own work and shows you proof. Then **you** open the page and click it too. |
 | 5 | `/fix the button does nothing` | When something is wrong: say what you saw or paste the red error. |
 | 6 | `/save` | A git checkpoint. If a later step breaks things, you can go back. |
+| share | `/share` | A public link to your page that anyone can open (no login). Type it again after changes. |
 | next | `/plan task 2` | When a task is done: the plan for the next task in TASKS.md, then `/build` again. |
 
 Then repeat 3 → 4 → 6 for the next step of the plan. Steps 1 and 2 use the "plan" agent, which cannot change files.
