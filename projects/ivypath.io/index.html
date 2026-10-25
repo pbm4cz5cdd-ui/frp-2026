@@ -385,6 +385,20 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
     <div id="langNote" class="lang-note"></div>
     <div id="articleList"></div>
   </section>
+
+  <section id="commonapp" class="section">
+    <h2 data-key="caTitle"></h2>
+    <p class="muted small" data-key="caNote"></p>
+    <ol class="steps" id="caSteps"></ol>
+    <article class="card" style="margin-top:20px"><h3 data-key="caNeedTitle"></h3><ul class="bullets" style="margin-top:12px" id="caNeed"></ul></article>
+    <article class="card" style="margin-top:20px">
+      <h3 data-key="caFreeTitle"></h3>
+      <ul class="bullets" id="caFreeSteps" style="margin-top:14px"></ul>
+      <ul class="bullets" style="margin-top:14px" id="caFreeTips"></ul>
+      <p class="muted small" style="margin-top:14px" data-key="caFreeNote"></p>
+    </article>
+    <p class="muted small" style="margin-top:16px"><a class="link" href="https://www.commonapp.org/apply/first-year-students" target="_blank" rel="noopener" data-key="caLink"></a></p>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -498,130 +512,35 @@ const COURSES=[
  {n:"Crimson Education",city:"Алматы (+ офисы в 20+ странах)",official:false,tags:["Поступление в топ-вузы","Менторство","SAT/эссе"],d:"Международная консалтинговая компания по поступлению в элитные университеты (включая Лигу плюща); есть офис в Алматы, сопровождение от выбора вузов до эссе и подготовки к экзаменам.",u:"https://www.crimsoneducation.org/"}
 ];
 
-const UNIS=[
- {n:"MIT",c:"usa",ielts:7,sat:1520,tags:["SAT/ACT required","IELTS 7.0","SAT ~1520+"],u:"https://mitadmissions.org/apply/firstyear/requirements-deadlines/"},
- {n:"Stanford University",c:"usa",ielts:7,sat:1500,tags:["TOEFL 100","IELTS 7.0","SAT ~1500+"],u:"https://admission.stanford.edu/apply/"},
- {n:"Harvard University",c:"usa",ielts:7,sat:1500,tags:["SAT ~1500+","ACT 34+","TOEFL 100"],u:"https://college.harvard.edu/admissions/apply"},
- {n:"Yale University",c:"usa",ielts:7,sat:1500,tags:["SAT/ACT required","TOEFL 100","IELTS 7.0"],u:"https://admissions.yale.edu/standardized-testing"},
- {n:"Princeton University",c:"usa",ielts:7.5,sat:1510,tags:["TOEFL 100","IELTS 7.5","SAT ~1510+"],u:"https://admission.princeton.edu/how-apply"},
- {n:"Columbia University",c:"usa",ielts:7,sat:null,tags:["TOEFL 100","IELTS 7.0","SAT optional"],u:"https://undergrad.admissions.columbia.edu/apply"},
- {n:"UC Berkeley",c:"usa",ielts:6.5,sat:null,tags:["TOEFL 80","IELTS 6.5","SAT not used"],u:"https://admissions.berkeley.edu/international-applicants/"},
- {n:"UCLA",c:"usa",ielts:7,sat:null,tags:["TOEFL 100","IELTS 7.0","SAT not used"],u:"https://admission.ucla.edu/apply/international"},
- {n:"Carnegie Mellon University",c:"usa",ielts:7.5,sat:1500,tags:["TOEFL 102","IELTS 7.5","SAT ~1500+"],u:"https://www.cmu.edu/admission/admission/apply"},
- {n:"University of Oxford",c:"uk",ielts:7,tags:["IELTS 7.0 (6.5)","TOEFL 100","Interview"],u:"https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/for-international-students"},
- {n:"University of Cambridge",c:"uk",ielts:7.5,tags:["IELTS 7.5 (7.0)","TOEFL 110","Interview"],u:"https://www.undergraduate.study.cam.ac.uk/international-students"},
- {n:"Imperial College London",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 92","DET 115"],u:"https://www.imperial.ac.uk/study/apply/undergraduate/entry-requirements/english-language/"},
- {n:"UCL",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 92","UCAS"],u:"https://www.ucl.ac.uk/prospective-students/undergraduate/application-and-entry"},
- {n:"LSE",c:"uk",ielts:7,tags:["IELTS 7.0 (6.5)","TOEFL 100","UCAS"],u:"https://www.lse.ac.uk/study-at-lse/Undergraduate/degree-programmes"},
- {n:"University of Edinburgh",c:"uk",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 92","UCAS"],u:"https://www.ed.ac.uk/studying/undergraduate/entry-requirements"},
- {n:"University of Manchester",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","UCAS"],u:"https://www.manchester.ac.uk/study/international/admissions/"},
- {n:"University of Toronto",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 100","OUAC"],u:"https://future.utoronto.ca/apply/english-language-requirements/"},
- {n:"UBC",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","Essays"],u:"https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"},
- {n:"McGill University",c:"canada",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","No SAT"],u:"https://www.mcgill.ca/undergraduate-admissions/apply/english"},
- {n:"University of Waterloo",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","Math contests"],u:"https://uwaterloo.ca/future-students/admissions/english-language-requirements"},
- {n:"TU Munich",c:"germany",ielts:6.5,tags:["IELTS 6.5","Deutsch C1 (DE-track)","Uni-Assist"],u:"https://www.tum.de/en/studies/application"},
- {n:"RWTH Aachen",c:"germany",ielts:6.5,tags:["Deutsch C1","IELTS 6.5 (EN-track)","Uni-Assist"],u:"https://www.rwth-aachen.de/go/id/bdvo"},
- {n:"Heidelberg University",c:"germany",ielts:6.5,tags:["Deutsch C1 / DSH-2","Studienkolleg"],u:"https://www.uni-heidelberg.de/en/study/application"},
- {n:"ETH Zurich",c:"switzerland",ielts:null,tags:["Deutsch C1","Entrance exam"],u:"https://ethz.ch/en/studies/bachelor/application.html"},
- {n:"EPFL",c:"switzerland",ielts:null,tags:["Français B2+","Entrance exam"],u:"https://www.epfl.ch/education/bachelor/admission-criteria/"},
- {n:"TU Delft",c:"netherlands",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","Studielink"],u:"https://www.tudelft.nl/en/education/admission-and-application"},
- {n:"University of Amsterdam",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 92","Studielink"],u:"https://www.uva.nl/en/education/bachelor-s/application-and-admission"},
- {n:"Eindhoven University of Technology",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","Math + Physics"],u:"https://www.tue.nl/en/education/admission-and-enrolment"},
- {n:"Sciences Po",c:"france",ielts:7,tags:["IELTS 7.0","TOEFL 100","Interview"],u:"https://www.sciencespo.fr/students/en/admissions"},
- {n:"Sorbonne Université",c:"france",ielts:6.5,tags:["Français B2–C1","Campus France"],u:"https://www.sorbonne-universite.fr/en/education"},
- {n:"Politecnico di Milano",c:"italy",ielts:6,tags:["IELTS 6.0","TOEFL 78","Online TOL test"],u:"https://www.polimi.it/en/programmes/admission-and-enrolment"},
- {n:"Bocconi University",c:"italy",ielts:6.5,tags:["IELTS 6.5","TOEFL 88","SAT/Bocconi test"],u:"https://www.unibocconi.it/en/programs/bachelor-science/admissions"},
- {n:"KTH Royal Institute of Technology",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90","universityadmissions.se"],u:"https://www.kth.se/en/studies/bachelor"},
- {n:"Lund University",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90","Free for EU"],u:"https://www.lunduniversity.lu.se/admissions"},
- {n:"Trinity College Dublin",c:"ireland",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","CAO"],u:"https://www.tcd.ie/study/international/admission-requirements/"},
- {n:"NUS",c:"singapore",ielts:6.5,tags:["IELTS 6.5","SAT recommended","Strong maths"],u:"https://www.nus.edu.sg/oam/apply-to-nus"},
- {n:"NTU Singapore",c:"singapore",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","SAT accepted"],u:"https://www.ntu.edu.sg/admissions/undergraduate"},
- {n:"HKU",c:"hongkong",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 80","Interview"],u:"https://admissions.hku.hk/international-students"},
- {n:"University of Tokyo (PEAK)",c:"japan",ielts:7,tags:["IELTS 7.0","TOEFL 100","SAT/IB"],u:"https://www.u-tokyo.ac.jp/en/prospective-students/admissions.html"},
- {n:"Kyoto University (iUP)",c:"japan",ielts:6.5,tags:["IELTS 6.5","EJU / JLPT","Japanese year 1"],u:"https://www.kyoto-u.ac.jp/en/education-campus/education/admissions"},
- {n:"KAIST",c:"korea",ielts:6.5,tags:["IELTS 6.5","TOEFL 83","Full scholarships"],u:"https://admission.kaist.ac.kr/international/"},
- {n:"Seoul National University",c:"korea",ielts:6.5,tags:["TOEFL 80+","TOPIK 3+","Interview"],u:"https://en.snu.ac.kr/admission/undergraduate/international"},
- {n:"Tsinghua University",c:"china",ielts:6.5,tags:["IELTS 6.5","HSK 5 (CN-track)","CSC scholarships"],u:"https://www.tsinghua.edu.cn/en/Admissions.htm"},
- {n:"Peking University",c:"china",ielts:6.5,tags:["HSK 5","IELTS 6.5 (EN-track)","Interview"],u:"https://english.pku.edu.cn/admissions/"},
- {n:"University of Melbourne",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 79","No SAT"],u:"https://study.unimelb.edu.au/how-to-apply/international-students"},
- {n:"University of Sydney",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 85","UAC"],u:"https://www.sydney.edu.au/study/how-to-apply.html"},
- {n:"Australian National University",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 80"],u:"https://www.anu.edu.au/study/apply"},
- {n:"University of Auckland",c:"nz",ielts:6,tags:["IELTS 6.0 (5.5)","TOEFL 80"],u:"https://www.auckland.ac.nz/en/study/applications-and-admissions.html"},
- {n:"Khalifa University",c:"uae",ielts:6.5,sat:1300,tags:["IELTS 6.5","SAT ~1300+","Scholarships"],u:"https://www.ku.ac.ae/admissions"},
- {n:"Koç University",c:"turkey",ielts:6.5,tags:["IELTS 6.5","TOEFL 80","SAT accepted"],u:"https://global.ku.edu.tr/admissions/"},
- {n:"Bilkent University",c:"turkey",ielts:6.5,tags:["IELTS 6.5","TOEFL 87","YÖS/SAT"],u:"https://stars.bilkent.edu.tr/homepage/international"},
- {n:"Charles University",c:"czech",ielts:6.5,tags:["IELTS 6.5","Čeština free track","Entrance exam"],u:"https://cuni.cz/UKEN-4.html"},
- {n:"Georgia Institute of Technology",c:"usa",ielts:7,sat:1450,tags:["TOEFL 90","IELTS 7.0","SAT optional"],u:"https://admission.gatech.edu/apply/international-students"},
- {n:"University of Michigan",c:"usa",ielts:6.5,sat:null,tags:["TOEFL 100","IELTS 6.5","SAT not used"],u:"https://admissions.umich.edu/apply/international-students"},
- {n:"New York University",c:"usa",ielts:7,sat:null,tags:["TOEFL 100","IELTS 7.0","SAT optional"],u:"https://www.nyu.edu/admissions/undergraduate-admissions/international-applicants.html"},
- {n:"King's College London",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.5)","TOEFL 92","UCAS"],u:"https://www.kcl.ac.uk/study/undergraduate/apply/international-students"},
- {n:"University of Bristol",c:"uk",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 88","UCAS"],u:"https://www.bristol.ac.uk/international/students/entry-requirements/"},
- {n:"University of Alberta",c:"canada",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90"],u:"https://www.ualberta.ca/en/admissions/undergraduate/requirements/international-requirements/index.html"},
- {n:"Queen's University",c:"canada",ielts:6.5,tags:["IELTS 6.5","TOEFL 88"],u:"https://www.queensu.ca/admission/international"},
- {n:"Humboldt-Universität zu Berlin",c:"germany",ielts:null,tags:["Deutsch C1","TestDaF/DSH","Uni-Assist"],u:"https://www.hu-berlin.de/en/studies/counselling/application"},
- {n:"University of Stuttgart",c:"germany",ielts:6.5,tags:["IELTS 6.5 (EN-track)","Deutsch B2+ (DE-track)"],u:"https://www.uni-stuttgart.de/en/study/international-applicants/"},
- {n:"Erasmus University Rotterdam",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","Studielink"],u:"https://www.eur.nl/en/education/practical-matters/admission-and-application/international-students"},
- {n:"École Polytechnique",c:"france",ielts:null,tags:["Bilingue FR/EN","Entrance exam","Interview"],u:"https://www.polytechnique.edu/en/admissions"},
- {n:"University of Zurich",c:"switzerland",ielts:null,tags:["Deutsch C1","Matura/entrance exam"],u:"https://www.uzh.ch/en/studies/application.html"},
- {n:"Chalmers University of Technology",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90"],u:"https://www.chalmers.se/en/education/admission/"},
- {n:"University College Dublin",c:"ireland",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90","CAO"],u:"https://www.ucd.ie/international/apply/"},
- {n:"Singapore Management University",c:"singapore",ielts:6.5,tags:["IELTS 6.5","SAT recommended"],u:"https://admissions.smu.edu.sg/undergraduate/international-students"},
- {n:"Waseda University",c:"japan",ielts:6.5,tags:["IELTS 6.5","EJU/SAT accepted"],u:"https://www.waseda.jp/inst/admission/en/"},
- {n:"Yonsei University",c:"korea",ielts:6.5,tags:["IELTS 6.5","TOEFL 80","TOPIK 3+ (KR-track)"],u:"https://admission.yonsei.ac.kr/"},
- {n:"Fudan University",c:"china",ielts:6.5,tags:["IELTS 6.5","TOEFL 90","HSK 5 (CN-track)"],u:"https://iso.fudan.edu.cn"},
- {n:"UNSW Sydney",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 90"],u:"https://www.unsw.edu.au/study/how-to-apply/international-applicants"},
- {n:"Monash University",c:"australia",ielts:6.5,tags:["IELTS 6.5 (6.0)","TOEFL 79"],u:"https://www.monash.edu/study/apply/international-students"},
- {n:"University of Otago",c:"nz",ielts:6,tags:["IELTS 6.0 (6.0)","TOEFL 80"],u:"https://www.otago.ac.nz/international/study/apply"},
- {n:"NYU Abu Dhabi",c:"uae",ielts:7,sat:1450,tags:["IELTS 7.0","SAT optional ~1450+","Full scholarships"],u:"https://nyuad.nyu.edu/en/admissions.html"},
- {n:"Sabancı University",c:"turkey",ielts:6.5,tags:["IELTS 6.5","TOEFL 87","SAT/YÖS accepted"],u:"https://www.sabanciuniv.edu/en/undergraduate-admission"},
- {n:"Czech Technical University in Prague",c:"czech",ielts:6,tags:["IELTS 6.0","Entrance exam"],u:"https://www.cvut.cz/en/admission-procedure"},
- {n:"University of Warsaw",c:"poland",ielts:6.5,tags:["IELTS 6.5","TOEFL 87"],u:"https://en.uw.edu.pl/candidates/"},
- {n:"Aalto University",c:"finland",ielts:6.5,tags:["IELTS 6.5","TOEFL 92"],u:"https://www.aalto.fi/en/admission-services"},
- {n:"University of Vienna",c:"austria",ielts:6.5,tags:["IELTS 6.5","Matura/entrance exam"],u:"https://www.univie.ac.at/en/studying/before-your-studies/international-applicants/"},
- {n:"University of Malaya",c:"malaysia",ielts:6,tags:["IELTS 6.0","TOEFL 70"],u:"https://um.edu.my/admission"},
- {n:"Dartmouth College",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://admissions.dartmouth.edu"},
- {n:"Amherst College",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://www.amherst.edu/admission"},
- {n:"Bowdoin College",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://www.bowdoin.edu/admissions"},
- {n:"Brown University",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://admission.brown.edu"},
- {n:"University of Notre Dame",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://admissions.nd.edu"},
- {n:"Washington and Lee University",c:"usa",ielts:null,tags:["Need-blind (intl)","Meets 100% need"],u:"https://www.wlu.edu/admissions-and-aid"}
-];
-
-COUNTRIES.denmark=["Дания","Дания","Denmark"];
-UNIS.push(
-{n:"Duke University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.duke.edu"},
-{n:"University of Pennsylvania",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.upenn.edu"},
-{n:"Cornell University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.cornell.edu"},
-{n:"Johns Hopkins University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://apply.jhu.edu"},
-{n:"Northwestern University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.northwestern.edu"},
-{n:"University of Chicago",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://collegeadmissions.uchicago.edu"},
-{n:"Caltech",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://www.admissions.caltech.edu"},
-{n:"Rice University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admission.rice.edu"},
-{n:"Vanderbilt University",c:"usa",ielts:7,tags:["IELTS 7.0","TOEFL 100"],u:"https://admissions.vanderbilt.edu"},
-{n:"UC San Diego",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 80","SAT not used"],u:"https://admissions.ucsd.edu"},
-{n:"Purdue University",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 80"],u:"https://www.admissions.purdue.edu"},
-{n:"University of Illinois Urbana-Champaign",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 79"],u:"https://admissions.illinois.edu"},
-{n:"University of Warwick",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://warwick.ac.uk/study/undergraduate"},
-{n:"University of Glasgow",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://www.gla.ac.uk/undergraduate"},
-{n:"University of St Andrews",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://www.st-andrews.ac.uk/subjects"},
-{n:"Durham University",c:"uk",ielts:6.5,tags:["IELTS 6.5","UCAS"],u:"https://www.durham.ac.uk/study"},
-{n:"McMaster University",c:"canada",ielts:6.5,tags:["IELTS 6.5","OUAC"],u:"https://future.mcmaster.ca"},
-{n:"LMU Munich",c:"germany",ielts:null,tags:["Deutsch C1","Uni-Assist"],u:"https://www.lmu.de/en/study"},
-{n:"University of Copenhagen",c:"denmark",ielts:6.5,tags:["IELTS 6.5","TOEFL 83"],u:"https://studies.ku.dk/bachelors"},
-{n:"Aarhus University",c:"denmark",ielts:6.5,tags:["IELTS 6.5","TOEFL 83"],u:"https://international.au.dk/education"},
-{n:"University of Helsinki",c:"finland",ielts:6.5,tags:["IELTS 6.5","TOEFL 92"],u:"https://www.helsinki.fi/en/admissions-and-education"},
-{n:"Uppsala University",c:"sweden",ielts:6.5,tags:["IELTS 6.5 (5.5)","TOEFL 90"],u:"https://www.uu.se/en/admissions"},
-{n:"University of Groningen",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90"],u:"https://www.rug.nl/education"},
-{n:"Utrecht University",c:"netherlands",ielts:6.5,tags:["IELTS 6.5","TOEFL 90"],u:"https://www.uu.nl/en/bachelors"},
-{n:"HKUST",c:"hongkong",ielts:6.5,tags:["IELTS 6.5","TOEFL 80"],u:"https://join.hkust.edu.hk"},
-{n:"CUHK",c:"hongkong",ielts:6.5,tags:["IELTS 6.5","TOEFL 80"],u:"https://admission.cuhk.edu.hk/international"}
-);
-UNIS.push(
-{n:"Embry-Riddle Aeronautical University",c:"usa",ielts:6,tags:["IELTS 6.0","TOEFL 79"],u:"https://www.erau.edu/admissions"},
-{n:"University of North Dakota",c:"usa",ielts:6,tags:["IELTS 6.0","TOEFL 71"],u:"https://admissions.und.edu"},
-{n:"Western Michigan University",c:"usa",ielts:6.5,tags:["IELTS 6.5","TOEFL 79"],u:"https://wmich.edu/admissions"}
-);
-UNIS.forEach(u=>{if(u.toefl===undefined){const m=u.tags.join(" ").match(/TOEFL\s*(?:iBT\s*)?(\d{2,3})/);u.toefl=m?+m[1]:null;}});
+const UNIS=[];
+function parseCsv(text){
+  const rows=[];let row=[],cell="",q=false;
+  for(let i=0;i<text.length;i++){
+    const ch=text[i];
+    if(q){
+      if(ch==='"'){ if(text[i+1]==='"'){cell+='"';i++;} else q=false; }
+      else cell+=ch;
+    }else if(ch==='"')q=true;
+    else if(ch===","){row.push(cell);cell="";}
+    else if(ch==="\n"){row.push(cell);cell="";if(row.some(x=>x.length))rows.push(row);row=[];}
+    else if(ch!=="\r")cell+=ch;
+  }
+  row.push(cell);
+  if(row.some(x=>x.length))rows.push(row);
+  return rows;
+}
+async function loadUnis(){
+  const res=await fetch("data/universities.csv");
+  if(!res.ok)throw new Error(res.status+" "+res.statusText);
+  const rows=parseCsv(await res.text());
+  const head=rows.shift().map(x=>x.trim());
+  const name=head.indexOf("name"), country=head.indexOf("country"), url=head.indexOf("admissions_url");
+  if(name<0||country<0||url<0)throw new Error("CSV needs name, country, admissions_url");
+  rows.forEach(r=>{
+    if(!r[name])return;
+    UNIS.push({n:r[name],c:r[country],u:r[url],tags:[]});
+  });
+}
 const PILOT=["Purdue University","Embry-Riddle Aeronautical University","University of North Dakota","Western Michigan University"];
 const AVIA=["Embry-Riddle Aeronautical University","University of North Dakota","Western Michigan University"];
 const MAJ={cs:"Информатика",eng:"Инженерия",biz:"Бизнес и экономика",med:"Медицина и биология",sci:"Естественные науки",soc:"Социальные науки и право",art:"Искусство и дизайн",pilot:"Пилот / авиация"};
@@ -761,10 +680,10 @@ const T={
   res:[["Application portals",["Common App — USA","UCAS — UK","Studielink — Netherlands","Uni-Assist — Germany"]],["Exams & prep",["IELTS / TOEFL official","Khan Academy — SAT","MIT OpenCourseWare"]],["Scholarships & aid",["University need-based aid and merit scholarships — the main route for bachelor's","Bolashak — for bachelor's only international olympiad medallists (bolashak.gov.kz)","Chevening, DAAD, Fulbright, Erasmus Mundus — master's level, not for school leavers"]]]}
 };
 
-Object.assign(T.ru,{matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"ИИ-помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →"});
-Object.assign(T.kk,{navHome:"Басты бет",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"ИИ-көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →"});
-Object.assign(T.en,{navHome:"Home",ctaA:"Find a university",ctaB:"Read the guides",navChat:"AI assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →"});
-const SECTIONS=["home","universities","qs","guide","exams","articles"];
+Object.assign(T.ru,{matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"ИИ-помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →",navCommonapp:"Common App",caTitle:"Common App: пошагово",caNote:"Одна анкета для 1100+ вузов США и не только. Ниже — путь от аккаунта до отправки.",caNeedTitle:"Что собрать заранее",caLink:"Официальный гайд Common App",caNeed:["Транскрипт с переводом","Список активностей","Баллы тестов","Данные родителей","Контакты учителей"],caFreeTitle:"Как подать бесплатно: fee waiver",caFreeNote:"Источник: Common App, гайд для иностранных студентов и справка о fee waiver (проверено 24 октября 2026). Условия вузов меняются — сверяй с сайтом университета.",caFreeSteps:[["Вузы без взноса","на Common App больше 500 вузов не берут взнос с иностранных студентов. В College search есть фильтр по взносу — начни с них."],["Запроси waiver","My Common Application → Profile → Common App Fee Waiver. Прочитай условия: если подходишь по финансовой ситуации, выбери Yes, подпиши своё имя и нажми Continue."],["Подтверждение школы","запрос уходит твоему counsellor: он должен подтвердить (подписать) fee waiver и отметить признаки финансовой нужды. Без подписи школы waiver не действует."],["Свои waivers у вузов","часть университетов даёт свой fee waiver по письму в admissions, часть — нет. Политику смотри на странице вуза в My Colleges и в Requirements Grid."],["Если нужно письмо","напиши в admissions: коротко о финансовой ситуации семьи, приложи подтверждение дохода, попроси waiver до отправки заявки."]],caFreeTips:["Waiver подтверждает школа, а не ты сам.","Не занижай доход: вуз может запросить документы.","Fee waiver не влияет на решение о приёме."],caSteps:[["Аккаунт","apply.commonapp.org → Create account → «first-year student». Бери личную почту, которую будешь проверять и после школы: вузы пишут туда."],["Документы","Заранее собери транскрипт с оценками 9–11 классов, список активностей и работы, баллы SAT/ACT/IELTS, данные родителей, олимпиады и награды."],["Список вузов","College search → Add+. Максимум 20 вузов. Рабочий список — 8–12: 2–3 амбициозных, 4–6 реалистичных, 2–3 надёжных. После отправки убрать вуз нельзя."],["Анкета","Заполни My Common Application: личные данные, семья, образование, тесты (можно self-report), до 10 активностей."],["Рекомендации","My Colleges → Recommenders and FERPA → подпиши FERPA → пригласи counsellor и учителей → назначь (assign) их на каждый вуз. Письмо придёт только после назначения."],["Эссе","Главное эссе до 650 слов в My Common Application плюс дополнительные вопросы каждого вуза. Требования смотри в My Colleges и в Requirements Grid."],["Отправка","У каждого вуза свои дедлайн, взнос, тесты и портфолио. Нужна помощь с оплатой — проси fee waiver. После Submit проверь, что школа отправила транскрипт."]]});
+Object.assign(T.kk,{navHome:"Басты бет",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"ИИ-көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →",navCommonapp:"Common App",caTitle:"Common App: қадам-қадам",caNote:"АҚШ-тағы 1100-ден астам университетке бір өтінім. Төменде — аккаунттан жіберуге дейінгі жол.",caNeedTitle:"Алдын ала не жинау керек",caLink:"Common App ресми гайды",caNeed:["Аудармасы бар транскрипт","Белсенділік тізімі","Тест балдары","Ата-ана деректері","Мұғалімдердің байланысы"],caFreeTitle:"Тегін тапсыру: fee waiver",caFreeNote:"Дереккөз: Common App, шетелдік студенттерге арналған гайд және fee waiver анықтамасы (2026 жылғы 24 қазанда тексерілді). Университет шарттары өзгереді — сайтымен салыстыр.",caFreeSteps:[["Взноссыз университеттер","Common App-та 500-ден астам университет шетелдік студенттерден төлем алмайды. College search-те төлем бойынша сүзгі бар — солардан баста."],["Waiver сұра","My Common Application → Profile → Common App Fee Waiver. Шарттарын оқы: қаржылық жағдайың сәйкес келсе, Yes таңда, атыңды қой және Continue бас."],["Мектептің растауы","сұраныс counsellor-ға кетеді: ол fee waiver-ды растап (қол қойып), қаржылық қажеттілік белгілерін белгілеуі керек. Мектеп қолы болмаса waiver жарамайды."],["Университеттің өз waiver-ы","кейбір университет admissions-қа хат арқылы өз fee waiver-ын береді, кейбіреуі бермейді. Саясатты My Colleges ішіндегі вуз бетінен және Requirements Grid-тен қара."],["Хат керек болса","admissions-қа жаз: отбасының қаржылық жағдайын қысқаша айт, табыс растамасын қос, өтінімді жібермес бұрын waiver сұра."]],caFreeTips:["Waiver-ды мектеп растайды, өзің емес.","Табысты төмендетіп көрсетпе: вуз құжат сұрауы мүмкін.","Fee waiver қабылдау шешіміне әсер етпейді."],caSteps:[["Аккаунт","apply.commonapp.org → Create account → «first-year student». Мектептен кейін де тексеретін жеке поштаңды ал: университеттер сол жерге жазады."],["Құжаттар","Алдын ала жина: 9–11 сынып бағалары бар транскрипт, белсенділік пен жұмыс тізімі, SAT/ACT/IELTS балдары, ата-ана деректері, олимпиадалар мен марапаттар."],["Университет тізімі","College search → Add+. Ең көбі 20 университет. Жұмыс тізімі — 8–12: 2–3 амбициялы, 4–6 шынайы, 2–3 сенімді. Жібергеннен кейін университетті алып тастауға болмайды."],["Сауалнама","My Common Application толтыр: жеке деректер, отбасы, білім, тесттер (self-report болады), 10-ға дейін белсенділік."],["Ұсыныстар","My Colleges → Recommenders and FERPA → FERPA-ға қол қой → counsellor мен мұғалімдерді шақыр → әр университетке assign ет. Хат тек тағайындалғаннан кейін келеді."],["Эссе","My Common Application-да 650 сөзге дейінгі негізгі эссе және әр университеттің қосымша сұрақтары. Талаптарды My Colleges мен Requirements Grid-тен қара."],["Жіберу","Әр университеттің дедлайны, төлемі, тесттері бөлек. Төлемге көмек керек болса — fee waiver сұра. Submit кейін мектеп транскрипт жібергенін тексер."]]});
+Object.assign(T.en,{navHome:"Home",ctaA:"Find a university",ctaB:"Read the guides",navChat:"AI assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →",navCommonapp:"Common App",caTitle:"Common App, step by step",caNote:"One application for 1,100+ US colleges and more. Here is the path from account to submission.",caNeedTitle:"What to collect first",caLink:"Official Common App guide",caNeed:["Transcript with translation","Activity list","Test scores","Parent details","Teachers' contacts"],caFreeTitle:"Applying for free: fee waiver",caFreeNote:"Sources: Common App international student guide and the fee waiver article (checked 24 October 2026). College rules change — verify with the university.",caFreeSteps:[["Colleges with no fee","on Common App more than 500 colleges charge no application fee to international students. College search has a fee filter — start there."],["Request the waiver","My Common Application → Profile → Common App Fee Waiver. Read the criteria: if your financial situation qualifies, choose Yes, sign your name and press Continue."],["School confirmation","the request goes to your counsellor, who must confirm (sign) the fee waiver and mark the indicators of financial need. Without the school's signature the waiver does not work."],["College-specific waivers","some universities give their own fee waiver if you email admissions, some do not. Check the policy on the college page in My Colleges and in the Requirements Grid."],["If a letter is needed","email admissions: describe your family's financial situation briefly, attach proof of income and ask for a waiver before you submit."]],caFreeTips:["The waiver is confirmed by your school, not by you.","Do not understate income: the college may ask for documents.","A fee waiver does not affect the admission decision."],caSteps:[["Account","apply.commonapp.org → Create account → 'first-year student'. Use a personal email you will check after school too — colleges write there."],["Documents","Collect in advance: a transcript with grades for grades 9–11, your activity and work list, SAT/ACT/IELTS scores, parent details, olympiads and awards."],["College list","College search → Add+. Up to 20 colleges. A working list is 8–12: 2–3 reach, 4–6 match, 2–3 safety. After you submit you cannot remove a college."],["Profile","Fill in My Common Application: personal details, family, education, tests (self-report is fine), up to 10 activities."],["Recommenders","My Colleges → Recommenders and FERPA → sign FERPA → invite counsellor and teachers → assign them to each college. The email is sent only after assigning."],["Essays","The personal essay (up to 650 words) in My Common Application plus each college's supplements. Check requirements in My Colleges and the Requirements Grid."],["Submit","Every college has its own deadline, fee, tests and portfolio. If the fee is a problem, ask for a fee waiver. After Submit check that your school sent the transcript."]]});
+const SECTIONS=["home","universities","qs","guide","exams","articles","commonapp"];
 const ICONS={home:"",universities:"",guide:"",exams:"",tips:"",resources:"",courses:"",costs:"",articles:""};
 const LI={ru:0,kk:1,en:2};
 let lang="ru";try{lang=localStorage.getItem("an_lang")||"ru";}catch(e){}
@@ -1141,6 +1060,10 @@ function applyLang(){
   $("#myScore").placeholder=t.matchPh;
   $("#mySat").placeholder=t.matchSatPh;
   $("#steps").innerHTML=t.steps.map(([a,b])=>`<li><b>${esc(a)}</b><span>${esc(b)}</span></li>`).join("");
+  $("#caSteps").innerHTML=t.caSteps.map(([a,b])=>`<li><b>${esc(a)}</b><span>${esc(b)}</span></li>`).join("");
+  $("#caNeed").innerHTML=t.caNeed.map(x=>`<li>${esc(x)}</li>`).join("");
+  $("#caFreeSteps").innerHTML=t.caFreeSteps.map(([a,b])=>`<li><b>${esc(a)}</b> — ${esc(b)}</li>`).join("");
+  $("#caFreeTips").innerHTML=t.caFreeTips.map(x=>`<li>${esc(x)}</li>`).join("");
   $("#examGrid").innerHTML=t.exams.map(([a,b])=>`<article class="card"><h3>${esc(a)}</h3><p style="margin-top:10px">${esc(b)}</p></article>`).join("");
   $("#tipsList").innerHTML=t.tips.map(x=>`<li>${esc(x)}</li>`).join("");
   $("#resGrid").innerHTML=t.res.map(([h,items])=>`<article class="card"><h3>${esc(h)}</h3><ul class="bullets" style="margin-top:12px">${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></article>`).join("");
@@ -1154,7 +1077,7 @@ function applyLang(){
 }
 function renderHome(){
   const t=T[lang],i=LI[lang];
-  $("#homeUnis").innerHTML=["MIT","Stanford University","Harvard University"].map(n=>{const u=UNIS.find(x=>x.n===n);return `<article class="ucard"><h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])} · ${esc(majorLabel(u))}</div><div class="tags">${u.tags.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>${moneyHtml(t,u)}<a class="link" href="${u.u}" target="_blank" rel="noopener">${esc(t.site)}</a></article>`;}).join("");
+  $("#homeUnis").innerHTML=["MIT","Stanford University","Harvard University"].map(n=>UNIS.find(x=>x.n===n)).filter(Boolean).map(u=>`<article class="ucard"><h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])} · ${esc(majorLabel(u))}</div><div class="tags">${u.tags.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>${moneyHtml(t,u)}<a class="link" href="${u.u}" target="_blank" rel="noopener">${esc(t.site)}</a></article>`).join("");
   $("#homeGuides").innerHTML=GUIDES.map(a=>`<a class="gcard" href="#" data-go="articles"><b>${esc(a.t)}</b><span>${esc(a.l)}</span></a>`).join("");
 }
 
@@ -1179,6 +1102,34 @@ const HERO_IMG="";
 function initHero(){
   if(HERO_IMG)document.getElementById("heroImg").style.backgroundImage='url("'+HERO_IMG+'")';
 }
+const API=location.pathname.split('/proxy/')[0]+'/proxy/19040/v1';
+const CHAT_TEXT={
+ ru:{title:"Помощник по поступлению",sub:"Отвечает на вопросы о вузах и подаче",open:"Спросить ИИ",send:"Отправить",ph:"Ваш вопрос…",err:"Ошибка: ",empty:"Напишите вопрос.",
+  hello:"Здравствуйте! Я помощник ivypath.io. Помогу разобраться с поступлением за рубеж. Для начала три коротких вопроса — можно ответить на все сразу: 1) в какой стране или регионе вы хотите учиться и какое направление интересно? 2) какие у вас IELTS/TOEFL и SAT? 3) какой у семьи бюджет на год и нужна ли финансовая помощь?"},
+ kk:{title:"Оқуға түсу көмекшісі",sub:"Университеттер мен өтінім туралы жауап береді",open:"ИИ-ден сұрау",send:"Жіберу",ph:"Сұрағыңыз…",err:"Қате: ",empty:"Сұрағыңызды жазыңыз.",
+  hello:"Сәлеметсіз бе! Мен ivypath.io көмекшісімін. Шетелде оқуға түсуге көмектесемін. Басында үш қысқа сұрақ — бәріне бірге жауап беруге болады: 1) қай елде немесе аймақта оқығыңыз келеді және қандай бағыт қызықтырады? 2) IELTS/TOEFL және SAT балыңыз қандай? 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе?"},
+ en:{title:"Admissions assistant",sub:"Answers questions about universities and applying",open:"Ask AI",send:"Send",ph:"Your question…",err:"Error: ",empty:"Type a question.",
+  hello:"Hello! I'm the ivypath.io assistant and I'll help you plan studying abroad. To start, three short questions — you can answer all at once: 1) which country or region do you want to study in, and which field interests you? 2) what are your IELTS/TOEFL and SAT scores? 3) what is your family's yearly budget, and do you need financial aid?"}
+};
+const CHAT_SYSTEM={
+ ru:"Ты — дружелюбный помощник сайта ivypath.io о поступлении на бакалавриат за рубеж для школьников из Казахстана и СНГ. В начале знакомства задай по одному короткому вопросу: 1) в какой стране или регионе хочет учиться пользователь и какое направление ему интересно; 2) какие у него IELTS/TOEFL и SAT; 3) какой бюджет семьи на год и нужна ли финансовая помощь. После этого отвечай по существу: кратко (3–6 предложений), простыми словами, по шагам. Сравнения вузов и шансы давай как ориентир, без обещаний. Не выдумывай точные цены, дедлайны и баллы — говори, что их нужно проверить на официальном сайте вуза. Отвечай на языке пользователя.",
+ kk:"Сен — ivypath.io сайтының көмекшісісің, Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсу туралы кеңес бересің. Танысудың басында бір-бірден қысқа сұрақ қой: 1) қай елде немесе аймақта оқығысы келеді және қандай бағыт қызықтырады; 2) IELTS/TOEFL және SAT балы қандай; 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе. Содан кейін сұрақтарға нақты жауап бер: қысқа (3–6 сөйлем), қарапайым тілмен, қадам-қадам. Университеттерді салыстыру мен мүмкіндікті болжам ретінде айт, уәде берме. Нақты бағаны, дедлайнды және баллды ойдан шығарма: оларды университеттің ресми сайтынан тексеру керек деп айт. Пайдаланушының тілінде жауап бер.",
+ en:"You are the friendly assistant of ivypath.io, a site about applying to bachelor's programmes abroad for students from Kazakhstan and Central Asia. When you first meet the user, ask one short question at a time: 1) which country or region they want to study in and which field interests them; 2) their IELTS/TOEFL and SAT scores; 3) the family's yearly budget and whether they need financial aid. After that, answer their questions concisely (3–6 sentences), in plain words, step by step. Treat comparisons and chances as guidance, never a promise. Never invent exact prices, deadlines or score cut-offs — tell them to check the university's official site. Answer in the user's language."
+};
+const chatMsgs=[];
+let chatBusy=false;
+function chatT(){return CHAT_TEXT[lang]||CHAT_TEXT.ru;}
+function updateChatLang(){
+  const c=CHAT_TEXT[lang]||CHAT_TEXT.ru;
+  document.getElementById("chatTitle").textContent=c.title;
+  document.getElementById("chatSub").textContent=c.sub;
+  document.getElementById("chatInput").placeholder=c.ph;
+  document.getElementById("chatSend").textContent=c.send;
+  document.querySelectorAll("#chatLog .chat-msg.bot[data-greet]").forEach(el=>{el.textContent=c.hello;});
+}
+async function boot(){
+  let loadError=null;
+  try{await loadUnis();}catch(e){loadError=e.message||String(e);console.error("data/universities.csv:",e);}
 initHero(); buildNav(); initTheme();
 $("#lang").value=lang;
 $("#lang").addEventListener("change",e=>{lang=e.target.value;try{localStorage.setItem("an_lang",lang);}catch(e){}applyLang();});
@@ -1201,31 +1152,6 @@ $("#mx").addEventListener("click",()=>{$("#modal").hidden=true;});
 $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")$("#modal").hidden=true;});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#modal").hidden=true;});
 document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){e.preventDefault();show(g.dataset.go);}});
-const API=location.pathname.split('/proxy/')[0]+'/proxy/19040/v1';
-const CHAT_TEXT={
- ru:{title:"Помощник по поступлению",sub:"Отвечает на вопросы о вузах и подаче",open:"Спросить ИИ",send:"Отправить",ph:"Ваш вопрос…",err:"Ошибка: ",empty:"Напишите вопрос.",
-  hello:"Здравствуйте! Я помощник ivypath.io. Помогу разобраться с поступлением за рубеж. Для начала три коротких вопроса — можно ответить на все сразу: 1) в какой стране или регионе вы хотите учиться и какое направление интересно? 2) какие у вас IELTS/TOEFL и SAT? 3) какой у семьи бюджет на год и нужна ли финансовая помощь?"},
- kk:{title:"Оқуға түсу көмекшісі",sub:"Университеттер мен өтінім туралы жауап береді",open:"ИИ-ден сұрау",send:"Жіберу",ph:"Сұрағыңыз…",err:"Қате: ",empty:"Сұрағыңызды жазыңыз.",
-  hello:"Сәлеметсіз бе! Мен ivypath.io көмекшісімін. Шетелде оқуға түсуге көмектесемін. Басында үш қысқа сұрақ — бәріне бірге жауап беруге болады: 1) қай елде немесе аймақта оқығыңыз келеді және қандай бағыт қызықтырады? 2) IELTS/TOEFL және SAT балыңыз қандай? 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе?"},
- en:{title:"Admissions assistant",sub:"Answers questions about universities and applying",open:"Ask AI",send:"Send",ph:"Your question…",err:"Error: ",empty:"Type a question.",
-  hello:"Hello! I'm the ivypath.io assistant and I'll help you plan studying abroad. To start, three short questions — you can answer all at once: 1) which country or region do you want to study in, and which field interests you? 2) what are your IELTS/TOEFL and SAT scores? 3) what is your family's yearly budget, and do you need financial aid?"}
-};
-const CHAT_SYSTEM={
- ru:"Ты — дружелюбный помощник сайта ivypath.io о поступлении на бакалавриат за рубеж для школьников из Казахстана и СНГ. В начале знакомства задай по одному короткому вопросу: 1) в какой стране или регионе хочет учиться пользователь и какое направление ему интересно; 2) какие у него IELTS/TOEFL и SAT; 3) какой бюджет семьи на год и нужна ли финансовая помощь. После этого отвечай по существу: кратко (3–6 предложений), простыми словами, по шагам. Сравнения вузов и шансы давай как ориентир, без обещаний. Не выдумывай точные цены, дедлайны и баллы — говори, что их нужно проверить на официальном сайте вуза. Отвечай на языке пользователя.",
- kk:"Сен — ivypath.io сайтының көмекшісісің, Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсу туралы кеңес бересің. Танысудың басында бір-бірден қысқа сұрақ қой: 1) қай елде немесе аймақта оқығысы келеді және қандай бағыт қызықтырады; 2) IELTS/TOEFL және SAT балы қандай; 3) отбасының жылына бөлетін бюджеті қандай және қаржылық көмек керек пе. Содан кейін сұрақтарға нақты жауап бер: қысқа (3–6 сөйлем), қарапайым тілмен, қадам-қадам. Университеттерді салыстыру мен мүмкіндікті болжам ретінде айт, уәде берме. Нақты бағаны, дедлайнды және баллды ойдан шығарма: оларды университеттің ресми сайтынан тексеру керек деп айт. Пайдаланушының тілінде жауап бер.",
- en:"You are the friendly assistant of ivypath.io, a site about applying to bachelor's programmes abroad for students from Kazakhstan and Central Asia. When you first meet the user, ask one short question at a time: 1) which country or region they want to study in and which field interests them; 2) their IELTS/TOEFL and SAT scores; 3) the family's yearly budget and whether they need financial aid. After that, answer their questions concisely (3–6 sentences), in plain words, step by step. Treat comparisons and chances as guidance, never a promise. Never invent exact prices, deadlines or score cut-offs — tell them to check the university's official site. Answer in the user's language."
-};
-const chatMsgs=[];
-let chatBusy=false;
-function chatT(){return CHAT_TEXT[lang]||CHAT_TEXT.ru;}
-function updateChatLang(){
-  const c=chatT();
-  document.getElementById("chatTitle").textContent=c.title;
-  document.getElementById("chatSub").textContent=c.sub;
-  document.getElementById("chatInput").placeholder=c.ph;
-  document.getElementById("chatSend").textContent=c.send;
-  document.querySelectorAll("#chatLog .chat-msg.bot[data-greet]").forEach(el=>{el.textContent=c.hello;});
-}
 function chatAdd(text,cls,greet){
   const d=document.createElement("div");
   d.className="chat-msg "+cls;
@@ -1288,6 +1214,13 @@ initChat();
 
 document.body.dataset.page="home";
 applyLang();
+if(loadError){
+  const g=$("#uniGrid");
+  if(g)g.innerHTML=`<p class="muted">Не удалось загрузить data/universities.csv: ${esc(loadError)}</p>`;
+  const em=$("#empty"); if(em)em.style.display="none";
+}
+}
+boot();
 </script>
 </body>
 </html>

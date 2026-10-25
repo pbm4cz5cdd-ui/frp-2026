@@ -9,7 +9,7 @@
 | Folder | What is in it |
 |---|---|
 | `projects/` | **Your projects**, one folder each. Everything you save here stays. |
-| `materials/` | Project ideas (IDEAS.md), class guides (TRACKS.md: your track) and the files of each day. |
+| `materials/` | Project ideas (IDEAS.md), how to share a page (DEPLOY.md), the agent's skills (skills/, SKILLS.md), class guides (TRACKS.md: your track), files of each day. |
 
 ## Talk to the AI agent
 
@@ -25,6 +25,17 @@ To leave OpenCode, press Ctrl+C.
 1. In a terminal, type `cd ~/work && frp-serve 8000` and press Enter. Keep this terminal open. It prints your links.
 2. Open https://kitan-a.com/frp/s16/proxy/8000/projects/ in a new browser tab, then your project folder.
 3. To stop the server, press Ctrl+C in that terminal. (Your agent can start it in the background with `frp-serve --bg 8000`.)
+
+## Share your page with anyone
+
+Your workspace links need your login. To share a finished page (a classmate, your family, a phone, Demo Day):
+
+```
+frp-publish projects/my-page
+```
+
+It prints a public link like https://kitan-a.com/frp/pub/s16/my-page/ . Run it again after every change.
+More (Flask apps, problems): `materials/DEPLOY.md`.
 
 ## Extra
 

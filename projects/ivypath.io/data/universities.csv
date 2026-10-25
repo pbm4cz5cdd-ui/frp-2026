@@ -1,0 +1,116 @@
+name,country,admissions_url
+MIT,usa,https://mitadmissions.org/apply/firstyear/requirements-deadlines/
+Stanford University,usa,https://admission.stanford.edu/apply/
+Harvard University,usa,https://college.harvard.edu/admissions/apply
+Yale University,usa,https://admissions.yale.edu/standardized-testing
+Princeton University,usa,https://admission.princeton.edu/how-apply
+Columbia University,usa,https://undergrad.admissions.columbia.edu/apply
+UC Berkeley,usa,https://admissions.berkeley.edu/international-applicants/
+UCLA,usa,https://admission.ucla.edu/apply/international
+Carnegie Mellon University,usa,https://www.cmu.edu/admission/admission/apply
+University of Oxford,uk,https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/for-international-students
+University of Cambridge,uk,https://www.undergraduate.study.cam.ac.uk/international-students
+Imperial College London,uk,https://www.imperial.ac.uk/study/apply/undergraduate/entry-requirements/english-language/
+UCL,uk,https://www.ucl.ac.uk/prospective-students/undergraduate/application-and-entry
+LSE,uk,https://www.lse.ac.uk/study-at-lse/Undergraduate/degree-programmes
+University of Edinburgh,uk,https://www.ed.ac.uk/studying/undergraduate/entry-requirements
+University of Manchester,uk,https://www.manchester.ac.uk/study/international/admissions/
+University of Toronto,canada,https://future.utoronto.ca/apply/english-language-requirements/
+UBC,canada,https://you.ubc.ca/applying-ubc/requirements/english-language-competency/
+McGill University,canada,https://www.mcgill.ca/undergraduate-admissions/apply/english
+University of Waterloo,canada,https://uwaterloo.ca/future-students/admissions/english-language-requirements
+TU Munich,germany,https://www.tum.de/en/studies/application
+RWTH Aachen,germany,https://www.rwth-aachen.de/go/id/bdvo
+Heidelberg University,germany,https://www.uni-heidelberg.de/en/study/application
+ETH Zurich,switzerland,https://ethz.ch/en/studies/bachelor/application.html
+EPFL,switzerland,https://www.epfl.ch/education/bachelor/admission-criteria/
+TU Delft,netherlands,https://www.tudelft.nl/en/education/admission-and-application
+University of Amsterdam,netherlands,https://www.uva.nl/en/education/bachelor-s/application-and-admission
+Eindhoven University of Technology,netherlands,https://www.tue.nl/en/education/admission-and-enrolment
+Sciences Po,france,https://www.sciencespo.fr/students/en/admissions
+Sorbonne Université,france,https://www.sorbonne-universite.fr/en/education
+Politecnico di Milano,italy,https://www.polimi.it/en/programmes/admission-and-enrolment
+Bocconi University,italy,https://www.unibocconi.it/en/programs/bachelor-science/admissions
+KTH Royal Institute of Technology,sweden,https://www.kth.se/en/studies/bachelor
+Lund University,sweden,https://www.lunduniversity.lu.se/admissions
+Trinity College Dublin,ireland,https://www.tcd.ie/study/international/admission-requirements/
+NUS,singapore,https://www.nus.edu.sg/oam/apply-to-nus
+NTU Singapore,singapore,https://www.ntu.edu.sg/admissions/undergraduate
+HKU,hongkong,https://admissions.hku.hk/international-students
+University of Tokyo (PEAK),japan,https://www.u-tokyo.ac.jp/en/prospective-students/admissions.html
+Kyoto University (iUP),japan,https://www.kyoto-u.ac.jp/en/education-campus/education/admissions
+KAIST,korea,https://admission.kaist.ac.kr/international/
+Seoul National University,korea,https://en.snu.ac.kr/admission/undergraduate/international
+Tsinghua University,china,https://www.tsinghua.edu.cn/en/Admissions.htm
+Peking University,china,https://english.pku.edu.cn/admissions/
+University of Melbourne,australia,https://study.unimelb.edu.au/how-to-apply/international-students
+University of Sydney,australia,https://www.sydney.edu.au/study/how-to-apply.html
+Australian National University,australia,https://www.anu.edu.au/study/apply
+University of Auckland,nz,https://www.auckland.ac.nz/en/study/applications-and-admissions.html
+Khalifa University,uae,https://www.ku.ac.ae/admissions
+Koç University,turkey,https://global.ku.edu.tr/admissions/
+Bilkent University,turkey,https://stars.bilkent.edu.tr/homepage/international
+Charles University,czech,https://cuni.cz/UKEN-4.html
+Georgia Institute of Technology,usa,https://admission.gatech.edu/apply/international-students
+University of Michigan,usa,https://admissions.umich.edu/apply/international-students
+New York University,usa,https://www.nyu.edu/admissions/undergraduate-admissions/international-applicants.html
+King's College London,uk,https://www.kcl.ac.uk/study/undergraduate/apply/international-students
+University of Bristol,uk,https://www.bristol.ac.uk/international/students/entry-requirements/
+University of Alberta,canada,https://www.ualberta.ca/en/admissions/undergraduate/requirements/international-requirements/index.html
+Queen's University,canada,https://www.queensu.ca/admission/international
+Humboldt-Universität zu Berlin,germany,https://www.hu-berlin.de/en/studies/counselling/application
+University of Stuttgart,germany,https://www.uni-stuttgart.de/en/study/international-applicants/
+Erasmus University Rotterdam,netherlands,https://www.eur.nl/en/education/practical-matters/admission-and-application/international-students
+École Polytechnique,france,https://www.polytechnique.edu/en/admissions
+University of Zurich,switzerland,https://www.uzh.ch/en/studies/application.html
+Chalmers University of Technology,sweden,https://www.chalmers.se/en/education/admission/
+University College Dublin,ireland,https://www.ucd.ie/international/apply/
+Singapore Management University,singapore,https://admissions.smu.edu.sg/undergraduate/international-students
+Waseda University,japan,https://www.waseda.jp/inst/admission/en/
+Yonsei University,korea,https://admission.yonsei.ac.kr/
+Fudan University,china,https://iso.fudan.edu.cn
+UNSW Sydney,australia,https://www.unsw.edu.au/study/how-to-apply/international-applicants
+Monash University,australia,https://www.monash.edu/study/apply/international-students
+University of Otago,nz,https://www.otago.ac.nz/international/study/apply
+NYU Abu Dhabi,uae,https://nyuad.nyu.edu/en/admissions.html
+Sabancı University,turkey,https://www.sabanciuniv.edu/en/undergraduate-admission
+Czech Technical University in Prague,czech,https://www.cvut.cz/en/admission-procedure
+University of Warsaw,poland,https://en.uw.edu.pl/candidates/
+Aalto University,finland,https://www.aalto.fi/en/admission-services
+University of Vienna,austria,https://www.univie.ac.at/en/studying/before-your-studies/international-applicants/
+University of Malaya,malaysia,https://um.edu.my/admission
+Dartmouth College,usa,https://admissions.dartmouth.edu
+Amherst College,usa,https://www.amherst.edu/admission
+Bowdoin College,usa,https://www.bowdoin.edu/admissions
+Brown University,usa,https://admission.brown.edu
+University of Notre Dame,usa,https://admissions.nd.edu
+Washington and Lee University,usa,https://www.wlu.edu/admissions-and-aid
+Duke University,usa,https://admissions.duke.edu
+University of Pennsylvania,usa,https://admissions.upenn.edu
+Cornell University,usa,https://admissions.cornell.edu
+Johns Hopkins University,usa,https://apply.jhu.edu
+Northwestern University,usa,https://admissions.northwestern.edu
+University of Chicago,usa,https://collegeadmissions.uchicago.edu
+Caltech,usa,https://www.admissions.caltech.edu
+Rice University,usa,https://admission.rice.edu
+Vanderbilt University,usa,https://admissions.vanderbilt.edu
+UC San Diego,usa,https://admissions.ucsd.edu
+Purdue University,usa,https://www.admissions.purdue.edu
+University of Illinois Urbana-Champaign,usa,https://admissions.illinois.edu
+University of Warwick,uk,https://warwick.ac.uk/study/undergraduate
+University of Glasgow,uk,https://www.gla.ac.uk/undergraduate
+University of St Andrews,uk,https://www.st-andrews.ac.uk/subjects
+Durham University,uk,https://www.durham.ac.uk/study
+McMaster University,canada,https://future.mcmaster.ca
+LMU Munich,germany,https://www.lmu.de/en/study
+University of Copenhagen,denmark,https://studies.ku.dk/bachelors
+Aarhus University,denmark,https://international.au.dk/education
+University of Helsinki,finland,https://www.helsinki.fi/en/admissions-and-education
+Uppsala University,sweden,https://www.uu.se/en/admissions
+University of Groningen,netherlands,https://www.rug.nl/education
+Utrecht University,netherlands,https://www.uu.nl/en/bachelors
+HKUST,hongkong,https://join.hkust.edu.hk
+CUHK,hongkong,https://admission.cuhk.edu.hk/international
+Embry-Riddle Aeronautical University,usa,https://www.erau.edu/admissions
+University of North Dakota,usa,https://admissions.und.edu
+Western Michigan University,usa,https://wmich.edu/admissions
