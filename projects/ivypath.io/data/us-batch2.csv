@@ -1,0 +1,45 @@
+name,country,homepage,admissions_url,http_status,final_url,checked,note
+Loyola University Chicago,usa,https://www.luc.edu/,https://www.luc.edu/undergrad/admissions/internationalstudents/,200,https://www.luc.edu/undergrad/admissions/internationalstudents/,2026-10-26,ok
+DePaul University,usa,http://www.depaul.edu,https://www.depaul.edu/admission/undergraduate-admission/visit-depaul-undergraduate,200,https://www.depaul.edu/admission/undergraduate-admission/visit-depaul-undergraduate,2026-10-26,candidate 200; check requirements
+Xavier University,usa,http://www.xavier.edu,https://www.xavier.edu/international-admission/index,200,https://www.xavier.edu/international-admission/index,2026-10-26,candidate 200; check requirements
+Butler University,usa,http://www.butler.edu,https://www.butler.edu:443/admission-aid/international/,200,https://www.butler.edu:443/admission-aid/international/,2026-10-26,ok
+University of Dayton,usa,http://www.udayton.edu,https://udayton.edu/apply/index.php,200,https://udayton.edu/apply/index.php,2026-10-26,candidate 200; check requirements
+Texas Christian University,usa,https://www.tcu.edu/,https://www.tcu.edu/admission-aid/index.php,200,https://www.tcu.edu/admission-aid/index.php,2026-10-26,candidate 200; check requirements
+Valparaiso University,usa,http://www.valpo.edu,https://www.valpo.edu/admission/international/,200,https://www.valpo.edu/admission/international/,2026-10-26,candidate 200; check requirements
+Rose-Hulman Institute of Technology,usa,https://rose-hulman.edu,https://rose-hulman.edu/admissions-and-aid/index.html,200,https://rose-hulman.edu/admissions-and-aid/index.html,2026-10-26,candidate 200; check requirements
+Milwaukee School of Engineering,usa,https://www.msoe.edu/,https://www.msoe.edu/admissions-aid/international-admissions/,200,https://www.msoe.edu/admissions-aid/international-admissions/,2026-10-26,candidate 200; check requirements
+Elon University,usa,https://www.elon.edu,,,,2026-10-26,"ConnectTimeout: HTTPSConnectionPool(host='www.elon.edu', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.e"
+Southern Methodist University,usa,https://www.smu.edu/,https://www.smu.edu/admission/apply,200,https://www.smu.edu/admission/apply,2026-10-26,candidate 200; check requirements
+Baylor University,usa,https://www.baylor.edu/,,200,https://www.baylor.edu/,2026-10-26,no candidate opened
+Trinity University,usa,https://www.trinity.edu/,https://trinity.edu/admissions-and-aid/guides-and-resources/guide-international-applicants,200,https://trinity.edu/admissions-and-aid/guides-and-resources/guide-international-applicants,2026-10-26,ok
+University of Tulsa,usa,https://utulsa.edu,https://utulsa.edu/admissions/apply/international-students/,200,https://utulsa.edu/admissions/apply/international-students/,2026-10-26,ok
+High Point University,usa,https://www.highpoint.edu,https://www.highpoint.edu/admissions/freshmen-admissions/?utm_source=highpoint.edu&utm_medium=site-cta&utm_campaign=freshman-admissions&utm_content=app-fee-waiver-premier&utm_term=premier&hpu_cta=app-fee-waiver-premier&code=PREMIER,200,https://www.highpoint.edu/admissions/freshmen-admissions/?utm_source=highpoint.edu&utm_medium=site-cta&utm_campaign=freshman-admissions&utm_content=app-fee-waiver-premier&utm_term=premier&hpu_cta=app-fee-waiver-premier&code=PREMIER,2026-10-26,candidate 200; check requirements
+Rollins College,usa,http://www.rollins.edu,https://www.rollins.edu/college-of-liberal-arts/,200,https://www.rollins.edu/college-of-liberal-arts/,2026-10-26,candidate 200; check requirements
+Belmont University,usa,http://www.belmont.edu,https://www.belmont.edu/admissions/,200,https://www.belmont.edu/admissions/,2026-10-26,candidate 200; check requirements
+Samford University,usa,http://samford.edu/,https://www.samford.edu/admission/international-students,200,https://www.samford.edu/admission/international-students,2026-10-26,ok
+Mercer University,usa,http://www.mercer.edu/,https://www.mercer.edu/admissions/military/,200,https://www.mercer.edu/admissions/military/,2026-10-26,ok
+Stetson University,usa,http://www.stetson.edu,,403,https://www.stetson.edu/,2026-10-26,homepage 403
+Loyola University Maryland,usa,http://www.loyola.edu/,https://www.loyola.edu/admission/undergraduate/application-process/first-year/,200,https://www.loyola.edu/admission/undergraduate/application-process/first-year/,2026-10-26,ok
+American University,usa,https://american.edu,,403,https://american.edu/,2026-10-26,homepage 403
+The Catholic University of America,usa,https://www.catholic.edu/,,403,https://www.catholic.edu/,2026-10-26,homepage 403
+St. John's College,usa,http://www.sjc.edu/,https://www.sjc.edu/admissions-and-aid/undergraduate/apply/freshman-class-profile,200,https://www.sjc.edu/admissions-and-aid/undergraduate/apply/freshman-class-profile,2026-10-26,candidate 200; check requirements
+Colby College,usa,https://colby.edu,,403,https://www.colby.edu/,2026-10-26,homepage 403
+Bard College,usa,https://www.bard.edu/,https://www.bard.edu/admission/inquiries/,200,https://www.bard.edu/admission/inquiries/,2026-10-26,candidate 200; check requirements
+Sarah Lawrence College,usa,https://www.sarahlawrence.edu/,https://www.sarahlawrence.edu/admission/,200,https://www.sarahlawrence.edu/admission/,2026-10-26,candidate 200; check requirements
+Gettysburg College,usa,http://www.gettysburg.edu,http://www.gettysburg.edu/admissions-aid/admissions/faq,200,http://www.gettysburg.edu/admissions-aid/admissions/faq,2026-10-26,ok
+Muhlenberg College,usa,http://www.muhlenberg.edu,https://www.muhlenberg.edu/admissions-aid/,200,https://www.muhlenberg.edu/admissions-aid/,2026-10-26,manual pick; check requirements
+Ursinus College,usa,https://www.ursinus.edu/,,,,2026-10-26,"ConnectionError: HTTPSConnectionPool(host='www.ursinus.edu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='w"
+Oberlin College,usa,https://www.oberlin.edu/,https://www.oberlin.edu/admissions-and-aid/international-students,200,https://www.oberlin.edu/admissions-and-aid/international-students,2026-10-26,candidate 200; check requirements
+The College of Wooster,usa,http://www.wooster.edu,https://wooster.edu/apply,200,https://wooster.edu/apply,2026-10-26,ok
+Ohio Wesleyan University,usa,https://www.owu.edu/,https://www.owu.edu/admission/apply/international-students/,200,https://www.owu.edu/admission/apply/international-students/,2026-10-26,ok
+Earlham College,usa,http://www.earlham.edu,https://earlham.edu/admissions/how-to-apply/undergraduate-admissions/early-decision/,200,https://earlham.edu/admissions/how-to-apply/undergraduate-admissions/early-decision/,2026-10-26,candidate 200; check requirements
+DePauw University,usa,https://www.depauw.edu/,https://www.depauw.edu/admission-aid/apply/,200,https://www.depauw.edu/admission-aid/apply/,2026-10-26,candidate 200; check requirements
+St. Olaf College,usa,https://wp.stolaf.edu/,https://wp.stolaf.edu/admissions/apply/,200,https://wp.stolaf.edu/admissions/apply/,2026-10-26,manual pick; check requirements
+Beloit College,usa,http://www.beloit.edu,https://www.beloit.edu/admission/apply/,200,https://www.beloit.edu/admission/apply/,2026-10-26,candidate 200; check requirements
+Lawrence University,usa,https://www.lawrence.edu/,https://www.lawrence.edu/admissions-aid/apply/,200,https://www.lawrence.edu/admissions-aid/apply/,2026-10-26,manual pick; check requirements
+Knox College,usa,https://www.knox.edu,https://www.knox.edu/admission/apply-to-knox,200,https://www.knox.edu/admission/apply-to-knox,2026-10-26,manual pick; check requirements
+Illinois Wesleyan University,usa,https://www.iwu.edu/,https://www.iwu.edu/admissions/applications/,200,https://www.iwu.edu/admissions/applications/,2026-10-26,candidate 200; check requirements
+Lake Forest College,usa,https://www.lakeforest.edu/,https://www.lakeforest.edu/admissions/first-year-students/first-year-application-requirements,200,https://www.lakeforest.edu/admissions/first-year-students/first-year-application-requirements,2026-10-26,ok
+Wheaton College,usa,https://www.wheaton.edu/,,403,https://www.wheaton.edu/,2026-10-26,homepage 403
+Kalamazoo College,usa,https://www.kzoo.edu/,https://admission.kzoo.edu/how-to-apply-2/,200,https://admission.kzoo.edu/how-to-apply-2/,2026-10-26,candidate 200; check requirements
+Hope College,usa,https://hope.edu/,https://hope.edu/admissions/apply.html,200,https://hope.edu/admissions/apply.html,2026-10-26,candidate 200; check requirements

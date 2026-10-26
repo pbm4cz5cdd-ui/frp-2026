@@ -1,0 +1,9 @@
+name,fact,status,value,quote,source,reason
+Valparaiso University,sat,value,500,SAT (Reading & Writing score of minimum 500),https://www.valpo.edu/admission/international/undergraduate/,SAT меньше 800: похоже на секцию
+University of Tulsa,sat,not_required,,US High School graduate (SAT or ACT recommended),https://utulsa.edu/admissions/apply/international-students/evidence-of-english-proficiency/,цитата не подтверждает not required
+Rollins College,sat,not_required,,a score of 550 or higher on the critical reading section of the SAT,https://www.rollins.edu/apply/international/faqs/,цитата не подтверждает not required
+Gettysburg College,sat,not_required,,Applicants choose whether to submit SAT/ACT scores on the Common App's Gettysburg Member Screen.,http://www.gettysburg.edu/admissions-aid/admissions/faq,цитата не подтверждает not required
+The College of Wooster,sat,varies,,The College of Wooster has a test-flexible policy for international students,https://wooster.edu/admissions/international-students,цитата не подтверждает varies
+DePauw University,ielts,varies,,"For international transfer students, we require English proficiency if English isn't your first language.",https://www.depauw.edu/admission-aid/apply/transfer-applicants/,цитата не подтверждает varies
+DePauw University,toefl,varies,,"For international transfer students, we require English proficiency if English isn't your first language.",https://www.depauw.edu/admission-aid/apply/transfer-applicants/,цитата не подтверждает varies
+Illinois Wesleyan University,sat,not_required,,Standardized Test Scores. You may submit one of the following: SAT or ACT .,https://www.iwu.edu/international/admission.html,цитата не подтверждает not required

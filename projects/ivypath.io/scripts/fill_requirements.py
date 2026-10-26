@@ -103,6 +103,7 @@ def ask(text, url):
             "If it gives a minimum plus higher scores for some programmes, use value and say that in note. "
             "Use status=varies only if the page says requirements vary and gives no number. "
             "status=not_required only if the page says the test is not required. "
+            "If SAT is optional (test-optional, not test-free), still look for a published middle 50% range or average of admitted students: put the upper bound (or average) in sat.note as 'SAT не требуется; ориентир ~N (75-й перцентиль)' and quote that range. If no range is on the page, use 'SAT не требуется; ориентир не опубликован'. If SAT is not used, use 'SAT не используется'. "
             "status=not_stated if the page does not state it. "
             "note must be Russian, max 100 chars. quote must be copied word for word from the text (one sentence).\n"
             f"URL: {url}\nTEXT:\n{text}")

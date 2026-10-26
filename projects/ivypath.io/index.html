@@ -469,7 +469,7 @@ const COSTS=[
 
 const CODES={usa:"US",uk:"GB",canada:"CA",germany:"DE",switzerland:"CH",netherlands:"NL",france:"FR",italy:"IT",sweden:"SE",ireland:"IE",singapore:"SG",hongkong:"HK",japan:"JP",korea:"KR",china:"CN",australia:"AU",nz:"NZ",uae:"AE",turkey:"TR",hungary:"HU",czech:"CZ",poland:"PL",finland:"FI",austria:"AT",malaysia:"MY"};
 const MONEY={
- "MIT":{cost:{v:"≈ $89 340",k:"full",y:"2026–27"},intl:{v:"≈ 11%",s:"u"},aid:"bf"},
+ "MIT":{cost:{v:"≈ $92 760",k:"full",y:"2026–27"},intl:{v:"≈ 11%",s:"u"},aid:"bf"},
  "Stanford University":{cost:{v:"≈ $97 288",k:"full",y:"2026–27"},intl:{v:"≈ 11%",s:"u"},aid:"aware"},
  "Harvard University":{cost:{v:"≈ $86 926",k:"full",y:"2026–27"},intl:{v:"≈ 12–15%",s:"u"},aid:"bf"},
  "Yale University":{cost:{v:"≈ $94 425",k:"full",y:"2026–27"},intl:{v:"≈ 12%",s:"u"},aid:"bf"},
@@ -508,7 +508,7 @@ const COURSES=[
 ];
 
 const UNIS=[
- {n:"MIT",c:"usa",ielts:7,sat:1520,tags:["SAT/ACT required","IELTS 7.0","SAT ~1520+"],u:"https://mitadmissions.org/apply/firstyear/requirements-deadlines/"},
+ {n:"MIT",c:"usa",ielts:7,sat:1520,tags:["SAT/ACT required","IELTS 7.0","TOEFL 90/120 · 5/6","SAT Math 780–800","SAT ERW 740–780"],u:"https://mitadmissions.org/apply/firstyear/deadlines-requirements/"},
  {n:"Stanford University",c:"usa",ielts:7,sat:1500,tags:["TOEFL 100","IELTS 7.0","SAT ~1500+"],u:"https://admission.stanford.edu/apply/"},
  {n:"Harvard University",c:"usa",ielts:7,sat:1500,tags:["SAT ~1500+","ACT 34+","TOEFL 100"],u:"https://college.harvard.edu/admissions/apply"},
  {n:"Yale University",c:"usa",ielts:7,sat:1500,tags:["SAT/ACT required","TOEFL 100","IELTS 7.0"],u:"https://admissions.yale.edu/standardized-testing"},
@@ -824,8 +824,16 @@ const TAGMAP={
 "Поступление в топ-вузы":["Поступление в топ-вузы","Топ-университеттерге түсу","Top-university admissions"],
 "Менторство":["Менторство","Менторлық","Mentoring"]
 };
-Object.assign(TAGMAP,{"Need-blind":["Приём без учёта финансов","Қаржыға қарамай қабылдау","Need-blind"],"Need-aware":["Приём с учётом финансов","Қаржыны ескере отырып қабылдау","Need-aware"],"Merit aid only":["Только стипендии за заслуги","Тек еңбегі үшін стипендиялар","Merit aid only"],"Government funding only":["Только госфинансирование","Тек мемлекеттік қаржыландыру","Government funding only"],"No need-based aid":["Нет помощи по нужде","Мұқтаждық бойынша көмек жоқ","No need-based aid"],"Branch campus":["Филиал кампуса","Кампус филиалы","Branch campus"]});
+Object.assign(TAGMAP,{"Need-blind":["Приём без учёта финансов","Қаржыға қарамай қабылдау","Need-blind"],"Need-aware":["Приём с учётом финансов","Қаржыны ескере отырып қабылдау","Need-aware"],"Merit aid only":["Только стипендии за заслуги","Тек еңбегі үшін стипендиялар","Merit aid only"],"Government funding only":["Только госфинансирование","Тек мемлекеттік қаржыландыру","Government funding only"],"No need-based aid":["Нет помощи по нужде","Мұқтаждық бойынша көмек жоқ","No need-based aid"],"Branch campus":["Филиал кампуса","Кампус филиалы","Branch campus"],"English test required":["Английский тест обязателен","Ағылшын тесті міндетті","English test required"],"IELTS no minimum":["IELTS без минимума","IELTS минимумы жоқ","IELTS no minimum"],"TOEFL no minimum":["TOEFL без минимума","TOEFL минимумы жоқ","TOEFL no minimum"],"IELTS recommended":["IELTS рекомендуют","IELTS ұсынылады","IELTS recommended"],"TOEFL recommended":["TOEFL рекомендуют","TOEFL ұсынылады","TOEFL recommended"],"IELTS varies":["IELTS зависит от программы","IELTS бағдарламаға байланысты","IELTS varies by programme"],"TOEFL varies":["TOEFL зависит от программы","TOEFL бағдарламаға байланысты","TOEFL varies by programme"],"French B2":["Французский B2","Француз тілі B2","French B2"],"German C1":["Немецкий C1","Неміс тілі C1","German C1"],"HSK required":["Нужен HSK","HSK қажет","HSK required"],"TOEFL not accepted":["TOEFL не принимают","TOEFL қабылданбайды","TOEFL not accepted"],"English or Korean test":["Английский или корейский тест","Ағылшын немесе корей тілі тесті","English or Korean test"],"Danish required":["Нужен датский","Дат тілі қажет","Danish required"],"IELTS: see note":["IELTS: см. пояснение","IELTS: түсіндірмені қараңыз","IELTS: see note"],"TOEFL: see note":["TOEFL: см. пояснение","TOEFL: түсіндірмені қараңыз","TOEFL: see note"],"SAT: see note":["SAT: см. пояснение","SAT: түсіндірмені қараңыз","SAT: see note"]});
 function tagLabel(x,l){const m=TAGMAP[x];return m?m[LI[l||lang]]:x;}
+function reqTagRank(t){
+  if(/IELTS/i.test(t))return 0;
+  if(/TOEFL/i.test(t))return 1;
+  if(/SAT|ACT/i.test(t))return 2;
+  if(/English test|French|Français|German|Deutsch|HSK|Danish|Korean|DET|Duolingo|PTE/i.test(t))return 3;
+  if(/Entrance exam|Interview|Portfolio|Audition/i.test(t))return 4;
+  return 9;
+}
 const COURSE_T={
 kk:[{city:"Алматы, Астана, Атырау және т.б.",d:"Қазақстандағы IELTS ресми емтихан серіктесі; бірнеше қалада тест орталықтары және дайындық материалдары."},{city:"Алматы",d:"Қазақстандағы IELTS емтиханының екінші ресми операторы (British Council-мен қатар тесттің тең иесі); Алматыда өз тест орталығы бар."},{city:"Алматы, Астана",d:"Алматы мен Астанада кеңселері бар стандартталған емтихандарға дайындықтың халықаралық желісі; IELTS, SAT, ACT бойынша топтық курстар және жеке сабақтар."},{city:"Астана",d:"Астанада IELTS-ке тіркелу және дайындалу бойынша British Council-дың ресми аймақтық серіктесі."},{city:"Алматы (+20-дан астам елде кеңсе)",d:"Элиталық университеттерге (оның ішінде Ivy League) түсу бойынша халықаралық консалтингтік компания; Алматыда кеңсесі бар, университет таңдаудан эссе мен емтихан дайындығына дейін сүйемелдейді."}],
 en:[{city:"Almaty, Astana, Atyrau and more",d:"Official IELTS exam partner in Kazakhstan; test centres in several cities and preparation materials."},{city:"Almaty",d:"The second official IELTS operator in Kazakhstan (co-owner of the test alongside the British Council); its own test centre in Almaty."},{city:"Almaty, Astana",d:"International test-prep network with offices in Almaty and Astana; group courses and one-to-one lessons for IELTS, SAT and ACT."},{city:"Astana",d:"Official British Council regional partner for IELTS registration and preparation in Astana."},{city:"Almaty (+ offices in 20+ countries)",d:"International consulting company for admission to elite universities (including the Ivy League); an Almaty office, support from shortlisting to essays and exam prep."}]
@@ -1298,7 +1306,7 @@ function buildFilters(){
     Object.keys(COUNTRIES).map(k=>`<option value="${k}">${esc(COUNTRIES[k][i])}</option>`).join("");
 }
 
-const FACTS={"Amherst College":{"acc":"7,72%","cost":"$93 090","students":"1 907","founded":"1821","rank":"USN LA #2","dl":"07.11 / 05.01","aid":"bf"},"Bowdoin College":{"acc":"6,81%","cost":"$93 800","students":"1 841","founded":"1794","rank":"USN LA #5","dl":"15.11 / 05.01","aid":"bf"},"Brown University":{"acc":"5,39%","cost":"$95 984","students":"11 956","founded":"1764","rank":"THE #65, USN #13","dl":"01.11 / 05.01","aid":"bf"},"Caltech":{"acc":"2,57%","cost":"$93 912","students":"2 430","founded":"1891","rank":"QS #10, THE #7, USN #11","dl":"01.11 / 05.01","aid":"aware"},"Columbia University":{"acc":"3,86%","cost":"$93 417","students":"35 173","founded":"1754","rank":"QS #38, THE #20, USN #15","dl":"01.11 / 01.01","aid":"aware"},"Cornell University":{"acc":"8,41%","cost":"$96 268","students":"26 793","founded":"1865","rank":"QS #16, THE #18, USN #12","dl":"01.11 / 02.01","aid":"aware"},"Dartmouth College":{"acc":"5,4%","cost":"$95 490","students":"6 938","founded":"1769","rank":"THE #180, USN #13","dl":"01.11 / 01.01","aid":"bf"},"Duke University":{"acc":"6,78%","cost":"$98 549 - $99 344","students":"20 601","founded":"1838","rank":"QS #62, THE #28, USN #7","dl":"03.11 / 05.01","aid":"aware"},"Harvard University":{"acc":"3,65%","cost":"$86 926","students":"21 189","founded":"1636","rank":"QS #5, THE #5, USN #3","dl":"01.11 / 01.01","aid":"bf"},"Johns Hopkins University":{"acc":"6,44%","cost":"$91 830","students":"30 210","founded":"1876","rank":"QS #24, THE #16, USN #7","dl":"01.11 / 02.01","aid":"aware"},"MIT":{"acc":"4,55%","cost":"$89 340","students":"11 886","founded":"1861","rank":"QS #1, THE #2, USN #2","dl":"01.11 / 01.01","aid":"bf"},"Northwestern University":{"acc":"7,7%","cost":"$96 236","students":"23 431","founded":"1851","rank":"QS #42, THE #30, USN #7","dl":"01.11 / 02.01","aid":"aware"},"University of Notre Dame":{"acc":"11,27%","cost":"$89 245","students":"13 204","founded":"1842","rank":"THE #194, USN #20","dl":"01.11 / 02.01","aid":"bf"},"Pomona College":{"acc":"7,14%","cost":"$96 953","students":"1 721","founded":"1887","rank":"USN LA #7","dl":"08.11 / 08.01","aid":"aware"},"Princeton University":{"acc":"4,62%","cost":"$94 624","students":"9 137","founded":"1746","rank":"QS #25, THE #3, USN #1","dl":"01.11 / 01.01","aid":"bf"},"Rice University":{"acc":"8,0%","cost":"$92 262","students":"8 961","founded":"1912","rank":"QS #119, THE #103, USN #17","dl":"01.11 / 04.01","aid":"aware"},"Stanford University":{"acc":"3,61%","cost":"$97 288","students":"18 625","founded":"1885","rank":"QS #3, THE #5, USN #4","dl":"01.11 / 05.01","aid":"aware"},"Swarthmore College":{"acc":"7,52%","cost":"$93 172","students":"1 631","founded":"1864","rank":"USN LA #4","dl":"15.11 / 04.01","aid":"aware"},"University of Chicago":{"acc":"8,27%","cost":"$100 938","students":"16 221","founded":"1890","rank":"QS #13, THE #15, USN #6","dl":"03.11 / 05.01","aid":"aware"},"University of Pennsylvania":{"acc":"5,4%","cost":"$95 612","students":"24 023","founded":"1740","rank":"QS #15, THE #14, USN #7","dl":"01.11 / 05.01","aid":"aware"},"Vanderbilt University":{"acc":"5,86%","cost":"$97 374","students":"13 575","founded":"1873","rank":"QS #250, THE #92, USN #17","dl":"01.11 / 01.01","aid":"aware"},"Wellesley College":{"acc":"14,05%","cost":"$100 541","students":"2 407","founded":"1870","rank":"USN LA #7","dl":"01.11 / 08.01","aid":"aware"},"Williams College":{"acc":"8,61%","cost":"$94 505","students":"2 150","founded":"1793","rank":"USN LA #1","dl":"15.11 / 05.01","aid":"aware"},"Yale University":{"acc":"3,87%","cost":"$94 425","students":"15 564","founded":"1701","rank":"QS #21, THE #10, USN #4","dl":"01.11 / 02.01","aid":"bf"}};
+const FACTS={"Amherst College":{"acc":"7,72%","cost":"$93 090","students":"1 907","founded":"1821","rank":"USN LA #2","dl":"07.11 / 05.01","aid":"bf"},"Bowdoin College":{"acc":"6,81%","cost":"$93 800","students":"1 841","founded":"1794","rank":"USN LA #5","dl":"15.11 / 05.01","aid":"bf"},"Brown University":{"acc":"5,39%","cost":"$95 984","students":"11 956","founded":"1764","rank":"THE #65, USN #13","dl":"01.11 / 05.01","aid":"bf"},"Caltech":{"acc":"2,57%","cost":"$93 912","students":"2 430","founded":"1891","rank":"QS #10, THE #7, USN #11","dl":"01.11 / 05.01","aid":"aware"},"Columbia University":{"acc":"3,86%","cost":"$93 417","students":"35 173","founded":"1754","rank":"QS #38, THE #20, USN #15","dl":"01.11 / 01.01","aid":"aware"},"Cornell University":{"acc":"8,41%","cost":"$96 268","students":"26 793","founded":"1865","rank":"QS #16, THE #18, USN #12","dl":"01.11 / 02.01","aid":"aware"},"Dartmouth College":{"acc":"5,4%","cost":"$95 490","students":"6 938","founded":"1769","rank":"THE #180, USN #13","dl":"01.11 / 01.01","aid":"bf"},"Duke University":{"acc":"6,78%","cost":"$98 549 - $99 344","students":"20 601","founded":"1838","rank":"QS #62, THE #28, USN #7","dl":"03.11 / 05.01","aid":"aware"},"Harvard University":{"acc":"3,65%","cost":"$86 926","students":"21 189","founded":"1636","rank":"QS #5, THE #5, USN #3","dl":"01.11 / 01.01","aid":"bf"},"Johns Hopkins University":{"acc":"6,44%","cost":"$91 830","students":"30 210","founded":"1876","rank":"QS #24, THE #16, USN #7","dl":"01.11 / 02.01","aid":"aware"},"MIT":{"acc":"4,55%","cost":"$92 760","students":"11 886","founded":"1861","rank":"QS #1, THE #2, USN #2","dl":"01.11 / 04.01","aid":"bf"},"Northwestern University":{"acc":"7,7%","cost":"$96 236","students":"23 431","founded":"1851","rank":"QS #42, THE #30, USN #7","dl":"01.11 / 02.01","aid":"aware"},"University of Notre Dame":{"acc":"11,27%","cost":"$89 245","students":"13 204","founded":"1842","rank":"THE #194, USN #20","dl":"01.11 / 02.01","aid":"bf"},"Pomona College":{"acc":"7,14%","cost":"$96 953","students":"1 721","founded":"1887","rank":"USN LA #7","dl":"08.11 / 08.01","aid":"aware"},"Princeton University":{"acc":"4,62%","cost":"$94 624","students":"9 137","founded":"1746","rank":"QS #25, THE #3, USN #1","dl":"01.11 / 01.01","aid":"bf"},"Rice University":{"acc":"8,0%","cost":"$92 262","students":"8 961","founded":"1912","rank":"QS #119, THE #103, USN #17","dl":"01.11 / 04.01","aid":"aware"},"Stanford University":{"acc":"3,61%","cost":"$97 288","students":"18 625","founded":"1885","rank":"QS #3, THE #5, USN #4","dl":"01.11 / 05.01","aid":"aware"},"Swarthmore College":{"acc":"7,52%","cost":"$93 172","students":"1 631","founded":"1864","rank":"USN LA #4","dl":"15.11 / 04.01","aid":"aware"},"University of Chicago":{"acc":"8,27%","cost":"$100 938","students":"16 221","founded":"1890","rank":"QS #13, THE #15, USN #6","dl":"03.11 / 05.01","aid":"aware"},"University of Pennsylvania":{"acc":"5,4%","cost":"$95 612","students":"24 023","founded":"1740","rank":"QS #15, THE #14, USN #7","dl":"01.11 / 05.01","aid":"aware"},"Vanderbilt University":{"acc":"5,86%","cost":"$97 374","students":"13 575","founded":"1873","rank":"QS #250, THE #92, USN #17","dl":"01.11 / 01.01","aid":"aware"},"Wellesley College":{"acc":"14,05%","cost":"$100 541","students":"2 407","founded":"1870","rank":"USN LA #7","dl":"01.11 / 08.01","aid":"aware"},"Williams College":{"acc":"8,61%","cost":"$94 505","students":"2 150","founded":"1793","rank":"USN LA #1","dl":"15.11 / 05.01","aid":"aware"},"Yale University":{"acc":"3,87%","cost":"$94 425","students":"15 564","founded":"1701","rank":"QS #21, THE #10, USN #4","dl":"01.11 / 02.01","aid":"bf"}};
 function factsHtml(t,u){const f=FACTS[u.n]||((u.acc||(u.m&&u.m.cost)||u.dl)?{acc:u.acc,cost:u.m&&u.m.cost?u.m.cost.v.replace("≈ ",""):"",dl:u.dl}:null);if(!f)return "";const rows=[];if(f.acc)rows.push([t.fAcc,f.acc]);if(f.cost)rows.push([t.fCost,f.cost]);if(f.students)rows.push([t.fStudents,f.students]);if(f.founded)rows.push([t.fFounded,f.founded]);if(f.aid)rows.push([t.fAid,f.aid==="bf"?t.aidShortBf:t.aidShortAware]);if(f.rank)rows.push([t.fRank,f.rank]);if(f.dl)rows.push([t.fDeadline,f.dl]);return `<h4>${esc(t.fFacts)}</h4><div class="facts">${rows.map(([a,b])=>`<div><span>${esc(a)}</span><b>${esc(b)}</b></div>`).join("")}</div>`;}
 function moneyHtml(t,u){
   const m=MONEY[u.n]||u.m||{};
@@ -1335,8 +1343,121 @@ function qHay(u,q,i){
   if(u.toefl!=null)bits.push("toefl "+u.toefl);
   return bits.join(" ").toLowerCase().includes(q);
 }
+function parseCsv(text){
+  const rows=[];let row=[],cell="",q=false;
+  for(let i=0;i<text.length;i++){
+    const ch=text[i];
+    if(q){
+      if(ch==='"'){ if(text[i+1]==='"'){cell+='"';i++;} else q=false; }
+      else cell+=ch;
+    }else if(ch==='"')q=true;
+    else if(ch===","){row.push(cell);cell="";}
+    else if(ch==="\n"){row.push(cell);cell="";if(row.some(x=>x.length))rows.push(row);row=[];}
+    else if(ch!=="\r")cell+=ch;
+  }
+  row.push(cell);
+  if(row.some(x=>x.length))rows.push(row);
+  return rows;
+}
+const CSV_SYM={USD:"$",GBP:"£",EUR:"€",CAD:"C$",AUD:"A$"};
+function csvNum(v){const n=parseFloat(String(v).replace(",","."));return isFinite(n)?n:null;}
+function scoreText(v,oneDecimal){const n=parseFloat(String(v).replace(",","."));if(!isFinite(n))return String(v).trim();return oneDecimal&&Number.isInteger(n)?n.toFixed(1):String(n);}
+function hasReqTag(u,re){return (u.tags||[]).some(t=>re.test(t));}
+function addCsvReqTags(u){
+  const c=u.csv||{},tags=u.tags||(u.tags=[]);let n=0;
+  const add=t=>{if(t&&!tags.includes(t)){tags.push(t);n++;}};
+  const hasLang=re=>(u.tags||[]).some(t=>re.test(t));
+  if(!hasReqTag(u,/IELTS/i)){
+    const v=c.ielts,note=(c.ielts_note||"").toLowerCase();
+    if(v&&c.ielts_checked)add("IELTS "+scoreText(v,true));
+    else if(/француз/.test(note)){if(!hasLang(/français|french/i))add("French B2");}
+    else if(/немец|dsh|testdaf/.test(note)){if(!hasLang(/deutsch|german/i))add("German C1");}
+    else if(/китай|hsk/.test(note)){if(!hasLang(/hsk/i))add("HSK required");}
+    else if(/не принима/.test(note))add("IELTS not accepted");
+    else if(/датск/.test(note))add("Danish required");
+    else if(/корейск/.test(note))add("English or Korean test");
+    else if(/обязателен|тест нужен/.test(note))add("English test required");
+    else if(/не требуется|optional|не обязателен/.test(note))add("English test optional");
+    else if(/нет минимума/.test(note))add("IELTS no minimum");
+    else if(/зависит|варьируется|concordance|пересч/.test(note))add("IELTS varies");
+    else if(/рекоменд|ориентир|совету/.test(note))add("IELTS recommended");
+    else if(note)add("IELTS: see note");
+  }
+  if(!hasReqTag(u,/TOEFL/i)){
+    const v=c.toefl,note=(c.toefl_note||"").toLowerCase();
+    const fresh=note.match(/новая шкала\s*(\d(?:\.\d)?)/);
+    if(v&&c.toefl_checked)add("TOEFL "+scoreText(v,false));
+    else if(/француз/.test(note)){if(!hasLang(/français|french/i))add("French B2");}
+    else if(/немец|dsh|testdaf/.test(note)){if(!hasLang(/deutsch|german/i))add("German C1");}
+    else if(/китай|hsk/.test(note)){if(!hasLang(/hsk/i))add("HSK required");}
+    else if(/не принима/.test(note))add("TOEFL not accepted");
+    else if(/датск/.test(note))add("Danish required");
+    else if(/корейск/.test(note))add("English or Korean test");
+    else if(fresh)add("TOEFL "+fresh[1]+" (new)");
+    else if(/обязателен|тест нужен/.test(note))add("English test required");
+    else if(/не требуется|optional|не обязателен/.test(note))add("English test optional");
+    else if(/нет минимума/.test(note))add("TOEFL no minimum");
+    else if(/зависит|варьируется|concordance|пересч/.test(note))add("TOEFL varies");
+    else if(/рекоменд|ориентир|совету|обычно/.test(note))add("TOEFL recommended");
+    else if(note)add("TOEFL: see note");
+  }
+  if(!hasReqTag(u,/SAT/i)){
+    const v=c.sat,note=(c.sat_note||"").toLowerCase();
+    const ebrw=note.match(/ebrw\s*(\d+)/);
+    const target=note.match(/(?:ориентир|цель)\s*~?\s*(\d{3,4})/);
+    if(v&&c.sat_checked)add("SAT "+scoreText(v,false));
+    else if(ebrw)add("SAT EBRW "+ebrw[1]);
+    else if(target)add("SAT ~"+target[1]+" (optional)");
+    else if(/национальной системе|не рассматриваются|test-free|не учитывают/.test(note))add("SAT not used");
+    else if(/не обязателен|не требуется|optional|можно не/.test(note))add("SAT optional");
+    else if(/нужен|нужна|обязателен|ожидается/.test(note))add("SAT/ACT required");
+    else if(/рекоменд/.test(note))add("SAT recommended");
+    else if(note)add("SAT: see note");
+  }
+  return n;
+}
+function applyUniRows(rows){
+  const head=rows.shift().map(x=>x.trim());
+  const ix={};head.forEach((h,i)=>ix[h]=i);
+  if(ix.name==null)throw new Error("CSV needs a name column");
+  let changed=0;
+  rows.forEach(r=>{
+    const name=(r[ix.name]||"").trim();
+    const u=UNIS.find(x=>x.n===name);
+    if(!u)return;
+    u.csv={};
+    head.forEach((h,i)=>u.csv[h]=(r[i]||"").trim());
+    if(u.csv.ielts_checked&&u.csv.ielts){const n=csvNum(u.csv.ielts);if(n!=null){u.ielts=n;changed++;}}
+    if(u.csv.toefl_checked&&u.csv.toefl){const n=csvNum(u.csv.toefl);if(n!=null){u.toefl=n;changed++;}}
+    if(u.csv.sat_checked&&u.csv.sat){const n=csvNum(u.csv.sat);if(n!=null){u.sat=n;changed++;}}
+    if(u.csv.deadline_checked&&u.csv.deadline){u.dl=u.csv.deadline;changed++;}
+    if(u.csv.cost_checked&&u.csv.cost_amount){
+      const cur=(u.csv.cost_currency||"USD").toUpperCase();
+      const sym=CSV_SYM[cur]||cur+" ";
+      const amount=Number(String(u.csv.cost_amount).replace(/[^\d.]/g,""));
+      const shown=isFinite(amount)?Math.round(amount).toLocaleString("ru-RU"):u.csv.cost_amount.replace(/,/g," ");
+      u.m=u.m||{};
+      u.m.cost={v:"≈ "+sym+shown,k:"full",y:(u.csv.cost_year||"").replace("-","–")};
+      changed++;
+    }
+    const tagChanges=addCsvReqTags(u);
+    if(tagChanges)changed+=tagChanges;
+  });
+  return changed;
+}
+async function loadUniData(){
+  try{
+    const res=await fetch("data/universities.csv",{cache:"no-store"});
+    if(!res.ok)throw new Error(res.status+" "+res.statusText);
+    const changed=applyUniRows(parseCsv(await res.text()));
+    if(changed)render();
+  }catch(e){
+    console.warn("CSV data not loaded; using built-in data",e);
+  }
+}
 function render(){
   const t=T[lang],i=LI[lang];
+  UNIS.forEach(u=>{if(u.tags&&u.tags.length>1)u.tags.sort((a,b)=>reqTagRank(a)-reqTagRank(b));});
   const c=$("#countryFilter").value||"all", q=($("#q").value||"").trim().toLowerCase();
   const myI=parseFloat($("#myScore").value), myS=parseFloat($("#mySat").value), myT=parseFloat($("#myToefl").value);
   let list=UNIS.filter(u=>
@@ -1371,7 +1492,7 @@ function render(){
 const AREAS={"architecture":["Архитектура","Сәулет","Architecture"],"biological_life_sciences":["Биология и науки о жизни","Биология және өмір туралы ғылымдар","Biology & life sciences"],"business_marketing":["Бизнес и маркетинг","Бизнес және маркетинг","Business & marketing"],"computer_info_science":["Информатика и компьютерные науки","Информатика және компьютерлік ғылымдар","Computer & information sciences"],"engineering":["Инженерия","Инженерия","Engineering"],"engineering_technologies":["Инженерные технологии","Инженерлік технологиялар","Engineering technologies"],"english":["Английский язык","Ағылшын тілі","English"],"health_professions_related_programs":["Медицинские специальности","Медициналық мамандықтар","Health professions"],"history":["История","Тарих","History"],"law_legal_studies":["Право и юриспруденция","Құқық және заңтану","Law & legal studies"],"mathematics_statistics":["Математика и статистика","Математика және статистика","Mathematics & statistics"],"natural_resources_conservation":["Природные ресурсы и охрана природы","Табиғи ресурстар және табиғатты қорғау","Natural resources & conservation"],"philosophy_religious_studies":["Философия и религиоведение","Философия және дінтану","Philosophy & religious studies"],"physical_sciences":["Естественные науки","Жаратылыстану ғылымдары","Physical sciences"],"psychology":["Психология","Психология","Psychology"],"public_administration_social_services":["Госуправление и социальные службы","Мемлекеттік басқару және әлеуметтік қызметтер","Public administration & social services"],"social_sciences":["Социальные науки","Әлеуметтік ғылымдар","Social sciences"],"visual_performing_arts":["Изобразительное и исполнительское искусство","Бейнелеу және орындаушылық өнер","Visual & performing arts"],"foreign_languages_literatures_linguistics":["Иностранные языки и лингвистика","Шет тілдері және лингвистика","Foreign languages & linguistics"],"interdisciplinary_studies":["Междисциплинарные исследования","Пәнаралық зерттеулер","Interdisciplinary studies"],"area_ethnic_gender_studies":["Регионоведение, этнические и гендерные исследования","Аймақтану, этникалық және гендерлік зерттеулер","Area, ethnic & gender studies"],"communication_journalism":["Коммуникации и журналистика","Коммуникациялар және журналистика","Communication & journalism"],"education":["Образование","Білім беру","Education"],"liberal_arts_general_studies":["Liberal arts и общие дисциплины","Liberal arts және жалпы пәндер","Liberal arts & general studies"],"parks_recreation":["Парки, рекреация и фитнес","Саябақтар, рекреация және фитнес","Parks, recreation & fitness"],"family_consumer_sciences":["Семья и потребительские науки","Отбасы және тұтыну ғылымдары","Family & consumer sciences"],"agriculture":["Сельское хозяйство","Ауыл шаруашылығы","Agriculture"],"homeland_security_law_enforcement":["Безопасность и правоохранительная деятельность","Қауіпсіздік және құқық қорғау","Homeland security & law enforcement"],"communication_technologies":["Коммуникационные технологии","Коммуникациялық технологиялар","Communication technologies"],"other":["Другое","Басқа","Other"],"theology_religious_vocations":["Теология и религиозное служение","Теология және діни қызмет","Theology & religious vocations"],"construction_trades":["Строительные специальности","Құрылыс мамандықтары","Construction trades"],"transportation_materials_moving":["Транспорт и логистика","Көлік және логистика","Transportation & logistics"],"foreign_languages_literatures":["Иностранные языки и литература","Шет тілдері және әдебиет","Foreign languages & literature"],"personal_culinary_services":["Кулинария и сервис","Аспаздық және сервис","Personal & culinary services"],"military_science_technologies":["Военные науки и технологии","Әскери ғылымдар және технологиялар","Military science & technologies"]};
 const EXTRA_AREAS={"Massachusetts Institute of Technology":["architecture","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","social_sciences","visual_performing_arts","business_marketing","history"],"Harvard University":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Princeton University":["architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Yale University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Stanford University":["area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"California Institute of Technology":["computer_info_science","engineering","biological_life_sciences","mathematics_statistics","physical_sciences","business_marketing"],"University of Pennsylvania":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Duke University":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Brown University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"Columbia University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Amherst College":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Dartmouth College":["area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history","other"],"Williams College":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"University of Chicago":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","theology_religious_vocations","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Cornell University":["agriculture","natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Northwestern University":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","law_legal_studies","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Notre Dame University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","theology_religious_vocations","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Bowdoin College":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Vanderbilt University":["architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Swarthmore College":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Johns Hopkins University":["natural_resources_conservation","area_ethnic_gender_studies","communication_technologies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","history"],"Rice University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Pomona College":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Wellesley College":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","history"],"Washington and Lee University":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"University of California, Berkeley":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"New York University":["area_ethnic_gender_studies","communication_journalism","communication_technologies","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","law_legal_studies","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of California, Los Angeles":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of Michigan":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Georgia Institute of Technology":["natural_resources_conservation","architecture","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","business_marketing","history"],"Carnegie Mellon University":["architecture","communication_journalism","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"Purdue University":["agriculture","natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","communication_technologies","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","family_consumer_sciences","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","construction_trades","transportation_materials_moving","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of California, San Diego":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of Illinois Urbana-Champaign":["agriculture","natural_resources_conservation","architecture","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"]};
 function openUni(u){const t=T[lang],i=LI[lang];
-  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div>${factsHtml(t,u)}<h4>${esc(t.modalMajors)}</h4><div class="chips">${majorsOf(u).map(k=>`<span>${esc(MAJ[k][i])}</span>`).join("")}</div>${(u.a||EXTRA_AREAS[u.n]||[]).length?`<h4>${esc(t.modalAreas)}</h4><div class="chips">${(u.a||EXTRA_AREAS[u.n]).map(k=>AREAS[k]?`<span>${esc(AREAS[k][i])}</span>`:"").join("")}</div>`:""}${PILOT.includes(u.n)?`<p class="muted small">${esc(t.pilotNote)}</p>`:""}<h4>${esc(t.modalReqs)}</h4><div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div><h4>${esc(t.modalMoney)}</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(u.src==="my"?t.mySource:t.site)}</a></p>`;
+  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div>${factsHtml(t,u)}<h4>${esc(t.modalMajors)}</h4><div class="chips">${majorsOf(u).map(k=>`<span>${esc(MAJ[k][i])}</span>`).join("")}</div>${(u.a||EXTRA_AREAS[u.n]||[]).length?`<h4>${esc(t.modalAreas)}</h4><div class="chips">${(u.a||EXTRA_AREAS[u.n]).map(k=>AREAS[k]?`<span>${esc(AREAS[k][i])}</span>`:"").join("")}</div>`:""}${PILOT.includes(u.n)?`<p class="muted small">${esc(t.pilotNote)}</p>`:""}<h4>${esc(t.modalReqs)}</h4> <div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>${lang==="ru"&&u.csv?(()=>{const rn=[u.csv.ielts_note,u.csv.toefl_note,u.csv.sat_note].filter(Boolean);return rn.length?`<div class="muted small" style="margin-top:8px;line-height:1.45">${rn.map(x=>esc(x)).join("<br>")}</div>`:"";})():""}<h4>${esc(t.modalMoney)}</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(u.src==="my"?t.mySource:t.site)}</a></p>`;
   $("#modal").hidden=false;}
 const _rh=renderHome;renderHome=function(){_rh();const N=["MIT","Stanford University","Harvard University"];document.querySelectorAll("#homeUnis .ucard").forEach((el,k)=>{el.style.cursor="pointer";el.addEventListener("click",ev=>{if(!ev.target.closest("a"))openUni(UNIS.find(x=>x.n===N[k]));});});};
 function blockHtml(b){
@@ -1790,6 +1911,7 @@ const PUBLIC_TEXT={
   anyCountry:"любая страна",overBudget:"⚠ дороже твоего бюджета",budgetUnknown:"У части вузов нет цены в данных — проверь стоимость на официальном сайте.",
   disclaimer:"Это ориентир по данным сайта. Точные требования и дедлайны проверь на официальном сайте вуза.",
   noFound:"По этим условиям ничего не нашёл. Попробуй другую страну или направление — или напиши «не важно».",
+  notUnderstood:"Я не понял этот вопрос. Я советчик по поступлению: отвечаю про вузы, IELTS/TOEFL, SAT, стоимость, дедлайны, визу и стипендии. Спроси, например: «Какой IELTS нужен для MIT?» или «Сколько стоит учёба в Канаде?».",
   checkSite:"Проверь точные требования на официальном сайте.",
   regions:{europe:"Европа",asia:"Азия",cis:"СНГ",middleeast:"Ближний Восток"},
   faq:{
@@ -1800,6 +1922,7 @@ const PUBLIC_TEXT={
    visa:"Для учёбы нужна студенческая виза. Обычно нужны письмо о зачислении, подтверждение оплаты и страховка. Правила зависят от страны — проверь на сайте посольства.",
    aid:"Стипендии и финансовая помощь есть, но для иностранцев их мало. Ищи раздел Scholarships / Financial Aid на сайте вуза. В карточках есть пометки про aid.",
    docs:"Обычно нужны аттестат, транскрипт, IELTS/TOEFL, SAT (если нужен), эссе, рекомендации и паспорт. Список зависит от вуза.",
+   life:"Студенческая жизнь зависит от страны и города: кампус, общежитие, столовая, клубы и транспорт. В США кампусы часто большие и с общежитием; в Европе чаще снимают квартиру. Точные условия и расходы смотри в карточке вуза и разделе Housing.",
    help:"Я умею: подбирать вузы по стране, направлению, баллам и бюджету; показывать требования, стоимость и дедлайны; отвечать на частые вопросы. Скажи, что важно."
   }
  },
@@ -1814,6 +1937,7 @@ const PUBLIC_TEXT={
   anyCountry:"кез келген ел",overBudget:"⚠ бюджетіңізден қымбат",budgetUnknown:"Кейбір университеттерде баға деректерде жоқ — құнын ресми сайттан тексеріңіз.",
   disclaimer:"Бұл сайттағы деректер бойынша бағдар. Нақты талаптар мен дедлайнды университеттің ресми сайтынан тексеріңіз.",
   noFound:"Бұл шарттар бойынша ештеңе табылмады. Басқа ел немесе бағыт көріңіз — немесе «маңызды емес» деп жазыңыз.",
+  notUnderstood:"Мен бұл сұрақты түсінбедім. Мен оқуға түсу жөніндегі кеңесшімін: университеттер, IELTS/TOEFL, SAT, құны, дедлайн, виза және стипендия туралы айтамын. Мысалы: «MIT үшін қандай IELTS керек?» немесе «Канадада оқу қанша тұрады?».",
   checkSite:"Нақты талаптарды ресми сайттан тексеріңіз.",
   regions:{europe:"Еуропа",asia:"Азия",cis:"ТМД",middleeast:"Таяу Шығыс"},
   faq:{
@@ -1824,6 +1948,7 @@ const PUBLIC_TEXT={
    visa:"Оқу үшін студенттік виза керек. Әдетте қабылдау хаты, төлем растамасы және сақтандыру қажет. Ережелер елге байланысты — елшілік сайтынан тексеріңіз.",
    aid:"Стипендиялар мен қаржылық көмек бар, бірақ шетелдіктерге аз. Университет сайтынан Scholarships / Financial Aid бөлімін іздеңіз. Карточкаларда aid белгілері бар.",
    docs:"Әдетте аттестат, транскрипт, IELTS/TOEFL, SAT (керек болса), эссе, ұсыныстар және паспорт керек. Тізім университетке байланысты.",
+   life:"Студенттік өмір ел мен қалаға байланысты: кампус, жатақхана, асхана, клубтар және көлік. АҚШ-та кампустар көбіне үлкен және жатақханасы бар; Еуропада көбіне пәтер жалдайды. Нақты шарттар мен шығындарды университет карточкасынан және Housing бөлімінен қараңыз.",
    help:"Мен: ел, бағыт, балл және бюджет бойынша университет таңдаймын; талаптар, құны мен дедлайнды көрсетемін; жиі сұрақтарға жауап беремін. Не маңызды екенін айтыңыз."
   }
  },
@@ -1838,6 +1963,7 @@ const PUBLIC_TEXT={
   anyCountry:"any country",overBudget:"⚠ above your budget",budgetUnknown:"Some universities have no price in the data — check the cost on the official site.",
   disclaimer:"This is guidance from the site's data. Check exact requirements and deadlines on the university's official site.",
   noFound:"I found nothing for these conditions. Try another country or field — or say \"not sure\".",
+  notUnderstood:"I did not understand that question. I am an admissions advisor: I answer about universities, IELTS/TOEFL, SAT, cost, deadlines, visas and scholarships. Try: \"What IELTS do I need for MIT?\" or \"How much does studying in Canada cost?\".",
   checkSite:"Check the exact requirements on the official site.",
   regions:{europe:"Europe",asia:"Asia",cis:"CIS",middleeast:"Middle East"},
   faq:{
@@ -1848,6 +1974,7 @@ const PUBLIC_TEXT={
    visa:"You need a student visa. Usually you need an offer letter, proof of payment and insurance. Rules depend on the country — check the embassy site.",
    aid:"Scholarships and financial aid exist, but there is little for international students. Look for the Scholarships / Financial Aid section on the university site. Cards show aid notes.",
    docs:"Usually you need a school certificate, transcript, IELTS/TOEFL, SAT (if required), essays, references and a passport. The list depends on the university.",
+   life:"Student life depends on the country and city: campus, dorm, canteen, clubs and transport. US campuses are often large with dorms; in Europe students more often rent a flat. Check the university card and its Housing section for exact conditions and costs.",
    help:"I can shortlist universities by country, field, scores and budget; show requirements, cost and deadlines; and answer common questions. Tell me what matters."
   }
  }
@@ -2074,13 +2201,15 @@ function faqKey(low){
   if(/(виза|visa|виза)/i.test(low))return "visa";
   if(/(стипенд|scholarship|финанс|aid|грант|қаржы)/i.test(low))return "aid";
   if(/(документ|эссе|essay|рекомендац|document)/i.test(low))return "docs";
+  if(/(жизн|кампус|общежит|студенческ|life|campus|dorm|housing|accommodation|өмір|жатақхана)/i.test(low))return "life";
   if(/(что ты|кто ты|помощь|help|что умеешь|мүмкіндік)/i.test(low))return "help";
   return null;
 }
 function publicReply(text){
   advisorLang=advisorLanguage(text);
   const P=PUBLIC_TEXT[advisorLang],low=text.toLowerCase().trim();
-  const changed=parseProfile(text);
+  const isQuestion=(/\?|(^|\s)(что|как|какие|какой|какая|почему|зачем|расскажи|можно|стоит ли|сколько|где|когда|who|what|how|why|which|when|where|can|tell me)(?=\s|$|[?.!,])/i.test(low))&&!/\d/.test(low);
+  const changed=isQuestion?false:parseProfile(text);
   const uni=findUni(text);
   if(uni)return {html:uniAnswer(uni)};
   if(changed){
@@ -2097,8 +2226,9 @@ function publicReply(text){
     return {html:esc(P.faq[f]+(q?"\n\n"+q.text:""))};
   }
   const q=nextPublicQuestion(publicProfile);
-  if(q){publicAsk=q.key;return {html:esc(q.text)};}
-  publicAsk=null;return {html:recommendHtml(publicProfile)};
+  if(q){publicAsk=q.key;return {html:esc(P.notUnderstood+"\n\n"+q.text)};}
+  if(/(ещё|еще|другие|other|more|басқа)/i.test(low))return {html:recommendHtml(publicProfile)};
+  publicAsk=null;return {html:esc(P.notUnderstood+"\n\n"+P.faq.help)};
 }
 
 async function chatReply(text){
@@ -2185,6 +2315,7 @@ initChat();
 
 document.body.dataset.page="home";
 applyLang();
+loadUniData();
 </script>
 </body>
 </html>

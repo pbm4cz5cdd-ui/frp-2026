@@ -1,0 +1,56 @@
+[1/44] Loyola University Chicago: https://www.luc.edu/undergrad/admissions/internationalstudents/
+[2/44] DePaul University: https://www.depaul.edu/admission/undergraduate-admission/visit-depaul-undergraduate
+[3/44] Xavier University: https://www.xavier.edu/international-admission/index
+[4/44] Butler University: https://www.butler.edu:443/admission-aid/international/
+[5/44] University of Dayton: https://udayton.edu/apply/index.php
+[6/44] Texas Christian University: https://www.tcu.edu/admission-aid/index.php
+[7/44] Valparaiso University: https://www.valpo.edu/admission/international/
+[8/44] Rose-Hulman Institute of Technology: https://rose-hulman.edu/admissions-and-aid/index.html
+[9/44] Milwaukee School of Engineering: https://www.msoe.edu/admissions-aid/international-admissions/
+[10/44] Elon University: ConnectTimeout
+[1/44] skip Loyola University Chicago
+[2/44] skip DePaul University
+[3/44] skip Xavier University
+[4/44] skip Butler University
+[5/44] skip University of Dayton
+[6/44] skip Texas Christian University
+[7/44] skip Valparaiso University
+[8/44] skip Rose-Hulman Institute of Technology
+[9/44] skip Milwaukee School of Engineering
+[10/44] Elon University: ConnectTimeout
+[11/44] Southern Methodist University: https://www.smu.edu/admission/apply
+[12/44] Baylor University: no candidate opened
+[13/44] Trinity University: https://trinity.edu/admissions-and-aid/guides-and-resources/guide-international-applicants
+[14/44] University of Tulsa: https://utulsa.edu/admissions/apply/international-students/
+[15/44] High Point University: https://www.highpoint.edu/admissions/freshmen-admissions/?utm_source=highpoint.edu&utm_medium=site-cta&utm_campaign=freshman-admissions&utm_content=app-fee-waiver-premier&utm_term=premier&hpu_cta=app-fee-waiver-premier&code=PREMIER
+[16/44] Rollins College: https://www.rollins.edu/college-of-liberal-arts/
+[17/44] Belmont University: https://www.belmont.edu/admissions/
+[18/44] Samford University: https://www.samford.edu/admission/international-students
+[19/44] Mercer University: https://www.mercer.edu/admissions/military/
+[20/44] Stetson University: homepage 403
+[21/44] Loyola University Maryland: https://www.loyola.edu/admission/undergraduate/application-process/first-year/
+[22/44] American University: homepage 403
+[23/44] The Catholic University of America: homepage 403
+[24/44] St. John's College: https://www.sjc.edu/admissions-and-aid/undergraduate/apply/freshman-class-profile
+  retry https://www.colby.edu
+[25/44] Colby College: homepage 403
+[26/44] Bard College: https://www.bard.edu/admission/inquiries/
+[27/44] Sarah Lawrence College: https://www.sarahlawrence.edu/admission/
+[28/44] Gettysburg College: http://www.gettysburg.edu/admissions-aid/admissions/faq
+[29/44] Muhlenberg College: https://www.muhlenberg.edu/admissions-aid/net-price-calculator/
+[30/44] Ursinus College: ConnectionError
+[31/44] Oberlin College: https://www.oberlin.edu/admissions-and-aid/international-students
+[32/44] The College of Wooster: https://wooster.edu/apply
+[33/44] Ohio Wesleyan University: https://www.owu.edu/admission/apply/international-students/
+[34/44] Earlham College: https://earlham.edu/admissions/how-to-apply/undergraduate-admissions/early-decision/
+[35/44] DePauw University: https://www.depauw.edu/admission-aid/apply/
+[36/44] St. Olaf College: https://wp.stolaf.edu/admissions/majors-and-programs/
+[37/44] Beloit College: https://www.beloit.edu/admission/apply/
+[38/44] Lawrence University: https://www.lawrence.edu/admissions-aid/apply/conservatory/audition-requirements/
+[39/44] Knox College: https://www.knox.edu/admission/apply-to-knox/notice-of-non-discrimination
+[40/44] Illinois Wesleyan University: https://www.iwu.edu/admissions/applications/
+[41/44] Lake Forest College: https://www.lakeforest.edu/admissions/first-year-students/first-year-application-requirements
+[42/44] Wheaton College: homepage 403
+[43/44] Kalamazoo College: https://admission.kzoo.edu/how-to-apply-2/
+[44/44] Hope College: https://hope.edu/admissions/apply.html
+done: 36/44 have admissions_url

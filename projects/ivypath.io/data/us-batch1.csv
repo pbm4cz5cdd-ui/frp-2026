@@ -1,0 +1,45 @@
+name,country,homepage,admissions_url,http_status,final_url,checked,note
+The University of Texas at Austin,usa,https://www.utexas.edu/,https://admissions.utexas.edu/apply/international-students/,200,https://admissions.utexas.edu/apply/international-students/,2026-10-26,ok
+Northeastern University,usa,https://www.northeastern.edu/,https://www.northeastern.edu/admissions/,200,https://www.northeastern.edu/admissions/,2026-10-26,ok
+Spelman College,usa,http://www.spelman.edu,https://www.spelman.edu/admissions/applying-to-spelman/index.html,200,https://www.spelman.edu/admissions/applying-to-spelman/index.html,2026-10-26,candidate 200; check requirements
+Rensselaer Polytechnic Institute,usa,http://www.rpi.edu,https://www.rpi.edu/admissions,200,https://www.rpi.edu/admissions,2026-10-26,candidate 200; check requirements
+Fordham University,usa,https://fordham.edu/,https://www.fordham.edu/undergraduate-admission/apply/,200,https://www.fordham.edu/undergraduate-admission/apply/,2026-10-26,ok
+Drexel University,usa,https://drexel.edu/,,,,2026-10-26,"ConnectionError: HTTPSConnectionPool(host='www.drexel.edu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='ww"
+Indiana University Bloomington,usa,https://bloomington.iu.edu,https://bloomington.iu.edu/admissions/apply/freshman/test-optional.html,200,https://bloomington.iu.edu/admissions/apply/freshman/test-optional.html,2026-10-26,ok
+Pepperdine University,usa,http://www.pepperdine.edu/,https://www.pepperdine.edu/admission/apply-now/,200,https://www.pepperdine.edu/admission/apply-now/,2026-10-26,candidate 200; check requirements
+Howard University,usa,https://howard.edu,https://admission.howard.edu/,200,https://admission.howard.edu/,2026-10-26,candidate 200; check requirements
+Marquette University,usa,https://www.marquette.edu/,https://www.marquette.edu/admissions/index.php,200,https://www.marquette.edu/admissions/index.php,2026-10-26,candidate 200; check requirements
+Virginia Tech,usa,https://www.vt.edu/,https://www.vt.edu/admissions/international.html,200,https://www.vt.edu/admissions/international.html,2026-10-26,candidate 200; check requirements
+Furman University,usa,http://www.furman.edu,https://www.furman.edu/admissions-aid/apply/,200,https://www.furman.edu/admissions-aid/apply/,2026-10-26,ok
+Wabash College,usa,http://www.wabash.edu,https://www.wabash.edu/admissions/apply,200,https://www.wabash.edu/admissions/apply,2026-10-26,candidate 200; check requirements
+Case Western Reserve University,usa,https://case.edu,https://case.edu/admission/,200,https://case.edu/admission/,2026-10-26,candidate 200; check requirements
+Syracuse University,usa,https://www.syracuse.edu,https://www.syracuse.edu/admissions-aid/application-process/apply/,200,https://www.syracuse.edu/admissions-aid/application-process/apply/,2026-10-26,candidate 200; check requirements
+Worcester Polytechnic Institute,usa,http://www.wpi.edu,https://www.wpi.edu/admissions,200,https://www.wpi.edu/admissions,2026-10-26,candidate 200; check requirements
+Stevens Institute of Technology,usa,https://www.stevens.edu/,https://www.stevens.edu/admission-aid/international-students,200,https://www.stevens.edu/admission-aid/international-students,2026-10-26,ok
+Temple University,usa,https://www.temple.edu/,,,,2026-10-26,"ReadTimeout: HTTPSConnectionPool(host='www.temple.edu', port=443): Read timed out. (read timeout=25)"
+Illinois Institute of Technology,usa,http://www.iit.edu,https://www.iit.edu/admissions-aid/undergraduate-admission,200,https://www.iit.edu/admissions-aid/undergraduate-admission,2026-10-26,candidate 200; check requirements
+Duquesne University,usa,http://www.duq.edu,https://www.duq.edu/admission-and-aid/how-to-apply/index.php,200,https://www.duq.edu/admission-and-aid/how-to-apply/index.php,2026-10-26,candidate 200; check requirements
+The College of New Jersey,usa,http://www.tcnj.edu,,403,http://www.tcnj.edu/,2026-10-26,homepage 403
+Rutgers University-Newark,usa,https://www.newark.rutgers.edu/,https://www.newark.rutgers.edu/admissions-affordability,200,https://www.newark.rutgers.edu/admissions-affordability,2026-10-26,candidate 200; check requirements
+Saint Joseph's University,usa,http://www.sju.edu,https://www.sju.edu/admission,200,https://www.sju.edu/admission,2026-10-26,candidate 200; check requirements
+Seton Hall University,usa,http://www.shu.edu,https://www.shu.edu/undergraduate-admissions/international-and-esl-applicants.html,200,https://www.shu.edu/undergraduate-admissions/international-and-esl-applicants.html,2026-10-26,ok
+Hofstra University,usa,https://www.hofstra.edu,https://www.hofstra.edu/admission/international/,200,https://www.hofstra.edu/admission/international/,2026-10-26,candidate 200; check requirements
+Pace University,usa,http://www.pace.edu,https://www.pace.edu/admission-and-aid/undergraduate-admission/how-apply/international-undergraduate-admission,200,https://www.pace.edu/admission-and-aid/undergraduate-admission/how-apply/international-undergraduate-admission,2026-10-26,ok
+Adelphi University,usa,https://www.adelphi.edu,https://www.adelphi.edu/admissions/international/,200,https://www.adelphi.edu/admissions/international/,2026-10-26,ok
+St. John's University,usa,http://www.stjohns.edu,https://www.stjohns.edu/admission/international-admission,200,https://www.stjohns.edu/admission/international-admission,2026-10-26,candidate 200; check requirements
+Yeshiva University,usa,https://www.yu.edu/,https://www.yu.edu/admission,200,https://www.yu.edu/admission,2026-10-26,candidate 200; check requirements
+Rochester Institute of Technology,usa,https://www.rit.edu/,https://www.rit.edu/admissions/first-year-application,200,https://www.rit.edu/admissions/first-year-application,2026-10-26,ok
+The Cooper Union for the Advancement of Science and Art,usa,https://cooper.edu/,https://cooper.edu/admissions/international/applicants,200,https://cooper.edu/admissions/international/applicants,2026-10-26,candidate 200; check requirements
+Emerson College,usa,https://emerson.edu/,https://emerson.edu/admission-aid/,200,https://emerson.edu/admission-aid/,2026-10-26,candidate 200; check requirements
+Suffolk University,usa,http://www.suffolk.edu,https://www.suffolk.edu/admission/international-students,200,https://www.suffolk.edu/admission/international-students,2026-10-26,ok
+Simmons University,usa,https://www.simmons.edu/,https://www.simmons.edu/admission-aid/application-process,200,https://www.simmons.edu/admission-aid/application-process,2026-10-26,candidate 200; check requirements
+Clark University,usa,http://www.clarku.edu,https://www.clarku.edu/undergraduate-admissions/apply/,200,https://www.clarku.edu/undergraduate-admissions/apply/,2026-10-26,candidate 200; check requirements
+Wentworth Institute of Technology,usa,https://wit.edu/,https://wit.edu/admissions/international/english-proficiency-requirement,200,https://wit.edu/admissions/international/english-proficiency-requirement,2026-10-26,ok
+University of Denver,usa,https://www.du.edu/,https://www.du.edu/admission-aid,200,https://www.du.edu/admission-aid,2026-10-26,candidate 200; check requirements
+Fairfield University,usa,http://fairfield.edu/,https://www.fairfield.edu/admission-and-aid/apply/,200,https://www.fairfield.edu/admission-and-aid/apply/,2026-10-26,candidate 200; check requirements
+Bryant University,usa,https://www.bryant.edu/,https://www.bryant.edu/undergraduate/undergraduate-admission/applying-bryant/international-students,200,https://www.bryant.edu/undergraduate/undergraduate-admission/applying-bryant/international-students,2026-10-26,ok
+Providence College,usa,http://www.providence.edu,https://admission.providence.edu,200,https://admission.providence.edu,2026-10-26,candidate 200; check requirements
+Sacred Heart University,usa,http://www.sacredheart.edu,https://www.sacredheart.edu/admissions--aid/apply-now/,200,https://www.sacredheart.edu/admissions--aid/apply-now/,2026-10-26,candidate 200; check requirements
+Creighton University,usa,http://www.creighton.edu,https://www.creighton.edu/admissions/admissions-requirements/international,200,https://www.creighton.edu/admissions/admissions-requirements/international,2026-10-26,ok
+Drake University,usa,https://www.drake.edu/,https://www.drake.edu/admission-aid/international-students,200,https://www.drake.edu/admission-aid/international-students,2026-10-26,ok
+Saint Louis University,usa,https://www.slu.edu/,https://www.slu.edu/admission/international/index.php,200,https://www.slu.edu/admission/international/index.php,2026-10-26,ok
