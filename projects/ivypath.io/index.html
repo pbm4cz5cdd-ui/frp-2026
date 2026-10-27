@@ -390,6 +390,20 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
     <div id="langNote" class="lang-note"></div>
     <div id="articleList"></div>
   </section>
+
+  <section id="letters" class="section">
+    <h2 data-key="lettersTitle"></h2>
+    <p class="muted small" data-key="lettersNote"></p>
+    <div id="lettersWrap" class="tbl" hidden></div>
+    <p id="lettersEmpty" class="muted small"></p>
+  </section>
+
+  <section id="commonapp" class="section">
+    <h2 data-key="commonappTitle"></h2>
+    <p class="muted small" data-key="commonappNote"></p>
+    <div id="commonappBody" class="article-body"></div>
+    <p id="commonappSources" class="muted small"></p>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -790,6 +804,12 @@ const T={
 Object.assign(T.ru,{fFacts:"Ключевые факты",fAcc:"Приём",fCost:"Стоимость в год",fStudents:"Студенты",fFounded:"Основан",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Помощь",aidShortBf:"Need-blind",aidShortAware:"Need-aware",matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",mySource:"Источник: myedline",accShort:"Приём",modalAreas:"Специальности",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"Помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →"});
 Object.assign(T.kk,{fFacts:"Негізгі фактілер",fAcc:"Қабылдау",fCost:"Жылына құны",fStudents:"Студенттер",fFounded:"Құрылған",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Көмек",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Басты бет",mySource:"Дереккөз: myedline",accShort:"Қабылдау",modalAreas:"Мамандықтар",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"Көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →"});
 Object.assign(T.en,{fFacts:"Key facts",fAcc:"Acceptance",fCost:"Cost per year",fStudents:"Students",fFounded:"Founded",fRank:"Ranking",fDeadline:"Deadline",fAid:"Aid",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Home",mySource:"Source: myedline",accShort:"Acceptance",modalAreas:"Majors",ctaA:"Find a university",ctaB:"Read the guides",navChat:"Assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →"});
+Object.assign(T.ru,{navLetters:"Письма и рекомендации",lettersTitle:"Мотивационные письма и рекомендации",lettersNote:"Примеры мотивационных эссе и писем: объём, рекомендации и источник. Данные добавляются постепенно.",lettersEmpty:"Пока нет данных. Таблица заполняется.",lettersType:"Эссе или письмо",lettersWords:"Слов",lettersRecs:"Рекомендации и от кого",lettersSource:"Источник",lettersEssay:"Эссе",lettersLetter:"Письмо",lettersOpen:"Открыть →",lettersError:"Не удалось загрузить таблицу. Обновите страницу."});
+Object.assign(T.kk,{navLetters:"Мотивациялық хаттар мен ұсыныстар",lettersTitle:"Мотивациялық хаттар мен ұсыныстар",lettersNote:"Мотивациялық эссе мен хаттардың мысалдары: көлемі, ұсыныстар және дереккөз. Деректер біртіндеп қосылады.",lettersEmpty:"Әзірге деректер жоқ. Кесте толығып жатыр.",lettersType:"Эссе немесе хат",lettersWords:"Сөз саны",lettersRecs:"Ұсыныстар және кімнен",lettersSource:"Дереккөз",lettersEssay:"Эссе",lettersLetter:"Хат",lettersOpen:"Ашу →",lettersError:"Кестені жүктеу мүмкін болмады. Бетті жаңартыңыз."});
+Object.assign(T.en,{navLetters:"Letters & recommendations",lettersTitle:"Motivation letters & recommendations",lettersNote:"Examples of motivation essays and letters: length, recommendations and source. The data is added gradually.",lettersEmpty:"No data yet. The table is being filled in.",lettersType:"Essay or letter",lettersWords:"Words",lettersRecs:"Recommendations & writers",lettersSource:"Source",lettersEssay:"Essay",lettersLetter:"Letter",lettersOpen:"Open →",lettersError:"Could not load the table. Please reload the page."});
+Object.assign(T.ru,{navCommonapp:"Common App",commonappTitle:"Common App: заявка, портфолио и fee waiver",commonappNote:"Как устроена общая заявка, как собрать профиль и творческое портфолио, как просить освобождение от взноса. Правила меняются — проверяйте сайт вуза.",commonappSources:"Официальные источники:"});
+Object.assign(T.kk,{navCommonapp:"Common App",commonappTitle:"Common App: өтінім, портфолио және fee waiver",commonappNote:"Жалпы өтінім қалай құрылған, профиль мен шығармашылық портфолионы қалай жинау керек, төлемнен босатуды қалай сұрау керек. Ережелер өзгереді — вуз сайтын тексеріңіз.",commonappSources:"Ресми дереккөздер:"});
+Object.assign(T.en,{navCommonapp:"Common App",commonappTitle:"Common App: application, portfolio and fee waiver",commonappNote:"How the shared application works, how to build your application profile and creative portfolio, and how to request a fee waiver. Rules change — check the college website.",commonappSources:"Official sources:"});
 Object.assign(T.ru,{homePlat:"Платформа",feat1T:"Университеты",feat1D:"Требования, стоимость и помощь по каждому вузу.",feat2T:"План поступления",feat2D:"Шаги от выбора страны до визы.",feat3T:"Экзамены",feat3D:"IELTS, TOEFL, SAT: что сдавать и сколько стоит.",feat4T:"Гайды",feat4D:"Статьи о поступлении, деньгах и стипендиях.",homeUniTitle:"Университеты",btnAllUnis:"Все университеты",homeGuidesTitle:"Гайды",ctaTitle:"Начать поиск",ctaBtn:"Смотреть университеты",footAbout:"Помогаем школьникам из Казахстана и СНГ разобраться в поступлении на бакалавриат за рубежом.",footPlat:"Платформа",footRes:"Ресурсы",footUnis:"Университеты",footSteps:"Пошагово",footExams:"Экзамены",footGuides:"Гайды",footTips:"Советы",footResLink:"Полезные ресурсы",footCourses:"Курсы",footCosts:"Стоимость",heroLi1:"Требования IELTS и SAT по каждому вузу",heroLi2:"Стоимость, доля иностранцев и финансовая помощь",heroLi3:"Фильтр по стране и специальности",statLine:"{u} вузов · {c} стран",majorAll:"Все специальности",allMajors:"Все направления",more:"Подробнее →",modalMajors:"Направления",modalReqs:"Требования",modalMoney:"Стоимость и помощь",pilotNote:"Лётная подготовка для иностранных студентов в США требует проверки TSA (Alien Flight Student Program) и медицинского сертификата FAA. Условия уточняйте в приёмной комиссии.",theme:"Тема",closeAria:"Закрыть",langAria:"Язык",pageTitle:"ivypath.io — поступление за рубеж"});
 Object.assign(T.kk,{homePlat:"Платформа",feat1T:"Университеттер",feat1D:"Әр университеттің талаптары, құны және көмегі.",feat2T:"Түсу жоспары",feat2D:"Ел таңдаудан визаға дейінгі қадамдар.",feat3T:"Емтихандар",feat3D:"IELTS, TOEFL, SAT: не тапсыру керек және қанша тұрады.",feat4T:"Гайдтар",feat4D:"Түсу, ақша және стипендиялар туралы мақалалар.",homeUniTitle:"Университеттер",btnAllUnis:"Барлық университеттер",homeGuidesTitle:"Гайдтар",ctaTitle:"Іздеуді бастау",ctaBtn:"Университеттерді қарау",footAbout:"Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсуді түсінуге көмектесеміз.",footPlat:"Платформа",footRes:"Ресурстар",footUnis:"Университеттер",footSteps:"Қадамдар",footExams:"Емтихандар",footGuides:"Гайдтар",footTips:"Кеңестер",footResLink:"Пайдалы ресурстар",footCourses:"Курстар",footCosts:"Құны",heroLi1:"Әр университеттің IELTS және SAT талаптары",heroLi2:"Құны, шетелдіктер үлесі және қаржылық көмек",heroLi3:"Ел және мамандық бойынша сүзгі",statLine:"{u} университет · {c} ел",majorAll:"Барлық мамандықтар",allMajors:"Барлық бағыттар",more:"Толығырақ →",modalMajors:"Бағыттар",modalReqs:"Талаптар",modalMoney:"Құны және көмек",pilotNote:"АҚШ-та шетелдік студенттер үшін ұшу дайындығы TSA (Alien Flight Student Program) тексеруін және FAA медициналық сертификатын талап етеді. Шарттарын қабылдау комиссиясынан нақтылаңыз.",theme:"Тақырып",closeAria:"Жабу",langAria:"Тіл",pageTitle:"ivypath.io — шетелге түсу"});
 Object.assign(T.en,{homePlat:"Platform",feat1T:"Universities",feat1D:"Requirements, cost and aid for every university.",feat2T:"Application plan",feat2D:"Steps from choosing a country to the visa.",feat3T:"Exams",feat3D:"IELTS, TOEFL, SAT: what to take and what it costs.",feat4T:"Guides",feat4D:"Articles on applying, money and scholarships.",homeUniTitle:"Universities",btnAllUnis:"All universities",homeGuidesTitle:"Guides",ctaTitle:"Start your search",ctaBtn:"Browse universities",footAbout:"We help school students from Kazakhstan and the CIS make sense of applying for a bachelor's abroad.",footPlat:"Platform",footRes:"Resources",footUnis:"Universities",footSteps:"Step by step",footExams:"Exams",footGuides:"Guides",footTips:"Tips",footResLink:"Useful resources",footCourses:"Courses",footCosts:"Costs",heroLi1:"IELTS and SAT requirements for every university",heroLi2:"Cost, share of international students and financial aid",heroLi3:"Filter by country and major",statLine:"{u} universities · {c} countries",majorAll:"All majors",allMajors:"All fields",more:"Details →",modalMajors:"Fields",modalReqs:"Requirements",modalMoney:"Cost and aid",pilotNote:"Flight training for international students in the US requires TSA clearance (Alien Flight Student Program) and an FAA medical certificate. Confirm the conditions with the admissions office.",theme:"Theme",closeAria:"Close",langAria:"Language",pageTitle:"ivypath.io — study abroad"});
@@ -825,6 +845,8 @@ const TAGMAP={
 "Менторство":["Менторство","Менторлық","Mentoring"]
 };
 Object.assign(TAGMAP,{"Need-blind":["Приём без учёта финансов","Қаржыға қарамай қабылдау","Need-blind"],"Need-aware":["Приём с учётом финансов","Қаржыны ескере отырып қабылдау","Need-aware"],"Merit aid only":["Только стипендии за заслуги","Тек еңбегі үшін стипендиялар","Merit aid only"],"Government funding only":["Только госфинансирование","Тек мемлекеттік қаржыландыру","Government funding only"],"No need-based aid":["Нет помощи по нужде","Мұқтаждық бойынша көмек жоқ","No need-based aid"],"Branch campus":["Филиал кампуса","Кампус филиалы","Branch campus"],"English test required":["Английский тест обязателен","Ағылшын тесті міндетті","English test required"],"IELTS no minimum":["IELTS без минимума","IELTS минимумы жоқ","IELTS no minimum"],"TOEFL no minimum":["TOEFL без минимума","TOEFL минимумы жоқ","TOEFL no minimum"],"IELTS recommended":["IELTS рекомендуют","IELTS ұсынылады","IELTS recommended"],"TOEFL recommended":["TOEFL рекомендуют","TOEFL ұсынылады","TOEFL recommended"],"IELTS varies":["IELTS зависит от программы","IELTS бағдарламаға байланысты","IELTS varies by programme"],"TOEFL varies":["TOEFL зависит от программы","TOEFL бағдарламаға байланысты","TOEFL varies by programme"],"French B2":["Французский B2","Француз тілі B2","French B2"],"German C1":["Немецкий C1","Неміс тілі C1","German C1"],"HSK required":["Нужен HSK","HSK қажет","HSK required"],"TOEFL not accepted":["TOEFL не принимают","TOEFL қабылданбайды","TOEFL not accepted"],"English or Korean test":["Английский или корейский тест","Ағылшын немесе корей тілі тесті","English or Korean test"],"Danish required":["Нужен датский","Дат тілі қажет","Danish required"],"IELTS: see note":["IELTS: см. пояснение","IELTS: түсіндірмені қараңыз","IELTS: see note"],"TOEFL: see note":["TOEFL: см. пояснение","TOEFL: түсіндірмені қараңыз","TOEFL: see note"],"SAT: see note":["SAT: см. пояснение","SAT: түсіндірмені қараңыз","SAT: see note"]});
+Object.assign(TAGMAP,{"HSK not required":["HSK не требуется","HSK қажет емес","HSK not required"],"HSK: see note":["HSK: см. пояснение","HSK: түсіндірмені қараңыз","HSK: see note"],"AP credit":["AP — кредит","AP — кредит","AP credit"],"AP required":["Нужен AP","AP қажет","AP required"],"AP not required":["AP не требуется","AP қажет емес","AP not required"],"AP recommended":["AP рекомендуют","AP ұсынылады","AP recommended"],"AP: see note":["AP: см. пояснение","AP: түсіндірмені қараңыз","AP: see note"]});
+Object.assign(TAGMAP,{"Merit scholarships":["Стипендии вуза","Университет стипендиялары","University scholarships"],"Government + university scholarships":["Госстипендии + вуза","Мемлекеттік + университет стипендиялары","Government + university scholarships"],"Government scholarships only":["Только госстипендии","Тек мемлекеттік стипендиялар","Government scholarships only"],"No scholarships":["Стипендий нет","Стипендия жоқ","No scholarships"],"Aid not published":["Помощь не опубликована","Көмек жарияланбаған","Aid not published"],"Aid: see note":["Финансирование: см. пояснение","Қаржыландыру: түсіндірмені қараңыз","Aid: see note"]});
 function tagLabel(x,l){const m=TAGMAP[x];return m?m[LI[l||lang]]:x;}
 function reqTagRank(t){
   if(/IELTS/i.test(t))return 0;
@@ -832,6 +854,8 @@ function reqTagRank(t){
   if(/SAT|ACT/i.test(t))return 2;
   if(/English test|French|Français|German|Deutsch|HSK|Danish|Korean|DET|Duolingo|PTE/i.test(t))return 3;
   if(/Entrance exam|Interview|Portfolio|Audition/i.test(t))return 4;
+  if(/^AP\b/.test(t))return 5;
+  if(/^(Need-blind|Need-aware|Merit scholarships|Government \+ university scholarships|Government scholarships only|No scholarships|Aid not published|Aid: see note)$/.test(t))return 6;
   return 9;
 }
 const COURSE_T={
@@ -1269,7 +1293,7 @@ const GUIDE_T={
  ]
 };
 
-const SECTIONS=["home","universities","qs","guide","exams","articles"];
+const SECTIONS=["home","universities","qs","guide","exams","articles","letters","commonapp"];
 const ICONS={home:"",universities:"",guide:"",exams:"",tips:"",resources:"",courses:"",costs:"",articles:""};
 const LI={ru:0,kk:1,en:2};
 let lang="ru";try{lang=localStorage.getItem("an_lang")||"ru";}catch(e){}
@@ -1359,6 +1383,63 @@ function parseCsv(text){
   if(row.some(x=>x.length))rows.push(row);
   return rows;
 }
+let LETTERS=null,LETTERS_ERROR=false;
+function letterValue(row,i){return i>=0&&row[i]!=null?String(row[i]).trim():"";}
+function letterType(value,t){
+  const s=String(value||"").trim().toLowerCase();
+  if(["essay","эссе","motivation essay"].includes(s))return t.lettersEssay;
+  if(["letter","письмо","хат","recommendation","recommendation letter","rec letter","reference","ұсыныс"].includes(s))return t.lettersLetter;
+  return value||"—";
+}
+function sourceCell(value,t){
+  const s=String(value||"").trim();
+  if(!s)return "—";
+  if(!/^https?:\/\//i.test(s))return esc(s);
+  let label=t.lettersOpen;
+  try{label=new URL(s).hostname.replace(/^www\./,"")+" ↗";}catch(e){}
+  return `<a class="link" href="${esc(s)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+}
+function renderLetters(){
+  const t=T[lang],box=$("#lettersWrap"),empty=$("#lettersEmpty");
+  if(!box||!empty)return;
+  if(LETTERS_ERROR){box.hidden=true;box.innerHTML="";empty.hidden=false;empty.textContent=t.lettersError;return;}
+  if(!LETTERS||!LETTERS.length){box.hidden=true;box.innerHTML="";empty.hidden=false;empty.textContent=t.lettersEmpty;return;}
+  box.hidden=false;empty.hidden=true;
+  box.innerHTML="<table><thead><tr>"+[t.lettersType,t.lettersWords,t.lettersRecs,t.lettersSource].map(h=>`<th>${esc(h)}</th>`).join("")+"</tr></thead><tbody>"+LETTERS.map(r=>{
+    const rec=[r.recommendations,r.recommenders].filter(Boolean).join(" — ");
+    return `<tr><td>${esc(letterType(r.type,t))}</td><td>${esc(r.words||"—")}</td><td>${esc(rec||"—")}</td><td>${sourceCell(r.source,t)}</td></tr>`;
+  }).join("")+"</tbody></table>";
+}
+async function loadLetters(){
+  try{
+    const res=await fetch("data/friend-letters.csv",{cache:"no-store"});
+    if(res.status===404){LETTERS=[];LETTERS_ERROR=false;renderLetters();return;}
+    if(!res.ok)throw new Error(res.status+" "+res.statusText);
+    const rows=parseCsv(await res.text());
+    if(!rows.length){LETTERS=[];LETTERS_ERROR=false;renderLetters();return;}
+    const head=rows[0].map(x=>x.replace(/^\ufeff/,"").trim().toLowerCase());
+    const col=(...names)=>head.findIndex(x=>names.includes(x));
+    const iType=col("type","kind","essay_or_letter","эссе_или_письмо","түрі");
+    const iWords=col("words","word_count","word count","слов","слов саны");
+    const iRecs=col("recommendations","recommendation_count","recommendation count","recs","рекомендаций","ұсыныстар");
+    const iFrom=col("recommenders","recommendation_writers","recommendation writers","from","кто_рекомендует","кімнен");
+    const iSource=col("source","url","link","ссылка","дереккөз");
+    LETTERS=rows.slice(1).filter(r=>r.some(x=>String(x).trim())).map(r=>({
+      type:letterValue(r,iType),
+      words:letterValue(r,iWords),
+      recommendations:letterValue(r,iRecs),
+      recommenders:letterValue(r,iFrom),
+      source:letterValue(r,iSource)
+    }));
+    LETTERS_ERROR=false;
+    renderLetters();
+  }catch(e){
+    console.warn("Friend letters CSV not loaded",e);
+    LETTERS=[];
+    LETTERS_ERROR=true;
+    renderLetters();
+  }
+}
 const CSV_SYM={USD:"$",GBP:"£",EUR:"€",CAD:"C$",AUD:"A$"};
 function csvNum(v){const n=parseFloat(String(v).replace(",","."));return isFinite(n)?n:null;}
 function scoreText(v,oneDecimal){const n=parseFloat(String(v).replace(",","."));if(!isFinite(n))return String(v).trim();return oneDecimal&&Number.isInteger(n)?n.toFixed(1):String(n);}
@@ -1413,6 +1494,39 @@ function addCsvReqTags(u){
     else if(/нужен|нужна|обязателен|ожидается/.test(note))add("SAT/ACT required");
     else if(/рекоменд/.test(note))add("SAT recommended");
     else if(note)add("SAT: see note");
+  }
+  if(!hasReqTag(u,/HSK/i)){
+    const v=c.hsk,note=(c.hsk_note||"").toLowerCase();
+    if(v&&c.hsk_checked)add("HSK "+scoreText(v,false));
+    else if(/не требуется|не нужен|не обязателен|english[- ]track/.test(note))add("HSK not required");
+    else if(/обязателен|нужен|требуется|требует/.test(note))add("HSK required");
+    else if(note)add("HSK: see note");
+  }
+  if(!hasReqTag(u,/^AP\b/)){
+    const v=c.ap,note=(c.ap_note||"").toLowerCase();
+    if(v&&c.ap_checked)add("AP "+scoreText(v,false));
+    else if(/не применя|не используется|не требуется|не нужен|не учитыва|not used|not required/.test(note))add("AP not required");
+    else if(/кредит|credit|advanced standing/.test(note))add("AP credit");
+    else if(/обязателен|нужен|требуется|требует/.test(note))add("AP required");
+    else if(/рекоменд/.test(note))add("AP recommended");
+    else if(note)add("AP: see note");
+  }
+  if(c.aid_checked){
+    for(const old of ["Need-blind","Need-aware","Merit aid only","Government funding only","No need-based aid"]){
+      const at=tags.indexOf(old);
+      if(at>=0)tags.splice(at,1);
+    }
+  }
+  if(c.aid_checked&&(c.aid_type||c.aid_note)&&!hasReqTag(u,/^(Need-blind|Need-aware|Merit scholarships|Government \+ university scholarships|Government scholarships only|No scholarships|Aid not published|Aid: see note)$/)){
+    const type=(c.aid_type||"").toLowerCase().replace(/[_\s]+/g,"-");
+    if(type==="need-blind")add("Need-blind");
+    else if(type==="need-aware")add("Need-aware");
+    else if(type==="merit")add("Merit scholarships");
+    else if(type==="government+merit"||type==="government-merit")add("Government + university scholarships");
+    else if(type==="government")add("Government scholarships only");
+    else if(type==="none")add("No scholarships");
+    else if(type==="not-published")add("Aid not published");
+    else if(c.aid_note)add("Aid: see note");
   }
   return n;
 }
@@ -1492,9 +1606,195 @@ function render(){
 const AREAS={"architecture":["Архитектура","Сәулет","Architecture"],"biological_life_sciences":["Биология и науки о жизни","Биология және өмір туралы ғылымдар","Biology & life sciences"],"business_marketing":["Бизнес и маркетинг","Бизнес және маркетинг","Business & marketing"],"computer_info_science":["Информатика и компьютерные науки","Информатика және компьютерлік ғылымдар","Computer & information sciences"],"engineering":["Инженерия","Инженерия","Engineering"],"engineering_technologies":["Инженерные технологии","Инженерлік технологиялар","Engineering technologies"],"english":["Английский язык","Ағылшын тілі","English"],"health_professions_related_programs":["Медицинские специальности","Медициналық мамандықтар","Health professions"],"history":["История","Тарих","History"],"law_legal_studies":["Право и юриспруденция","Құқық және заңтану","Law & legal studies"],"mathematics_statistics":["Математика и статистика","Математика және статистика","Mathematics & statistics"],"natural_resources_conservation":["Природные ресурсы и охрана природы","Табиғи ресурстар және табиғатты қорғау","Natural resources & conservation"],"philosophy_religious_studies":["Философия и религиоведение","Философия және дінтану","Philosophy & religious studies"],"physical_sciences":["Естественные науки","Жаратылыстану ғылымдары","Physical sciences"],"psychology":["Психология","Психология","Psychology"],"public_administration_social_services":["Госуправление и социальные службы","Мемлекеттік басқару және әлеуметтік қызметтер","Public administration & social services"],"social_sciences":["Социальные науки","Әлеуметтік ғылымдар","Social sciences"],"visual_performing_arts":["Изобразительное и исполнительское искусство","Бейнелеу және орындаушылық өнер","Visual & performing arts"],"foreign_languages_literatures_linguistics":["Иностранные языки и лингвистика","Шет тілдері және лингвистика","Foreign languages & linguistics"],"interdisciplinary_studies":["Междисциплинарные исследования","Пәнаралық зерттеулер","Interdisciplinary studies"],"area_ethnic_gender_studies":["Регионоведение, этнические и гендерные исследования","Аймақтану, этникалық және гендерлік зерттеулер","Area, ethnic & gender studies"],"communication_journalism":["Коммуникации и журналистика","Коммуникациялар және журналистика","Communication & journalism"],"education":["Образование","Білім беру","Education"],"liberal_arts_general_studies":["Liberal arts и общие дисциплины","Liberal arts және жалпы пәндер","Liberal arts & general studies"],"parks_recreation":["Парки, рекреация и фитнес","Саябақтар, рекреация және фитнес","Parks, recreation & fitness"],"family_consumer_sciences":["Семья и потребительские науки","Отбасы және тұтыну ғылымдары","Family & consumer sciences"],"agriculture":["Сельское хозяйство","Ауыл шаруашылығы","Agriculture"],"homeland_security_law_enforcement":["Безопасность и правоохранительная деятельность","Қауіпсіздік және құқық қорғау","Homeland security & law enforcement"],"communication_technologies":["Коммуникационные технологии","Коммуникациялық технологиялар","Communication technologies"],"other":["Другое","Басқа","Other"],"theology_religious_vocations":["Теология и религиозное служение","Теология және діни қызмет","Theology & religious vocations"],"construction_trades":["Строительные специальности","Құрылыс мамандықтары","Construction trades"],"transportation_materials_moving":["Транспорт и логистика","Көлік және логистика","Transportation & logistics"],"foreign_languages_literatures":["Иностранные языки и литература","Шет тілдері және әдебиет","Foreign languages & literature"],"personal_culinary_services":["Кулинария и сервис","Аспаздық және сервис","Personal & culinary services"],"military_science_technologies":["Военные науки и технологии","Әскери ғылымдар және технологиялар","Military science & technologies"]};
 const EXTRA_AREAS={"Massachusetts Institute of Technology":["architecture","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","social_sciences","visual_performing_arts","business_marketing","history"],"Harvard University":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Princeton University":["architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Yale University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Stanford University":["area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"California Institute of Technology":["computer_info_science","engineering","biological_life_sciences","mathematics_statistics","physical_sciences","business_marketing"],"University of Pennsylvania":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Duke University":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Brown University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"Columbia University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Amherst College":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Dartmouth College":["area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history","other"],"Williams College":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"University of Chicago":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","theology_religious_vocations","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Cornell University":["agriculture","natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Northwestern University":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","law_legal_studies","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Notre Dame University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","theology_religious_vocations","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Bowdoin College":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Vanderbilt University":["architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Swarthmore College":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Johns Hopkins University":["natural_resources_conservation","area_ethnic_gender_studies","communication_technologies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","history"],"Rice University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Pomona College":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Wellesley College":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","history"],"Washington and Lee University":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"University of California, Berkeley":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"New York University":["area_ethnic_gender_studies","communication_journalism","communication_technologies","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","law_legal_studies","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of California, Los Angeles":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of Michigan":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Georgia Institute of Technology":["natural_resources_conservation","architecture","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","business_marketing","history"],"Carnegie Mellon University":["architecture","communication_journalism","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"Purdue University":["agriculture","natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","communication_technologies","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","family_consumer_sciences","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","construction_trades","transportation_materials_moving","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of California, San Diego":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of Illinois Urbana-Champaign":["agriculture","natural_resources_conservation","architecture","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"]};
 function openUni(u){const t=T[lang],i=LI[lang];
-  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div>${factsHtml(t,u)}<h4>${esc(t.modalMajors)}</h4><div class="chips">${majorsOf(u).map(k=>`<span>${esc(MAJ[k][i])}</span>`).join("")}</div>${(u.a||EXTRA_AREAS[u.n]||[]).length?`<h4>${esc(t.modalAreas)}</h4><div class="chips">${(u.a||EXTRA_AREAS[u.n]).map(k=>AREAS[k]?`<span>${esc(AREAS[k][i])}</span>`:"").join("")}</div>`:""}${PILOT.includes(u.n)?`<p class="muted small">${esc(t.pilotNote)}</p>`:""}<h4>${esc(t.modalReqs)}</h4> <div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>${lang==="ru"&&u.csv?(()=>{const rn=[u.csv.ielts_note,u.csv.toefl_note,u.csv.sat_note].filter(Boolean);return rn.length?`<div class="muted small" style="margin-top:8px;line-height:1.45">${rn.map(x=>esc(x)).join("<br>")}</div>`:"";})():""}<h4>${esc(t.modalMoney)}</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(u.src==="my"?t.mySource:t.site)}</a></p>`;
+  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div>${factsHtml(t,u)}<h4>${esc(t.modalMajors)}</h4><div class="chips">${majorsOf(u).map(k=>`<span>${esc(MAJ[k][i])}</span>`).join("")}</div>${(u.a||EXTRA_AREAS[u.n]||[]).length?`<h4>${esc(t.modalAreas)}</h4><div class="chips">${(u.a||EXTRA_AREAS[u.n]).map(k=>AREAS[k]?`<span>${esc(AREAS[k][i])}</span>`:"").join("")}</div>`:""}${PILOT.includes(u.n)?`<p class="muted small">${esc(t.pilotNote)}</p>`:""}<h4>${esc(t.modalReqs)}</h4> <div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>${lang==="ru"&&u.csv?(()=>{const rn=[u.csv.ielts_note,u.csv.toefl_note,u.csv.sat_note,u.csv.hsk_note,u.csv.ap_note,u.csv.aid_note].filter(Boolean);return rn.length?`<div class="muted small" style="margin-top:8px;line-height:1.45">${rn.map(x=>esc(x)).join("<br>")}</div>`:"";})():""}<h4>${esc(t.modalMoney)}</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(u.src==="my"?t.mySource:t.site)}</a></p>`;
   $("#modal").hidden=false;}
 const _rh=renderHome;renderHome=function(){_rh();const N=["MIT","Stanford University","Harvard University"];document.querySelectorAll("#homeUnis .ucard").forEach((el,k)=>{el.style.cursor="pointer";el.addEventListener("click",ev=>{if(!ev.target.closest("a"))openUni(UNIS.find(x=>x.n===N[k]));});});};
+const COMMONAPP_INTRO={
+ ru:[
+  {p:"Common App — это не один общий конкурс, а платформа, через которую вы отправляете заявки в разные вузы. Общую анкету заполняют один раз, но у каждого вуза остаются свои вопросы, дедлайны и взносы. Ниже — маршрут для новичка: что делать по порядку и где проверять требования."},
+  {table:[["Шаг","Что сделать"],["1","Создать аккаунт и добавить 8–12 вузов"],["2","Заполнить Profile, Family, Education"],["3","Добавить тесты, Activities и Honors"],["4","Написать эссе и попросить рекомендации"],["5","Проверить требования каждого вуза"],["6","Отправить заявку и следить за порталом"]]},
+  {p:"Главное правило: требования вуза важнее советов из интернета. Всё, что ниже, проверяйте в My Colleges и Requirements Grid на своём аккаунте."}
+ ],
+ kk:[
+  {p:"Common App — бір жалпы конкурс емес, әртүрлі вуздарға өтінім жіберетін платформа. Жалпы сауалнаманы бір рет толтырады, бірақ әр вуздың өз сұрақтары, дедлайндары мен төлемдері қалады. Төменде — жаңадан бастағанға арналған рет: не істеу керек және талаптарды қайдан тексеру керек."},
+  {table:[["Қадам","Не істеу керек"],["1","Аккаунт ашып, 8–12 вуз қосу"],["2","Profile, Family, Education толтыру"],["3","Тесттер, Activities және Honors қосу"],["4","Эссе жазып, ұсыныстар сұрау"],["5","Әр вуздың талаптарын тексеру"],["6","Өтінім жіберіп, порталды бақылау"]]},
+  {p:"Басты ереже: вуз талабы интернеттегі кеңестен маңызды. Төмендегінің бәрін өз аккаунтыңыздағы My Colleges және Requirements Grid-тен тексеріңіз."}
+ ],
+ en:[
+  {p:"Common App is not one shared competition; it is a platform for sending applications to different colleges. You fill in the shared form once, but each college keeps its own questions, deadlines and fees. Below is a beginner route: what to do in order and where to check the requirements."},
+  {table:[["Step","What to do"],["1","Create an account and add 8–12 colleges"],["2","Fill in Profile, Family, Education"],["3","Add tests, Activities and Honors"],["4","Write the essay and ask for recommendations"],["5","Check each college's requirements"],["6","Submit and track the college portals"]]},
+  {p:"Main rule: the college's requirements matter more than advice from the internet. Check everything below in My Colleges and the Requirements Grid inside your own account."}
+ ]
+};
+const COMMONAPP_GUIDE={
+ ru:[
+  {t:"1. С чего начать: аккаунт и список вузов",sub:"Сначала список и требования, потом анкета.",b:[
+   {p:"Создайте аккаунт на apply.commonapp.org в роли student. Запишите email, который проверяете каждый день; сохраните пароль и код восстановления."},
+   {p:"Добавьте 8–12 вузов в My Colleges. Для каждого откройте Requirements Grid: там видно, нужны ли SAT/ACT, IELTS/TOEFL, рекомендации, Portfolio, дополнительные эссе и какой дедлайн."},
+   {ul:["Разделите список на 3 группы: 2–3 ambitious, 4–5 match, 2–3 safety.","Проверьте, принимает ли вуз Common App и нет ли у него отдельного приложения.","Сразу запишите дедлайны ED/EA/RD в календарь.","Не начинайте с эссе, пока не знаете вопросы вузов."]},
+   {p:"Если вуз не принимает Common App, не заполняйте его вслепую: у него может быть свой портал."}
+  ]},
+  {t:"2. Profile, Family, Education",sub:"Личные данные, семья и школа.",b:[
+   {p:"Profile: имя как в паспорте, дата рождения, гражданство, адрес, телефон и email. Ошибку в имени потом сложно исправить."},
+   {p:"Family: образование и работа родителей. Если родитель не работает или данных нет, выбирайте «does not apply» или «unknown», а не выдумывайте."},
+   {p:"Education: школа, класс, даты, оценки и курсы. Counsellor — школьный человек, который отправит school report и transcript. Спросите, кто это будет."},
+   {ul:["Подготовьте транскрипт на английском или попросите школу перевести.","Проверьте, как в школе считают GPA и есть ли ranking.","Если школа не отправляет документы через Common App, уточните альтернативу у вуза."]}
+  ]},
+  {t:"3. Testing",sub:"SAT/ACT, IELTS/TOEFL и политика вуза.",b:[
+   {p:"Common App не отправляет баллы сам. Вы вводите их в Testing (self-report) или заказываете официальную отправку у College Board/ETS, если вуз этого требует."},
+   {ul:["Проверьте политику: required, test-optional или test-blind.","Если вуз test-optional, а балл ниже среднего, не отправляйте его.","IELTS/TOEFL действуют 2 года: проверьте, доживёт ли балл до дедлайна.","Некоторые вузы принимают Duolingo или PTE — смотрите Requirements Grid."]},
+   {p:"Не отправляйте официальные баллы во все вузы заранее: это платно и часто не нужно."}
+  ]},
+  {t:"4. Activities: 10 мест",sub:"Не 10 ради галочки, а 6–10 значимых дел.",b:[
+   {p:"В Activities до 10 позиций. Лучше 6–8 сильных, чем 10 случайных. Считается всё: работа, помощь семье, уход за родственниками, спорт, клуб, волонтёрство, олимпиады и хобби."},
+   {p:"Лимиты полей: роль — 50 символов, организация — 100, описание — 150. Часы в неделю и недели в году указывайте честно."},
+   {p:"Формула описания: что делал + для кого + результат. Например: «Led 4 debates, prepared 12 cases, team reached city final» — конкретно, без «participated in various activities»."},
+   {ul:["Сначала выпишите 15–20 дел, потом выберите самые важные.","Показывайте рост: с участника до капитана, с идеи до проекта.","Не раздувайте часы: интервью или документы могут показать разницу.","Работа и семейные обязанности — сильная часть заявки, не прячьте их."]}
+  ]},
+  {t:"5. Honors: 5 мест",sub:"Награды и их уровень.",b:[
+   {p:"Honors — до 5 академических наград. Указывайте название, дату и уровень: school, city/regional, national, international."},
+   {ul:["Олимпиады, конкурсы, стипендии, Dean's list, научные проекты.","Если награда командная, напишите свою роль.","Не добавляйте награды за участие без отбора: это ослабляет список.","Если награда неизвестна вузу, добавьте 5–8 слов пояснения."]}
+  ]},
+  {t:"6. Writing: главное эссе и допэссе",sub:"650 слов плюс вопросы конкретного вуза.",b:[
+   {p:"Главное эссе — до 650 слов. Оно не про список достижений, а про то, как вы думаете и меняетесь. Выберите один конкретный эпизод, покажите сцену, свои действия и вывод."},
+   {ul:["Черновик, обратная связь, новый черновик. Планируйте 3–5 версий.","Не пересказывайте Activities: там уже есть факты.","Допэссе «Why us» — назовите конкретные курсы, профессоров, лаборатории и программы.","Проверьте лимит слов у каждого вуза: он может быть 100, 150, 250 или 400."]},
+   {p:"Помощь взрослого — это вопросы и комментарии. Если текст написан не вами, это видно по стилю и ответам на интервью."}
+  ]},
+  {t:"7. Рекомендации и школа",sub:"Просить заранее и дать учителю материал.",b:[
+   {p:"Обычно нужны counsellor и 1–2 учителя. Точный набор — в My Colleges. Школа отправляет school report, transcript и рекомендации."},
+   {ul:["Попросите минимум за 4–6 недель до дедлайна.","Дайте учителю brag sheet: проекты, оценки, что вы читали, чем гордитесь.","Скажите, какие вузы и дедлайны, и как отправить форму.","Проверьте статус в Common App: форма может быть «invited», но не отправлена.","FERPA waiver добровольный; он не обязателен для поступления."]},
+   {p:"Если учитель не говорит по-английски, узнайте у школы, кто переведёт и отправит письмо."}
+  ]},
+  {t:"8. Творческое портфолио",sub:"Только если вуз просит.",b:[
+   {p:"Для art, design, architecture, music, film и некоторых других программ вуз может попросить portfolio отдельно. Это не то же самое, что Activities."},
+   {ul:["Смотрите колонку Portfolio в Requirements Grid и инструкцию в My Colleges.","Формат, число работ, размер файлов и дедлайн задаёт вуз.","Часто загрузка идёт через SlideRoom или портал вуза.","Подпишите каждую работу: название, год, материал, размер и вашу роль.","Не отправляйте общий набор, если вуз просит конкретный формат."]}
+  ]},
+  {t:"9. Fee waiver",sub:"Освобождение от взноса: как просить и что важно.",b:[
+   {p:"Взнос берёт каждый вуз, а не Common App. Fee waiver — просьба убрать взнос. Он находится в Profile → Common App Fee Waiver: ответьте «Yes», прочитайте критерии и подпишите."},
+   {p:"Counsellor или школьный official подтверждает нужду. Решение принимает вуз: некоторые принимают waiver только от граждан США, некоторые не принимают вообще. Для иностранца waiver не автоматический."},
+   {p:"Критерии Common App: бесплатный или льготный обед, SAT/ACT fee waiver, доход по USDA, госпомощь, low-income программы, foster care или бездомность, статус сироты, Pell Grant и письменное подтверждение school official. Часть критериев американская; для Казахстана важны подтверждение школы и политика вуза."},
+   {p:"Что делать: 1) заполните fee waiver в Profile; 2) попросите counsellor подтвердить; 3) при отправке каждого вуза выберите fee waiver; 4) проверьте, принял ли вуз; 5) если отказал — ищите собственную форму вуза. 650+ вузов вообще не берут взнос с иностранцев."},
+   {p:"Fee waiver покрывает только application fee. Тесты, доставка документов и виза оплачиваются отдельно."}
+  ]},
+  {t:"10. Отправка и после",sub:"Проверить, отправить и не потерять дедлайн.",b:[
+   {ul:["Пройдите Review: имя, дата рождения, email, вузы и эссе.","Подпишите и отправьте. Сохраните confirmation.","Зайдите в портал каждого вуза в течение 1–2 дней: там видно, какие документы дошли.","Если чего-то не хватает, напишите admissions и counsellor.","Следите за интервью, mid-year report и дополнительными формами.","Не ждите последнего часа: сервер может зависнуть."]},
+   {table:[["Когда","Что сделать"],["Лето–сентябрь","Аккаунт, список, Activities, черновик эссе"],["Сентябрь–октябрь","Рекомендации, тесты, допэссе"],["Ноябрь","Дедлайны ED/EA"],["Декабрь–январь","Дедлайны RD"],["После отправки","Порталы, интервью, mid-year report"]]},
+   {p:"Даты зависят от вуза. Проверяйте My Colleges, а не общий календарь."}
+  ]}
+ ],
+ kk:[
+  {t:"1. Қайдан бастау: аккаунт және вуздар тізімі",sub:"Алдымен тізім мен талаптар, содан кейін анкета.",b:[
+   {p:"apply.commonapp.org сайтында student рөлімен аккаунт ашыңыз. Күнде тексеретін email-ды жазып, құпия сөз бен қалпына келтіру кодын сақтаңыз."},
+   {p:"My Colleges бөліміне 8–12 вуз қосыңыз. Әр вуз үшін Requirements Grid ашыңыз: SAT/ACT, IELTS/TOEFL, ұсыныстар, Portfolio, қосымша эсселер және дедлайн керек пе — бәрі сонда."},
+   {ul:["Тізімді 3 топқа бөліңіз: 2–3 ambitious, 4–5 match, 2–3 safety.","Вуз Common App қабылдай ма, әлде өз өтінімі бар ма — тексеріңіз.","ED/EA/RD дедлайндарын бірден күнтізбеге жазыңыз.","Вуз сұрақтарын білмей тұрып эссе жазбаңыз."]},
+   {p:"Вуз Common App қабылдамаса, соқыр толтырмаңыз: оның өз порталы болуы мүмкін."}
+  ]},
+  {t:"2. Profile, Family, Education",sub:"Жеке деректер, отбасы және мектеп.",b:[
+   {p:"Profile: аты-жөні паспорттағыдай, туған күні, азаматтық, мекенжай, телефон және email. Атындағы қатені кейін түзету қиын."},
+   {p:"Family: ата-ананың білімі мен жұмысы. Ата-ана жұмыс істемесе немесе дерек жоқ болса, «does not apply» немесе «unknown» таңдаңыз, ойдан жазбаңыз."},
+   {p:"Education: мектеп, сынып, күндер, бағалар және курстар. Counsellor — school report пен transcript жіберетін мектеп адамы. Ол кім болатынын сұраңыз."},
+   {ul:["Транскриптті ағылшынша дайындаңыз немесе мектептен аудартуды сұраңыз.","Мектеп GPA-ды қалай есептейтінін және ranking бар-жоғын тексеріңіз.","Мектеп құжатты Common App арқылы жібермесе, вуздан балама жолды сұраңыз."]}
+  ]},
+  {t:"3. Testing",sub:"SAT/ACT, IELTS/TOEFL және вуз саясаты.",b:[
+   {p:"Common App баллды өзі жібермейді. Сіз оны Testing бөліміне енгізесіз (self-report) немесе вуз талап етсе, College Board/ETS арқылы ресми жібертесіз."},
+   {ul:["Саясатты тексеріңіз: required, test-optional немесе test-blind.","Вуз test-optional, ал балл орташадан төмен болса, жібермеңіз.","IELTS/TOEFL 2 жыл жарамды: балл дедлайнға дейін жетеді ме — тексеріңіз.","Кейбір вуздар Duolingo немесе PTE қабылдайды — Requirements Grid-тен қараңыз."]},
+   {p:"Ресми баллды барлық вузға алдын ала жібермеңіз: ол ақылы және көбіне қажет емес."}
+  ]},
+  {t:"4. Activities: 10 орын",sub:"10 белгі үшін емес, 6–10 маңызды іс.",b:[
+   {p:"Activities-те 10 позицияға дейін. 10 кездейсоқ істен 6–8 мықты іс жақсы. Барлығы есептеледі: жұмыс, отбасына көмек, науқасқа күтім, спорт, клуб, волонтёрлік, олимпиада және хобби."},
+   {p:"Өріс шектеулері: рөл — 50 таңба, ұйым — 100, сипаттама — 150. Аптадағы сағат пен жылындағы аптаны шынайы жазыңыз."},
+   {p:"Сипаттама формуласы: не істедіңіз + кім үшін + нәтиже. Мысалы: «Led 4 debates, prepared 12 cases, team reached city final» — нақты, «participated in various activities» емес."},
+   {ul:["Алдымен 15–20 істі жазып, кейін ең маңыздысын таңдаңыз.","Өсуді көрсетіңіз: қатысушыдан капитанға, идеядан жобаға.","Сағатты асырмаңыз: интервью немесе құжат айырмашылықты көрсетуі мүмкін.","Жұмыс пен отбасы міндеттері — өтінімнің мықты бөлігі, оны жасырмаңыз."]}
+  ]},
+  {t:"5. Honors: 5 орын",sub:"Марапаттар және олардың деңгейі.",b:[
+   {p:"Honors — 5 академиялық марапатқа дейін. Атауы, күні және деңгейі: school, city/regional, national, international."},
+   {ul:["Олимпиадалар, конкурстар, стипендиялар, Dean's list, ғылыми жобалар.","Марапат командалық болса, өз рөліңізді жазыңыз.","Іріктеусіз қатысқаны үшін марапат қоспаңыз: ол тізімді әлсіретеді.","Вуз марапатты білмесе, 5–8 сөзбен түсіндіріңіз."]}
+  ]},
+  {t:"6. Writing: негізгі эссе және қосымша эссе",sub:"650 сөз және нақты вуздың сұрақтары.",b:[
+   {p:"Негізгі эссе — 650 сөзге дейін. Ол жетістіктер тізімі емес, сіздің қалай ойлайтыныңыз және өзгеретініңіз туралы. Бір нақты оқиғаны таңдап, көріністі, әрекетіңізді және қорытындыны көрсетіңіз."},
+   {ul:["Черновик, кері байланыс, жаңа черновик. 3–5 нұсқа жоспарлаңыз.","Activities-ті қайталамаңыз: фактілер сонда бар.","«Why us» эссесінде нақты курстар, профессорлар, зертханалар мен бағдарламаларды атаңыз.","Әр вуздың сөз шегін тексеріңіз: 100, 150, 250 немесе 400 болуы мүмкін."]},
+   {p:"Ересек адамның көмегі — сұрақ пен пікір. Мәтін сіз жазбасаңыз, ол стиль мен интервью жауаптарынан көрінеді."}
+  ]},
+  {t:"7. Ұсыныстар және мектеп",sub:"Алдын ала сұрап, мұғалімге материал беріңіз.",b:[
+   {p:"Әдетте counsellor және 1–2 мұғалім керек. Нақты тізім — My Colleges-те. Мектеп school report, transcript және ұсыныстарды жібереді."},
+   {ul:["Дедлайнға кемінде 4–6 апта бұрын сұраңыз.","Мұғалімге brag sheet беріңіз: жобалар, бағалар, не оқығаныңыз, немен мақтанасыз.","Қай вуздар, қандай дедлайн және форманы қалай жіберу керегін айтыңыз.","Common App статусын тексеріңіз: форма «invited» болып, жіберілмеуі мүмкін.","FERPA waiver ерікті; түсу үшін міндетті емес."]},
+   {p:"Мұғалім ағылшынша сөйлемесе, мектептен кім аударып жіберетінін сұраңыз."}
+  ]},
+  {t:"8. Шығармашылық портфолио",sub:"Вуз сұраса ғана.",b:[
+   {p:"Art, design, architecture, music, film және кейбір басқа бағдарламалар үшін вуз portfolio-ны бөлек сұрауы мүмкін. Бұл Activities емес."},
+   {ul:["Requirements Grid-тегі Portfolio бағанын және My Colleges нұсқаулығын қараңыз.","Формат, жұмыс саны, файл өлшемі және дедлайнды вуз белгілейді.","Көбіне жүктеу SlideRoom немесе вуз порталы арқылы өтеді.","Әр жұмысты қолтаңбалаңыз: атауы, жылы, материалы, өлшемі және рөліңіз.","Вуз нақты формат сұраса, жалпы жинақ жібермеңіз."]}
+  ]},
+  {t:"9. Fee waiver",sub:"Төлемнен босату: қалай сұрау керек және не маңызды.",b:[
+   {p:"Төлемді Common App емес, әр вуз алады. Fee waiver — сол төлемді алып тастауды сұрау. Ол Profile → Common App Fee Waiver бөлімінде: «Yes» таңдап, шарттарды оқып, қол қойыңыз."},
+   {p:"Counsellor немесе мектептің official өкілі қажеттілікті растайды. Шешімді вуз қабылдайды: кейбірі waiver-ды тек АҚШ азаматтарына береді, кейбірі мүлде бермейді. Шетелдік үшін waiver автоматты емес."},
+   {p:"Common App критерийлері: тегін немесе жеңілдік тамақ, SAT/ACT fee waiver, USDA кіріс нормасы, мемлекеттік көмек, low-income бағдарламалар, foster care немесе баспанасыздық, жетім мәртебесі, Pell Grant және school official-дың жазбаша растауы. Критерийлердің бір бөлігі америкалық; Қазақстан үшін мектептің растауы және вуз саясаты маңызды."},
+   {p:"Не істеу керек: 1) Profile-те fee waiver толтырыңыз; 2) counsellor-дан растауды сұраңыз; 3) әр вузды жібергенде fee waiver таңдаңыз; 4) вуз қабылдады ма — тексеріңіз; 5) қабылдамаса, вуздың өз формасын іздеңіз. 650+ вуз шетелдіктерден төлем алмайды."},
+   {p:"Fee waiver тек application fee-ді жабады. Тесттер, құжат жеткізу және виза бөлек төленеді."}
+  ]},
+  {t:"10. Жіберу және кейін",sub:"Тексеру, жіберу және дедлайнды жоғалтпау.",b:[
+   {ul:["Review бөлімінде аты-жөні, туған күні, email, вуздар және эсселерді тексеріңіз.","Қол қойып, жіберіңіз. Confirmation сақтаңыз.","1–2 күн ішінде әр вуздың порталына кіріңіз: қай құжат жеткенін көресіз.","Бірдеңе жетпесе, admissions пен counsellor-ға жазыңыз.","Интервью, mid-year report және қосымша формаларды бақылаңыз.","Соңғы сағатты күтпеңіз: сервер іркілуі мүмкін."]},
+   {table:[["Қашан","Не істеу керек"],["Жаз–қыркүйек","Аккаунт, тізім, Activities, эссе черновигі"],["Қыркүйек–қазан","Ұсыныстар, тесттер, қосымша эсселер"],["Қараша","ED/EA дедлайндары"],["Желтоқсан–қаңтар","RD дедлайндары"],["Жібергеннен кейін","Порталдар, интервью, mid-year report"]]},
+   {p:"Күндер вузға байланысты. Жалпы күнтізбені емес, My Colleges-ті тексеріңіз."}
+  ]}
+ ],
+ en:[
+  {t:"1. Start here: account and college list",sub:"List and requirements first, the form second.",b:[
+   {p:"Create an account at apply.commonapp.org as a student. Use an email you check every day and save your password and recovery code."},
+   {p:"Add 8–12 colleges in My Colleges. For each one, open the Requirements Grid: it shows whether SAT/ACT, IELTS/TOEFL, recommendations, a Portfolio, extra essays and which deadline are required."},
+   {ul:["Split the list into 3 groups: 2–3 ambitious, 4–5 match, 2–3 safety.","Check whether the college accepts Common App or has its own application.","Put ED/EA/RD deadlines in your calendar now.","Do not start the essay before you know each college's questions."]},
+   {p:"If a college does not accept Common App, do not fill it in blindly: it may have its own portal."}
+  ]},
+  {t:"2. Profile, Family, Education",sub:"Personal details, family and school.",b:[
+   {p:"Profile: your name exactly as in your passport, date of birth, citizenship, address, phone and email. A name error is hard to fix later."},
+   {p:"Family: your parents' education and work. If a parent does not work or you do not know the details, choose «does not apply» or «unknown»; do not invent them."},
+   {p:"Education: school, year, dates, grades and courses. Your counsellor is the school person who sends the school report and transcript. Ask who it will be."},
+   {ul:["Prepare a transcript in English or ask the school to translate it.","Check how your school calculates GPA and whether it ranks students.","If the school does not send documents through Common App, ask the college about an alternative."]}
+  ]},
+  {t:"3. Testing",sub:"SAT/ACT, IELTS/TOEFL and each college's policy.",b:[
+   {p:"Common App does not send scores itself. You enter them in Testing (self-report) or order an official send from College Board/ETS if the college requires it."},
+   {ul:["Check the policy: required, test-optional or test-blind.","If a college is test-optional and your score is below its range, do not send it.","IELTS/TOEFL are valid for 2 years: check that the score lasts until the deadline.","Some colleges accept Duolingo or PTE — see the Requirements Grid."]},
+   {p:"Do not order official score sends to every college in advance: it costs money and is often unnecessary."}
+  ]},
+  {t:"4. Activities: 10 slots",sub:"Not 10 for the sake of it, but 6–10 meaningful ones.",b:[
+   {p:"Activities has up to 10 slots. Six to eight strong entries are better than ten random ones. Everything counts: work, family responsibilities, caring for relatives, sport, clubs, volunteering, olympiads and hobbies."},
+   {p:"Field limits: role — 50 characters, organisation — 100, description — 150. Give honest hours per week and weeks per year."},
+   {p:"Description formula: what you did + for whom + result. For example: «Led 4 debates, prepared 12 cases, team reached city final» — specific, not «participated in various activities»."},
+   {ul:["Write down 15–20 activities first, then choose the most important.","Show growth: from member to captain, from idea to project.","Do not inflate hours: an interview or documents may show the difference.","Work and family duties are a strong part of the application; do not hide them."]}
+  ]},
+  {t:"5. Honors: 5 slots",sub:"Awards and their level.",b:[
+   {p:"Honors has up to 5 academic awards. Give the title, date and level: school, city/regional, national, international."},
+   {ul:["Olympiads, competitions, scholarships, Dean's list, research projects.","If an award was a team result, state your role.","Do not add participation awards with no selection: they weaken the list.","If a college may not know the award, add a 5–8 word explanation."]}
+  ]},
+  {t:"6. Writing: main essay and supplements",sub:"650 words plus each college's questions.",b:[
+   {p:"The main essay is up to 650 words. It is not a list of achievements but a story of how you think and change. Choose one specific episode, show the scene, your actions and what you learned."},
+   {ul:["Draft, get feedback, draft again. Plan for 3–5 versions.","Do not repeat Activities: the facts are already there.","In a «Why us» essay, name specific courses, professors, labs and programmes.","Check each college's word limit: it may be 100, 150, 250 or 400."]},
+   {p:"Adult help means questions and comments. If someone else wrote the text, it shows in the style and in interview answers."}
+  ]},
+  {t:"7. Recommendations and school forms",sub:"Ask early and give the teacher material.",b:[
+   {p:"You usually need a counsellor and 1–2 teachers. The exact list is in My Colleges. The school sends the school report, transcript and recommendations."},
+   {ul:["Ask at least 4–6 weeks before the deadline.","Give the teacher a brag sheet: projects, grades, what you read, what you are proud of.","Tell them which colleges and deadlines, and how to send the form.","Check the status in Common App: a form can be «invited» but not sent.","The FERPA waiver is optional; it is not required for admission."]},
+   {p:"If a teacher does not speak English, ask the school who will translate and send the letter."}
+  ]},
+  {t:"8. Creative portfolio",sub:"Only if the college asks.",b:[
+   {p:"For art, design, architecture, music, film and some other programmes, a college may ask for a portfolio separate from the application. This is not the same as Activities."},
+   {ul:["Check the Portfolio column in the Requirements Grid and the instructions in My Colleges.","The college sets the format, number of works, file size and deadline.","Uploads often go through SlideRoom or the college portal.","Caption each work: title, year, medium, size and your role.","Do not send a generic collection if the college asks for a specific format."]}
+  ]},
+  {t:"9. Fee waiver",sub:"Removing the application fee: how to ask and what matters.",b:[
+   {p:"Each college charges the application fee, not Common App. A fee waiver is a request to remove that fee. It is in Profile → Common App Fee Waiver: answer «Yes», read the criteria and sign."},
+   {p:"Your counsellor or a school official confirms the need. The college decides: some accept waivers only from US citizens, some do not accept them at all. For an international student a waiver is not automatic."},
+   {p:"Common App criteria include free or reduced-price lunch, an SAT/ACT fee waiver, income within USDA guidelines, public assistance, low-income programmes, foster care or homelessness, orphan status, Pell Grant and a written statement from a school official. Some criteria are US-specific; for Kazakhstan the school confirmation and the college's policy matter most."},
+   {p:"What to do: 1) complete the fee waiver in Profile; 2) ask your counsellor to confirm; 3) choose the fee waiver when submitting each college; 4) check whether the college accepted it; 5) if it refused, look for the college's own form. 650+ colleges charge no application fee to international students."},
+   {p:"A fee waiver covers the application fee only. Tests, document delivery and the visa are paid separately."}
+  ]},
+  {t:"10. Submit and after",sub:"Review, send and do not miss a deadline.",b:[
+   {ul:["Review your name, date of birth, email, colleges and essays.","Sign and submit. Save the confirmation.","Open each college portal within 1–2 days: it shows which documents arrived.","If something is missing, email admissions and your counsellor.","Track interviews, the mid-year report and extra forms.","Do not wait for the last hour: the server may stall."]},
+   {table:[["When","What to do"],["Summer–September","Account, list, Activities, essay draft"],["September–October","Recommendations, tests, supplements"],["November","ED/EA deadlines"],["December–January","RD deadlines"],["After submitting","Portals, interviews, mid-year report"]]},
+   {p:"Dates depend on the college. Check My Colleges, not a generic calendar."}
+  ]}
+ ]
+};
+const COMMONAPP_LINKS=[["First-year guide","https://www.commonapp.org/apply/first-year-students/"],["Activities (PDF)","https://www.commonapp.org/static/a5d59a915bdc2031e62c468ad35e0de9/Resource_FY_Activities_ENG_2025.06.25_0.pdf"],["Fees & fee waivers (PDF)","https://www.commonapp.org/static/653ded5d8d0d5d685e10ae814a7b2c85/Understanding-App-Fees-and-Waivers.pdf"],["2026–27 Requirements Grid","https://content.commonapp.org/Files/ReqGrid.pdf"],["Essay prompts","https://www.commonapp.org/apply/essay-prompts"]];
+
 function blockHtml(b){
   if(b.h)return `<h4>${esc(b.h)}</h4>`;
   if(b.p)return `<p>${esc(b.p)}</p>`;
@@ -1505,6 +1805,13 @@ function blockHtml(b){
 function renderArticles(){
   $("#langNote").textContent="";
   $("#articleList").innerHTML=GUIDES.map((a,i)=>{const g=(GUIDE_T[lang]||[])[i]||[a.t,a.l],bb=g[2]||a.b;return `<details class="article"${i===0?" open":""}><summary><b>${esc(g[0])}</b><span>${esc(g[1])}</span></summary><div class="article-body">${bb.map(blockHtml).join("")}</div></details>`;}).join("");
+}
+function renderCommonApp(){
+  const t=T[lang];
+  const intro=(COMMONAPP_INTRO[lang]||COMMONAPP_INTRO.ru).map(blockHtml).join("");
+  const guide=(COMMONAPP_GUIDE[lang]||COMMONAPP_GUIDE.ru).map((g,i)=>`<details class="article"${i===0?" open":""}><summary><b>${esc(g.t)}</b><span>${esc(g.sub)}</span></summary><div class="article-body">${g.b.map(blockHtml).join("")}</div></details>`).join("");
+  $("#commonappBody").innerHTML=intro+`<div id="commonappSections" class="articles-wrap">${guide}</div>`;
+  $("#commonappSources").innerHTML=esc(t.commonappSources)+" "+COMMONAPP_LINKS.map(([l,u])=>`<a class="link" href="${u}" target="_blank" rel="noopener">${esc(l)}</a>`).join(" · ");
 }
 function calcUpdate(){
   const t=T[lang];
@@ -1776,6 +2083,8 @@ function applyLang(){
   renderCourses();
   renderCosts();
   renderArticles();
+  renderLetters();
+  renderCommonApp();
   $("#statLine").textContent=t.statLine.replace("{u}",UNIS.length).replace("{c}",new Set(UNIS.map(u=>u.c)).size);
   document.title=t.pageTitle;
   $("#themeBtn").title=t.theme;
@@ -2316,6 +2625,7 @@ initChat();
 document.body.dataset.page="home";
 applyLang();
 loadUniData();
+loadLetters();
 </script>
 </body>
 </html>

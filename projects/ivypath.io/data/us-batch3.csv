@@ -1,0 +1,21 @@
+name,country,homepage,admissions_url,http_status,final_url,checked,note
+Middlebury College,usa,https://www.middlebury.edu/,https://www.middlebury.edu/school-english/admissions,200,https://www.middlebury.edu/school-english/admissions,2026-10-27,candidate 200; check requirements
+Wesleyan University,usa,https://www.wesleyan.edu/,https://www.wesleyan.edu:443/admission/undergraduate-admission/international/,200,https://www.wesleyan.edu:443/admission/undergraduate-admission/international/,2026-10-27,ok
+Claremont McKenna College,usa,http://www.claremontmckenna.edu/,https://www.cmc.edu/admission/first-year-application-instructions,200,https://www.cmc.edu/admission/first-year-application-instructions,2026-10-27,ok
+Harvey Mudd College,usa,https://www.hmc.edu,https://www.hmc.edu/academics/english-language-learning/,200,https://www.hmc.edu/academics/english-language-learning/,2026-10-27,ok
+Washington University in St. Louis,usa,https://washu.edu/,https://admissions.washu.edu/how-to-apply/application-dates-deadlines/,200,https://admissions.washu.edu/how-to-apply/application-dates-deadlines/,2026-10-27,candidate 200; check requirements
+Tufts University,usa,https://tufts.edu,https://www.tufts.edu/admissions,200,https://www.tufts.edu/admissions,2026-10-27,candidate 200; check requirements
+Carleton College,usa,https://www.carleton.edu/,https://www.carleton.edu/admissions/explore/after-grad/,200,https://www.carleton.edu/admissions/explore/after-grad/,2026-10-27,candidate 200; check requirements
+Vassar College,usa,https://www.vassar.edu/,https://www.vassar.edu/admission/apply/,200,https://www.vassar.edu/admission/apply/,2026-10-27,candidate 200; check requirements
+Davidson College,usa,http://www.davidson.edu/,https://www.davidson.edu/campus-life/international-student-experience,200,https://www.davidson.edu/campus-life/international-student-experience,2026-10-27,candidate 200; check requirements
+Grinnell College,usa,https://grinnell.edu,https://www.grinnell.edu/admission/apply,200,https://www.grinnell.edu/admission/apply,2026-10-27,candidate 200; check requirements
+Georgetown University,usa,https://www.georgetown.edu,https://www.georgetown.edu/admissions/commitment-to-access/,200,https://www.georgetown.edu/admissions/commitment-to-access/,2026-10-27,candidate 200; check requirements
+Smith College,usa,https://www.smith.edu/,https://www.smith.edu/admission-aid/school-counselors,200,https://www.smith.edu/admission-aid/school-counselors,2026-10-27,candidate 200; check requirements
+Barnard College,usa,https://barnard.edu/,https://barnard.edu/admissions/how-to-apply,200,https://barnard.edu/admissions/how-to-apply,2026-10-27,candidate 200; check requirements
+Hamilton College,usa,http://www.hamilton.edu,https://www.hamilton.edu/admission/apply/first-year,200,https://www.hamilton.edu/admission/apply/first-year,2026-10-27,candidate 200; check requirements
+Haverford College,usa,https://www.haverford.edu/,,403,https://www.haverford.edu/,2026-10-27,homepage 403
+University of Rochester,usa,https://www.rochester.edu/,https://www.rochester.edu/admissions/,200,https://www.rochester.edu/admissions/,2026-10-27,candidate 200; check requirements
+University of Richmond,usa,http://www.richmond.edu,https://www.richmond.edu/admission-aid/index.html,200,https://www.richmond.edu/admission-aid/index.html,2026-10-27,candidate 200; check requirements
+Colgate University,usa,https://www.colgate.edu/,https://www.colgate.edu/admission-aid,200,https://www.colgate.edu/admission-aid,2026-10-27,candidate 200; check requirements
+Emory University,usa,https://emory.edu,https://www.emory.edu/apply,200,https://www.emory.edu/apply,2026-10-27,ok
+Bates College,usa,http://www.bates.edu/,https://www.bates.edu/admission/virtual-tour/,200,https://www.bates.edu/admission/virtual-tour/,2026-10-27,candidate 200; check requirements

@@ -4,7 +4,7 @@ Northeastern University,usa,https://www.northeastern.edu/,https://www.northeaste
 Spelman College,usa,http://www.spelman.edu,https://www.spelman.edu/admissions/applying-to-spelman/index.html,200,https://www.spelman.edu/admissions/applying-to-spelman/index.html,2026-10-26,candidate 200; check requirements
 Rensselaer Polytechnic Institute,usa,http://www.rpi.edu,https://www.rpi.edu/admissions,200,https://www.rpi.edu/admissions,2026-10-26,candidate 200; check requirements
 Fordham University,usa,https://fordham.edu/,https://www.fordham.edu/undergraduate-admission/apply/,200,https://www.fordham.edu/undergraduate-admission/apply/,2026-10-26,ok
-Drexel University,usa,https://drexel.edu/,,,,2026-10-26,"ConnectionError: HTTPSConnectionPool(host='www.drexel.edu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='ww"
+Drexel University,usa,https://drexel.edu/,https://drexel.edu/admissions/undergrad,200,https://drexel.edu/admissions/undergrad,2026-10-27,candidate 200; check requirements
 Indiana University Bloomington,usa,https://bloomington.iu.edu,https://bloomington.iu.edu/admissions/apply/freshman/test-optional.html,200,https://bloomington.iu.edu/admissions/apply/freshman/test-optional.html,2026-10-26,ok
 Pepperdine University,usa,http://www.pepperdine.edu/,https://www.pepperdine.edu/admission/apply-now/,200,https://www.pepperdine.edu/admission/apply-now/,2026-10-26,candidate 200; check requirements
 Howard University,usa,https://howard.edu,https://admission.howard.edu/,200,https://admission.howard.edu/,2026-10-26,candidate 200; check requirements
@@ -16,7 +16,7 @@ Case Western Reserve University,usa,https://case.edu,https://case.edu/admission/
 Syracuse University,usa,https://www.syracuse.edu,https://www.syracuse.edu/admissions-aid/application-process/apply/,200,https://www.syracuse.edu/admissions-aid/application-process/apply/,2026-10-26,candidate 200; check requirements
 Worcester Polytechnic Institute,usa,http://www.wpi.edu,https://www.wpi.edu/admissions,200,https://www.wpi.edu/admissions,2026-10-26,candidate 200; check requirements
 Stevens Institute of Technology,usa,https://www.stevens.edu/,https://www.stevens.edu/admission-aid/international-students,200,https://www.stevens.edu/admission-aid/international-students,2026-10-26,ok
-Temple University,usa,https://www.temple.edu/,,,,2026-10-26,"ReadTimeout: HTTPSConnectionPool(host='www.temple.edu', port=443): Read timed out. (read timeout=25)"
+Temple University,usa,https://www.temple.edu/,https://www.temple.edu/admissions/international-admissions,200,https://www.temple.edu/admissions/international-admissions,2026-10-27,ok
 Illinois Institute of Technology,usa,http://www.iit.edu,https://www.iit.edu/admissions-aid/undergraduate-admission,200,https://www.iit.edu/admissions-aid/undergraduate-admission,2026-10-26,candidate 200; check requirements
 Duquesne University,usa,http://www.duq.edu,https://www.duq.edu/admission-and-aid/how-to-apply/index.php,200,https://www.duq.edu/admission-and-aid/how-to-apply/index.php,2026-10-26,candidate 200; check requirements
 The College of New Jersey,usa,http://www.tcnj.edu,,403,http://www.tcnj.edu/,2026-10-26,homepage 403
