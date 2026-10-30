@@ -1,0 +1,58 @@
+start 11:42:37, waiting for: 1420525 1420526 1420527 1420528 1420529 1420530 1420531 1420532 1420533 1420534 1420535 1420536
+all crawlers finished 12:04:37
+--- proposals before merge 12:04:37
+    5 data/proposals-west-0.csv
+    3 data/proposals-west-1.csv
+   10 data/proposals-west-2.csv
+   10 data/proposals-west-3.csv
+   15 data/proposals-west-4.csv
+    2 data/proposals-west-5.csv
+    8 data/proposals-west-6.csv
+    8 data/proposals-west-7.csv
+   17 data/proposals-china-0.csv
+   13 data/proposals-china-1.csv
+   11 data/proposals-china-2.csv
+   18 data/proposals-china-3.csv
+  120 total
+--- apply 12:04:37
+--- coverage 12:04:37
+--- done 12:04:37
+utorun.csv
+applied 0 rows, review 48 rows, csv 734 rows
+country	rows	IELTS	TOEFL	SAT	HSK	AP	AID
+usa	344	325/344	325/344	344/344	0/344	44/344	0/344
+uk	124	102/124	96/124	94/124	0/124	10/124	0/124
+china	107	29/107	29/107	10/107	22/107	2/107	20/107
+canada	56	43/56	44/56	36/56	0/56	10/56	0/56
+hongkong	11	7/11	6/11	5/11	0/11	2/11	0/11
+germany	7	7/7	7/7	7/7	0/7	0/7	0/7
+korea	7	7/7	7/7	7/7	0/7	0/7	0/7
+netherlands	7	7/7	7/7	7/7	0/7	0/7	0/7
+qatar	6	4/6	4/6	4/6	0/6	1/6	0/6
+uae	6	5/6	5/6	4/6	0/6	1/6	0/6
+australia	5	5/5	5/5	5/5	0/5	0/5	0/5
+switzerland	5	5/5	5/5	5/5	0/5	0/5	0/5
+turkey	5	5/5	5/5	5/5	0/5	1/5	0/5
+france	4	4/4	4/4	4/4	0/4	0/4	0/4
+italy	4	3/4	3/4	3/4	0/4	0/4	0/4
+japan	4	4/4	4/4	4/4	0/4	0/4	0/4
+sweden	4	4/4	4/4	4/4	0/4	0/4	0/4
+czech	3	3/3	3/3	3/3	0/3	1/3	0/3
+singapore	3	3/3	3/3	3/3	0/3	0/3	0/3
+austria	2	2/2	2/2	2/2	0/2	0/2	0/2
+denmark	2	2/2	2/2	2/2	0/2	0/2	0/2
+finland	2	2/2	2/2	2/2	0/2	0/2	0/2
+hungary	2	2/2	2/2	2/2	0/2	0/2	0/2
+ireland	2	2/2	2/2	2/2	0/2	0/2	0/2
+nz	2	2/2	2/2	2/2	0/2	0/2	0/2
+armenia	1	1/1	1/1	0/1	0/1	0/1	0/1
+bulgaria	1	1/1	1/1	1/1	0/1	0/1	0/1
+croatia	1	1/1	1/1	0/1	0/1	0/1	0/1
+kosovo	1	1/1	1/1	1/1	0/1	0/1	0/1
+kyrgyzstan	1	0/1	0/1	0/1	0/1	0/1	0/1
+malaysia	1	1/1	1/1	1/1	0/1	0/1	0/1
+panama	1	1/1	1/1	1/1	0/1	0/1	0/1
+poland	1	1/1	1/1	1/1	0/1	0/1	0/1
+spain	1	1/1	1/1	1/1	0/1	1/1	0/1
+uzbekistan	1	1/1	1/1	1/1	0/1	0/1	0/1
+TOTAL	734	593/734	587/734	573/734	22/734	73/734	20/734

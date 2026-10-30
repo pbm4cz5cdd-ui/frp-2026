@@ -1,0 +1,75 @@
+  skip https://www.zju.edu.cn/english/75035/list.htm The read operation timed out
+  skip https://www.zju.edu.cn/english/sustainability/main.htm The read operation timed out
+  skip https://www.zju.edu.cn/english/hangzhou/list.htm The read operation timed out
+  skip https://www.zju.edu.cn/english/Headlines/list.htm The read operation timed out
+  skip https://www.zju.edu.cn/english/Dialogue/list.htm The read operation timed out
+  skip http://www.zju.edu.cn/english/19936/list.htm timed out
+  skip https://www.zju.edu.cn/english/19936/list93.htm The read operation timed out
+  skip https://www.zju.edu.cn/english/19937/list.htm The read operation timed out
+  skip https://www.zju.edu.cn/english/19938/list.htm The read operation timed out
+NONE Zhejiang University 0 facts
+  skip http://iso.ruc.edu.cn/xwytz/tz/3164a5421b1d49858adc1aa89bd32f2e.htm HTTP Error 404: Not Found
+NONE Renmin University of China 0 facts
+  skip http://en.lib.bjtu.edu.cn/ HTTP Error 400: 
+OK Beijing Jiaotong University sat
+NONE University of International Business and Economics 0 facts
+  skip http://english.cau.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.cau.edu.cn/col/col12107/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12143/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12147/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12130/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12527/index.html HTTP Error 404: Not Found
+  skip http://en.cau.edu.cn/art/2013/12/28/art_12014_234739.html HTTP Error 404: Not Found
+  skip http://en.cau.edu.cn/art/2013/12/19/art_12014_234749.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12411/index.html HTTP Error 404: Not Found
+  skip http://en.cau.edu.cn/col/col12014/index.html HTTP Error 404: Not Found
+NONE China Agricultural University 0 facts
+OK Southwest University sat
+NONE The Hong Kong University of Science and Technology (Guangzhou) 0 facts
+NONE Donghua University 0 facts
+OK South China University of Technology sat
+  skip https://iso.hust.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Huazhong University of Science and Technology 0 facts
+OK Xiamen University sat
+  skip https://en.nankai.edu.cn/_s299/UndergraduateEducation/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+  skip https://en.nankai.edu.cn/_s299/InternationalOrgnizations/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+  skip https://en.nankai.edu.cn/_s299/StudentsExchange/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+  skip https://en.nankai.edu.cn/_s299/GraduateEducation/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+NONE Nankai University 0 facts
+NONE Hohai University 0 facts
+  skip https://en.swjtu.edu.cn/ADMISSION/Degree_Programs/UNDERGRADUATE_PROGRAMS.htm HTTP Error 404: Not Found
+  skip https://en.swjtu.edu.cn/ADMISSION/Degree_Programs/POSTGRADUATE_PROGRAMS.htm HTTP Error 404: Not Found
+OK Southwest Jiaotong University sat
+  skip http://www.lzu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Lanzhou University 0 facts
+OK Xiangtan University sat
+NONE Hefei University of Technology 0 facts
+  skip https://en.nwpu.edu.cn/ The read operation timed out
+NONE Northwestern Polytechnical University 0 facts
+  skip https://sie.nwu.edu.cn/en/Admissions/Chinese_Taught_Degree_Programs.htm HTTP Error 404: Not Found
+NONE Northwest University 0 facts
+  skip http://iso.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.nxu.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Ningxia University 0 facts
+  skip http://www.tmu.edu.cn <urlopen error [Errno 101] Network is unreachable>
+NONE Tianjin Medical University 0 facts
+NONE Central Academy of Drama 0 facts
+  skip https://www.sufe.edu.cn The read operation timed out
+NONE Shanghai University of Finance and Economics 0 facts
+OK China University of Mining and Technology sat
+OK Wenzhou-Kean University sat

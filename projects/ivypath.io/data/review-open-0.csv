@@ -1,0 +1,6 @@
+name,fact,status,value,quote,source,reason
+Lawrence University,sat,not_required,,Standardized test scores are optional.,https://www.lawrence.edu/admissions-aid/apply/direct-admissions/,уже есть ориентир
+Lawrence University,toefl,value,65,TOEFL iBT 65-79; meets all other academic requirements for LU admissions,https://inside.lawrence.edu/offices/center-academic-success/english-second-language/pathway-program,поле уже заполнено
+University of Massachusetts Lowell,sat,not_required,,1316 Average SAT,https://www.uml.edu/admissions/apply/standards.aspx,цитата не подтверждает not required
+"Goldsmiths, University of London",ielts,value,6.0,IELTS requirement for undergraduate study: 6.0 overall with 6.0 in writing and no element lower than 5.5,https://www.gold.ac.uk/studyabroad/apply/,поле уже заполнено
+Université Laval,toefl,value,64,Examen TOEFL - version IBT avec résultat de 064 à 078,https://www.ulaval.ca/etudes/cours/anl-3010-advanced-english-i,значение не найдено в цитате

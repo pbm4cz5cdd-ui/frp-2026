@@ -1,0 +1,42 @@
+NONE Xi'an Jiaotong University 0 facts
+  skip https://www.bjut.edu.cn/ The read operation timed out
+NONE Beijing University of Technology 0 facts
+  skip https://www.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE China University of Political Science and Law 0 facts
+OK New York University Shanghai toefl
+NONE Donghua University 0 facts
+  skip http://iso.scut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.scut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.scut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.scut.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.scut.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE South China University of Technology 0 facts
+NONE Central China Normal University 0 facts
+  skip http://xinwen.ouc.edu.cn/Index.html <urlopen error [Errno 101] Network is unreachable>
+NONE Ocean University of China 0 facts
+  skip http://www.njnu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Nanjing Normal University 0 facts
+  skip http://www.jlu.edu.cn/ <urlopen error _ssl.c:983: The handshake operation timed out>
+NONE Jilin University 0 facts
+NONE Fuzhou University 0 facts
+  skip https://www.nbu.edu.cn/en/ HTTP Error 502: Bad Gateway
+NONE Ningbo University 0 facts
+  skip http://admission.snnu.edu.cn/ HTTP Error 403: Forbidden
+OK Shaanxi Normal University hsk
+  skip http://iso.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.nxu.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Ningxia University 0 facts
+  skip http://www.tmu.edu.cn <urlopen error [Errno 101] Network is unreachable>
+NONE Tianjin Medical University 0 facts
+  skip http://www.ccmusic.edu.cn/ HTTP Error 403: Forbidden
+NONE China Conservatory of Music 0 facts
+NONE Southwestern University of Finance and Economics 0 facts
+  skip http://www.nuaa.edu.cn HTTP Error 412: Precondition Failed
+NONE Nanjing University of Aeronautics and Astronautics 0 facts

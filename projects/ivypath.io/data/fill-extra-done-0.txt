@@ -1,0 +1,50 @@
+MIT
+Princeton University
+Carnegie Mellon University
+University of Toronto
+TU Munich
+KTH Royal Institute of Technology
+NTU Singapore
+University of Melbourne
+Khalifa University
+Georgia Institute of Technology
+University of Bristol
+Yonsei University
+University of Warsaw
+Dartmouth College
+University of Notre Dame
+Cornell University
+Caltech
+Purdue University
+University of St Andrews
+University of Groningen
+Embry-Riddle Aeronautical University
+Ewha Womans University
+Pomona College
+The University of Texas at Austin
+Virginia Tech
+Worcester Polytechnic Institute
+Yeshiva University
+Wentworth Institute of Technology
+Providence College
+Howard University
+Emerson College
+Hofstra University
+Valparaiso University
+High Point University
+St. John's College
+Muhlenberg College
+DePauw University
+Knox College
+Hope College
+Texas Christian University
+Oberlin College
+Washington University in St. Louis
+Smith College
+Bates College
+Georgetown University
+Emory University
+University of Science and Technology of China
+Beijing Normal University
+Beijing University of Technology
+Central University of Finance and Economics

@@ -1,0 +1,21 @@
+[1/144] The College of Wooster: 0 facts
+[2/144] Lawrence University: 1 facts
+  Zhejiang University: https://www.zju.edu.cn ConnectionError
+[3/144] Zhejiang University: homepage failed
+[3/144] Zhejiang University: 0 facts
+[4/144] University of Science and Technology of China: 0 facts
+[5/144] Harbin Institute of Technology: 0 facts
+[6/144] Xi'an Jiaotong University: 0 facts
+[7/144] Renmin University of China: 0 facts
+[8/144] Beijing Normal University: 2 facts
+[9/144] Beihang University: 0 facts
+  Beijing Institute of Technology: http://www.bit.edu.cn/ ConnectionError
+[10/144] Beijing Institute of Technology: homepage failed
+[10/144] Beijing Institute of Technology: 0 facts
+[11/144] Beijing Jiaotong University: 0 facts
+  Beijing University of Technology: http://english.bjut.edu.cn/ ReadTimeout
+  Beijing University of Technology: http://admissions.bjut.edu.cn/ ReadTimeout
+[12/144] Beijing University of Technology: 0 facts
+[13/144] Beijing Foreign Studies University: 0 facts
+[14/144] Beijing Language and Culture University: 0 facts
+  University of International Business and Economics: http://foreign.uibe.edu.cn/english ConnectTimeout

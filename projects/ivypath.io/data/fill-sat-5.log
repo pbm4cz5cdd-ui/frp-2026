@@ -1,0 +1,34 @@
+[1/26] UCL: start failed
+  TU Munich: https://cms.mgt.tum.de/fileadmin/mgt.tum.de/downloads/BMT/MUC/ADMISSION/BMT_Satzung_03.05.22_EN_new.pdf SSLError
+[2/26] TU Munich: no target
+[3/26] Sciences Po: start failed
+  Tsinghua University: http://international.join-tsinghua.edu.cn/ ConnectionError
+  Tsinghua University: https://international.join-tsinghua.edu.cn/Admission1/Eligibility.htm ConnectionError
+  Tsinghua University: https://join-tsinghua.edu.cn/ ConnectionError
+  Tsinghua University: https://www.tsinghua.edu.cn/en/Admissions.htm ConnectionError
+[4/26] Tsinghua University: start failed
+[5/26] King's College London: no target
+[6/26] University of Zurich: start failed
+[7/26] NYU Abu Dhabi: no target
+[8/26] University of Notre Dame: no target
+[9/26] University of Warwick: no target
+[10/26] University of Helsinki: no target
+  Sungkyunkwan University (SKKU): http://admission-global.skku.edu/eng/index.html ConnectTimeout
+  Sungkyunkwan University (SKKU): https://admission-global.skku.edu/eng/etc/bbs_list.html?bbsid=global_notice_re_eng&mode=view&bltn_seq=53638 ConnectTimeout
+  Sungkyunkwan University (SKKU): https://admission-global.skku.edu/ ConnectTimeout
+[11/26] Sungkyunkwan University (SKKU): no target
+[12/26] Williams College: start failed
+[13/26] Fairfield University: SAT ~1370 (range) https://www.fairfield.edu/_files/documents/pdfs/4447623414_about_offices-and-departments_institutional-research_common-data-sheet-2025-26_09212026.pdf
+[14/26] Loyola University Maryland: SAT ~1340 (range) https://www.loyola.edu/_media/department/institutional-research/documents/cds/CDS_2023-2024_v3_posted-20240503.pdf
+[15/26] Lawrence University: SAT ~1440 (range) https://inside.lawrence.edu/sites/default/files/2023-06/CDS%202022-23_0.pdf
+[16/26] Milwaukee School of Engineering: start failed
+[17/26] Wesleyan University: SAT ~1505 (range) https://www.wesleyan.edu/ir/data-sets/CDS_2022-2023.pdf
+[18/26] Middlebury College: SAT ~1530 (range) https://www.middlebury.edu/sites/default/files/2026-06/Fall%202025%20CDS%20FINAL.pdf?fv=XbZmhGZl
+[19/26] skip University of Southern California
+[20/26] Penn State University Park: SAT ~1410 (range) https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/d/114442/files/2026/09/CDS_2025_2026_UniversityPark_v3.pdf
+[21/26] Christopher Newport University: SAT ~1170 (average) https://cnu.edu/admission/freshman/_documents/cnu-viewbook.pdf
+[22/26] Occidental College: SAT ~1490 (range) https://www.oxy.edu/sites/default/files/assets/Institutional_Research/cds_2022-2023_2.pdf
+[23/26] Otis College of Art and Design: no target
+[24/26] Loyola Marymount University: SAT ~1410 (range) https://academics.lmu.edu/media/lmuacademics/strategicplanningacademiceffectiveness/officeofinstitutionalresearch/documents/CDS%202025-26_20260518.pdf
+[25/26] University of the Pacific: SAT ~1410 (range) https://www.pacific.edu/sites/default/files/users/user777/2023_24_CDS_Full_Form.pdf
+[26/26] Guangdong Technion-Israel Institute of Technology: start failed

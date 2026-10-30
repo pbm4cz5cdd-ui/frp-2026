@@ -1,0 +1,54 @@
+OK Harbin Institute of Technology ielts,hsk
+NONE Beijing Institute of Technology 0 facts
+NONE University of International Business and Economics 0 facts
+  skip http://www.bupt.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Beijing University of Posts and Telecommunications 0 facts
+  skip https://english.ecnu.edu.cn/2091/list.htm HTTP Error 404: Not Found
+OK East China Normal University ielts
+  skip http://www.sysu.edu.cn/Admissions.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Admissions/Scholarship_Programs.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/Undergraduate.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/Exchange_Programs.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/SYSU_Scholars/SYSU_Scholars.htm HTTP Error 404: Not Found
+NONE Sun Yat-sen University 0 facts
+  skip http://www.hust.edu.cn/0618huakezhupiangaoqingwushuiyin_yasuobanben.mp4 IncompleteRead(18906630 bytes read, 127183406 more expected)
+OK Huazhong University of Science and Technology hsk
+NONE Shandong University 0 facts
+  skip http://iso.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Nanjing University of Science and Technology 0 facts
+  skip https://www.swjtu.edu.cn <urlopen error [Errno 101] Network is unreachable>
+NONE Southwest Jiaotong University 0 facts
+  skip http://www.hunu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Hunan University 0 facts
+  skip http://iso.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ahu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://en.ahu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://english.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Anhui University 0 facts
+  skip https://lib.chd.edu.cn/en/ HTTP Error 400: 
+NONE Chang'an University 0 facts
+NONE Inner Mongolia University 0 facts
+  skip http://www.cmu.edu.cn/ <urlopen error timed out>
+NONE China Medical University 0 facts
+  skip https://iso.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://chntheatre.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://chntheatre.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip https://chntheatre.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://chntheatre.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Central Academy of Drama 0 facts
+  skip http://www.znufe.edu.cn <urlopen error [Errno -2] Name or service not known>
+NONE Zhongnan University of Economics and Law 0 facts
+  skip http://cie.upc.edu.cn/admission_cn/ timed out
+  skip http://cie.upc.edu.cn/admission_en/ timed out
+  skip http://cie.upc.edu.cn/en/index.htm timed out
+  skip http://cie.upc.edu.cn/en/CONFUCIUS__INSTITUTE/Introduction_of_CI.htm timed out
+  skip http://cie.upc.edu.cn/en/ timed out
+  skip http://cie.upc.edu.cn/_t15/main.htm timed out
+  skip http://cie.upc.edu.cn/_t15/1142/list.htm timed out
+NONE China University of Petroleum 0 facts

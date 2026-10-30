@@ -21,11 +21,10 @@ def is_filled(row, key):
 
 def load_page(path):
     html = path.read_text(encoding="utf-8")
-    start = html.index("const UNIS=")
-    end = html.index("\n];", start) + 3
+    # Cards live in the first UNIS array and in the UNIS.push(...) blocks after it.
     static = {
         m.group(1): m.group(2)
-        for m in re.finditer(r'\{n:"([^"]+)",c:"([^"]+)"', html[start:end])
+        for m in re.finditer(r'\{n:"([^"]+)",c:"([^"]+)"', html)
     }
     imported = []
     match = re.search(r"const IMPORTED=(\[.*?\]);\s*UNIS\.push", html, re.S)

@@ -1,0 +1,41 @@
+  skip http://en.lib.ustc.edu.cn/ <urlopen error timed out>
+NONE University of Science and Technology of China 0 facts
+  skip https://ev.buaa.edu.cn/Admissions/Chinese_Language_Program.htm <urlopen error [Errno 101] Network is unreachable>
+NONE Beihang University 0 facts
+NONE Beijing Language and Culture University 0 facts
+  skip http://iso.cau.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.cau.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.cau.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.cau.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE China Agricultural University 0 facts
+  skip http://open.tongji.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Tongji University 0 facts
+NONE East China University of Science and Technology 0 facts
+  skip http://iso.hu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.hu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.hu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.hu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.hu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.whu.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.whu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.whu.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.whu.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Wuhan University 0 facts
+NONE Xiamen University 0 facts
+NONE Southeast University 0 facts
+NONE Nanjing Agricultural University 0 facts
+  skip http://jwgl.nwsuaf.edu.cn/academic/index.html <urlopen error [Errno -2] Name or service not known>
+NONE Northwest A&F University 0 facts
+NONE Hefei University of Technology 0 facts
+  skip http://admission.nwpu.edu.cn HTTP Error 412: Precondition Failed
+  skip http://admission.nwpu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Northwestern Polytechnical University 0 facts
+NONE Xinjiang University 0 facts
+  skip http://www.ccmu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Capital Medical University 0 facts
+  skip http://sie.cuc.edu.cn/CH/comm/apply/ HTTP Error 502: Bad Gateway
+  skip https://international.w.cuc.edu.cn/english/iecd.html <urlopen error [Errno -2] Name or service not known>
+NONE Communication University of China 0 facts
+NONE Shanghai University of Finance and Economics 0 facts
+NONE China University of Mining and Technology 0 facts
+NONE Wenzhou-Kean University 0 facts

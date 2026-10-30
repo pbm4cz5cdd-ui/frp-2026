@@ -1,0 +1,41 @@
+  University of Cambridge: https://www.undergraduate.study.cam.ac.uk/international-students/international-entry-requirements ConnectionError
+  University of Cambridge: https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements ConnectionError
+  University of Cambridge: https://www.christs.cam.ac.uk/admissions/undergraduate-admissions/international-students-eu-and-non-eu/international-entrance-1/sat ConnectionError
+[1/26] University of Cambridge: no target
+[2/26] McGill University: start failed
+  University of Amsterdam: https://student.uva.nl/en ConnectionError
+[3/26] University of Amsterdam: start failed
+[4/26] Trinity College Dublin: SAT ~1400 (range) https://onprem.tcd.ie/study/country/usa/
+  search 429
+  search 429
+[5/26] University of Michigan: start failed
+[6/26] Erasmus University Rotterdam: start failed
+[7/26] Monash University: start failed
+  search 429
+[8/26] Amherst College: start failed
+[9/26] Vanderbilt University: SAT ~1530 (range) https://admissions.vanderbilt.edu/vandybloggers/2010/12/understanding-the-mid-50/
+  University of Copenhagen: https://about.ku.dk/facts-figures/students/ ConnectTimeout
+  University of Copenhagen: https://about.ku.dk/facts-figures/statistical-data/ ConnectTimeout
+  University of Copenhagen: https://science.ku.dk/studerende/studieordninger/undervisnings-og-eksamensregler/ENG_Undervisnings-_og_eksamensregler.pdf ConnectTimeout
+  University of Copenhagen: https://studies.ku.dk/bachelor/ ConnectTimeout
+[10/26] University of Copenhagen: start failed
+[11/26] Western Michigan University: SAT ~1200 (range) https://files.wmich.edu/s3fs-public/2026-02/wmu_cds_2025-26.pdf
+[12/26] Swarthmore College: SAT ~1540 (range) https://www.swarthmore.edu/sites/default/files/assets/documents/institutional-effectiveness-research-assessment/Swarthmore%20CDS%202023-2024.pdf
+[13/26] Rochester Institute of Technology: SAT ~1440 (range) https://www.rit.edu/institutionalresearch/sites/rit.edu.institutionalresearch/files/documents/Common%20Data%20Set%20PDFs/RIT_CDS_2025_26_FINAL_20260603.pdf
+  University of Tulsa: https://bulletin.utulsa.edu/ SSLError
+[14/26] University of Tulsa: no target
+[15/26] DePauw University: SAT ~1390 (range) https://www.depauw.edu/files/resources/depauw-cds-c-2526-4.pdf
+[16/26] Texas Christian University: SAT ~1340 (range) https://ir.tcu.edu/wp-content/uploads/2025/09/TCU-CDS_2024_2025.pdf
+[17/26] Stetson University: no target
+[18/26] Colgate University: SAT ~1480 (range) https://www.colgate.edu/sites/default/files/2020-06/CDS_2019-2020%20April%2028.pdf
+[19/26] Emory University: SAT ~1540 (range) https://provost.emory.edu/planning-administration/_includes/documents/sections/institutional-data/emory-common-data-set-2024-2025.pdf
+[20/26] Skidmore College: SAT ~1460 (range) https://www.skidmore.edu/ir/facts/common/cds-2025-26.pdf
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/DXWELR+AcuminPro-Semibold', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 48, '/FontDescriptor': IndirectObject(26, 0, 140475025896464), '/LastChar': 57, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [580, 387, 544, 556, 555, 562, 568, 488, 573, 562]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/DXWELR+AcuminPro-Semibold', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 32, '/FontDescriptor': IndirectObject(26, 0, 140475025896464), '/LastChar': 56, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 580, 387, 544, 556, 555, 562, 568, 488, 573]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+[21/26] Rhodes College: SAT ~1430 (range) https://www.rhodes.edu/sites/default/files/2025-10/Class_of_2029_Profile.pdf
+[22/26] University of Puget Sound: SAT ~1388 (range) https://www.pugetsound.edu/sites/default/files/2025-02/CDS2024-25_0.pdf
+[23/26] Ohio University: no target
+[24/26] Purdue University Northwest: no target
+  York University: https://future.studentsv2.uit.yorku.ca/admitted SSLError
+[25/26] York University: no target
+[26/26] University of Wyoming: SAT ~1280 (range) https://www.uwyo.edu/oia/_files/cds/cds2025-2026.pdf

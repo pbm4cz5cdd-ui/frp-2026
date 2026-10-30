@@ -1,0 +1,51 @@
+[1/41] skip University of Southern California
+[2/41] The George Washington University: homepage failed
+[2/41] The George Washington University: 0 facts
+[3/41] skip Wake Forest University
+[4/41] skip Rensselaer Polytechnic Institute
+[5/41] skip Coe College
+[6/41] skip Whittier College
+[7/41] skip Stony Brook University
+[8/41] skip James Madison University
+[9/41] University of South Carolina: 3 facts
+[10/41] University of Tennessee, Knoxville: 3 facts
+[11/41] University of Cincinnati: 3 facts
+[12/41] Kansas State University: https://www.k-state.edu/admissions/undergrad/manhattan/apply/international/english-proficiency.html JSONDecodeError Expecting ',' delimiter: line 1 column 276 (char 275)
+[12/41] Kansas State University: 0 facts
+[13/41] Colorado School of Mines: 1 facts
+[14/41] Portland State University: 3 facts
+[15/41] Seattle Pacific University: homepage failed
+[15/41] Seattle Pacific University: 0 facts
+[16/41] University of San Francisco: 3 facts
+[17/41] Savannah College of Art and Design: homepage failed
+[17/41] Savannah College of Art and Design: 0 facts
+[18/41] The University of Texas Rio Grande Valley: 2 facts
+[19/41] University of York: 0 facts
+[20/41] University of Reading: 2 facts
+[21/41] University of Strathclyde: 2 facts
+[22/41] Cardiff Metropolitan University: 2 facts
+[23/41] University of Bradford: 2 facts
+[24/41] Bournemouth University: homepage failed
+[24/41] Bournemouth University: 0 facts
+[25/41] Middlesex University: 2 facts
+[26/41] Edge Hill University: 2 facts
+[27/41] Guildhall School of Music and Drama: 0 facts
+  Shanghai University: http://en.shu.edu.cn/ ConnectionError
+  Shanghai University: https://apply.shu.edu.cn/ ConnectionError
+[28/41] Shanghai University: 0 facts
+[29/41] Xiamen University: 0 facts
+[30/41] Southwest Jiaotong University: 0 facts
+  Zhengzhou University: http://international.zzu.edu.cn/en/course?cid=4&pid=4 ConnectionError
+[31/41] Zhengzhou University: 0 facts
+  Inner Mongolia University: http://www.imu.edu.cn/ ConnectionError
+[32/41] Inner Mongolia University: homepage failed
+[32/41] Inner Mongolia University: 0 facts
+[33/41] Beijing Sport University: 3 facts
+[34/41] Northeast Normal University: 3 facts
+[35/41] Rochester Institute of Technology Dubai: 2 facts
+[36/41] Florida State University Panama: 2 facts
+[37/41] University of Ottawa: 0 facts
+[38/41] Carleton University: 3 facts
+[39/41] Polytechnique Montréal: 0 facts
+[40/41] Conestoga College: 2 facts
+[41/41] City University of Hong Kong: 0 facts

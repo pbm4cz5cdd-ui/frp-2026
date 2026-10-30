@@ -1,0 +1,46 @@
+OK Harbin Institute of Technology ielts,toefl,hsk
+NONE Beihang University 0 facts
+  skip https://osao.bfsu.edu.cn/Admission/Programs.htm HTTP Error 404: Not Found
+  skip https://osao.bfsu.edu.cn/Admission/Application_Process.htm HTTP Error 404: Not Found
+NONE Beijing Foreign Studies University 0 facts
+  skip https://www.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE China University of Political Science and Law 0 facts
+  skip https://www.nottingham.edu.cn/en/graduateschool/prospective-students/how-to-apply.aspx The read operation timed out
+NONE University of Nottingham Ningbo China 0 facts
+  skip http://www.cafa.edu.cn/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+NONE Central Academy of Fine Arts 0 facts
+  skip https://apply.shu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://en.shu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Shanghai University 0 facts
+  skip https://www.szu.edu.cn <urlopen error [Errno -3] Temporary failure in name resolution>
+NONE Shenzhen University 0 facts
+NONE Central China Normal University 0 facts
+  skip http://www.apply.sdu.edu.cn/--><!--/student/apply_accommodation HTTP Error 400: Bad Request
+NONE Shandong University 0 facts
+NONE Southeast University 0 facts
+NONE Nanjing Agricultural University 0 facts
+  skip http://jwgl.nwsuaf.edu.cn/academic/index.html <urlopen error [Errno -2] Name or service not known>
+NONE Northwest A&F University 0 facts
+OK Nanchang University ielts,toefl,hsk
+  skip http://iso.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ahu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://en.ahu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://english.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Anhui University 0 facts
+OK Xidian University ielts,toefl,hsk
+NONE Xinjiang University 0 facts
+NONE Yunnan University 0 facts
+NONE Nanjing Medical University 0 facts
+  skip https://en.ccmusic.edu.cn/ HTTP Error 403: Forbidden
+NONE China Conservatory of Music 0 facts
+  skip http://www.znufe.edu.cn <urlopen error [Errno -2] Name or service not known>
+NONE Zhongnan University of Economics and Law 0 facts
+  skip http://cie.upc.edu.cn/admission_cn/ timed out
+  skip http://cie.upc.edu.cn/admission_en/ timed out
+  skip http://cie.upc.edu.cn/en/index.htm timed out
+  skip http://cie.upc.edu.cn/en/CONFUCIUS__INSTITUTE/Introduction_of_CI.htm timed out
+  skip http://cie.upc.edu.cn/en/ timed out
+  skip http://cie.upc.edu.cn/_t15/main.htm timed out
+  skip http://cie.upc.edu.cn/_t15/1142/list.htm timed out
+NONE China University of Petroleum 0 facts

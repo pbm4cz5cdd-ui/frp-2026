@@ -1,0 +1,8 @@
+type,words,recommendations,recommenders,source
+essay|Common App (USA),ca250_650,none,self,https://www.commonapp.org/apply/essay-prompts
+letter|Common App — teacher recommendation (USA),uni_limit,teachers12,subject_teachers,https://www.commonapp.org/counselors-and-recommenders/recommender-guide/
+letter|Common App — counsellor report (USA),uni_limit,counsellor1,school_counsellor,https://www.commonapp.org/counselors-and-recommenders/recommender-guide/
+essay|UCAS (UK) — personal statement,ucas4000,none,self,https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement
+letter|UCAS (UK) — reference,school_limit,must1,school_adviser,https://www.ucas.com/advisers/help-and-training/guides-resources-and-training/references
+essay|uni-assist (Germany) — motivation letter,prog_limit,usually_none,self,https://www.uni-assist.de/en/
+essay|Studielink (Netherlands) — motivation letter,prog_limit,usually_none,self,https://www.studielink.nl/

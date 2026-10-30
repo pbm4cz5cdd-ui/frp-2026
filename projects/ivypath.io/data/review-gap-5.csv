@@ -1,0 +1,6 @@
+name,fact,status,value,quote,source,reason
+New York Institute of Technology Abu Dhabi,ielts,value,6.0,IELTS score: 6.0,https://www.nyit.edu/admissions/international/,поле уже заполнено
+New York Institute of Technology Abu Dhabi,toefl,value,79,TOEFL (iBT) score: 4.0 (new); 79 (old),https://www.nyit.edu/admissions/international/,поле уже заполнено
+New York Institute of Technology Abu Dhabi,ib,value,4,IB English Literature A HL (Higher Level): 4,https://www.nyit.edu/admissions/international/,IB вне шкалы 24–45
+University of Maine,sat,not_required,,SAT Reading/Writing score is 550 or higher;,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,цитата не подтверждает not required
+Colorado School of Mines,sat,not_required,,1372 AVERAGE SAT COMPOSITE SCORE (FOR THOSE WHO CHOSE TO SUBMIT SCORES),https://undergraduate-admissions.mines.edu/,цитата не подтверждает not required

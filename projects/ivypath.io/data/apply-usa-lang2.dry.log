@@ -1,0 +1,223 @@
+applied 23 rows, review 199 rows, csv 734 rows
+APPLY City College of New York | ielts |  | IELTS принимается; минимальный балл не опубликован
+APPLY City College of New York | toefl |  | TOEFL принимается; минимальный балл не опубликован
+APPLY Denison University | sat | 1490 | SAT не требуется; ориентир ~1490 (75-й перцентиль)
+APPLY Kenyon College | ap |  | AP не требуется
+APPLY Kenyon College | ib |  | IB не требуется
+APPLY University of Rhode Island | sat | 1340 | SAT не требуется; ориентир ~1340 (75-й перцентиль)
+APPLY Babson College | sat | 1530 | SAT не требуется; ориентир ~1530 (75-й перцентиль)
+APPLY North Carolina State University | ielts |  | IELTS принимается; минимальный балл не опубликован
+APPLY Samford University | sat |  | SAT не требуется; ориентир ~1350 (75-й перцентиль)
+APPLY Pitzer College | ap | 4 | максимум 4 кредита AP+IB; только higher-level, балл ≥5
+APPLY Montana State University | ap | 3 | минимум 3 балла на большинстве экзаменов AP
+APPLY University of Massachusetts Lowell | ielts |  | IELTS принимается; минимальный балл не опубликован
+APPLY University of Massachusetts Lowell | toefl |  | TOEFL принимается; минимальный балл не опубликован
+APPLY Queens College | ielts | 5 | минимум; зависит от программы, до 6.5
+APPLY Queens College | toefl | 45 | минимум; зависит от программы, до 80
+APPLY University of Colorado Colorado Springs | ap | 4 | минимум; зависит от программы, до 4
+APPLY Case Western Reserve University | sat | 1520 | SAT не требуется; ориентир ~1520 (75-й перцентиль)
+APPLY Colgate University | sat | 1530 | SAT не требуется; ориентир ~1530 (75-й перцентиль)
+APPLY University of Alaska Fairbanks | ap | 3 | минимум 3; для Calculus AB/BC — 4
+APPLY University of Georgia | ielts | 6.5 | минимум; для первокурсников средний 7.5
+APPLY University of Georgia | toefl | 80 | минимум; для первокурсников средний 102
+APPLY New England Conservatory | ielts | 6.0 | минимум для бакалавриата
+APPLY New England Conservatory | toefl | 61 | минимум; для тестов после 21.01.2026 — 3.5
+REVIEW Stanford University | ielts | уже есть примечание
+REVIEW Stanford University | toefl | уже есть примечание
+REVIEW Stanford University | sat | цитата не подтверждает not required
+REVIEW Northwestern University | sat | уже есть ориентир
+REVIEW Northwestern University | ielts | уже есть примечание
+REVIEW Northwestern University | toefl | уже есть примечание
+REVIEW Wellesley College | ielts | уже есть примечание
+REVIEW Wellesley College | toefl | уже есть примечание
+REVIEW Wellesley College | sat | цитата не подтверждает not required
+REVIEW Illinois Institute of Technology | ielts | поле уже заполнено
+REVIEW Illinois Institute of Technology | toefl | уже есть примечание
+REVIEW Illinois Institute of Technology | sat | цитата не подтверждает not required
+REVIEW Southern Methodist University | toefl | поле уже заполнено
+REVIEW Southern Methodist University | sat | цитата не подтверждает not required
+REVIEW The College of Wooster | sat | уже есть ориентир
+REVIEW Carleton College | ielts | уже есть примечание
+REVIEW Carleton College | toefl | уже есть примечание
+REVIEW Carleton College | sat | уже есть ориентир
+REVIEW Bates College | ielts | уже есть примечание
+REVIEW Bates College | toefl | уже есть примечание
+REVIEW Bates College | sat | уже есть ориентир
+REVIEW Trinity College (CT) | ielts | уже есть примечание
+REVIEW Trinity College (CT) | toefl | уже есть примечание
+REVIEW Scripps College | ielts | поле уже заполнено
+REVIEW Scripps College | toefl | уже есть примечание
+REVIEW Scripps College | sat | уже есть ориентир
+REVIEW University of Puget Sound | ielts | уже есть примечание
+REVIEW University of Puget Sound | toefl | уже есть примечание
+REVIEW University of Puget Sound | sat | уже есть ориентир
+REVIEW Soka University of America | ielts | цитата не подтверждает not required
+REVIEW Soka University of America | toefl | уже есть примечание
+REVIEW Soka University of America | sat | уже есть ориентир
+REVIEW Washington State University | sat | уже есть примечание
+REVIEW Missouri University of Science and Technology | sat | уже есть ориентир
+REVIEW Missouri University of Science and Technology | ielts | поле уже заполнено
+REVIEW Missouri University of Science and Technology | toefl | уже есть примечание
+REVIEW University of Alabama at Birmingham | ielts | поле уже заполнено
+REVIEW University of Alabama at Birmingham | toefl | уже есть примечание
+REVIEW Grand Valley State University | ielts | поле уже заполнено
+REVIEW Grand Valley State University | toefl | уже есть примечание
+REVIEW Grand Valley State University | sat | уже есть ориентир
+REVIEW Grand Valley State University | ap | поле уже заполнено
+REVIEW Grand Valley State University | ib | IB вне шкалы 24–45
+REVIEW Franklin & Marshall College | sat | цитата не подтверждает not required
+REVIEW Franklin & Marshall College | ielts | уже есть примечание
+REVIEW Franklin & Marshall College | toefl | уже есть примечание
+REVIEW Franklin & Marshall College | ap | поле уже заполнено
+REVIEW Franklin & Marshall College | ib | поле уже заполнено
+REVIEW Cornell College | sat | уже есть ориентир
+REVIEW Cornell College | ielts | уже есть примечание
+REVIEW Cornell College | toefl | уже есть примечание
+REVIEW City College of New York | sat | уже есть ориентир
+REVIEW Harvard University | sat | accepted не подходит для этого факта
+REVIEW Harvard University | ielts | цитата не подтверждает: тест принимается
+REVIEW Harvard University | toefl | цитата не подтверждает: тест принимается
+REVIEW Emerson College | sat | уже есть ориентир
+REVIEW Emerson College | ielts | поле уже заполнено
+REVIEW Emerson College | toefl | уже есть примечание
+REVIEW Trinity University | sat | уже есть ориентир
+REVIEW Trinity University | ielts | поле уже заполнено
+REVIEW Trinity University | toefl | уже есть примечание
+REVIEW Earlham College | sat | цитата не подтверждает not required
+REVIEW Earlham College | ielts | уже есть примечание
+REVIEW Earlham College | toefl | уже есть примечание
+REVIEW Texas Christian University | ielts | поле уже заполнено
+REVIEW Texas Christian University | toefl | уже есть примечание
+REVIEW Vassar College | ielts | уже есть примечание
+REVIEW Vassar College | toefl | уже есть примечание
+REVIEW Georgetown University | ielts | уже есть примечание
+REVIEW Georgetown University | toefl | уже есть примечание
+REVIEW Georgetown University | sat | цитата не подтверждает not required
+REVIEW Denison University | ielts | цитата не подтверждает: тест принимается
+REVIEW Denison University | toefl | цитата не подтверждает: тест принимается
+REVIEW Kenyon College | ielts | уже есть примечание
+REVIEW Kenyon College | toefl | уже есть примечание
+REVIEW Kenyon College | sat | уже есть ориентир
+REVIEW University of New Hampshire | ielts | поле уже заполнено
+REVIEW University of New Hampshire | toefl | уже есть примечание
+REVIEW University of New Hampshire | sat | цитата не подтверждает not required
+REVIEW University of Rhode Island | ielts | поле уже заполнено
+REVIEW University of Rhode Island | toefl | уже есть примечание
+REVIEW University of Central Florida | ielts | поле уже заполнено
+REVIEW University of Central Florida | toefl | уже есть примечание
+REVIEW University of Central Florida | sat | цитата не подтверждает not required
+REVIEW University of South Florida | ielts | цитата не подтверждает not required
+REVIEW University of South Florida | toefl | цитата не подтверждает not required
+REVIEW University of South Florida | sat | поле уже заполнено
+REVIEW Manhattan School of Music | sat | уже есть примечание
+REVIEW Manhattan School of Music | ielts | уже есть примечание
+REVIEW Manhattan School of Music | toefl | уже есть примечание
+REVIEW Babson College | ielts | уже есть примечание
+REVIEW Babson College | toefl | уже есть примечание
+REVIEW Drexel University | ielts | цитата не подтверждает: тест принимается
+REVIEW Drexel University | toefl | цитата не подтверждает: тест принимается
+REVIEW Drexel University | sat | уже есть ориентир
+REVIEW Lewis & Clark College | sat | цитата не подтверждает not required
+REVIEW Brooklyn College | sat | уже есть ориентир
+REVIEW North Carolina State University | toefl | поле уже заполнено
+REVIEW North Carolina State University | sat | уже есть ориентир
+REVIEW Oklahoma State University | ielts | поле уже заполнено
+REVIEW Oklahoma State University | toefl | уже есть примечание
+REVIEW University of San Diego | sat | уже есть примечание
+REVIEW University of Colorado Denver | sat | цитата не подтверждает not required
+REVIEW University of Colorado Denver | ap | status not_stated
+REVIEW University of Colorado Denver | ib | status not_stated
+REVIEW Princeton University | ielts | уже есть примечание
+REVIEW Princeton University | toefl | уже есть примечание
+REVIEW Princeton University | sat | цитата не подтверждает varies
+REVIEW University of Illinois Urbana-Champaign | ielts | уже есть примечание
+REVIEW University of Illinois Urbana-Champaign | toefl | уже есть примечание
+REVIEW Spelman College | sat | уже есть ориентир
+REVIEW Spelman College | toefl | уже есть примечание
+REVIEW Samford University | ielts | уже есть примечание
+REVIEW Samford University | toefl | уже есть примечание
+REVIEW Lawrence University | sat | уже есть ориентир
+REVIEW Lawrence University | toefl | цитата не подтверждает: тест принимается
+REVIEW Smith College | ielts | уже есть примечание
+REVIEW Smith College | toefl | уже есть примечание
+REVIEW Smith College | sat | уже есть ориентир
+REVIEW Pitzer College | sat | уже есть примечание
+REVIEW Pitzer College | ielts | поле уже заполнено
+REVIEW Pitzer College | toefl | уже есть примечание
+REVIEW Pitzer College | ib | IB вне шкалы 24–45
+REVIEW Wake Forest University | ielts | цитата не подтверждает: тест принимается
+REVIEW Wake Forest University | toefl | цитата не подтверждает: тест принимается
+REVIEW Rhodes College | sat | уже есть ориентир
+REVIEW Rhodes College | ap | status not_stated
+REVIEW Rhodes College | ib | status not_stated
+REVIEW Occidental College | ielts | поле уже заполнено
+REVIEW Occidental College | toefl | уже есть примечание
+REVIEW Whitman College | ielts | поле уже заполнено
+REVIEW Whitman College | toefl | уже есть примечание
+REVIEW Whitman College | sat | уже есть ориентир
+REVIEW Maryland Institute College of Art | ielts | поле уже заполнено
+REVIEW Maryland Institute College of Art | toefl | уже есть примечание
+REVIEW Maryland Institute College of Art | sat | уже есть ориентир
+REVIEW Montana State University | sat | уже есть ориентир
+REVIEW Montana State University | ib | IB вне шкалы 24–45
+REVIEW University of Wyoming | sat | цитата не подтверждает not required
+REVIEW University of Wyoming | ielts | поле уже заполнено
+REVIEW University of Wyoming | toefl | уже есть примечание
+REVIEW University of Wyoming | ap | поле уже заполнено
+REVIEW University of Wyoming | ib | IB вне шкалы 24–45
+REVIEW Villanova University | ielts | уже есть примечание
+REVIEW Villanova University | toefl | уже есть примечание
+REVIEW Villanova University | sat | уже есть ориентир
+REVIEW University of California, Davis | ib | поле уже заполнено
+REVIEW University of California, Davis | ielts | цитата не подтверждает: тест принимается
+REVIEW University of California, Davis | toefl | цитата не подтверждает: тест принимается
+REVIEW The College of New Jersey | ielts | уже есть примечание
+REVIEW The College of New Jersey | toefl | уже есть примечание
+REVIEW University of Massachusetts Lowell | sat | цитата не подтверждает not required
+REVIEW University of Arkansas | sat | цитата не подтверждает varies
+REVIEW University of Colorado Colorado Springs | ielts | поле уже заполнено
+REVIEW University of Colorado Colorado Springs | toefl | уже есть примечание
+REVIEW University of Colorado Colorado Springs | sat | уже есть ориентир
+REVIEW University of Colorado Colorado Springs | ib | IB вне шкалы 24–45
+REVIEW Bowdoin College | ielts | уже есть примечание
+REVIEW Bowdoin College | toefl | уже есть примечание
+REVIEW Bowdoin College | sat | уже есть ориентир
+REVIEW Swarthmore College | ielts | уже есть примечание
+REVIEW Swarthmore College | toefl | уже есть примечание
+REVIEW Case Western Reserve University | ielts | поле уже заполнено
+REVIEW Case Western Reserve University | toefl | уже есть примечание
+REVIEW Saint Joseph's University | sat | уже есть ориентир
+REVIEW Saint Joseph's University | ielts | поле уже заполнено
+REVIEW Saint Joseph's University | toefl | уже есть примечание
+REVIEW St. John's College | sat | ориентир меньше 800: похоже на секцию
+REVIEW St. John's College | ielts | уже есть примечание
+REVIEW St. John's College | toefl | уже есть примечание
+REVIEW Claremont McKenna College | ielts | уже есть примечание
+REVIEW Claremont McKenna College | toefl | уже есть примечание
+REVIEW Colgate University | ielts | поле уже заполнено
+REVIEW Colgate University | toefl | уже есть примечание
+REVIEW Boston College | ielts | уже есть примечание
+REVIEW Boston College | toefl | уже есть примечание
+REVIEW Boston College | sat | ориентир не найден в цитате
+REVIEW University of Massachusetts Boston | ielts | поле уже заполнено
+REVIEW University of Massachusetts Boston | toefl | уже есть примечание
+REVIEW University of Massachusetts Boston | sat | цитата не подтверждает not required
+REVIEW Morehouse College | ielts | цитата не подтверждает: тест принимается
+REVIEW Morehouse College | toefl | цитата не подтверждает: тест принимается
+REVIEW Morehouse College | sat | уже есть ориентир
+REVIEW University of Houston | ielts | поле уже заполнено
+REVIEW University of Houston | toefl | уже есть примечание
+REVIEW Florida International University | sat | уже есть ориентир
+REVIEW University of Alaska Fairbanks | sat | цитата не подтверждает not required
+REVIEW University of Alaska Fairbanks | ib | IB вне шкалы 24–45
+REVIEW North Dakota State University | ielts | поле уже заполнено
+REVIEW North Dakota State University | toefl | уже есть примечание
+REVIEW North Dakota State University | sat | цитата не подтверждает not required
+REVIEW Pace University | sat | уже есть ориентир
+REVIEW University at Buffalo | sat | цитата не подтверждает not required
+REVIEW University of Pittsburgh | ielts | цитата не подтверждает: тест принимается
+REVIEW University of Pittsburgh | toefl | цитата не подтверждает: тест принимается
+REVIEW University of Georgia | sat | уже есть примечание
+REVIEW ArtCenter College of Design | ielts | поле уже заполнено
+REVIEW ArtCenter College of Design | toefl | уже есть примечание
+REVIEW ArtCenter College of Design | sat | уже есть примечание

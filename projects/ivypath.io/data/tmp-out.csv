@@ -1,0 +1,6 @@
+name,country,fact,status,value,note,quote,source,checked
+University of York,uk,ielts,value,6.0,"минимум; зависит от программы, до 7.0","IELTS: 6.0, with a minimum of 5.5 in each component",https://www.york.ac.uk/study/international/applying/ielts-equivalencies-undergraduate/,2026-10-29
+University of York,uk,toefl,value,79,"минимум; зависит от программы, до 96","TOEFL iBT: 79, with a minimum of 17 in Listening, 18 in Reading, 20 in Speaking and 17 in Writing (taken before January 2026)",https://www.york.ac.uk/study/international/applying/ielts-equivalencies-undergraduate/,2026-10-29
+University of Ottawa,canada,ielts,value,6.5,"минимум; зависит от программы, до 6.5",IELTS Academic 6.5 6.5,https://www.uottawa.ca/study/undergraduate-studies/language-requirements,2026-10-29
+University of Ottawa,canada,toefl,value,86,"минимум; зависит от программы, до 86","TOEFL IBT Internet-based ( for tests taken before January 21, 2026 ) 86 22 n/a n/a",https://www.uottawa.ca/study/undergraduate-studies/language-requirements,2026-10-29
+University of Ottawa,canada,sat,not_required,,SAT не требуется; ориентир не опубликован,achieving a score of 550 in the Reading and Writing section of the SAT Digital version,https://www.uottawa.ca/study/undergraduate-studies/language-requirements,2026-10-29

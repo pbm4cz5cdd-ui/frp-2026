@@ -1,0 +1,57 @@
+  skip http://en.lib.ustc.edu.cn/ <urlopen error timed out>
+NONE University of Science and Technology of China 0 facts
+  skip https://www.bjut.edu.cn/ The read operation timed out
+NONE Beijing University of Technology 0 facts
+  skip http://sice.cufe.edu.cn/ywb/index_english.htm HTTP Error 404: Not Found
+  skip http://int.cufe.edu.cn/Elish/index.htm HTTP Error 404: Not Found
+  skip http://humancapital.cufe.edu.cn/en/Conference_/A_Brief_Introduction_to_CHLR.htm HTTP Error 404: Not Found
+OK Central University of Finance and Economics hsk
+  skip http://www.bupt.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Beijing University of Posts and Telecommunications 0 facts
+NONE The Hong Kong University of Science and Technology (Guangzhou) 0 facts
+NONE Donghua University 0 facts
+NONE South China University of Technology 0 facts
+  skip https://iso.hust.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Huazhong University of Science and Technology 0 facts
+OK Xiamen University ielts,toefl,hsk
+  skip https://en.nankai.edu.cn/_s299/UndergraduateEducation/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+  skip https://en.nankai.edu.cn/_s299/InternationalOrgnizations/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+  skip https://en.nankai.edu.cn/_s299/StudentsExchange/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+  skip https://en.nankai.edu.cn/_s299/GraduateEducation/list.psp HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+
+NONE Nankai University 0 facts
+NONE Hohai University 0 facts
+  skip https://en.swjtu.edu.cn/ADMISSION/Degree_Programs/UNDERGRADUATE_PROGRAMS.htm HTTP Error 404: Not Found
+  skip https://en.swjtu.edu.cn/ADMISSION/Degree_Programs/POSTGRADUATE_PROGRAMS.htm HTTP Error 404: Not Found
+OK Southwest Jiaotong University ielts,hsk
+  skip http://www.lzu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Lanzhou University 0 facts
+NONE Hefei University of Technology 0 facts
+  skip http://gjjyxy.nwpu.edu.cn/en/ <urlopen error [Errno -2] Name or service not known>
+  skip http://gjjyxy.nwpu.edu.cn/en/CampusxLife.htm <urlopen error [Errno -2] Name or service not known>
+NONE Northwestern Polytechnical University 0 facts
+  skip https://sie.nwu.edu.cn/en/Admissions/Chinese_Taught_Degree_Programs.htm HTTP Error 404: Not Found
+NONE Northwest University 0 facts
+  skip http://iso.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.nxu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.nxu.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.nxu.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Ningxia University 0 facts
+  skip http://www.tmu.edu.cn <urlopen error [Errno 101] Network is unreachable>
+NONE Tianjin Medical University 0 facts
+NONE Central Academy of Drama 0 facts
+NONE Shanghai University of Finance and Economics 0 facts
+OK China University of Mining and Technology hsk
+NONE Wenzhou-Kean University 0 facts

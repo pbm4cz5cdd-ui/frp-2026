@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- Our project page (FRP 2026). Public page: no tester names, no keys, no private photos. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ivypath.io — every university requirement on one page · FRP 2026</title>
+<meta name="description" content="A free study-abroad guide: IELTS, TOEFL and SAT requirements, costs and an AI admissions assistant for 734 universities in 35 countries.">
+<style>
+  :root { --accent: #A3283D; --ink: #222; --muted: #666; --line: #e6e1df; --soft: #faf7f5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: #fff; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { text-align: center; }
+  h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.15; margin: 0 0 12px; }
+  .authors { font-size: 19px; } .aff { color: var(--muted); margin-top: 4px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 22px 0 8px; }
+  .links a { background: var(--ink); color: #fff; text-decoration: none; padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 15px; }
+  .links a.soon { background: #bbb; pointer-events: none; }
+  figure { margin: 28px 0; } figure img { width: 100%; border-radius: 10px; border: 1px solid var(--line); }
+  figcaption { color: var(--muted); font-size: 15px; text-align: center; margin-top: 6px; }
+  h2 { font-size: 26px; margin: 44px 0 10px; text-align: center; }
+  .tldr { background: var(--soft); border-left: 5px solid var(--accent); padding: 14px 18px; border-radius: 0 8px 8px 0; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 18px 0; }
+  .steps div { border: 2px solid var(--accent); border-radius: 10px; padding: 12px; text-align: center; font-size: 15px; }
+  .steps b { display: block; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; margin: 14px 0; }
+  th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: center; }
+  th { border-bottom: 2px solid var(--ink); } td:first-child, th:first-child { text-align: left; }
+  tr.best td { font-weight: 700; background: #fdf1f3; }
+  .table-wrap { overflow-x: auto; }
+  pre { background: var(--soft); padding: 14px; border-radius: 8px; overflow-x: auto; font-size: 14px; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 50px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>ivypath.io: what does each university actually require?</h1>
+    <div class="authors">A student project · AI Engineering track</div>
+    <div class="aff">FRP 2026 · ISSAI, Nazarbayev University</div>
+    <div class="links">
+      <!-- Demo opens the public copy of the site (no login needed). The AI assistant does not work there. -->
+      <a href="https://kitan-a.com/frp/pub/s16/ivypath.io/" target="_blank" rel="noopener">▶ Demo</a>
+      <a href="https://github.com/pbm4cz5cdd-ui/frp-2026/tree/main/projects/ivypath.io" target="_blank" rel="noopener">💻 Code</a>
+    </div>
+  </header>
+
+  <figure>
+    <img src="images/teaser.jpg" alt="The ivypath.io university list in English, with boxes for IELTS, TOEFL and SAT scores at the top">
+    <figcaption>Type your IELTS, TOEFL or SAT score once — every card shows at once whether you already meet the requirement.</figcaption>
+  </figure>
+
+  <p class="tldr"><b>In one sentence:</b> ivypath.io puts the IELTS, TOEFL and SAT requirements, costs and deadlines of 734 universities in 35 countries on one free page, checks a student's own scores against all of them in one click, and answers follow-up questions with an AI admissions assistant.</p>
+
+  <h2>The problem</h2>
+  <p>A student from Kazakhstan who wants to study abroad has to open hundreds of university websites. Each one hides its requirements in a different place, states them differently (“IELTS 7.0, no band below 6.5” against “good English required”), and changes them every year. Paid agencies cost money that many families do not have, and the free lists that exist are usually US-only or a few years old. One missed line — a stricter band, an optional SAT that is really expected, a deadline in November — can cost an applicant a whole year.</p>
+
+  <h2>How it works</h2>
+  <div class="steps">
+    <div><b>1. Input</b>A country or region, a field, a yearly budget, and the student's IELTS, TOEFL and SAT scores</div>
+    <div><b>2. Model</b>A rule-based matcher over a hand-checked data file, plus a chat assistant that reads the same data</div>
+    <div><b>3. Output</b>A shortlist of universities with their requirements, costs, financial aid and a link to the official page</div>
+  </div>
+  <p>The data is one CSV file of 734 universities in 35 countries, collected by hand from official admissions pages with a small Python pipeline: a script fetches a page, proposes the values, a person reviews them, and only then are they written into the data. Every card keeps the link to the page the numbers came from. The site itself is plain HTML, CSS and JavaScript and needs no server; the assistant is a chat call to the class model API, and it answers only from the site data.</p>
+
+  <h2>Results</h2>
+  <p>A requirement counts as filled only when the card has a score or a checked note saying why there is no score (for example “IELTS not required, English-medium school”). The numbers below are from our coverage script on 30 October 2026.</p>
+  <div class="table-wrap"><table>
+    <tr><th>Fact on a university card</th><th>Universities</th><th>Share of all</th></tr>
+    <tr><td>Country and field of study</td><td>734 of 734</td><td>100%</td></tr>
+    <tr><td>IELTS score or checked note</td><td>619 of 734</td><td>84%</td></tr>
+    <tr><td>TOEFL score or checked note</td><td>611 of 734</td><td>83%</td></tr>
+    <tr class="best"><td>SAT score, note, or approximate target</td><td>595 of 734</td><td>81%</td></tr>
+  </table></div>
+  <p>Four out of five cards are complete. The United States, the United Kingdom, Germany and Korea are practically finished (USA: 344 of 344 have SAT). The big gaps are China (39 of 107 have IELTS), Canada (45 of 56) and Hong Kong (9 of 11), because those official pages are often in Chinese or behind a programme-by-programme list. Where a university is test-optional we do not write “no data”: we show an approximate target such as “SAT ~1500 (optional)”, taken from the official admitted-student range, and mark it as optional.</p>
+
+  <figure>
+    <img src="images/demo.jpg" alt="The ivypath.io home page with the admissions assistant panel open on the right">
+    <figcaption>The demo: the home page and the admissions assistant, which asks for a country, your scores and a budget, then shortlists universities from the same data — no download, no account. The public demo shows the list and the score check; the assistant itself runs only in the class workspace version, because its model calls need the course proxy.</figcaption>
+  </figure>
+
+  <h2>Limitations and ethics</h2>
+  <p>The page is a guide, not an admission guarantee: requirements change every year, so each card links to the official site and we tell the reader to check it. The SAT target is approximate, never a cutoff. Coverage is not complete — China, Canada and Hong Kong are the weakest, and costs are filled for fewer universities than scores. The assistant can be wrong; it reads only our own data and is not a consultant. We collect only public information from official pages, the site needs no account, and what it remembers (favourites, language, theme) stays in the visitor's own browser. It is free, and no university pays to be on it.</p>
+
+  <h2>Cite</h2>
+<pre>@misc{ivypath2026,
+  title  = {ivypath.io: requirements of 734 universities in one place},
+  author = {FRP 2026 student project},
+  note   = {FRP 2026, ISSAI, Nazarbayev University},
+  year   = {2026}
+}</pre>
+
+  <footer>Made at the ISSAI Fall Research Program 2026 · Page template: FRP AI Engineering</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+[1/35] University of New Hampshire: 3 facts
+  Royal Agricultural University: http://www.rau.ac.uk ConnectionError
+[2/35] Royal Agricultural University: homepage failed
+[2/35] Royal Agricultural University: 0 facts
+[3/35] San Diego State University: 4 facts
+[4/35] University of Southampton: 2 facts
+[5/35] Cleveland State University: 3 facts
+[6/35] Leeds Conservatoire: 2 facts
+  Beijing Normal-Hong Kong Baptist University United International College: https://admission.bnbu.edu.cn/ido/programmes_courses.htm ConnectionError
+  Beijing Normal-Hong Kong Baptist University United International College: https://sie.bnbu.edu.cn/ ConnectTimeout
+  Beijing Normal-Hong Kong Baptist University United International College: https://ido.bnbu.edu.cn/ ConnectionError
+[7/35] Beijing Normal-Hong Kong Baptist University United International College: 0 facts
+[8/35] Dalhousie University: 3 facts
+[9/35] Queen Margaret University: 2 facts
+[10/35] Michigan Technological University: 2 facts
+[11/35] The Hong Kong University of Science and Technology (Guangzhou): 2 facts
+[12/35] Birkbeck, University of London: 2 facts
+[13/35] Brandeis University: homepage failed
+[13/35] Brandeis University: 0 facts
+[14/35] Pace University: 2 facts
+  Hunter College: https://www2.hunter.cuny.edu/ieli/ ConnectionError
+  Hunter College: https://www2.hunter.cuny.edu/studentservices/is ConnectionError
+[15/35] Hunter College: 0 facts
+  University of Kentucky: https://uky.edu SSLError
+[16/35] University of Kentucky: homepage failed
+[16/35] University of Kentucky: 0 facts
+[17/35] Colorado School of Mines: 1 facts
+[18/35] University of San Diego: 1 facts
+[19/35] University of Colorado Colorado Springs: 0 facts
+  Royal Holloway, University of London: http://www.rhbnc.ac.uk/ ConnectTimeout
+[20/35] Royal Holloway, University of London: homepage failed
+[20/35] Royal Holloway, University of London: 0 facts
+[21/35] Ulster University: homepage failed
+[21/35] Ulster University: 0 facts
+[22/35] Kingston University: homepage failed
+[22/35] Kingston University: 0 facts
+[23/35] The Glasgow School of Art: 0 facts
+[24/35] Donghua University: 0 facts
+[25/35] Central China Normal University: 0 facts
+[26/35] Nanjing Normal University: homepage failed
+[26/35] Nanjing Normal University: 0 facts
+[27/35] Northwest A&F University: 0 facts
+[28/35] Jiangnan University: 0 facts
+[29/35] Yunnan University: 0 facts
+[30/35] Shenzhen MSU-BIT University: 0 facts
+[31/35] Georgetown University in Qatar: 1 facts
+[32/35] The American University of Paris: 0 facts
+[33/35] Lakehead University: 0 facts
+[34/35] Humber Polytechnic: homepage failed
+[34/35] Humber Polytechnic: 0 facts
+  Hang Seng University of Hong Kong: http://www.hsu.edu.hk ConnectTimeout
+[35/35] Hang Seng University of Hong Kong: homepage failed
+[35/35] Hang Seng University of Hong Kong: 0 facts

@@ -1,0 +1,166 @@
+OK Zhejiang University: https://www.zju.edu.cn/english/
+NO University of Science and Technology of China: https://en.ustc.edu.cn not English (letters 538, cjk 0, en 16) | https://www.ustc.edu.cn/english/ HTTP 404 | https://www.ustc.edu.cn/en/ HTTP 404 | https://iso.ustc.edu.cn ConnectionError | https://admissions.ustc.edu.cn ConnectionError | https://international.ustc.edu.cn ConnectionError | http://en.ustc.edu.cn not English (letters 538, cjk 0, en 16) | https://www.ustc.edu.cn/English/ HTTP 404
+OK Harbin Institute of Technology: https://en.hit.edu.cn/
+OK Xi'an Jiaotong University: https://en.xjtu.edu.cn/
+OK Renmin University of China: https://en.ruc.edu.cn/
+OK Beijing Normal University: https://iso.bnu.edu.cn/
+NO Beihang University: https://en.buaa.edu.cn ConnectionError | https://www.buaa.edu.cn/english/ HTTP 404 | https://www.buaa.edu.cn/en/ ConnectionError | https://iso.buaa.edu.cn ConnectionError | https://admissions.buaa.edu.cn ConnectionError | https://international.buaa.edu.cn ConnectionError | http://en.buaa.edu.cn ConnectionError | https://www.buaa.edu.cn/English/ HTTP 404
+NO Beijing Institute of Technology: https://en.bit.edu.cn ConnectionError | https://www.bit.edu.cn/english/ HTTP 404 | https://www.bit.edu.cn/en/ HTTP 404 | https://iso.bit.edu.cn ConnectionError | https://admissions.bit.edu.cn ConnectionError | https://international.bit.edu.cn not English (letters 264, cjk 0, en 1) | http://en.bit.edu.cn ConnectionError | https://www.bit.edu.cn/English/ HTTP 404
+OK Beijing Jiaotong University: https://en.bjtu.edu.cn/
+NO Beijing University of Technology: https://en.bjut.edu.cn ConnectionError | https://www.bjut.edu.cn/english/ HTTP 404 | https://www.bjut.edu.cn/en/ HTTP 404 | https://iso.bjut.edu.cn ConnectionError | https://admissions.bjut.edu.cn not English (letters 85, cjk 0, en 2) | https://international.bjut.edu.cn not English (letters 59, cjk 0, en 0) | http://en.bjut.edu.cn ConnectionError | https://www.bjut.edu.cn/Eng[142/250] Sun Yat-sen University: none
+[143/250] South China University of Technology: https://www.scut.edu.cn/en/
+[144/250] Jinan University: none
+[145/250] Shenzhen University: none
+[146/250] Southern University of Science and Technology: https://www.sustech.edu.cn/en/
+[147/250] Wuhan University: https://en.whu.edu.cn/
+[148/250] Huazhong University of Science and Technology: https://iso.hust.edu.cn/
+[149/250] Central China Normal University: none
+[150/250] Wuhan University of Technology: none
+[151/250] China University of Geosciences (Wuhan): https://en.cug.edu.cn/
+[152/250] Xiamen University: https://en.xmu.edu.cn/
+[153/250] Shandong University: https://en.sdu.edu.cn/
+[154/250] Ocean University of China: none
+[155/250] Tianjin University: https://en.tju.edu.cn/
+[156/250] Nankai University: https://en.nankai.edu.cn/
+[157/250] Southeast University: https://www.seu.edu.cn/english/
+[158/250] Nanjing University of Science and Technology: none
+[159/250] Nanjing Normal University: none
+[160/250] Hohai University: https://en.hhu.edu.cn/
+[161/250] Nanjing Agricultural University: none
+[162/250] Sichuan University: https://international.scu.edu.cn/
+[163/250] University of Electronic Science and Technology of China: https://en.uestc.edu.cn/
+[164/250] Southwest Jiaotong University: https://en.swjtu.edu.cn/index.jsp
+[165/250] Chongqing University: none
+[166/250] Jilin University: https://en.jlu.edu.cn/
+[167/250] Dalian University of Technology: https://en.dlut.edu.cn/
+[168/250] Lanzhou University: none
+[169/250] Northwest A&F University: https://en.nwsuaf.edu.cn/
+[170/250] Hunan University: none
+[171/250] Central South University: https://en.csu.edu.cn/
+[172/250] Xiangtan University: https://en.xtu.edu.cn/
+[173/250] Nanchang University: none
+[174/250] Fuzhou University: https://en.fzu.edu.cn/
+[175/250] Zhengzhou University: none
+[176/250] Hefei University of Technology: https://en.hfut.edu.cn/
+[177/250] Anhui University: none
+[178/250] Ningbo University: https://www.nbu.edu.cn/en/
+[179/250] Jiangnan University: none
+[180/250] Northwestern Polytechnical University: https://en.nwpu.edu.cn/
+[181/250] Xidian University: https://en.xidian.edu.cn/
+[182/250] Chang'an University: https://en.chd.edu.cn/
+[183/250] Shaanxi Normal University: none
+[184/250] Northwest University: none
+[185/250] Xinjiang University: none
+[186/250] Shihezi University: none
+[187/250] Inner Mongolia University: none
+[188/250] Ningxia University: none
+[189/250] Yunnan University: none
+[190/250] Capital Medical University: https://en.ccmu.edu.cn/
+[191/250] China Medical University: none
+[192/250] Tianjin Medical University: none
+[193/250] Nanjing Medical University: none
+[194/250] Communication University of China: https://en.cuc.edu.cn/
+[195/250] Beijing Film Academy: none
+[196/250] Central Academy of Drama: https://en.chntheatre.edu.cn/
+[197/250] China Conservatory of Music: https://en.ccmusic.edu.cn/
+[198/250] Xi'an Jiaotong-Liverpool University: https://www.xjtlu.edu.cn/en/
+[199/250] Shenzhen MSU-BIT University: none
+[200/250] Shanghai University of Finance and Economics: none
+[201/250] Zhongnan University of Economics and Law: none
+[202/250] Southwestern University of Finance and Economics: none
+[203/250] Beijing Forestry University: none
+[204/250] China University of Mining and Technology: none
+[205/250] China University of Petroleum: none
+[206/250] Nanjing University of Aeronautics and Astronautics: https://en.nuaa.edu.cn/
+[207/250] Harbin Engineering University: none
+[212/250] Duke Kunshan University: https://www.dukekunshan.edu.cn:443/
+[213/250] Wenzhou-Kean University: https://www.wku.edu.cn/en
+[244/250] City University of Hong Kong: none
+[245/250] Hong Kong Baptist University: https://www.hkbu.edu.hk/en.html
+[246/250] Lingnan University: https://www.ln.edu.hk/en
+[247/250] Education University of Hong Kong: none
+[248/250] Hong Kong Metropolitan University: https://admissions.hkmu.edu.hk/
+[249/250] Hang Seng University of Hong Kong: none
+[250/250] Hong Kong Shue Yan University: https://english.hksyu.edu
+chinese rows 107, english seeds found 53
+nnectionError | https://international.cafa.edu.cn ConnectionError | http://en.cafa.edu.cn ConnectionError | https://www.cafa.edu.cn/English/ SSLError
+NO Tongji University: https://en.tongji.edu.cn not English (letters 16, cjk 0, en 1) | https://www.tongji.edu.cn/english/ HTTP 404 | https://www.tongji.edu.cn/en/ HTTP 404 | https://iso.tongji.edu.cn ConnectionError | https://admissions.tongji.edu.cn ConnectionError | https://international.tongji.edu.cn ConnectionError | http://en.tongji.edu.cn not English (letters 16, cjk 0, en 1) | https://www.tongji.edu.cn/English/ HTTP 404
+NO East China Normal University: https://en.english.ecnu.edu.cn ConnectionError | https://www.english.ecnu.edu.cn/english/ ConnectionError | https://www.english.ecnu.edu.cn/en/ ConnectionError | https://iso.english.ecnu.edu.cn ConnectionError | https://admissions.english.ecnu.edu.cn ConnectionError | https://international.english.ecnu.edu.cn ConnectionError | http://en.english.ecnu.edu.cn ConnectionError | https://www.english.ecnu.edu.cn/English/ ConnectionError
+NO Donghua University: https://en.dhu.edu.cn ConnectionError | https://www.dhu.edu.cn/english/ not English (letters 7, cjk 26, en 0) | https://www.dhu.edu.cn/en/ not English (letters 2, cjk 26, en 0) | https://iso.dhu.edu.cn ConnectionError | https://admissions.dhu.edu.cn not English (letters 0, cjk 0, en 0) | https://international.dhu.edu.cn ConnectionError | http://en.dhu.edu.cn ConnectionError | https://www.dhu.edu.cn/English/ not English (letters 7, cjk 26, en 0)
+NO Shanghai University: https://en.shu.edu.cn ConnectionError | https://www.shu.edu.cn/english/ HTTP 404 | https://www.shu.edu.cn/en/ HTTP 404 | https://iso.shu.edu.cn ConnectionError | https://admissions.shu.edu.cn ConnectionError | https://international.shu.edu.cn ConnectionError | http://en.shu.edu.cn ConnectionError | https://www.shu.edu.cn/English/ HTTP 404
+OK East China University of Science and Technology: https://www.ecust.edu.cn/en/
+NO Sun Yat-sen University: https://en.sysu.edu.cn ConnectionError | https://www.sysu.edu.cn/english/ HTTP 404 | https://www.sysu.edu.cn/en/ HTTP 404 | https://iso.sysu.edu.cn not English (letters 0, cjk 0, en 0) | https://admissions.sysu.edu.cn ConnectionError | https://international.sysu.edu.cn ConnectionError | http://en.sysu.edu.cn ConnectionError | https://www.sysu.edu.cn/English/ HTTP 404
+OK South China University of Technology: https://www.scut.edu.cn/en/
+NO Jinan University: https://en.jnu.edu.cn ConnectionError | https://www.jnu.edu.cn/english/ not English (letters 0, cjk 29, en 0) | https://www.jnu.edu.cn/en/ not English (letters 0, cjk 29, en 0) | https://iso.jnu.edu.cn ConnectionError | https://admissions.jnu.edu.cn ConnectionError | https://international.jnu.edu.cn ConnectionError | http://en.jnu.edu.cn ConnectionError | https://www.jnu.edu.cn/English/ not English (letters 0, cjk 29, en 0)
+NO Shenzhen University: https://en.szu.edu.cn ConnectionError | https://www.szu.edu.cn/english/ ConnectionError | https://www.szu.edu.cn/en/ ConnectionError | https://iso.szu.edu.cn ConnectionError | https://admissions.szu.edu.cn ConnectionError | https://international.szu.edu.cn ConnectionError | http://en.szu.edu.cn ConnectionError | https://www.szu.edu.cn/English/ ConnectionError
+OK Southern University of Science and Technology: https://www.sustech.edu.cn/en/
+OK Wuhan University: https://en.whu.edu.cn/
+OK Huazhong University of Science and Technology: https://iso.hust.edu.cn/
+NO Central China Normal University: https://en.ccnu.edu.cn ConnectTimeout | https://www.ccnu.edu.cn/english/ HTTP 404 | https://www.ccnu.edu.cn/en/ HTTP 404 | https://iso.ccnu.edu.cn ConnectTimeout | https://admissions.ccnu.edu.cn ConnectTimeout | https://international.ccnu.edu.cn not English (letters 36, cjk 0, en 1) | http://en.ccnu.edu.cn ConnectTimeout | https://www.ccnu.edu.cn/English/ HTTP 404
+NO Wuhan University of Technology: https://en.whut.edu.cn ConnectTimeout | https://www.whut.edu.cn/english/ HTTP 404 | https://www.whut.edu.cn/en/ HTTP 404 | https://iso.whut.edu.cn ConnectionError | https://admissions.whut.edu.cn ConnectionError | https://international.whut.edu.cn ConnectionError | http://en.whut.edu.cn ConnectTimeout | https://www.whut.edu.cn/English/ HTTP 404
+OK China University of Geosciences (Wuhan): https://en.cug.edu.cn/
+OK Xiamen University: https://en.xmu.edu.cn/
+OK Shandong University: https://en.sdu.edu.cn/
+NO Ocean University of China: https://en.ouc.edu.cn ConnectionError | https://www.ouc.edu.cn/english/ not English (letters 0, cjk 28, en 0) | https://www.ouc.edu.cn/en/ not English (letters 2, cjk 26, en 0) | https://iso.ouc.edu.cn ConnectionError | https://admissions.ouc.edu.cn ConnectionError | https://international.ouc.edu.cn ConnectionError | http://en.ouc.edu.cn ConnectionError | https://www.ouc.edu.cn/English/ not English (letters 0, cjk 28, en 0)
+OK Tianjin University: https://en.tju.edu.cn/
+OK Nankai University: https://en.nankai.edu.cn/
+OK Southeast University: https://www.seu.edu.cn/english/
+NO Nanjing University of Science and Technology: https://en.njust.edu.cn ConnectionError | https://www.njust.edu.cn/english/ HTTP 202 | https://www.njust.edu.cn/en/ HTTP 202 | https://iso.njust.edu.cn ConnectionError | https://admissions.njust.edu.cn ConnectionError | https://international.njust.edu.cn ConnectionError | http://en.njust.edu.cn ConnectionError | https://www.njust.edu.cn/English/ HTTP 202
+NO Nanjing Normal University: https://en.njnu.edu.cn HTTP 412 | https://www.njnu.edu.cn/english/ HTTP 412 | https://www.njnu.edu.cn/en/ HTTP 412 | https://iso.njnu.edu.cn ConnectionError | https://admissions.njnu.edu.cn ConnectionError | https://international.njnu.edu.cn ConnectionError | http://en.njnu.edu.cn HTTP 412 | https://www.njnu.edu.cn/English/ HTTP 412
+OK Hohai University: https://en.hhu.edu.cn/
+NO Nanjing Agricultural University: https://en.njau.edu.cn ConnectionError | https://www.njau.edu.cn/english/ HTTP 410 | https://www.njau.edu.cn/en/ HTTP 410 | https://iso.njau.edu.cn ConnectionError | https://admissions.njau.edu.cn ConnectionError | https://international.njau.edu.cn ConnectionError | http://en.njau.edu.cn ConnectionError | https://www.njau.edu.cn/English/ HTTP 410
+OK Sichuan University: https://international.scu.edu.cn/
+OK University of Electronic Science and Technology of China: https://en.uestc.edu.cn/
+OK Southwest Jiaotong University: https://en.swjtu.edu.cn/index.jsp
+NO Chongqing University: https://en.cqu.edu.cn HTTP 412 | https://www.cqu.edu.cn/english/ HTTP 404 | https://www.cqu.edu.cn/en/ HTTP 404 | https://iso.cqu.edu.cn ConnectionError | https://admissions.cqu.edu.cn ConnectionError | https://international.cqu.edu.cn ConnectTimeout | http://en.cqu.edu.cn HTTP 412 | https://www.cqu.edu.cn/English/ HTTP 404
+OK Jilin University: https://en.jlu.edu.cn/
+OK Dalian University of Technology: https://en.dlut.edu.cn/
+NO Lanzhou University: https://en.lzu.edu.cn HTTP 412 | https://www.lzu.edu.cn/english/ HTTP 412 | https://www.lzu.edu.cn/en/ HTTP 412 | https://iso.lzu.edu.cn ConnectionError | https://admissions.lzu.edu.cn ConnectionError | https://international.lzu.edu.cn ConnectionError | http://en.lzu.edu.cn HTTP 412 | https://www.lzu.edu.cn/English/ HTTP 412
+OK Northwest A&F University: https://en.nwsuaf.edu.cn/
+NO Hunan University: https://en.hunu.edu.cn ConnectionError | https://www.hunu.edu.cn/english/ ConnectionError | https://www.hunu.edu.cn/en/ ConnectionError | https://iso.hunu.edu.cn ConnectionError | https://admissions.hunu.edu.cn ConnectionError | https://international.hunu.edu.cn ConnectionError | http://en.hunu.edu.cn ConnectionError | https://www.hunu.edu.cn/English/ ConnectionError
+OK Central South University: https://en.csu.edu.cn/
+OK Xiangtan University: https://en.xtu.edu.cn/
+NO Nanchang University: https://en.ncu.edu.cn ConnectionError | https://www.ncu.edu.cn/english/ HTTP 404 | https://www.ncu.edu.cn/en/ HTTP 404 | https://iso.ncu.edu.cn ConnectionError | https://admissions.ncu.edu.cn ConnectionError | https://international.ncu.edu.cn ConnectionError | http://en.ncu.edu.cn ConnectionError | https://www.ncu.edu.cn/English/ HTTP 404
+OK Fuzhou University: https://en.fzu.edu.cn/
+NO Zhengzhou University: https://en.zzu.edu.cn ConnectionError | https://www.zzu.edu.cn/english/ HTTP 404 | https://www.zzu.edu.cn/en/ HTTP 404 | https://iso.zzu.edu.cn ConnectionError | https://admissions.zzu.edu.cn ConnectionError | https://international.zzu.edu.cn ConnectionError | http://en.zzu.edu.cn ConnectionError | https://www.zzu.edu.cn/English/ HTTP 404
+OK Hefei University of Technology: https://en.hfut.edu.cn/
+NO Anhui University: https://en.ahu.edu.cn HTTP 412 | https://www.ahu.edu.cn/english/ not English (letters 7, cjk 26, en 0) | https://www.ahu.edu.cn/en/ not English (letters 0, cjk 28, en 0) | https://iso.ahu.edu.cn ConnectionError | https://admissions.ahu.edu.cn ConnectionError | https://international.ahu.edu.cn ConnectionError | http://en.ahu.edu.cn HTTP 412 | https://www.ahu.edu.cn/English/ not English (letters 7, cjk 26, en 0)
+OK Ningbo University: https://www.nbu.edu.cn/en/
+NO Jiangnan University: https://en.jiangnan.edu.cn ConnectionError | https://www.jiangnan.edu.cn/english/ HTTP 404 | https://www.jiangnan.edu.cn/en/ HTTP 404 | https://iso.jiangnan.edu.cn ConnectionError | https://admissions.jiangnan.edu.cn ConnectionError | https://international.jiangnan.edu.cn ConnectionError | http://en.jiangnan.edu.cn ConnectionError | https://www.jiangnan.edu.cn/English/ HTTP 404
+OK Northwestern Polytechnical University: https://en.nwpu.edu.cn/
+OK Xidian University: https://en.xidian.edu.cn/
+OK Chang'an University: https://en.chd.edu.cn/
+NO Shaanxi Normal University: https://en.snnu.edu.cn ConnectionError | https://www.snnu.edu.cn/english/ HTTP 404 | https://www.snnu.edu.cn/en/ HTTP 404 | https://iso.snnu.edu.cn ConnectionError | https://admissions.snnu.edu.cn ConnectionError | https://international.snnu.edu.cn ConnectionError | http://en.snnu.edu.cn ConnectionError | https://www.snnu.edu.cn/English/ HTTP 404
+NO Northwest University: https://en.nwu.edu.cn ConnectionError | https://www.nwu.edu.cn/english/ HTTP 404 | https://www.nwu.edu.cn/en/ HTTP 404 | https://iso.nwu.edu.cn ConnectionError | https://admissions.nwu.edu.cn ConnectionError | https://international.nwu.edu.cn ConnectionError | http://en.nwu.edu.cn ConnectionError | https://www.nwu.edu.cn/English/ HTTP 404
+NO Xinjiang University: https://en.xju.edu.cn HTTP 403 | https://www.xju.edu.cn/english/ HTTP 404 | https://www.xju.edu.cn/en/ HTTP 404 | https://iso.xju.edu.cn ConnectionError | https://admissions.xju.edu.cn ConnectionError | https://international.xju.edu.cn ConnectionError | http://en.xju.edu.cn HTTP 403 | https://www.xju.edu.cn/English/ HTTP 404
+NO Shihezi University: https://en.shzuni.com ConnectionError | https://www.shzuni.com/english/ HTTP 404 | https://www.shzuni.com/en/ HTTP 404 | https://iso.shzuni.com ConnectionError | https://admissions.shzuni.com ConnectionError | https://international.shzuni.com ConnectionError | http://en.shzuni.com ConnectionError | https://www.shzuni.com/English/ HTTP 404
+NO Inner Mongolia University: https://en.imu.edu.cn ConnectionError | https://www.imu.edu.cn/english/ HTTP 404 | https://www.imu.edu.cn/en/ HTTP 404 | https://iso.imu.edu.cn ConnectionError | https://admissions.imu.edu.cn ConnectionError | https://international.imu.edu.cn ConnectionError | http://en.imu.edu.cn ConnectionError | https://www.imu.edu.cn/English/ HTTP 404
+NO Ningxia University: https://en.nxu.edu.cn ConnectionError | https://www.nxu.edu.cn/english/ HTTP 404 | https://www.nxu.edu.cn/en/ HTTP 404 | https://iso.nxu.edu.cn ConnectionError | https://admissions.nxu.edu.cn ConnectionError | https://international.nxu.edu.cn ConnectionError | http://en.nxu.edu.cn ConnectionError | https://www.nxu.edu.cn/English/ HTTP 404
+NO Yunnan University: https://en.ynu.edu.cn ConnectionError | https://www.ynu.edu.cn/english/ HTTP 404 | https://www.ynu.edu.cn/en/ HTTP 404 | https://iso.ynu.edu.cn ConnectionError | https://admissions.ynu.edu.cn ConnectionError | https://international.ynu.edu.cn ConnectionError | http://en.ynu.edu.cn ConnectionError | https://www.ynu.edu.cn/English/ HTTP 404
+OK Capital Medical University: https://en.ccmu.edu.cn/
+NO China Medical University: https://en.cmu.edu.cn ConnectionError | https://www.cmu.edu.cn/english/ ConnectTimeout | https://www.cmu.edu.cn/en/ ConnectTimeout | https://iso.cmu.edu.cn ConnectionError | https://admissions.cmu.edu.cn ConnectionError | https://international.cmu.edu.cn ConnectionError | http://en.cmu.edu.cn ConnectionError | https://www.cmu.edu.cn/English/ ConnectTimeout
+NO Tianjin Medical University: https://en.tmu.edu.cn ConnectionError | https://www.tmu.edu.cn/english/ ConnectionError | https://www.tmu.edu.cn/en/ ConnectionError | https://iso.tmu.edu.cn ConnectionError | https://admissions.tmu.edu.cn ConnectionError | https://international.tmu.edu.cn ConnectionError | http://en.tmu.edu.cn ConnectionError | https://www.tmu.edu.cn/English/ ConnectionError
+NO Nanjing Medical University: https://en.njmu.edu.cn ConnectionError | https://www.njmu.edu.cn/english/ HTTP 410 | https://www.njmu.edu.cn/en/ not English (letters 0, cjk 28, en 0) | https://iso.njmu.edu.cn ConnectionError | https://admissions.njmu.edu.cn ConnectionError | https://international.njmu.edu.cn ConnectionError | http://en.njmu.edu.cn ConnectionError | https://www.njmu.edu.cn/English/ HTTP 410
+OK Communication University of China: https://en.cuc.edu.cn/
+NO Beijing Film Academy: https://en.bfa.edu.cn ConnectionError | https://www.bfa.edu.cn/english/ HTTP 412 | https://www.bfa.edu.cn/en/ HTTP 412 | https://iso.bfa.edu.cn ConnectionError | https://admissions.bfa.edu.cn ConnectionError | https://international.bfa.edu.cn HTTP 412 | http://en.bfa.edu.cn ConnectionError | https://www.bfa.edu.cn/English/ HTTP 412
+OK Central Academy of Drama: https://en.chntheatre.edu.cn/
+OK China Conservatory of Music: https://en.ccmusic.edu.cn/
+OK Xi'an Jiaotong-Liverpool University: https://www.xjtlu.edu.cn/en/
+NO Shenzhen MSU-BIT University: https://en.ru.smbu.edu.cn ConnectionError | https://www.ru.smbu.edu.cn/english/ ConnectionError | https://www.ru.smbu.edu.cn/en/ ConnectionError | https://iso.ru.smbu.edu.cn ConnectionError | https://admissions.ru.smbu.edu.cn ConnectionError | https://international.ru.smbu.edu.cn ConnectionError | http://en.ru.smbu.edu.cn ConnectionError | https://www.ru.smbu.edu.cn/English/ ConnectionError
+NO Shanghai University of Finance and Economics: https://en.sufe.edu.cn ConnectionError | https://www.sufe.edu.cn/english/ not English (letters 0, cjk 28, en 0) | https://www.sufe.edu.cn/en/ HTTP 410 | https://iso.sufe.edu.cn ConnectionError | https://admissions.sufe.edu.cn ConnectionError | https://international.sufe.edu.cn ConnectionError | http://en.sufe.edu.cn ConnectionError | https://www.sufe.edu.cn/English/ not English (letters 0, cjk 28, en 0)
+NO Zhongnan University of Economics and Law: https://en.znufe.edu.cn ConnectionError | https://www.znufe.edu.cn/english/ ConnectionError | https://www.znufe.edu.cn/en/ ConnectionError | https://iso.znufe.edu.cn ConnectionError | https://admissions.znufe.edu.cn ConnectionError | https://international.znufe.edu.cn ConnectionError | http://en.znufe.edu.cn ConnectionError | https://www.znufe.edu.cn/English/ ConnectionError
+NO Southwestern University of Finance and Economics: https://en.swufe.edu.cn ConnectionError | https://www.swufe.edu.cn/english/ HTTP 404 | https://www.swufe.edu.cn/en/ HTTP 404 | https://iso.swufe.edu.cn ConnectionError | https://admissions.swufe.edu.cn ConnectionError | https://international.swufe.edu.cn not English (letters 112, cjk 0, en 1) | http://en.swufe.edu.cn ConnectionError | https://www.swufe.edu.cn/English/ HTTP 404
+NO Beijing Forestry University: https://en.bjfu.edu.cn ConnectionError | https://www.bjfu.edu.cn/english/ HTTP 404 | https://www.bjfu.edu.cn/en/ HTTP 404 | https://iso.bjfu.edu.cn ConnectionError | https://admissions.bjfu.edu.cn ConnectionError | https://international.bjfu.edu.cn not English (letters 88, cjk 0, en 1) | http://en.bjfu.edu.cn ConnectionError | https://www.bjfu.edu.cn/English/ HTTP 404
+NO China University of Mining and Technology: https://en.cumt.edu.cn ConnectionError | https://www.cumt.edu.cn/english/ HTTP 404 | https://www.cumt.edu.cn/en/ HTTP 404 | https://iso.cumt.edu.cn ConnectionError | https://admissions.cumt.edu.cn ConnectionError | https://international.cumt.edu.cn not English (letters 61, cjk 0, en 1) | http://en.cumt.edu.cn ConnectionError | https://www.cumt.edu.cn/English/ HTTP 404
+NO China University of Petroleum: https://en.upc.edu.cn ConnectionError | https://www.upc.edu.cn/english/ HTTP 404 | https://www.upc.edu.cn/en/ HTTP 404 | https://iso.upc.edu.cn ConnectionError | https://admissions.upc.edu.cn ConnectionError | https://international.upc.edu.cn ConnectionError | http://en.upc.edu.cn ConnectionError | https://www.upc.edu.cn/English/ HTTP 404
+OK Nanjing University of Aeronautics and Astronautics: https://en.nuaa.edu.cn/
+NO Harbin Engineering University: https://en.hrbeu.edu.cn ConnectTimeout | https://www.hrbeu.edu.cn/english/ HTTP 404 | https://www.hrbeu.edu.cn/en/ HTTP 404 | https://iso.hrbeu.edu.cn ConnectionError | https://admissions.hrbeu.edu.cn ConnectionError | https://international.hrbeu.edu.cn ConnectionError | http://en.hrbeu.edu.cn ConnectTimeout | https://www.hrbeu.edu.cn/English/ HTTP 404
+OK Duke Kunshan University: https://www.dukekunshan.edu.cn:443/
+OK Wenzhou-Kean University: https://www.wku.edu.cn/en
+NO City University of Hong Kong: https://en.cityu.edu.hk ConnectionError | https://www.cityu.edu.hk/english/ not English (letters 0, cjk 0, en 0) | https://www.cityu.edu.hk/en/ not English (letters 0, cjk 0, en 0) | https://iso.cityu.edu.hk ConnectionError | https://admissions.cityu.edu.hk ConnectionError | https://international.cityu.edu.hk ConnectionError | http://en.cityu.edu.hk ConnectionError | https://www.cityu.edu.hk/English/ not English (letters 0, cjk 0, en 0)
+OK Hong Kong Baptist University: https://www.hkbu.edu.hk/en.html
+OK Lingnan University: https://www.ln.edu.hk/en
+NO Education University of Hong Kong: https://en.ied.edu.hk ConnectionError | https://www.ied.edu.hk/english/ SSLError | https://www.ied.edu.hk/en/ SSLError | https://iso.ied.edu.hk ConnectionError | https://admissions.ied.edu.hk ConnectionError | https://international.ied.edu.hk ConnectionError | http://en.ied.edu.hk ConnectionError | https://www.ied.edu.hk/English/ SSLError
+OK Hong Kong Metropolitan University: https://admissions.hkmu.edu.hk/
+NO Hang Seng University of Hong Kong: https://en.hsu.edu.hk ConnectionError | https://www.hsu.edu.hk/english/ ConnectTimeout | https://www.hsu.edu.hk/en/ ConnectTimeout | https://iso.hsu.edu.hk ConnectionError | https://admissions.hsu.edu.hk ConnectionError | https://international.hsu.edu.hk ConnectionError | http://en.hsu.edu.hk ConnectionError | https://www.hsu.edu.hk/English/ ConnectTimeout
+OK Hong Kong Shue Yan University: https://english.hksyu.edu

@@ -1,0 +1,9 @@
+name,fact,status,value,quote,source,reason
+The George Washington University,sat,not_required,,Submitting standardized test scores is optional for most applicants.,https://undergraduate.admissions.gwu.edu/international-application-process,уже есть ориентир
+Pace University,ielts,not_required,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,цитата не подтверждает not required
+Pace University,toefl,not_required,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,цитата не подтверждает not required
+University at Buffalo,sat,not_required,,There are no additional high school GPA or SAT/ACT requirements.,https://www.buffalo.edu/admissions/apply/special-majors.html,цитата не подтверждает not required
+University of Pittsburgh,ielts,accepted,,"Always use your full legal name as it appears on your passport when completing your admissions, TOEFL/IELTS/Duolingo, and SAT/ACT applications.",https://admissions.pitt.edu/international/,цитата не подтверждает: тест принимается
+University of Pittsburgh,toefl,accepted,,"Always use your full legal name as it appears on your passport when completing your admissions, TOEFL/IELTS/Duolingo, and SAT/ACT applications.",https://admissions.pitt.edu/international/,цитата не подтверждает: тест принимается
+Trinity University,ielts,value,7.0,Recommended scores: TOEFL: 5.5 IELTS: 7.0 Duolingo: 130,https://trinity.edu/admissions-and-aid/guides-and-resources/guide-international-applicants,поле уже заполнено
+Trinity University,toefl,value,5.5,Recommended scores: TOEFL: 5.5 IELTS: 7.0 Duolingo: 130,https://trinity.edu/admissions-and-aid/guides-and-resources/guide-international-applicants,уже есть примечание

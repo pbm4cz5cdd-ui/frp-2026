@@ -1,0 +1,7 @@
+name,fact,status,value,quote,source,reason
+Southwest University,ielts,value,6.0,Undergraduate and Graduate Programs ï¼ IELTS is 6.0 and above or TOEFL iBT is 80 and above.,https://admissions.swu.edu.cn/Admissions/General_Requirements.htm,поле уже заполнено
+Southwest University,toefl,value,80,Undergraduate and Graduate Programs ï¼ IELTS is 6.0 and above or TOEFL iBT is 80 and above.,https://admissions.swu.edu.cn/Admissions/General_Requirements.htm,поле уже заполнено
+Southwest University,hsk,value,200,Undergraduate: HSK 4 200 and above.,https://admissions.swu.edu.cn/Admissions/General_Requirements.htm,поле уже заполнено
+Pace University,ielts,not_required,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,цитата не подтверждает not required
+Pace University,toefl,not_required,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,цитата не подтверждает not required
+University of San Diego,sat,not_required,,"USD is a test-free institution, which means we do not review standardized test scores, such as the SAT or ACT, as part of our admission process.",https://www.sandiego.edu/admission-and-aid/undergraduate/apply/,цитата не подтверждает not required

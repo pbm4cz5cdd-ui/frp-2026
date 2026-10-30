@@ -1,0 +1,5 @@
+name,fact,status,value,quote,source,reason
+Northern Arizona University,sat,not_required,,SAT ERW 350,https://in.nau.edu/center-international-education/apply-bachelors/,цитата не подтверждает not required
+"California State University, East Bay",sat,value,550,Scholastic Aptitude Test SAT 550 Verbal N/A,https://www.csueastbay.edu/iao/how-to-apply/english-proficiency-req/index.html,SAT меньше 800: похоже на секцию
+"California State University, East Bay",ib,value,6,International Baccalaureate IB Standard/High Level English (Language A Only) 6 Standard Level 5 Higher Level N/A,https://www.csueastbay.edu/iao/how-to-apply/english-proficiency-req/index.html,IB вне шкалы 24–45
+University of Stirling,sat,not_required,,SAT - Post March 2016: Score 1200,https://www.stir.ac.uk/international/international-students/international-entry-requirements/,цитата не подтверждает not required

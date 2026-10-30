@@ -1,0 +1,7 @@
+name,country,fact,status,value,note,quote,source,checked
+Southwest University,china,ielts,value,6.0,минимум; для PhD 6.5,Undergraduate and Graduate Programs ï¼ IELTS is 6.0 and above or TOEFL iBT is 80 and above.,https://admissions.swu.edu.cn/Admissions/General_Requirements.htm,2026-10-29
+Southwest University,china,toefl,value,80,минимум; для PhD 85,Undergraduate and Graduate Programs ï¼ IELTS is 6.0 and above or TOEFL iBT is 80 and above.,https://admissions.swu.edu.cn/Admissions/General_Requirements.htm,2026-10-29
+Southwest University,china,hsk,value,200,HSK 4 200 для бакалавриата (китайскоязычные программы),Undergraduate: HSK 4 200 and above.,https://admissions.swu.edu.cn/Admissions/General_Requirements.htm,2026-10-29
+Pace University,usa,ielts,not_required,,Для ELI не требуется,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,2026-10-29
+Pace University,usa,toefl,not_required,,Для ELI не требуется,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,2026-10-29
+University of San Diego,usa,sat,not_required,,SAT не используется,"USD is a test-free institution, which means we do not review standardized test scores, such as the SAT or ACT, as part of our admission process.",https://www.sandiego.edu/admission-and-aid/undergraduate/apply/,2026-10-29

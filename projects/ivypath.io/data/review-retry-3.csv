@@ -1,0 +1,6 @@
+name,fact,status,value,quote,source,reason
+"University of California, Davis",ib,value,30,"If you complete the IB Diploma with a score of 30 or higher, you will receive up to 30 quarter units of college credit.",https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements/international-baccalaureate-exam,поле уже заполнено
+"University of California, Davis",ap,value,3,"Official AP exam scores of 3, 4 or 5 earn college credit.",https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements/advanced-placement-exam,поле уже заполнено
+Brooklyn College,sat,not_required,,CUNY has revised its testing policy to test optional effective fall 2023 through spring 2027.,https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/,уже есть примечание
+University of San Diego,sat,not_required,,"USD is a test-free institution, which means we do not review standardized test scores, such as the SAT or ACT, as part of our admission process.",https://www.sandiego.edu/admission-and-aid/undergraduate/apply/,цитата не подтверждает not required
+Bangor University,ielts,value,6.0,The level required will vary according to the course and level of study.,https://www.bangor.ac.uk/international/future/englishlanguage,значение не найдено в цитате

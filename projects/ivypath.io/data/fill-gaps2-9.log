@@ -1,0 +1,45 @@
+[1/34] University of New Mexico: 1 facts
+  University of Greenwich: http://www.gre.ac.uk/ ConnectionError
+[2/34] University of Greenwich: homepage failed
+[2/34] University of Greenwich: 0 facts
+[3/34] Algonquin College: 2 facts
+[4/34] Southwest University: 3 facts
+[5/34] University of Hawaii at Manoa: 3 facts
+[6/34] University of Alaska Fairbanks: 3 facts
+[7/34] Edinburgh Napier University: 2 facts
+[8/34] California State University, Long Beach: 2 facts
+[9/34] Bard College Berlin: 2 facts
+[10/34] Birmingham City University: 2 facts
+[11/34] University of Wisconsin-Milwaukee: 3 facts
+[12/34] Ontario Tech University: 2 facts
+[13/34] Tulane University: 0 facts
+[14/34] University of Maine: 1 facts
+[15/34] North Carolina State University: homepage failed
+[15/34] North Carolina State University: 0 facts
+[16/34] Kansas State University: https://www.k-state.edu/admissions/undergrad/manhattan/apply/international/english-proficiency.html JSONDecodeError Expecting ',' delimiter: line 1 column 276 (char 275)
+[16/34] Kansas State University: 0 facts
+[17/34] California State University, Fullerton: 0 facts
+[18/34] The Juilliard School: homepage failed
+[18/34] The Juilliard School: 0 facts
+[19/34] Cardiff University: homepage failed
+[19/34] Cardiff University: 0 facts
+[20/34] University of Stirling: 0 facts
+[21/34] Bournemouth University: homepage failed
+[21/34] Bournemouth University: 0 facts
+[22/34] Canterbury Christ Church University: 0 facts
+[23/34] The Liverpool Institute for Performing Arts: 2 facts
+  Shenzhen University: https://www.szu.edu.cn ConnectionError
+[24/34] Shenzhen University: homepage failed
+[24/34] Shenzhen University: 0 facts
+[25/34] Tianjin University: 0 facts
+[26/34] Chongqing University: 0 facts
+  Zhengzhou University: http://international.zzu.edu.cn/en/course?cid=4&pid=4 ConnectionError
+[27/34] Zhengzhou University: 0 facts
+[28/34] Xinjiang University: 0 facts
+[29/34] Beijing Film Academy: homepage failed
+[29/34] Beijing Film Academy: 0 facts
+[30/34] China University of Petroleum: 0 facts
+[31/34] American University in Bulgaria: 1 facts
+[32/34] Université Laval: 1 facts
+[33/34] Université du Québec à Trois-Rivières: 0 facts
+[34/34] Hong Kong Baptist University: 0 facts

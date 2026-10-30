@@ -1,0 +1,217 @@
+  skip https://nyuad.nyu.edu/nyu/en.html HTTP Error 404: Not Found
+  skip http://iso.nyu.edu/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://iso.nyu.edu/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://admission.nyu.edu/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://admission.nyu.edu/ <urlopen error [Errno -5] No address associated with hostname>
+OK New York University Abu Dhabi ielts,toefl
+  skip http://iso.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.qatar.tamu.edu/admissions/admissions/ HTTP Error 404: Not Found
+  skip http://www.qatar.tamu.edu/admissions/academics/minors-and-programs HTTP Error 404: Not Found
+  skip http://www.qatar.tamu.edu/academics/admissions/ HTTP Error 404: Not Found
+  skip http://www.qatar.tamu.edu/academics/academics/minors-and-programs HTTP Error 404: Not Found
+  skip http://en.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.tamu.edu/ <urlopen error timed out>
+  skip https://international.tamu.edu/ <urlopen error timed out>
+  skip http://www.qatar.tamu.edu/english/ HTTP Error 404: Not Found
+  skip http://www.qatar.tamu.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.tamu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.qatar.tamu.edu/en/ HTTP Error 404: Not Found
+  skip http://www.qatar.tamu.edu/en/index.htm HTTP Error 404: Not Found
+NONE Texas A&M University at Qatar 0 facts
+  skip http://iso.cornell.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.cornell.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.cornell.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.cornell.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://apply.qatar-weill.cornell.edu/account/login?r=/portal/apply HTTP Error 503: Service Unavailable
+OK Weill Cornell Medicine-Qatar ielts,toefl
+  skip http://iso.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip https://applyonline.auca.kg <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+  skip https://applyonline.auca.kg/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+  skip https://www.auca.kg/uploads/Admissions 2025-26/AUCA_Transfer_Applications_2026 (1).docx URL can't contain control characters. '/uploads/Admissions 2025-26/AUCA_Transfer_Applications_2026 (1).docx' (found at least ' ')
+  skip https://www.auca.kg/uploads/Admissions 2025-26/AUCA_Transfer_Applications_2026 (1).pdf URL can't contain control characters. '/uploads/Admissions 2025-26/AUCA_Transfer_Applications_2026 (1).pdf' (found at least ' ')
+  skip http://en.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.auca.kg/ <urlopen error timed out>
+  skip https://international.auca.kg/ <urlopen error timed out>
+  skip http://www.auca.kg/english/index.htm HTTP Error 404: Not Found
+  skip http://lxs.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.auca.kg/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.auca.kg/en/index.htm HTTP Error 404: Not Found
+OK American University of Central Asia toefl
+  skip http://iso.johncabot.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.johncabot.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.johncabot.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.johncabot.edu/ <urlopen error [Errno -2] Name or service not known>
+OK John Cabot University ielts,toefl
+  skip http://iso.umontreal.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.umontreal.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE Université de Montréal 0 facts
+  skip http://iso.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.ulaval.ca/en/admission/track-your-application/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://en.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ulaval.ca/ <urlopen error [Errno -3] Temporary failure in name resolution>
+  skip https://international.ulaval.ca/ <urlopen error [Errno -3] Temporary failure in name resolution>
+  skip https://www.ulaval.ca/english/ HTTP Error 404: Not Found
+  skip https://www.ulaval.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE Université Laval 0 facts
+  skip http://iso.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.usherbrooke.ca/english/ HTTP Error 404: Not Found
+  skip https://www.usherbrooke.ca/english/index.htm HTTP Error 404: Not Found
+NONE Université de Sherbrooke 0 facts
+  skip http://iso.uqam.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqam.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE Université du Québec à Montréal 0 facts
+  skip https://www.etsmtl.ca/ HTTP Error 307: Temporary Redirect
+NONE École de technologie supérieure 0 facts
+  skip http://www.polymtl.ca/ HTTP Error 403: Forbidden
+NONE Polytechnique Montréal 0 facts
+  skip http://iso.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.uqtr.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.uqtr.ca/en/ HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/en/index.htm HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&amp;owa_no_fiche=45 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&amp;owa_no_fiche=76 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&owa_no_fiche=74 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&amp;owa_no_fiche=75 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw030?owa_no_site=2007 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/docs/GSC133/O0006641246_POLITIQUE_EN_MATI_RE_DE_PROTECTION_DE_L_INT_GRIT____Juin_2025.pdf HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw030?owa_no_site=960 HTTP Error 404: Not Found
+NONE Université du Québec à Trois-Rivières 0 facts
+  skip http://iso.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqac.ca/english/ HTTP Error 404: Not Found
+  skip http://www.uqac.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqac.ca/en/index.htm HTTP Error 404: Not Found
+NONE Université du Québec à Chicoutimi 0 facts
+  skip http://www.uqo.ca <urlopen error timed out>
+NONE Université du Québec en Outaouais 0 facts
+  skip http://iso.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqar.ca/english/ HTTP Error 404: Not Found
+  skip http://www.uqar.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqar.ca/en/index.htm HTTP Error 404: Not Found
+NONE Université du Québec à Rimouski 0 facts
+  skip http://iso.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.douglascollege.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.douglascollege.ca/en/ HTTP Error 404: Not Found
+  skip https://www.douglascollege.ca/en/index.htm HTTP Error 404: Not Found
+OK Douglas College ielts,toefl
+  skip http://iso.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://iso.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://admission.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://admission.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://en.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://en.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://english.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://english.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://international.sait.ca/ <urlopen error timed out>
+  skip https://international.sait.ca/ <urlopen error timed out>
+  skip http://www.sait.ca/english/ HTTP Error 404: Not Found
+  skip http://www.sait.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://study.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://lxs.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://lxs.sait.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip http://www.sait.ca/en/ HTTP Error 404: Not Found
+  skip http://www.sait.ca/en/index.htm HTTP Error 404: Not Found
+OK Southern Alberta Institute of Technology ielts
+  skip http://www.nscad.ns.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE NSCAD University 0 facts
+  skip http://iso.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.edu.hk/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>
+  skip http://international.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://study.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.edu.hk/ <urlopen error [Errno -2] Name or service not known>
+NONE City University of Hong Kong 0 facts
+  skip http://www.ied.edu.hk <urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)>
+NONE Education University of Hong Kong 0 facts
+  skip https://www.hkmu.edu.hk HTTP Error 403: Forbidden
+NONE Hong Kong Metropolitan University 0 facts
+  skip http://iso.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+NONE Hong Kong Shue Yan University 0 facts

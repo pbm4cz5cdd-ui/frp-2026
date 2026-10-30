@@ -1,0 +1,30 @@
+FAIL University of Leicester home: HTTP Error 403: Forbidden
+  skip https://le.ac.uk HTTP Error 403: Forbidden
+NOPAGE University of Leicester
+FAIL Cardiff University home: HTTP Error 403: Forbidden
+NOPAGE Cardiff University
+NOPAGE University of Birmingham
+NOPAGE University of East Anglia
+FAIL Royal Holloway, University of London home: <urlopen error timed out>
+  skip http://www.rhbnc.ac.uk/ <urlopen error timed out>
+NOPAGE Royal Holloway, University of London
+NOPAGE Goldsmiths, University of London
+NOPAGE Heriot-Watt University
+FAIL University of Dundee home: HTTP Error 403: Forbidden
+  skip http://www.dundee.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Dundee
+NOPAGE Robert Gordon University
+FAIL Glasgow Caledonian University home: <urlopen error [Errno -2] Name or service not known>
+  skip http://www.gcal.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+NOPAGE Glasgow Caledonian University
+FAIL Ulster University home: HTTP Error 403: Forbidden
+  skip https://www.ulster.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Ulster University
+FAIL Nottingham Trent University home: HTTP Error 403: Forbidden
+NOPAGE Nottingham Trent University
+  skip https://www.keele.ac.uk/study/undergraduate-2026/undergraduatecourses/ HTTP Error 404: Not Found
+NOPAGE Keele University
+FAIL Bournemouth University home: HTTP Error 403: Forbidden
+  skip http://www.bournemouth.ac.uk HTTP Error 403: Forbidden
+NOPAGE Bournemouth University
+NOPAGE Falmouth University

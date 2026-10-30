@@ -1,0 +1,3 @@
+name,fact,status,value,quote,source,reason
+University of San Diego,sat,not_required,,"USD is a test-free institution, which means we do not review standardized test scores, such as the SAT or ACT, as part of our admission process.",https://www.sandiego.edu/admission-and-aid/undergraduate/apply/,цитата не подтверждает not required
+University of Guelph,ib,value,28,Present a minimum academic score of 28 (many programs may require a higher score);,https://www.uoguelph.ca/admission/undergraduate/requirements/canadian,поле уже заполнено

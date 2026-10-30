@@ -1,0 +1,234 @@
+  skip http://iso.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.xjtu.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.xjtu.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.xjtu.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip https://en.xjtu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.xjtu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Xi'an Jiaotong University 0 facts
+  skip http://iso.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.bjut.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://www.bjut.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.bjut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.bjut.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://www.bjut.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Beijing University of Technology 0 facts
+  skip http://iso.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip https://iso.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://admission.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip https://admission.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://english.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip https://english.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://international.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip https://international.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://study.cupl.edu.cn/ <urlopen error timed out>
+  skip https://study.cupl.edu.cn/ <urlopen error timed out>
+  skip http://lxs.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip https://lxs.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE China University of Political Science and Law 0 facts
+  skip http://www.cafa.edu.cn/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+NONE Central Academy of Fine Arts 0 facts
+  skip http://iso.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.ecust.edu.cn/english/ Remote end closed connection without response
+  skip https://www.ecust.edu.cn/english/index.htm Remote end closed connection without response
+  skip http://study.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ecust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.ecust.edu.cn/en/index.htm Remote end closed connection without response
+NONE East China University of Science and Technology 0 facts
+  skip http://iso.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.whu.edu.cn/info/1581/list_about.html HTTP Error 404: Not Found
+  skip http://english.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.whu.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.whu.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.whu.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip https://en.whu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.whu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Wuhan University 0 facts
+  skip http://iso.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.apply.sdu.edu.cn/--><!--/student/apply_accommodation HTTP Error 400: Bad Request
+  skip http://english.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.sdu.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.sdu.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.sdu.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip https://en.sdu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.sdu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Shandong University 0 facts
+  skip http://iso.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.njust.edu.cn/ <urlopen error timed out>
+  skip https://lxs.njust.edu.cn/ <urlopen error timed out>
+NONE Nanjing University of Science and Technology 0 facts
+  skip http://www.lzu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Lanzhou University 0 facts
+  skip http://iso.hfut.edu.cn/ <urlopen error timed out>
+  skip https://iso.hfut.edu.cn/ <urlopen error timed out>
+  skip https://admission.hfut.edu.cn/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'admission.hfut.edu.cn'. (_ssl.c:1000)>
+  skip http://english.hfut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.hfut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.hfut.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.hfut.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.hfut.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip https://en.hfut.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.hfut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.hfut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.hfut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.hfut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Hefei University of Technology 0 facts
+  skip http://iso.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.nwpu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip https://admission.nwpu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://english.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.nwpu.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.nwpu.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.nwpu.edu.cn/en/index.htm HTTP Error 404: 
+  skip https://en.nwpu.edu.cn/english/index.htm HTTP Error 404: 
+  skip http://study.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.nwpu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://gjjyxy.nwpu.edu.cn/en/ <urlopen error [Errno -2] Name or service not known>
+  skip http://gjjyxy.nwpu.edu.cn/en/CampusxLife.htm <urlopen error [Errno -2] Name or service not known>
+NONE Northwestern Polytechnical University 0 facts
+  skip http://iso.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.xju.edu.cn/ HTTP Error 403: Forbidden
+  skip https://en.xju.edu.cn/ HTTP Error 403: Forbidden
+  skip http://international.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.xju.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://www.xju.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.xju.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.xju.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://www.xju.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Xinjiang University 0 facts
+  skip https://admissions.ccmu.edu.cn/ <urlopen error timed out>
+  skip http://iso.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ccmu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://english.ccmu.edu.cn/ <urlopen error timed out>
+  skip https://english.ccmu.edu.cn/ <urlopen error timed out>
+  skip http://international.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ccmu.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.ccmu.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.ccmu.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip https://en.ccmu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ccmu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+OK Capital Medical University hsk
+  skip http://iso.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.chntheatre.edu.cn/english/ HTTP Error 404: Not Found
+  skip https://en.chntheatre.edu.cn/en/ HTTP Error 404: Not Found
+  skip https://en.chntheatre.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip https://en.chntheatre.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.chntheatre.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Central Academy of Drama 0 facts
+  skip http://www.znufe.edu.cn <urlopen error [Errno -2] Name or service not known>
+NONE Zhongnan University of Economics and Law 0 facts
+  skip http://iso.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.hrbeu.edu.cn/ <urlopen error timed out>
+  skip https://en.hrbeu.edu.cn/ <urlopen error timed out>
+  skip http://international.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.hrbeu.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.hrbeu.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://study.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.hrbeu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.hrbeu.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.hrbeu.edu.cn/en/index.htm HTTP Error 404: Not Found
+  skip http://studyheu.hrbeu.edu.cn/en/Scholarship/Chinese_Government_Scholarship.htm HTTP Error 404: Not Found
+NONE Harbin Engineering University 0 facts
+  skip https://english.hksyu.edu/english/news-and-events/News - Events URL can't contain control characters. '/english/news-and-events/News - Events' (found at least ' ')
+  skip http://iso.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.hksyu.edu/english/ HTTP Error 404: Not Found
+  skip https://english.hksyu.edu/en/ HTTP Error 404: Not Found
+  skip https://english.hksyu.edu/en/index.htm HTTP Error 404: Not Found
+  skip https://english.hksyu.edu/english/index.htm HTTP Error 404: Not Found
+  skip https://english.hksyu.edu/about-us/teaching-staff/detail/Prof.%20Peter%20STOREY HTTP Error 404: Not Found
+  skip https://english.hksyu.edu/about-us/teaching-staff/detail/Dr.%20Rebekah%20BALE HTTP Error 404: Not Found
+  skip http://study.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.hksyu.edu/ <urlopen error [Errno -2] Name or service not known>
+OK Hong Kong Shue Yan University ielts,toefl

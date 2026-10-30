@@ -1,0 +1,6 @@
+name,fact,status,value,quote,source,reason
+"University of California, Davis",ib,value,30,"If you complete the IB Diploma with a score of 30 or higher, you will receive up to 30 quarter units of college credit.",https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements/international-baccalaureate-exam,поле уже заполнено
+"University of California, Davis",ap,value,3,"Official AP exam scores of 3, 4 or 5 earn college credit.",https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements/advanced-placement-exam,поле уже заполнено
+"University of California, Davis",sat,not_required,,UC Davis no longer considers SAT or ACT test scores for admissions decisions or scholarship awards.,https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements,цитата не подтверждает not required
+University of Colorado Denver,sat,not_required,,"The middle 50% of our admitted freshmen had between a 3.23 and 3.93 GPA and scored between a 1070 and 1260 on the SAT, 21-27 on the ACT.",https://www.cudenver.edu/undergraduate-admissions/first-year-admissions/admission-requirements,цитата не подтверждает not required
+Bangor University,ielts,value,6.0,The level required will vary according to the course and level of study.,https://www.bangor.ac.uk/international/future/englishlanguage,значение не найдено в цитате

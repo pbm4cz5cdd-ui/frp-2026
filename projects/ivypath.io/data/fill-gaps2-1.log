@@ -1,0 +1,51 @@
+[1/35] Beijing University of Posts and Telecommunications: homepage failed
+[1/35] Beijing University of Posts and Telecommunications: 0 facts
+[2/35] Teesside University: 1 facts
+[3/35] Centennial College: 2 facts
+  University of Missouri: https://missouri.edu/ ConnectionError
+[4/35] University of Missouri: homepage failed
+[4/35] University of Missouri: 0 facts
+[5/35] Fanshawe College: 2 facts
+[6/35] Liverpool John Moores University: 2 facts
+[7/35] University of Lancashire: 2 facts
+[8/35] Oxford Brookes University: 2 facts
+[9/35] University of Liverpool: 2 facts
+[10/35] Bishop's University: 2 facts
+[11/35] Arts University Bournemouth: 2 facts
+[12/35] University of Nevada, Reno: 1 facts
+[13/35] Saint Louis University-Madrid Campus: 4 facts
+  Drexel University: https://drexel.edu/ ConnectionError
+[14/35] Drexel University: homepage failed
+[14/35] Drexel University: 0 facts
+[15/35] University at Buffalo: homepage failed
+[15/35] University at Buffalo: 0 facts
+[16/35] East Carolina University: homepage failed
+[16/35] East Carolina University: 0 facts
+[17/35] University of Arkansas: 0 facts
+[18/35] California State University, East Bay: 0 facts
+[19/35] Johnson & Wales University: 0 facts
+[20/35] University of Bath: 0 facts
+  Glasgow Caledonian University: http://www.gcal.ac.uk/ ConnectionError
+[21/35] Glasgow Caledonian University: homepage failed
+[21/35] Glasgow Caledonian University: 0 facts
+[22/35] Falmouth University: homepage failed
+[22/35] Falmouth University: 0 facts
+[23/35] Birmingham Newman University: homepage failed
+[23/35] Birmingham Newman University: 0 facts
+[24/35] Tongji University: 0 facts
+[25/35] Wuhan University: 0 facts
+[26/35] Southeast University: 0 facts
+[27/35] Dalian University of Technology: 0 facts
+[28/35] Anhui University: 0 facts
+[29/35] Inner Mongolia University: 0 facts
+[30/35] China Conservatory of Music: 0 facts
+[31/35] Harbin Engineering University: 0 facts
+[32/35] Temple University, Japan Campus: 0 facts
+[33/35] Brock University: homepage failed
+[33/35] Brock University: 0 facts
+  Université du Québec en Outaouais: http://www.uqo.ca ConnectTimeout
+[34/35] Université du Québec en Outaouais: homepage failed
+[34/35] Université du Québec en Outaouais: 0 facts
+  Education University of Hong Kong: http://www.ied.edu.hk SSLError
+[35/35] Education University of Hong Kong: homepage failed
+[35/35] Education University of Hong Kong: 0 facts

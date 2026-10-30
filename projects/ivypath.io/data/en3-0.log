@@ -1,0 +1,223 @@
+  skip https://www.brandeis.edu/ HTTP Error 403: Forbidden
+NONE Brandeis University 0 facts
+  skip http://www.connecticutcollege.edu <urlopen error timed out>
+NONE Connecticut College 0 facts
+  skip http://iso.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ucdavis.edu/ HTTP Error 403: Forbidden
+  skip https://english.ucdavis.edu/ HTTP Error 403: Forbidden
+  skip http://international.ucdavis.edu/ HTTP Error 403: Forbidden
+  skip https://international.ucdavis.edu/ HTTP Error 403: Forbidden
+  skip https://ucdavis.edu/english/ HTTP Error 404: Not Found
+  skip https://ucdavis.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ucdavis.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://ucdavis.edu/en/ HTTP Error 404: Not Found
+  skip https://ucdavis.edu/en/index.htm HTTP Error 404: Not Found
+NONE University of California, Davis 0 facts
+  skip https://virginia.edu <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'virginia.edu'. (_ssl.c:1000)>
+NONE University of Virginia 0 facts
+  skip http://iso.drexel.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.drexel.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.drexel.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.drexel.edu/ <urlopen error [Errno -2] Name or service not known>
+OK Drexel University ielts,toefl
+  skip http://iso.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.pace.edu/admission-and-aid/undergraduate-admission/admission-events HTTP Error 403: Forbidden
+  skip http://en.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.pace.edu/ HTTP Error 409: Conflict
+  skip https://international.pace.edu/ <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1000)>
+  skip http://www.pace.edu/english/ HTTP Error 404: Not Found
+  skip http://www.pace.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.pace.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.pace.edu/en/ HTTP Error 404: Not Found
+  skip http://www.pace.edu/en/index.htm HTTP Error 404: Not Found
+OK Pace University ielts,toefl
+  skip http://iso.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.lclark.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.lclark.edu/english/ HTTP Error 404: Not Found
+  skip http://www.lclark.edu/english/index.htm HTTP Error 404: Not Found
+NONE Lewis & Clark College 0 facts
+  skip http://iso.brooklyn.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.brooklyn.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.brooklyn.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.brooklyn.edu/ <urlopen error [Errno -2] Name or service not known>
+NONE Brooklyn College 0 facts
+  skip http://iso.pitt.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.pitt.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.pitt.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.pitt.edu/ <urlopen error [Errno -2] Name or service not known>
+NONE University of Pittsburgh 0 facts
+  skip https://www.ecu.edu/ HTTP Error 403: Forbidden
+NONE East Carolina University 0 facts
+  skip https://spu.edu/ HTTP Error 403: Forbidden
+NONE Seattle Pacific University 0 facts
+  skip http://news.fullerton.edu/2020sp/Pandemic-Changing-English-Language.aspx?origin=homepage HTTP Error 404: Not Found
+  skip http://news.fullerton.edu/2020sp/University-Awards.aspx?origin=homepage HTTP Error 404: Not Found
+  skip http://iso.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.fullerton.edu/ HTTP Error 404: Not Found
+  skip https://www.fullerton.edu/english/ HTTP Error 404: Not Found
+  skip https://www.fullerton.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.fullerton.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.fullerton.edu/en/ HTTP Error 404: Not Found
+  skip https://www.fullerton.edu/en/index.htm HTTP Error 404: Not Found
+OK California State University, Fullerton ielts,toefl
+  skip http://iso.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://usdkb.sandiego.edu/s/article/Changing-Majors-Minors-and-Academic-Programs <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+  skip http://en.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.sandiego.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.sandiego.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.sandiego.edu/en/ HTTP Error 404: Not Found
+  skip https://www.sandiego.edu/en/index.htm HTTP Error 404: Not Found
+NONE University of San Diego 0 facts
+  skip http://www.newschool.edu/parsons/ HTTP Error 429: Too Many Requests
+NONE Parsons School of Design (The New School) 0 facts
+  skip http://iso.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://fitnyc.edu/english/ HTTP Error 404: Not Found
+  skip https://fitnyc.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.fitnyc.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://fitnyc.edu/en/ HTTP Error 404: Not Found
+  skip https://fitnyc.edu/en/index.htm HTTP Error 404: Not Found
+OK Fashion Institute of Technology (SUNY) ielts,toefl
+  skip https://admissions.ringling.edu/account/login?r=https://admissions.ringling.edu/portal/status HTTP Error 503: Service Unavailable
+  skip http://iso.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ringling.edu/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+  skip http://en.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.ringling.edu/english/ HTTP Error 404: Not Found
+  skip http://www.ringling.edu/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ringling.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.ringling.edu/en/ HTTP Error 404: Not Found
+  skip http://www.ringling.edu/en/index.htm HTTP Error 404: Not Found
+OK Ringling College of Art and Design ielts,toefl
+  skip http://www.juilliard.edu HTTP Error 403: Forbidden
+NONE The Juilliard School 0 facts
+  skip http://iso.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://study.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.jwu.edu/ <urlopen error [Errno -2] Name or service not known>
+NONE Johnson & Wales University 0 facts
+  skip http://iso.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://application.admissions.ucdenver.edu/apply/status HTTP Error 503: Service Unavailable
+  skip https://application.admissions.ucdenver.edu/account/login?r=https%3a%2f%2fapplication.admissions.ucdenver.edu%2fapply%2f HTTP Error 503: Service Unavailable
+  skip http://en.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ucdenver.edu/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ucdenver.edu/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+  skip https://international.ucdenver.edu/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+OK University of Colorado Denver ielts,toefl
+  skip https://le.ac.uk HTTP Error 403: Forbidden
+NONE University of Leicester 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://intranet.birmingham.ac.uk/as/registry/legislation/documents/public/Cohort-Legislation-2022-23/CoP-Admission-of-Students-22-23.pdf HTTP Error 404: Not Found
+  skip https://www.birmingham.ac.uk/study/programme-factsheets/2017-course-information.aspx HTTP Error 404: Not Found
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://www.bham.ac.uk/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.bham.ac.uk/en/ HTTP Error 404: Not Found
+  skip https://www.bham.ac.uk/en/index.htm HTTP Error 404: Not Found
+NONE University of Birmingham 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://www.uea.ac.uk/english/ HTTP Error 404: Not Found
+  skip https://www.uea.ac.uk/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.uea.ac.uk/en/ HTTP Error 404: Not Found
+  skip https://www.uea.ac.uk/en/index.htm HTTP Error 404: Not Found
+NONE University of East Anglia 0 facts
+  skip http://www.rhbnc.ac.uk/ <urlopen error timed out>
+NONE Royal Holloway, University of London 0 facts

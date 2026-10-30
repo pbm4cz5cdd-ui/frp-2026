@@ -1,0 +1,41 @@
+  skip http://iso.ruc.edu.cn/xwytz/tz/3164a5421b1d49858adc1aa89bd32f2e.htm HTTP Error 404: Not Found
+NONE Renmin University of China 0 facts
+  skip https://osao.bfsu.edu.cn/Admission/Programs.htm HTTP Error 404: Not Found
+  skip https://osao.bfsu.edu.cn/Admission/Application_Process.htm HTTP Error 404: Not Found
+NONE Beijing Foreign Studies University 0 facts
+NONE Beijing University of Chemical Technology 0 facts
+  skip http://www.cafa.edu.cn/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+NONE Central Academy of Fine Arts 0 facts
+  skip https://apply.shu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://en.shu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Shanghai University 0 facts
+  skip https://www.szu.edu.cn <urlopen error [Errno -3] Temporary failure in name resolution>
+NONE Shenzhen University 0 facts
+  skip http://iso.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.hut.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://www.whut.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.whut.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.whut.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.whut.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Wuhan University of Technology 0 facts
+NONE Nankai University 0 facts
+NONE Hohai University 0 facts
+  skip http://www.lzu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Lanzhou University 0 facts
+  skip http://international.zzu.edu.cn/en/course?cid=4&pid=4 <urlopen error [Errno 101] Network is unreachable>
+  skip http://international.zzu.edu.cn/scholarship?cid=5&pid=5 <urlopen error [Errno 101] Network is unreachable>
+NONE Zhengzhou University 0 facts
+  skip https://admission5.jiangnan.edu.cn/chat/index HTTP Error 483: 
+NONE Jiangnan University 0 facts
+  skip https://sie.nwu.edu.cn/en/Admissions/Chinese_Taught_Degree_Programs.htm HTTP Error 404: Not Found
+NONE Northwest University 0 facts
+NONE Yunnan University 0 facts
+NONE Nanjing Medical University 0 facts
+NONE Shenzhen MSU-BIT University 0 facts
+NONE Beijing Forestry University 0 facts
+  skip https://yanzhen.hrbeu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://studyheu.hrbeu.edu.cn/en/Scholarship/Chinese_Government_Scholarship.htm HTTP Error 404: Not Found
+NONE Harbin Engineering University 0 facts

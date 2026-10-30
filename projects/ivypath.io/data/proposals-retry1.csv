@@ -1,0 +1,4 @@
+name,country,fact,status,value,note,quote,source,checked
+University of Kentucky,usa,ielts,value,6.0,минимум,IELTS : 6.0,https://international.uky.edu/apply/admission-requirements,2026-10-29
+University of Kentucky,usa,toefl,value,71,"минимум; iBT до 20.01.2026 — 71, после — 4","TOEFL : 71 and above on the TOEFL iBT taken on or before January 20, 2026.",https://international.uky.edu/apply/admission-requirements,2026-10-29
+University of Kentucky,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,Optional tests: ACT / SAT (M+CR) Scores,https://international.uky.edu/apply/admission-requirements,2026-10-29

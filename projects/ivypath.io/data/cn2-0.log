@@ -1,0 +1,46 @@
+  skip http://iso.ruc.edu.cn/xwytz/tz/3164a5421b1d49858adc1aa89bd32f2e.htm HTTP Error 404: Not Found
+NONE Renmin University of China 0 facts
+NONE University of International Business and Economics 0 facts
+  skip http://english.cau.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.cau.edu.cn/col/col12107/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12143/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12147/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12130/index.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12527/index.html HTTP Error 404: Not Found
+  skip http://en.cau.edu.cn/art/2013/12/28/art_12014_234739.html HTTP Error 404: Not Found
+  skip http://en.cau.edu.cn/art/2013/12/19/art_12014_234749.html HTTP Error 404: Not Found
+  skip https://en.cau.edu.cn/col/col12411/index.html HTTP Error 404: Not Found
+  skip http://en.cau.edu.cn/col/col12014/index.html HTTP Error 404: Not Found
+NONE China Agricultural University 0 facts
+OK New York University Shanghai toefl
+OK East China Normal University ielts,hsk,toefl
+  skip http://www.sysu.edu.cn/Admissions.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Admissions/Scholarship_Programs.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/Undergraduate.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/Exchange_Programs.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/SYSU_Scholars/SYSU_Scholars.htm HTTP Error 404: Not Found
+NONE Sun Yat-sen University 0 facts
+  skip https://admission.whu.edu.cn/info/1581/list_about.html HTTP Error 404: Not Found
+NONE Wuhan University 0 facts
+  skip http://www.lib.cug.edu.cn/english/index.html HTTP Error 404: Not Found
+OK China University of Geosciences (Wuhan) ielts,toefl,hsk
+NONE Tianjin University 0 facts
+  skip http://www.njnu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Nanjing Normal University 0 facts
+  skip https://sfl.csu.edu.cn/english HTTP Error 404: 
+OK Central South University hsk,ielts,toefl
+  skip http://international.zzu.edu.cn/en/course?cid=4&pid=4 <urlopen error [Errno 101] Network is unreachable>
+  skip http://international.zzu.edu.cn/scholarship?cid=5&pid=5 <urlopen error [Errno 101] Network is unreachable>
+NONE Zhengzhou University 0 facts
+  skip https://admission5.jiangnan.edu.cn/chat/index HTTP Error 483: 
+NONE Jiangnan University 0 facts
+  skip https://www.snnu.edu.cn/ The read operation timed out
+NONE Shaanxi Normal University 0 facts
+NONE Inner Mongolia University 0 facts
+  skip http://www.cmu.edu.cn/ <urlopen error [Errno -3] Temporary failure in name resolution>
+NONE China Medical University 0 facts
+NONE Shenzhen MSU-BIT University 0 facts
+NONE Beijing Forestry University 0 facts
+  skip https://yanzhen.hrbeu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://studyheu.hrbeu.edu.cn/en/Scholarship/Chinese_Government_Scholarship.htm HTTP Error 404: Not Found
+NONE Harbin Engineering University 0 facts

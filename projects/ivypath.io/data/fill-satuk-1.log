@@ -1,0 +1,32 @@
+[1/22] University of Sussex: no target
+[2/22] Royal College of Music: no target
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/GCZVFQ+Gotham-Medium', '/Encoding': IndirectObject(451, 0, 140420323607472), '/FirstChar': 1, '/FontDescriptor': IndirectObject(455, 0, 140420323607472), '/LastChar': 173, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [682, 613, 738, 620, 950, 671, 620, 587, 671, 501, 286, 571, 411, 668, 760, 784, 376, 657, 861, 595, 850, 455, 317, 455, 300, 604, 413, 620, 671, 286, 656, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 640, 670, 656, 648, 396, 0, 0, 0, 0, 0, 0, 0, 0, 0, 790, 0, 618, 723, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 596, 0, 0, 757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 782]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/GCZVFQ+Gotham-Book', '/Encoding': IndirectObject(447, 0, 140420323607472), '/FirstChar': 7, '/FontDescriptor': IndirectObject(449, 0, 140420323607472), '/LastChar': 31, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [696, 245, 616, 591, 951, 408, 367, 571, 263, 587, 664, 664, 592, 861, 646, 616, 664, 405, 404, 498, 263, 300, 664, 616, 579]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/GCZVFQ+Gotham-Book', '/Encoding': IndirectObject(298, 0, 140420323607472), '/FirstChar': 24, '/FontDescriptor': IndirectObject(449, 0, 140420323607472), '/LastChar': 31, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [596, 647, 612, 671, 613, 599, 715, 358]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/GCZVFQ+Gotham-Medium', '/Encoding': IndirectObject(300, 0, 140420323607472), '/FirstChar': 19, '/FontDescriptor': IndirectObject(455, 0, 140420323607472), '/LastChar': 31, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [618, 396, 613, 300, 604, 671, 657, 571, 640, 619, 790, 850, 648]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+[3/22] Cardiff Metropolitan University: no target
+[4/22] Edge Hill University: no target
+[5/22] Teesside University: no target
+[6/22] University of Chester: no target
+[7/22] Aston University: no target
+  University of Greenwich: https://www.gre.ac.uk/international/countries/usa ConnectionError
+  University of Greenwich: https://www.gre.ac.uk/research/study/the-student-centre ConnectionError
+  University of Greenwich: https://banner.gre.ac.uk/pls/prod/twbkwbis.P_WWWLogin ConnectionError
+  University of Greenwich: http://www.gre.ac.uk/ ConnectionError
+[8/22] University of Greenwich: start failed
+[9/22] University of East London: start failed
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/SZUSZS+MinionPro-Regular', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 32, '/FontDescriptor': IndirectObject(324, 0, 140420322825552), '/LastChar': 32, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [227]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/EFCLHP+Overpass-ExtraBold', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 68, '/FontDescriptor': IndirectObject(2175, 0, 140420324724368), '/LastChar': 86, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [719, 632, 0, 679, 0, 300, 0, 0, 568, 0, 721, 719, 0, 0, 0, 0, 608, 0, 692]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+[10/22] University of Kent: no target
+[11/22] Leeds Trinity University: no target
+[12/22] Liverpool John Moores University: no target
+[13/22] University of Leeds: no target
+[14/22] Loughborough University: no target
+[15/22] Oxford Brookes University: no target
+[16/22] SOAS University of London: no target
+[17/22] Staffordshire University: no target
+[18/22] Rose Bruford College: no target
+[19/22] Leeds Beckett University: no target
+[20/22] Arts University Bournemouth: no target
+[21/22] University of the West of Scotland: no target
+[22/22] University for the Creative Arts: no target

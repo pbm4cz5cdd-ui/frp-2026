@@ -1,0 +1,63 @@
+FAIL University of Leicester home: HTTP Error 403: Forbidden
+  skip https://le.ac.uk HTTP Error 403: Forbidden
+NOPAGE University of Leicester
+FAIL Cardiff University home: HTTP Error 403: Forbidden
+NOPAGE Cardiff University
+NOPAGE University of Birmingham
+NOPAGE University of East Anglia
+FAIL Royal Holloway, University of London home: <urlopen error timed out>
+  skip http://www.rhbnc.ac.uk/ <urlopen error timed out>
+NOPAGE Royal Holloway, University of London
+OK City St George's, University of London https://www.citystgeorges.ac.uk/prospective-students/apply/alternative-entry-routes/second-year
+NOPAGE Goldsmiths, University of London
+NOPAGE Heriot-Watt University
+FAIL University of Dundee home: HTTP Error 403: Forbidden
+  skip http://www.dundee.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Dundee
+NOPAGE Robert Gordon University
+FAIL Glasgow Caledonian University home: <urlopen error [Errno -2] Name or service not known>
+  skip http://www.gcal.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+NOPAGE Glasgow Caledonian University
+  skip https://www.ulster.ac.uk/study/undergraduate HTTP Error 403: Forbidden
+NOPAGE Ulster University
+  skip https://www.ntu.ac.uk/about-us/ask-ntu-form HTTP Error 403: Forbidden
+NOPAGE Nottingham Trent University
+  skip https://www.keele.ac.uk/study/undergraduate-2026/undergraduatecourses/ HTTP Error 404: Not Found
+NOPAGE Keele University
+FAIL Bournemouth University home: HTTP Error 403: Forbidden
+  skip http://www.bournemouth.ac.uk HTTP Error 403: Forbidden
+NOPAGE Bournemouth University
+NOPAGE Falmouth University
+FAIL University of Chichester home: HTTP Error 403: Forbidden
+  skip https://www.chi.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Chichester
+FAIL Kingston University home: HTTP Error 403: Forbidden
+  skip https://www.kingston.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Kingston University
+FAIL University of Hertfordshire home: HTTP Error 403: Forbidden
+NOPAGE University of Hertfordshire
+OK London South Bank University https://www.lsbu.ac.uk/study/undergraduate/entry-requirements
+FAIL University of Bedfordshire home: HTTP Error 403: Forbidden
+  skip https://beds.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Bedfordshire
+NOPAGE Anglia Ruskin University
+FAIL Buckinghamshire New University home: HTTP Error 403: Forbidden
+  skip http://www.bucks.ac.uk/ Remote end closed connection without response
+NOPAGE Buckinghamshire New University
+NOPAGE Canterbury Christ Church University
+FAIL Birmingham Newman University home: HTTP Error 403: Forbidden
+  skip http://www.newman.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Birmingham Newman University
+NOPAGE University of the Arts London
+FAIL Norwich University of the Arts home: <urlopen error timed out>
+  skip https://www.nua.ac.uk/ <urlopen error timed out>
+NOPAGE Norwich University of the Arts
+FAIL Royal Academy of Music home: HTTP Error 403: Forbidden
+  skip https://ram.ac.uk HTTP Error 403: Forbidden
+NOPAGE Royal Academy of Music
+FAIL The Royal Central School of Speech and Drama home: HTTP Error 403: Forbidden
+  skip https://www.cssd.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE The Royal Central School of Speech and Drama
+FAIL LAMDA home: HTTP Error 403: Forbidden
+  skip https://lamda.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE LAMDA

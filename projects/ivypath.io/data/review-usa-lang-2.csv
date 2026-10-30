@@ -1,0 +1,7 @@
+name,fact,status,value,quote,source,reason
+University of Illinois Chicago,sat,not_required,,SAT Critical Reading score of 530 or higher (SAT prior to March 2016) or SAT Evidence-Based Reading and Writing score of 570 or higher (SAT taken March 2016 or later),https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements,цитата не подтверждает not required
+San Francisco State University,ielts,value,6.0,IELTS Overall Score 6.0,https://future.sfsu.edu/admissions/intl-transfers,поле уже заполнено
+San Francisco State University,toefl,value,61,TOEFL iBT Total Score 61,https://future.sfsu.edu/admissions/intl-transfers,поле уже заполнено
+San Francisco State University,sat,not_required,,SAT Evidence Based Reading and Writing 550,https://future.sfsu.edu/admissions/intl-transfers,цитата не подтверждает not required
+San Francisco State University,ap,value,3,AP English Language/Literature and Composition 3,https://future.sfsu.edu/admissions/intl-transfers,поле уже заполнено
+San Francisco State University,ib,value,4,IB English A – Language and Literature HL 4,https://future.sfsu.edu/admissions/intl-transfers,IB вне шкалы 24–45

@@ -1,0 +1,5 @@
+name,fact,status,value,quote,source,reason
+Villanova University,sat,not_required,,1440-1520 MIDDLE 50% SAT*,https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/admission-profile.html,цитата не подтверждает not required
+Boise State University,ib,value,4,IB English A Language & Literature HL or SL: 4,https://www.boisestate.edu/global-international/apply/ia-international-first-year-admission/,IB вне шкалы 24–45
+Bangor University,ielts,value,6.0,The level required will vary according to the course and level of study.,https://www.bangor.ac.uk/international/future/englishlanguage,значение не найдено в цитате
+Université Laval,toefl,value,64,Examen TOEFL - version IBT avec résultat de 064 à 078,https://www.ulaval.ca/etudes/cours/anl-3010-advanced-english-i,значение не найдено в цитате

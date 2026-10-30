@@ -1,0 +1,7 @@
+name,country,fact,status,value,note,quote,source,checked
+Cornell College,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,You may apply with or without ACT or SAT scores.,https://www.cornellcollege.edu/admissions/apply-to-cornell/index.shtml,2026-10-29
+Binghamton University,usa,ielts,value,6.5,минимум; диапазон 6.5-7.0,IELTS 6.5-7.0,https://www.binghamton.edu/admissions/undergraduate/apply/international/first-year.html,2026-10-29
+Binghamton University,usa,toefl,value,80,минимум; диапазон 80-95 (до 21.01.2026),"Before Jan. 21, 2026: Jan. 21, 2026 or later: 80-95 4.0-5.0",https://www.binghamton.edu/admissions/undergraduate/apply/international/first-year.html,2026-10-29
+Binghamton University,usa,sat,not_required,,SAT не требуется; ориентир ~640 (75-й перцентиль),SAT (EBRW) 530-640,https://www.binghamton.edu/admissions/undergraduate/apply/international/first-year.html,2026-10-29
+University of Pittsburgh,usa,ielts,accepted,,IELTS принимается; минимальный балл не опубликован,"Always use your full legal name as it appears on your passport when completing your admissions, TOEFL/IELTS/Duolingo, and SAT/ACT applications.",https://admissions.pitt.edu/international/,2026-10-29
+University of Pittsburgh,usa,toefl,accepted,,TOEFL принимается; минимальный балл не опубликован,"Always use your full legal name as it appears on your passport when completing your admissions, TOEFL/IELTS/Duolingo, and SAT/ACT applications.",https://admissions.pitt.edu/international/,2026-10-29

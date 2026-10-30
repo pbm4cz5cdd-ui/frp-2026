@@ -1,0 +1,490 @@
+name,country,homepage
+Bryn Mawr College,usa,https://www.brynmawr.edu/
+University of Southern California,usa,https://usc.edu
+University of North Carolina at Chapel Hill,usa,https://unc.edu
+Macalester College,usa,https://www.macalester.edu/
+Boston University,usa,https://bu.edu/
+Colorado College,usa,http://www.coloradocollege.edu
+Lehigh University,usa,https://www2.lehigh.edu/
+Pitzer College,usa,http://www.pitzer.edu
+Skidmore College,usa,https://www.skidmore.edu/
+Lafayette College,usa,http://www.lafayette.edu/
+Bucknell University,usa,http://www.bucknell.edu
+Boston College,usa,https://bc.edu
+Penn State University Park,usa,https://www.psu.edu/
+The George Washington University,usa,https://www.gwu.edu
+University of Miami,usa,https://welcome.miami.edu/
+Brandeis University,usa,https://www.brandeis.edu/
+Trinity College (CT),usa,http://www.trincoll.edu
+Villanova University,usa,http://www1.villanova.edu/content/main.html
+Connecticut College,usa,http://www.connecticutcollege.edu
+Northeastern University,usa,https://www.northeastern.edu/
+Denison University,usa,http://www.denison.edu
+Franklin & Marshall College,usa,http://www.fandm.edu
+Dickinson College,usa,http://www.dickinson.edu
+The University of the South,usa,https://new.sewanee.edu/
+Babson College,usa,https://www.babson.edu/
+Wake Forest University,usa,https://wfu.edu
+Scripps College,usa,http://www.scrippscollege.edu
+Union College,usa,https://www.union.edu/
+University of Florida,usa,https://www.ufl.edu/
+"University of California, Davis",usa,https://ucdavis.edu
+Santa Clara University,usa,http://www.scu.edu
+Kenyon College,usa,https://www.kenyon.edu/
+University of Wisconsin-Madison,usa,https://wisc.edu
+The Ohio State University,usa,https://osu.edu
+Tulane University,usa,https://tulane.edu
+University of Virginia,usa,https://virginia.edu
+Rhodes College,usa,https://www.rhodes.edu/
+Rensselaer Polytechnic Institute,usa,http://www.rpi.edu
+Drexel University,usa,https://drexel.edu/
+Pepperdine University,usa,http://www.pepperdine.edu/
+Marquette University,usa,https://www.marquette.edu/
+Temple University,usa,https://www.temple.edu/
+The College of New Jersey,usa,http://www.tcnj.edu
+Rutgers University-Newark,usa,https://www.newark.rutgers.edu/
+Pace University,usa,http://www.pace.edu
+The Cooper Union for the Advancement of Science and Art,usa,https://cooper.edu/
+Suffolk University,usa,http://www.suffolk.edu
+Albion College,usa,https://www.albion.edu/
+Luther College,usa,https://www.luther.edu/
+Coe College,usa,http://www.coe.edu
+Cornell College,usa,https://www.cornellcollege.edu
+Augustana College,usa,http://www.augustana.edu
+Wofford College,usa,http://www.wofford.edu
+Agnes Scott College,usa,http://www.agnesscott.edu
+Morehouse College,usa,http://www.morehouse.edu
+Whitman College,usa,http://www.whitman.edu
+Reed College,usa,http://www.reed.edu
+Lewis & Clark College,usa,http://www.lclark.edu/
+Willamette University,usa,https://willamette.edu/
+University of Puget Sound,usa,https://www.pugetsound.edu/
+Occidental College,usa,http://www.oxy.edu
+Whittier College,usa,https://www.whittier.edu/
+Soka University of America,usa,http://www.soka.edu
+University of Massachusetts Amherst,usa,https://www.umass.edu/
+University of Massachusetts Boston,usa,https://www.umb.edu/
+University of Massachusetts Lowell,usa,https://www.uml.edu
+University of Connecticut,usa,https://uconn.edu/
+University of New Hampshire,usa,https://www.unh.edu/
+University of Vermont,usa,https://www.uvm.edu/
+University of Maine,usa,https://umaine.edu/
+University of Rhode Island,usa,https://www.uri.edu/
+University of Delaware,usa,https://www.udel.edu/
+Binghamton University,usa,http://www.binghamton.edu
+Stony Brook University,usa,https://www.stonybrook.edu/
+University at Buffalo,usa,https://www.buffalo.edu/
+University at Albany,usa,https://www.albany.edu
+SUNY Geneseo,usa,https://www.geneseo.edu/
+SUNY New Paltz,usa,http://www.newpaltz.edu
+Baruch College,usa,http://www.baruch.cuny.edu
+Hunter College,usa,https://hunter.cuny.edu/
+City College of New York,usa,https://ccny.cuny.edu
+Brooklyn College,usa,https://www.brooklyn.edu/
+Queens College,usa,https://www.qc.cuny.edu/
+University of Pittsburgh,usa,https://www.pitt.edu
+George Mason University,usa,https://www.gmu.edu/
+James Madison University,usa,http://www.jmu.edu/
+Virginia Commonwealth University,usa,http://www.vcu.edu/
+Old Dominion University,usa,https://www.odu.edu/
+Christopher Newport University,usa,http://www.cnu.edu/
+West Virginia University,usa,http://www.wvu.edu/
+"University of Maryland, Baltimore County",usa,https://www.umbc.edu/
+Towson University,usa,https://www.towson.edu/
+North Carolina State University,usa,https://ncsu.edu
+University of North Carolina at Charlotte,usa,https://www.uncc.edu
+Appalachian State University,usa,http://www.appstate.edu/
+East Carolina University,usa,https://www.ecu.edu/
+Clemson University,usa,http://www.clemson.edu
+University of South Carolina,usa,https://sc.edu/
+College of Charleston,usa,http://www.cofc.edu
+University of Georgia,usa,https://uga.edu
+Auburn University,usa,https://auburn.edu
+University of Alabama,usa,https://www.ua.edu/
+University of Alabama at Birmingham,usa,http://www.uab.edu
+University of Alabama in Huntsville,usa,http://www.uah.edu
+University of Mississippi,usa,http://www.olemiss.edu
+Mississippi State University,usa,http://www.msstate.edu
+Louisiana State University,usa,https://www.lsu.edu/
+University of Kentucky,usa,https://uky.edu
+University of Louisville,usa,http://www.louisville.edu
+"University of Tennessee, Knoxville",usa,https://www.utk.edu/
+Florida State University,usa,https://fsu.edu
+University of Central Florida,usa,http://www.ucf.edu
+Florida International University,usa,https://www.fiu.edu/
+University of South Florida,usa,http://www.usf.edu/
+Michigan State University,usa,https://msu.edu/
+Wayne State University,usa,https://wayne.edu
+Michigan Technological University,usa,https://www.mtu.edu/
+Grand Valley State University,usa,http://www.gvsu.edu/
+Oakland University,usa,http://www.oakland.edu
+Miami University,usa,https://miamioh.edu/
+Ohio University,usa,https://www.ohio.edu/
+University of Cincinnati,usa,https://www.uc.edu/
+Kent State University,usa,https://www.kent.edu
+Bowling Green State University,usa,https://bgsu.edu
+Cleveland State University,usa,http://www.csuohio.edu/
+University of Illinois Chicago,usa,https://www.uic.edu/
+Southern Illinois University Carbondale,usa,https://siu.edu/
+University of Iowa,usa,https://uiowa.edu
+Iowa State University,usa,https://www.iastate.edu
+University of Wisconsin-Milwaukee,usa,http://www.uwm.edu
+University of Nebraska–Lincoln,usa,http://www.unl.edu/
+University of Nebraska at Omaha,usa,https://www.unomaha.edu/
+University of Kansas,usa,https://www.ku.edu
+Kansas State University,usa,http://www.k-state.edu
+Wichita State University,usa,http://www.wichita.edu
+University of Missouri,usa,https://missouri.edu/
+Missouri University of Science and Technology,usa,https://www.mst.edu/
+University of Oklahoma,usa,http://www.ou.edu
+Oklahoma State University,usa,https://go.okstate.edu
+University of Arkansas,usa,https://www.uark.edu/
+Texas A&M University,usa,https://www.tamu.edu
+University of Texas at Dallas,usa,https://www.utdallas.edu/
+University of Texas at Arlington,usa,http://www.uta.edu
+University of Houston,usa,https://www.uh.edu/
+Texas Tech University,usa,http://www.ttu.edu
+Colorado School of Mines,usa,https://www.mines.edu/
+Colorado State University,usa,https://www.colostate.edu/
+University of Utah,usa,https://www.utah.edu
+Utah State University,usa,http://www.usu.edu
+Brigham Young University,usa,https://www.byu.edu/
+University of Arizona,usa,https://www.arizona.edu
+Arizona State University,usa,https://www.asu.edu/
+Northern Arizona University,usa,http://nau.edu/
+"University of Nevada, Reno",usa,https://www.unr.edu/
+University of New Mexico,usa,https://www.unm.edu/
+University of Oregon,usa,http://www.uoregon.edu
+Oregon State University,usa,http://oregonstate.edu
+Portland State University,usa,https://www.pdx.edu/
+Washington State University,usa,https://wsu.edu
+University of Idaho,usa,https://www.uidaho.edu/
+Boise State University,usa,http://www.boisestate.edu
+Montana State University,usa,https://www.montana.edu/
+University of Montana,usa,https://www.umt.edu/
+University of Wyoming,usa,http://www.uwyo.edu
+North Dakota State University,usa,https://www.ndsu.edu/
+University of South Dakota,usa,https://www.usd.edu/
+South Dakota School of Mines and Technology,usa,https://www.sdsmt.edu/index.html
+Gonzaga University,usa,https://www.gonzaga.edu/
+Seattle University,usa,https://seattleu.edu
+Seattle Pacific University,usa,https://spu.edu/
+San Diego State University,usa,https://www.sdsu.edu/
+San José State University,usa,https://www.sjsu.edu/
+"California Polytechnic State University, San Luis Obispo",usa,https://www.calpoly.edu/
+"California State Polytechnic University, Pomona",usa,https://www.cpp.edu/
+San Francisco State University,usa,https://www.sfsu.edu/
+"California State University, Long Beach",usa,https://www.csulb.edu/
+"California State University, Fullerton",usa,https://www.fullerton.edu/
+"California State University, Northridge",usa,https://www.csun.edu/
+"California State University, East Bay",usa,http://www.csueastbay.edu
+Loyola Marymount University,usa,http://www.lmu.edu
+Chapman University,usa,https://www.chapman.edu/
+University of San Francisco,usa,https://www.usfca.edu/
+University of San Diego,usa,https://www.sandiego.edu/
+University of the Pacific,usa,https://www.pacific.edu/
+Rhode Island School of Design,usa,https://www.risd.edu/
+Pratt Institute,usa,https://pratt.edu
+Parsons School of Design (The New School),usa,http://www.newschool.edu/parsons/
+School of the Art Institute of Chicago,usa,https://www.saic.edu
+ArtCenter College of Design,usa,http://www.artcenter.edu
+School of Visual Arts,usa,http://www.sva.edu
+Fashion Institute of Technology (SUNY),usa,https://fitnyc.edu
+California Institute of the Arts,usa,https://calarts.edu/
+Otis College of Art and Design,usa,http://www.otis.edu
+Savannah College of Art and Design,usa,https://www.scad.edu/
+Ringling College of Art and Design,usa,http://www.ringling.edu
+Maryland Institute College of Art,usa,http://www.mica.edu
+Berklee College of Music,usa,https://college.berklee.edu/
+The Juilliard School,usa,http://www.juilliard.edu
+Manhattan School of Music,usa,https://www.msmnyc.edu
+New England Conservatory,usa,http://necmusic.edu
+The Culinary Institute of America,usa,https://www.ciachef.edu
+Johnson & Wales University,usa,https://www.jwu.edu/
+Purdue University Northwest,usa,http://www.pnw.edu
+University of Colorado Denver,usa,http://www.ucdenver.edu/
+The University of Texas at San Antonio,usa,http://www.utsa.edu/
+The University of Texas Rio Grande Valley,usa,http://www.utrgv.edu
+University of Colorado Colorado Springs,usa,http://www.uccs.edu
+"University of Nevada, Las Vegas",usa,https://unlv.edu
+University of Hawaii at Manoa,usa,https://manoa.hawaii.edu/
+University of Alaska Fairbanks,usa,https://www.uaf.edu/
+Loughborough University,uk,https://www.lboro.ac.uk/
+Queen Mary University of London,uk,https://qmul.ac.uk
+Queen's University Belfast,uk,https://qub.ac.uk/
+University of Aberdeen,uk,https://abdn.ac.uk/
+University of Leicester,uk,https://le.ac.uk
+University of Nottingham,uk,https://www.nottingham.ac.uk/
+University of Sheffield,uk,https://www.sheffield.ac.uk/
+University of York,uk,https://york.ac.uk/
+University of Exeter,uk,https://www.exeter.ac.uk/
+University of Southampton,uk,https://southampton.ac.uk/
+Cardiff University,uk,https://cardiff.ac.uk/
+University of Leeds,uk,https://leeds.ac.uk/
+University of Birmingham,uk,https://www.bham.ac.uk/
+University of Liverpool,uk,https://liverpool.ac.uk/
+Newcastle University,uk,https://www.ncl.ac.uk/
+Lancaster University,uk,https://www.lancaster.ac.uk/
+University of Surrey,uk,https://www.surrey.ac.uk/
+University of Bath,uk,https://www.bath.ac.uk/
+University of Sussex,uk,http://www.sussex.ac.uk
+University of Reading,uk,https://www.reading.ac.uk/
+University of Essex,uk,http://www.essex.ac.uk
+University of Kent,uk,https://www.kent.ac.uk
+University of East Anglia,uk,https://www.uea.ac.uk/
+"Royal Holloway, University of London",uk,http://www.rhbnc.ac.uk/
+"City St George's, University of London",uk,https://citystgeorges.ac.uk
+SOAS University of London,uk,https://soas.ac.uk
+"Goldsmiths, University of London",uk,https://gold.ac.uk
+"Birkbeck, University of London",uk,https://bbk.ac.uk
+Brunel University of London,uk,https://www.brunel.ac.uk/
+Aston University,uk,http://www.aston.ac.uk/
+Heriot-Watt University,uk,https://www.hw.ac.uk/
+University of Strathclyde,uk,https://www.strath.ac.uk/
+University of Dundee,uk,http://www.dundee.ac.uk/
+University of Stirling,uk,http://www.stir.ac.uk
+Robert Gordon University,uk,http://www.rgu.ac.uk/
+Glasgow Caledonian University,uk,http://www.gcal.ac.uk/
+Edinburgh Napier University,uk,https://www.napier.ac.uk/
+Queen Margaret University,uk,http://www.qmu.ac.uk
+Abertay University,uk,http://www.abertay.ac.uk/
+University of the West of Scotland,uk,http://www.uws.ac.uk/
+Swansea University,uk,http://www.swansea.ac.uk/
+Aberystwyth University,uk,https://www.aber.ac.uk/en/
+Bangor University,uk,https://www.bangor.ac.uk/
+Cardiff Metropolitan University,uk,http://www.cardiffmet.ac.uk
+Ulster University,uk,https://www.ulster.ac.uk/
+Coventry University,uk,https://www.coventry.ac.uk/
+De Montfort University,uk,https://dmu.ac.uk/home.aspx
+Nottingham Trent University,uk,https://www.ntu.ac.uk
+Sheffield Hallam University,uk,http://www.shu.ac.uk/
+Manchester Metropolitan University,uk,https://www.mmu.ac.uk/
+Leeds Beckett University,uk,http://www.leedsbeckett.ac.uk/
+Northumbria University,uk,http://www.northumbria.ac.uk
+Teesside University,uk,http://www.tees.ac.uk/
+University of Sunderland,uk,http://www.sunderland.ac.uk/
+University of Hull,uk,https://www.hull.ac.uk/
+University of Bradford,uk,http://www.brad.ac.uk/
+University of Huddersfield,uk,http://hud.ac.uk/
+University of Salford,uk,http://www.salford.ac.uk/
+Liverpool John Moores University,uk,http://www.ljmu.ac.uk/
+University of Lancashire,uk,http://www.uclan.ac.uk/
+Keele University,uk,https://www.keele.ac.uk/
+Staffordshire University,uk,http://www.staffs.ac.uk/
+Birmingham City University,uk,https://www.bcu.ac.uk
+University of Wolverhampton,uk,https://www.wlv.ac.uk/
+University of Worcester,uk,https://worcester.ac.uk/
+University of Gloucestershire,uk,https://www.glos.ac.uk/
+Bath Spa University,uk,https://bathspa.ac.uk/
+Bournemouth University,uk,http://www.bournemouth.ac.uk
+University of Plymouth,uk,https://www.plymouth.ac.uk
+Falmouth University,uk,http://www.falmouth.ac.uk/
+Solent University,uk,http://www.solent.ac.uk
+University of Portsmouth,uk,https://port.ac.uk
+University of Chichester,uk,https://www.chi.ac.uk/
+University of Brighton,uk,http://www.brighton.ac.uk/
+Kingston University,uk,https://www.kingston.ac.uk/
+University of Roehampton,uk,http://www.roehampton.ac.uk/
+University of Westminster,uk,http://www.westminster.ac.uk
+University of Greenwich,uk,http://www.gre.ac.uk/
+University of Hertfordshire,uk,https://www.herts.ac.uk/
+Middlesex University,uk,https://www.mdx.ac.uk
+University of East London,uk,https://www.uel.ac.uk/
+London South Bank University,uk,https://www.lsbu.ac.uk/
+University of Bedfordshire,uk,https://beds.ac.uk/
+Anglia Ruskin University,uk,https://aru.ac.uk/
+Oxford Brookes University,uk,https://www.brookes.ac.uk/
+University of Lincoln,uk,http://www.lincoln.ac.uk/
+University of Derby,uk,https://www.derby.ac.uk
+University of Northampton,uk,http://www.northampton.ac.uk/
+University of Chester,uk,https://www.chester.ac.uk/
+Buckinghamshire New University,uk,http://www.bucks.ac.uk/
+Canterbury Christ Church University,uk,http://www.canterbury.ac.uk/
+Edge Hill University,uk,https://edgehill.ac.uk/
+York St John University,uk,http://www.yorksj.ac.uk/
+Leeds Trinity University,uk,http://www.leedstrinity.ac.uk/
+Birmingham Newman University,uk,http://www.newman.ac.uk/
+University of the Arts London,uk,https://www.arts.ac.uk/
+The Glasgow School of Art,uk,https://www.gsa.ac.uk/
+Norwich University of the Arts,uk,https://www.nua.ac.uk/
+Arts University Bournemouth,uk,http://aub.ac.uk/
+University for the Creative Arts,uk,http://www.uca.ac.uk
+Royal Agricultural University,uk,http://www.rau.ac.uk
+Royal Academy of Music,uk,https://ram.ac.uk
+Royal College of Music,uk,http://www.rcm.ac.uk/
+Guildhall School of Music and Drama,uk,http://www.gsmd.ac.uk
+Royal Northern College of Music,uk,https://rncm.ac.uk
+Trinity Laban Conservatoire of Music and Dance,uk,http://www.trinitylaban.ac.uk/
+Leeds Conservatoire,uk,http://www.lcm.ac.uk/
+The Royal Central School of Speech and Drama,uk,https://www.cssd.ac.uk/
+LAMDA,uk,https://lamda.ac.uk/
+Rose Bruford College,uk,http://www.bruford.ac.uk/
+The Liverpool Institute for Performing Arts,uk,http://www.lipa.ac.uk/
+Central Academy of Fine Arts,china,http://www.cafa.edu.cn/
+Tongji University,china,https://www.tongji.edu.cn/
+East China Normal University,china,http://english.ecnu.edu.cn
+Donghua University,china,http://www.dhu.edu.cn/
+Shanghai University,china,http://www.shu.edu.cn
+East China University of Science and Technology,china,http://www.ecust.edu.cn/
+Sun Yat-sen University,china,http://www.sysu.edu.cn/
+South China University of Technology,china,http://www.scut.edu.cn/
+Jinan University,china,http://www.jnu.edu.cn/
+Shenzhen University,china,https://www.szu.edu.cn
+Southern University of Science and Technology,china,https://sustech.edu.cn
+Wuhan University,china,http://www.whu.edu.cn
+Huazhong University of Science and Technology,china,http://www.hust.edu.cn
+Central China Normal University,china,http://www.ccnu.edu.cn
+Wuhan University of Technology,china,http://www.whut.edu.cn
+China University of Geosciences (Wuhan),china,http://www.cug.edu.cn/
+Xiamen University,china,https://www.xmu.edu.cn/
+Shandong University,china,https://www.sdu.edu.cn/
+Ocean University of China,china,http://www.ouc.edu.cn/
+Tianjin University,china,http://www.tju.edu.cn
+Nankai University,china,http://www.nankai.edu.cn/
+Southeast University,china,https://www.seu.edu.cn/
+Nanjing University of Science and Technology,china,http://www.njust.edu.cn/
+Nanjing Normal University,china,http://www.njnu.edu.cn/
+Hohai University,china,http://www.hhu.edu.cn/
+Nanjing Agricultural University,china,http://www.njau.edu.cn
+Sichuan University,china,https://scu.edu.cn
+University of Electronic Science and Technology of China,china,http://www.uestc.edu.cn/
+Southwest Jiaotong University,china,https://www.swjtu.edu.cn
+Chongqing University,china,https://www.cqu.edu.cn
+Southwest University,china,http://www.swu.edu.cn/
+Jilin University,china,http://www.jlu.edu.cn/
+Dalian University of Technology,china,http://www.dlut.edu.cn
+Lanzhou University,china,http://www.lzu.edu.cn/
+Northwest A&F University,china,http://www.nwsuaf.edu.cn/
+Hunan University,china,http://www.hunu.edu.cn/
+Central South University,china,http://www.csu.edu.cn/
+Xiangtan University,china,https://www.xtu.edu.cn/
+Nanchang University,china,http://www.ncu.edu.cn/
+Fuzhou University,china,https://www.fzu.edu.cn/
+Zhengzhou University,china,http://www.zzu.edu.cn
+Hefei University of Technology,china,http://www.hfut.edu.cn
+Anhui University,china,http://www.ahu.edu.cn/
+Ningbo University,china,https://www.nbu.edu.cn
+Jiangnan University,china,http://www.jiangnan.edu.cn/
+Northwestern Polytechnical University,china,http://www.nwpu.edu.cn/
+Xidian University,china,http://www.xidian.edu.cn/
+Chang'an University,china,https://www.chd.edu.cn/
+Shaanxi Normal University,china,https://www.snnu.edu.cn/
+Northwest University,china,http://www.nwu.edu.cn/
+Xinjiang University,china,https://www.xju.edu.cn
+Shihezi University,china,https://www.shzuni.com
+Inner Mongolia University,china,http://www.imu.edu.cn/
+Ningxia University,china,http://www.nxu.edu.cn/
+Yunnan University,china,http://www.ynu.edu.cn/
+Capital Medical University,china,http://www.ccmu.edu.cn/
+China Medical University,china,http://www.cmu.edu.cn/
+Tianjin Medical University,china,http://www.tmu.edu.cn
+Nanjing Medical University,china,http://www.njmu.edu.cn/
+China Pharmaceutical University,china,http://www.cpu.edu.cn/
+Communication University of China,china,http://www.cuc.edu.cn/
+Beijing Film Academy,china,http://www.bfa.edu.cn
+Central Academy of Drama,china,https://chntheatre.edu.cn
+China Conservatory of Music,china,http://www.ccmusic.edu.cn/
+Beijing Sport University,china,http://www.bsu.edu.cn/
+Xi'an Jiaotong-Liverpool University,china,http://www.xjtlu.edu.cn/
+University of Nottingham Ningbo China,china,http://www.nottingham.edu.cn/
+"The Chinese University of Hong Kong, Shenzhen",china,http://www.cuhk.edu.cn/
+Beijing Normal-Hong Kong Baptist University United International College,china,https://uic.edu.cn
+Shenzhen MSU-BIT University,china,https://ru.smbu.edu.cn/
+Guangdong Technion-Israel Institute of Technology,china,http://www.gtiit.edu.cn/en/index.aspx
+The Hong Kong University of Science and Technology (Guangzhou),china,https://hkust-gz.edu.cn/
+Shanghai University of Finance and Economics,china,https://www.sufe.edu.cn
+Zhongnan University of Economics and Law,china,http://www.znufe.edu.cn
+Southwestern University of Finance and Economics,china,http://www.swufe.edu.cn/
+Beijing Forestry University,china,http://www.bjfu.edu.cn/
+Northeast Normal University,china,http://en.nenu.edu.cn/
+China University of Mining and Technology,china,http://www.cumt.edu.cn/
+China University of Petroleum,china,http://www.upc.edu.cn
+Nanjing University of Aeronautics and Astronautics,china,http://www.nuaa.edu.cn
+Harbin Engineering University,china,http://www.hrbeu.edu.cn
+New York University Abu Dhabi,uae,https://nyuad.nyu.edu
+Georgetown University in Qatar,qatar,https://www.qatar.georgetown.edu/
+Carnegie Mellon University in Qatar,qatar,http://www.qatar.cmu.edu
+Texas A&M University at Qatar,qatar,http://www.qatar.tamu.edu/
+Northwestern University in Qatar,qatar,http://www.qatar.northwestern.edu/
+Weill Cornell Medicine-Qatar,qatar,http://qatar-weill.cornell.edu
+Virginia Commonwealth University School of the Arts in Qatar,qatar,http://www.qatar.vcu.edu/
+Rochester Institute of Technology Dubai,uae,https://www.rit.edu/
+New York University Shanghai,china,https://shanghai.nyu.edu
+Duke Kunshan University,china,https://dukekunshan.edu.cn/zh
+Wenzhou-Kean University,china,https://wku.edu.cn
+American University of Central Asia,kyrgyzstan,http://www.auca.kg/
+Webster University in Tashkent,uzbekistan,https://www.webster.edu/
+American University in Bulgaria,bulgaria,http://www.aubg.edu/
+American University of Armenia,armenia,https://aua.am
+"Temple University, Japan Campus",japan,http://www.tuj.ac.jp/index.html
+Saint Louis University-Madrid Campus,spain,https://www.slu.edu/
+New York Institute of Technology Abu Dhabi,uae,https://www.nyit.edu
+University of Arizona Dubai,uae,https://www.arizona.edu
+Florida State University Panama,panama,https://fsu.edu
+Webster Vienna Private University,austria,https://www.webster.ac.at/
+Webster University Geneva,switzerland,http://www.webster.ch/
+Webster University Leiden,netherlands,https://www.webster.edu/
+RIT Croatia,croatia,http://www.croatia.rit.edu/
+RIT Kosovo,kosovo,http://kosovo.rit.edu/
+Bard College Berlin,germany,http://www.berlin.bard.edu
+The American University of Paris,france,https://www.aup.edu/
+Franklin University Switzerland,switzerland,http://www.fus.edu
+John Cabot University,italy,https://www.johncabot.edu
+The American University of Rome,italy,http://www.aur.edu/
+Western University,canada,http://www.uwo.ca
+University of Ottawa,canada,https://www.uottawa.ca/en
+York University,canada,https://www.yorku.ca/
+University of Calgary,canada,http://www.ucalgary.ca/
+University of Manitoba,canada,https://umanitoba.ca/
+University of Saskatchewan,canada,https://www.usask.ca/
+Dalhousie University,canada,https://www.dal.ca/
+Simon Fraser University,canada,https://www.sfu.ca/
+University of Victoria,canada,https://www.uvic.ca/
+Toronto Metropolitan University,canada,http://www.ryerson.ca/
+Université de Montréal,canada,https://www.umontreal.ca/
+Université Laval,canada,https://www.ulaval.ca/
+Concordia University,canada,https://www.concordia.ca/
+Carleton University,canada,https://carleton.ca/
+University of Guelph,canada,https://www.uoguelph.ca/
+University of Windsor,canada,https://www.uwindsor.ca/
+Brock University,canada,https://brocku.ca
+Wilfrid Laurier University,canada,http://www.wlu.ca/
+Trent University,canada,https://trentu.ca
+Lakehead University,canada,http://www.lakeheadu.ca/
+Laurentian University,canada,https://laurentian.ca/
+Ontario Tech University,canada,http://www.uoit.ca
+Université de Sherbrooke,canada,https://www.usherbrooke.ca
+Université du Québec à Montréal,canada,https://uqam.ca/
+École de technologie supérieure,canada,https://www.etsmtl.ca/
+Polytechnique Montréal,canada,http://www.polymtl.ca/
+HEC Montréal,canada,http://www.hec.ca/en/
+Université du Québec à Trois-Rivières,canada,https://www.uqtr.ca/
+Université du Québec à Chicoutimi,canada,http://www.uqac.ca/
+Université du Québec en Outaouais,canada,http://www.uqo.ca
+Université du Québec à Rimouski,canada,http://www.uqar.ca
+Bishop's University,canada,https://www.ubishops.ca/
+Mount Allison University,canada,https://mta.ca/
+Seneca Polytechnic,canada,http://www.senecacollege.ca/
+Humber Polytechnic,canada,https://www.humber.ca/
+Centennial College,canada,http://www.centennialcollege.ca/
+George Brown College,canada,http://www.georgebrown.ca/
+Conestoga College,canada,https://www.conestogac.on.ca/
+Algonquin College,canada,http://www.algonquincollege.com/
+Fanshawe College,canada,https://www.fanshawec.ca/
+Sheridan College,canada,http://www.sheridancollege.ca/
+Douglas College,canada,https://www.douglascollege.ca/
+British Columbia Institute of Technology,canada,https://www.bcit.ca/
+Southern Alberta Institute of Technology,canada,http://www.sait.ca
+Northern Alberta Institute of Technology,canada,http://www.nait.ca/
+NSCAD University,canada,http://www.nscad.ns.ca/
+Trinity Western University,canada,https://www.twu.ca
+Algoma University,canada,http://www.algomau.ca/
+Nipissing University,canada,http://www.nipissingu.ca/
+City University of Hong Kong,hongkong,https://cityu.edu.hk
+Hong Kong Polytechnic University,hongkong,https://polyu.edu.hk
+Hong Kong Baptist University,hongkong,https://www.hkbu.edu.hk/
+Lingnan University,hongkong,https://www.ln.edu.hk/
+Education University of Hong Kong,hongkong,http://www.ied.edu.hk
+Hong Kong Metropolitan University,hongkong,https://www.hkmu.edu.hk
+Hang Seng University of Hong Kong,hongkong,http://www.hsu.edu.hk
+Hong Kong Shue Yan University,hongkong,https://www.hksyu.edu

@@ -1,0 +1,9 @@
+name,fact,status,value,quote,source,reason
+Lawrence University,sat,not_required,,Standardized test scores are optional.,https://www.lawrence.edu/admissions-aid/apply/direct-admissions/,уже есть ориентир
+Lawrence University,toefl,accepted,,TOEFL: 1398,https://www.lawrence.edu/admissions-aid/apply/,цитата не подтверждает: тест принимается
+"University of California, Davis",ielts,accepted,,"International English Language Testing System, or IELTS",https://www.ucdavis.edu/admissions/undergraduate/international/exams-visas,цитата не подтверждает: тест принимается
+"University of California, Davis",toefl,accepted,,"Test of English as a Foreign Language, or TOEFL",https://www.ucdavis.edu/admissions/undergraduate/international/exams-visas,цитата не подтверждает: тест принимается
+University of Massachusetts Lowell,sat,not_required,,1316 Average SAT,https://www.uml.edu/admissions/apply/standards.aspx,цитата не подтверждает not required
+University of San Diego,sat,not_required,,"USD is a test-free institution, which means we do not review standardized test scores, such as the SAT or ACT, as part of our admission process.",https://www.sandiego.edu/admission-and-aid/undergraduate/apply/,цитата не подтверждает not required
+Ringling College of Art and Design,sat,not_required,,SAT and ACT scores are not required for admission.,https://www.ringling.edu/admissions/apply/application-requirements,уже есть примечание
+University of Colorado Denver,sat,not_required,,"The middle 50% of our admitted freshmen had between a 3.23 and 3.93 GPA and scored between a 1070 and 1260 on the SAT, 21-27 on the ACT.",https://www.cudenver.edu/undergraduate-admissions/first-year-admissions/admission-requirements,цитата не подтверждает not required

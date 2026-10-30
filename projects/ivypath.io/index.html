@@ -10,9 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#ffffff; --surface:#ffffff; --tint:#f4f4f4; --text:#111111; --muted:#666666; --line:#e2e2e2;
-  --brand:#2f4bd8; --go:#2f4bd8; --warn:#2f4bd8; --stop:#666666; --inv-bg:#111111; --inv-fg:#ffffff;
+  --bg:#fbfcff; --surface:#ffffff; --tint:#f2f5fb; --text:#101828; --muted:#5c6880; --line:#dfe6f2;
+  --brand:#1e40af; --go:#1e40af; --warn:#1e40af; --stop:#6b7385; --inv-bg:#0b1c3d; --inv-fg:#ffffff;
+  --lilac:#1e40af; --lilac-2:#3b82f6; --lilac-deep:#16307f; --lilac-soft:#eef3fd; --lilac-line:#d6e2f7;
+  --glow1:rgba(30,64,175,.08); --glow2:rgba(59,130,246,.12); --bg-veil:rgba(251,252,255,.86);
+  --grid-line:rgba(30,64,175,.05); --deco-line:rgba(30,64,175,.12);
   --pad:clamp(20px,5vw,64px);
+  /* distance from the 1200px text column to the screen edge: cards slide
+     into this strip and are cut by the screen edge, not mid-page */
+  --bleed:max(var(--pad),calc((100vw - 1200px) / 2));
   --sans:"Geist","Inter","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
   --serif:var(--sans);
   box-sizing:border-box;
@@ -20,12 +26,18 @@
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0b0b0b; --surface:#0b0b0b; --tint:#171717; --text:#f2f2f2; --muted:#a0a0a0; --line:#2c2c2c;
-  --brand:#9fb0ff; --go:#9fb0ff; --warn:#9fb0ff; --stop:#a0a0a0; --inv-bg:#f2f2f2; --inv-fg:#111111;
+  --bg:#080c16; --surface:#0d1422; --tint:#131c2e; --text:#eef3ff; --muted:#9ca9c1; --line:#233046;
+  --brand:#7aa6ff; --go:#7aa6ff; --warn:#7aa6ff; --stop:#8d97ab; --inv-bg:#dbe7ff; --inv-fg:#08152e;
+  --lilac:#7aa6ff; --lilac-2:#5b8def; --lilac-deep:#4a74e0; --lilac-soft:#111a2b; --lilac-line:#26344e;
+  --glow1:rgba(60,99,201,.22); --glow2:rgba(40,70,160,.18); --bg-veil:rgba(8,12,22,.84);
+  --grid-line:rgba(122,166,255,.05); --deco-line:rgba(122,166,255,.12);
 }}
 :root[data-theme="dark"]{
-  --bg:#0b0b0b; --surface:#0b0b0b; --tint:#171717; --text:#f2f2f2; --muted:#a0a0a0; --line:#2c2c2c;
-  --brand:#9fb0ff; --go:#9fb0ff; --warn:#9fb0ff; --stop:#a0a0a0; --inv-bg:#f2f2f2; --inv-fg:#111111;
+  --bg:#080c16; --surface:#0d1422; --tint:#131c2e; --text:#eef3ff; --muted:#9ca9c1; --line:#233046;
+  --brand:#7aa6ff; --go:#7aa6ff; --warn:#7aa6ff; --stop:#8d97ab; --inv-bg:#dbe7ff; --inv-fg:#08152e;
+  --lilac:#7aa6ff; --lilac-2:#5b8def; --lilac-deep:#4a74e0; --lilac-soft:#111a2b; --lilac-line:#26344e;
+  --glow1:rgba(60,99,201,.22); --glow2:rgba(40,70,160,.18); --bg-veil:rgba(8,12,22,.84);
+  --grid-line:rgba(122,166,255,.05); --deco-line:rgba(122,166,255,.12);
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:calc(100px + env(safe-area-inset-top,0px))}
@@ -35,15 +47,15 @@ a{color:inherit}
 h1,h2,h3,h4{margin:0}
 .muted{color:var(--muted)} .small{font-size:15px}
 
-.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;align-items:center;flex-wrap:wrap;gap:8px 28px;padding:14px max(var(--pad),calc((100% - 1200px)/2));background:var(--bg);border-bottom:1px solid var(--line)}
-.brand{font:800 19px/1 var(--sans);letter-spacing:-.02em;margin-right:auto}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;align-items:center;flex-wrap:wrap;gap:6px 22px;padding:8px max(var(--pad),calc((100% - 1200px)/2));background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font:800 17px/1 var(--sans);letter-spacing:-.02em;margin-right:auto}
 .site-nav{display:flex;flex-wrap:wrap;gap:0 14px}
-.site-nav button{font:600 15px/1 var(--sans);padding:10px 2px;border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);cursor:pointer}
+.site-nav button{font:600 14px/1 var(--sans);padding:7px 2px;border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);cursor:pointer}
 .site-nav button:hover{color:var(--text)}
 .site-nav button[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand)}
 .site-nav button span:first-child{display:none}
-.tools{display:flex;gap:8px;align-items:center}
-.tools select,.tools button.icon{font:600 14px var(--sans);padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);cursor:pointer}
+.tools{display:flex;gap:6px;align-items:center}
+.tools select,.tools button.icon{font:600 13px var(--sans);padding:5px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);cursor:pointer}
 
 .hero{position:relative;display:flex;align-items:flex-end;min-height:clamp(340px,34vw,500px);background:#111 center/cover no-repeat;color:#fff;padding:0 var(--pad)}
 .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.56)}
@@ -66,13 +78,41 @@ main{max-width:calc(1200px + 2*var(--pad));margin:0 auto;padding:0 var(--pad)}
 .trust-box{margin:0 0 22px;padding:14px 18px;background:var(--tint);border-radius:8px;font-size:15px;max-width:76ch}
 .trust-box b{font-weight:700}
 
-.match-box{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;margin:0 0 28px;padding:22px 24px;background:var(--inv-bg);color:var(--inv-fg);border-radius:6px}
-.match-text{margin-right:auto;display:flex;flex-direction:column;gap:2px}
-.match-text b{font:700 20px/1.25 var(--sans)}
-.match-text .muted{font-size:15px;color:inherit;opacity:.72}
-#myScore,#myToefl,#mySat{-moz-appearance:textfield;appearance:textfield;width:100px;font:600 22px var(--sans);text-align:center;padding:10px 8px;border:0;border-radius:6px;background:var(--inv-fg);color:var(--inv-bg)}
+.match-box{margin:0 0 28px;padding:22px 24px 20px;border:1px solid var(--lilac-line);border-radius:18px;
+  background:linear-gradient(165deg,var(--surface),var(--lilac-soft) 82%);
+  box-shadow:0 26px 60px -54px var(--lilac)}
+.match-head{display:flex;align-items:flex-start;gap:16px;margin:0 0 18px}
+.match-text{display:flex;flex-direction:column;gap:3px;margin-right:auto}
+.match-text b{font:700 19px/1.25 var(--sans);letter-spacing:-.01em;color:var(--text)}
+.match-text .muted{font-size:14.5px;color:var(--muted)}
+.match-reset{flex:none;font:600 13.5px var(--sans);padding:7px 13px;border:1px solid var(--line);border-radius:999px;
+  background:transparent;color:var(--muted);cursor:pointer;transition:color .15s,border-color .15s}
+.match-reset:hover{color:var(--brand);border-color:var(--brand)}
+.match-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.score-field{display:flex;flex-direction:column;gap:7px;padding:12px 14px 11px;
+  border:1px solid var(--line);border-radius:12px;background:var(--tint);cursor:text;
+  transition:border-color .15s,box-shadow .15s,background .15s}
+.score-field:focus-within{border-color:var(--brand);background:var(--surface);box-shadow:0 0 0 3px var(--glow1)}
+.score-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.score-name{font:700 12px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.score-range{font:500 12px/1 var(--sans);color:var(--muted);opacity:.7;font-variant-numeric:tabular-nums}
+.score-field:has(input:not(:placeholder-shown)){border-color:var(--lilac-line);background:var(--lilac-soft)}
+.score-field:has(input:not(:placeholder-shown)) .score-name{color:var(--brand)}
+#myScore,#myToefl,#mySat{-moz-appearance:textfield;appearance:textfield;width:100%;font:700 26px/1.1 var(--sans);
+  padding:0;border:0;border-radius:0;background:transparent;color:var(--text);font-variant-numeric:tabular-nums}
+#myScore:focus,#myToefl:focus,#mySat:focus{outline:none}
+#myScore::placeholder,#myToefl::placeholder,#mySat::placeholder{color:var(--muted);opacity:.4;font-weight:600}
 #myScore::-webkit-inner-spin-button,#myToefl::-webkit-inner-spin-button,#mySat::-webkit-inner-spin-button{display:none}
-.match-hint{flex-basis:100%;font-size:13.5px;opacity:.72}
+.match-hint{display:flex;gap:9px;margin:16px 0 0;font-size:13.5px;line-height:1.5;color:var(--muted)}
+.match-hint::before{content:"i";flex:none;width:17px;height:17px;margin-top:1px;border:1.2px solid currentColor;
+  border-radius:50%;font:700 11px/15px var(--sans);text-align:center;opacity:.75}
+@media (max-width:600px){
+  .match-box{padding:18px 16px 16px;border-radius:14px}
+  .match-fields{gap:8px}
+  .score-field{padding:10px 10px 9px}
+  #myScore,#myToefl,#mySat{font-size:20px}
+  .score-range{display:none}
+}
 
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
 .filters select,.filters input{flex:1 1 190px;min-width:0;font:500 15px var(--sans);padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text)}
@@ -116,7 +156,15 @@ a.link{font-weight:600;font-size:15px;color:var(--brand);text-decoration:underli
 
 #examGrid .card{display:grid;grid-template-columns:minmax(150px,230px) 1fr;gap:6px 28px;padding:20px 0;border-bottom:1px solid var(--line)}
 #examGrid .card p{margin:0}
-#courseGrid .card{padding:22px 0;border-bottom:1px solid var(--line);max-width:72ch}
+#courseGrid{display:grid;border-top:0;gap:16px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+#courseGrid .card{display:flex;flex-direction:column;gap:8px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--bg);max-width:none;transition:transform .15s,border-color .15s}
+#courseGrid .card:hover{transform:translateY(-3px);border-color:var(--brand)}
+#courseGrid h3{font:700 19px/1.3 var(--sans);margin:0}
+#courseGrid .tags{flex-direction:row;flex-wrap:wrap;gap:6px 14px;margin:4px 0}
+#courseGrid .city{color:var(--muted);font-size:14px}
+#courseGrid p{margin:0 0 6px;flex:1}
+#courseGrid a.link{margin-top:auto;font-weight:600}
+#courseGrid .badge-official{margin-bottom:2px;align-self:flex-start}
 #resGrid .card{border-top:1px solid var(--line);padding-top:16px}
 #costGrid .card{background:var(--tint);border-radius:10px;padding:26px}
 .badge-official{display:inline-block;font:600 13px var(--sans);padding:2px 9px;background:var(--tint);color:var(--brand);border-radius:4px;margin-bottom:10px}
@@ -269,19 +317,146 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
 #qsGrid .score{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600}
 #qsGrid .more{padding-top:0;font-size:14px}
 .chat-panel{right:0;left:0;bottom:0;width:100%;height:min(82vh,620px);border-radius:20px 20px 0 0}}
+
+/* hover zoom: cards and feature tiles grow slightly and lift */
+#uniGrid .card,#courseGrid .card,#qsGrid .qcard,.feat,.ucard,.gcard,.panel,#costGrid .card{
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  transform-origin:center center}
+@media (hover:hover){
+  #uniGrid .card:hover,#courseGrid .card:hover,#qsGrid .qcard:hover,.feat:hover,.ucard:hover,.gcard:hover{
+    transform:translateY(-4px) scale(1.022);
+    border-color:var(--brand);
+    box-shadow:0 16px 36px -20px rgba(0,0,0,.45)}
+  #costGrid .card:hover,.panel:hover{transform:translateY(-3px) scale(1.012);box-shadow:0 16px 36px -22px rgba(0,0,0,.4)}
+}
+@media (prefers-reduced-motion:reduce){
+  #uniGrid .card,#courseGrid .card,#qsGrid .qcard,.feat,.ucard,.gcard,.panel,#costGrid .card{transition:none}
+  #uniGrid .card:hover,#courseGrid .card:hover,#qsGrid .qcard:hover,.feat:hover,.ucard:hover,.gcard:hover,
+  #costGrid .card:hover,.panel:hover{transform:none}
+}
+
+/* right rail: the block that used to sit under the section moves into the
+   empty right side, keeps the lilac outline and slides in on scroll */
+.section.rail.active{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,340px);
+  column-gap:36px;row-gap:24px;align-items:start}
+.rail-main{min-width:0}
+.rail-main>p.muted{max-width:66ch}
+.rail-side{position:sticky;top:92px;min-width:0;
+  padding:20px 20px 22px;border:1px solid var(--brand);border-radius:18px;
+  background:var(--tint);box-shadow:0 20px 44px -34px var(--brand);
+  opacity:0;transform:translateX(26px);
+  transition:opacity .5s ease,transform .5s ease}
+.rail-side.in{opacity:1;transform:none}
+.rail-side>.calc{margin:0;padding:0;background:none;border-radius:0}
+.rail-side .calc-row{flex-direction:column;gap:12px}
+.rail-side .calc label{flex:0 0 auto}
+.rail-side .calc-out{margin-top:14px;line-height:1.5;overflow-wrap:anywhere}
+.rail-links{margin:22px 0 0;line-height:1.6;font-size:14.5px}
+.rail-links .link{display:block;margin:0 0 6px}
+
+/* numbered subsections live in the right column as separate cards.
+   They do not stick: each one peeks out from the right wall, comes fully
+   out while it crosses the middle of the screen and slides partly back
+   behind the wall when you scroll past it. */
+.section.rail.cards-rail.active{grid-template-columns:minmax(0,1fr) minmax(330px,420px);
+  column-gap:18px}
+/* the clip box runs past the text column all the way to the screen edge:
+   a card on its way out is cut by the edge, never in the middle of the page */
+.rail-cards{display:flex;flex-direction:column;gap:14px;min-width:0;margin-top:8px;
+  overflow:hidden;padding:2px calc(2px + var(--bleed)) 2px 2px;
+  margin-right:calc(-1 * var(--bleed))}
+.rail-card{border:1px solid var(--brand);border-radius:16px;background:var(--tint);
+  box-shadow:0 18px 36px -32px var(--brand);min-width:0}
+.rail-card>summary{cursor:pointer;list-style:none;position:relative;
+  padding:15px 42px 15px 18px}
+.rail-card>summary::-webkit-details-marker{display:none}
+.rail-card>summary b{display:block;font:700 16.5px/1.3 var(--sans);letter-spacing:-.01em}
+.rail-card>summary span{display:block;margin-top:4px;font-size:13.5px;color:var(--muted)}
+.rail-card>summary::after{content:"+";position:absolute;right:16px;top:11px;
+  font:400 24px var(--serif);color:var(--brand)}
+.rail-card[open]>summary::after{content:"\2212"}
+.rail-card>.article-body{padding:0 18px 16px;max-width:none;font-size:14.5px}
+.rail-card .article-body h4{font-size:15px;margin:16px 0 4px}
+.rail-card .article-body p{line-height:1.55}
+.rail-card .tbl{margin:8px 0}
+.rail-card .tbl table{min-width:0;font-size:13px}
+.rail-card .tbl th,.rail-card .tbl td{padding:7px 8px 7px 0}
+@media (max-width:960px){
+  .section.rail.active{grid-template-columns:minmax(0,1fr)}
+  .rail-side{position:static;transform:translateY(18px)}
+  .rail-side.in{transform:none}
+  .section.rail.cards-rail.active{grid-template-columns:minmax(0,1fr)}
+  .rail-cards{overflow:visible;margin-top:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rail-side{opacity:1;transform:none;transition:none}
+}
+
+/* background: soft glows, then a fine lilac grid that repeats down the page */
+body{background-color:var(--bg);
+  background-image:
+    radial-gradient(900px 520px at 10% -8%,var(--glow1),transparent 68%),
+    radial-gradient(820px 480px at 98% 2%,var(--glow2),transparent 70%),
+    radial-gradient(1000px 720px at 50% 104%,var(--glow2),transparent 72%),
+    linear-gradient(to right,var(--grid-line) 1px,transparent 1px),
+    linear-gradient(to bottom,var(--grid-line) 1px,transparent 1px);
+  background-size:auto,auto,auto,72px 72px,72px 72px;
+  background-repeat:no-repeat,no-repeat,no-repeat,repeat,repeat;
+  background-position:0 0,0 0,0 0,0 0,0 0}
+/* thin diagonal hairlines behind the hero, fading to nothing at the bottom */
+.hero::before{display:block;content:"";position:absolute;inset:0;pointer-events:none;
+  background-color:transparent;
+  background-image:repeating-linear-gradient(118deg,transparent 0 35px,var(--deco-line) 35px 36px);
+  -webkit-mask-image:linear-gradient(180deg,#000,transparent 88%);
+  mask-image:linear-gradient(180deg,#000,transparent 88%)}
+.site-header{background:var(--bg-veil);border-bottom-color:var(--lilac-line);
+  backdrop-filter:saturate(150%) blur(10px);-webkit-backdrop-filter:saturate(150%) blur(10px)}
+.section>h2::before,.rail-main>h2::before{content:"";display:inline-block;width:11px;height:.72em;margin-right:14px;
+  border-radius:999px;vertical-align:.02em;
+  background:linear-gradient(180deg,var(--lilac-2),var(--lilac));
+  box-shadow:0 0 22px -4px var(--lilac)}
+.statsbar{background:linear-gradient(90deg,var(--lilac-soft),transparent 78%)}
+.stat b{color:var(--lilac)}
+.trust-box{background:var(--lilac-soft);border-left:3px solid var(--lilac)}
+.feat{background:linear-gradient(160deg,var(--lilac-soft),var(--tint) 72%);border-color:var(--lilac-line)}
+.panel{background:linear-gradient(150deg,var(--lilac-soft),var(--tint));border-color:var(--lilac-line)}
+.ucard,.gcard{border-color:var(--lilac-line);background:linear-gradient(165deg,var(--surface),var(--lilac-soft))}
+#uniGrid .card,#courseGrid .card,#qsGrid .qcard{background:linear-gradient(168deg,var(--surface) 52%,var(--lilac-soft))}
+.sheet{background:linear-gradient(170deg,var(--surface),var(--lilac-soft))}
+.chat-panel{background:linear-gradient(170deg,var(--surface),var(--lilac-soft));border-color:var(--lilac-line)}
+.chips span{border-color:var(--lilac-line)}
+.cta-band{background-image:repeating-linear-gradient(120deg,rgba(255,255,255,.08) 0 1px,transparent 1px 18px),
+  linear-gradient(125deg,var(--lilac-2),var(--lilac) 45%,var(--lilac-deep))}
+.site-footer{border-top-color:var(--lilac-line)}
+.rail-card,.rail-side{background:linear-gradient(170deg,var(--surface),var(--lilac-soft))}
+/* each headed group of the long left-hand text sits in its own rounded box */
+.info-panel{border:1px solid var(--lilac-line);border-radius:18px;
+  padding:18px 20px 16px;margin:0 0 16px;
+  background:linear-gradient(168deg,var(--surface) 45%,var(--lilac-soft));
+  box-shadow:0 20px 42px -40px var(--lilac)}
+.info-panel>:first-child{margin-top:0}
+.info-panel>:last-child{margin-bottom:0}
+.info-panel li:last-child{margin-bottom:0}
+/* guides: the boxes fill the width of the page; on a wide screen they flow
+   in two even columns, so the right half is not left empty */
+#articleList .article-body{max-width:none}
+@media (min-width:1101px){
+  #articleList .article-body{columns:2;column-gap:16px}
+  #articleList .info-panel{break-inside:avoid;display:inline-block;width:100%;vertical-align:top}
+}
 </style>
 </head>
 <body>
 
 <header class="site-header">
-  <div class="brand" data-go="home" style="cursor:pointer">ivypath.io</div>
-  <nav class="site-nav" id="nav" role="tablist"></nav>
   <div class="tools">
     <button class="icon" id="themeBtn" type="button">◐</button>
     <select id="lang">
       <option value="ru">RU</option><option value="kk">KZ</option><option value="en">EN</option>
     </select>
   </div>
+  <div class="brand" data-go="home" style="cursor:pointer">ivypath.io</div>
+  <nav class="site-nav" id="nav" role="tablist"></nav>
 </header>
 
 <section class="hero" id="hero"><div class="hero-inner">
@@ -307,7 +482,7 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
     <h3 class="faq-h" data-key="faqTitle"></h3>
     <div id="faqList"></div>
     <div class="cta-band"><h2 data-key="ctaTitle"></h2><button class="btn" type="button" data-go="universities" data-key="ctaBtn"></button></div>
-    <p class="insta">inst: <a href="https://instagram.com/m_maadiiiii" target="_blank" rel="noopener">@m_maadiiiii</a> <a href="https://instagram.com/saintwithoutgod" target="_blank" rel="noopener">@saintwithoutgod</a></p>
+    <p class="insta">inst: <a href="https://instagram.com/m_maadiiiii" target="_blank" rel="noopener">@m_maadiiiii</a> <a href="https://instagram.com/saintwithoutgod" target="_blank" rel="noopener">@saintwithoutgod</a> <a href="https://instagram.com/owyxxd" target="_blank" rel="noopener">@owyxxd</a></p>
   </section>
 
   <section id="universities" class="section">
@@ -318,12 +493,25 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
       <div><b data-key="trustTitle"></b><br><span class="muted small" data-key="trustText"></span></div>
     </div>
     <div class="match-box">
-      
-      <div class="match-text"><b data-key="matchTitle"></b><span class="muted small" data-key="matchSubtitle"></span></div>
-      <input id="myScore" type="number" min="0" max="9" step="0.5" data-key-ph="matchPh">
-      <input id="myToefl" type="number" min="0" max="120" step="1" placeholder="TOEFL">
-      <input id="mySat" type="number" min="400" max="1600" step="10" data-key-ph="matchSatPh">
-      <span class="match-hint" data-key="matchHint"></span>
+      <div class="match-head">
+        <div class="match-text"><b data-key="matchTitle"></b><span class="muted small" data-key="matchSubtitle"></span></div>
+        <button type="button" class="match-reset" id="matchReset" data-key="matchReset">Сбросить</button>
+      </div>
+      <div class="match-fields">
+        <label class="score-field">
+          <span class="score-top"><span class="score-name">IELTS</span><span class="score-range">0–9</span></span>
+          <input id="myScore" type="number" min="0" max="9" step="0.5" inputmode="decimal" placeholder="0–9" aria-label="IELTS">
+        </label>
+        <label class="score-field">
+          <span class="score-top"><span class="score-name">TOEFL</span><span class="score-range">0–120</span></span>
+          <input id="myToefl" type="number" min="0" max="120" step="1" inputmode="numeric" placeholder="0–120" aria-label="TOEFL">
+        </label>
+        <label class="score-field">
+          <span class="score-top"><span class="score-name">SAT</span><span class="score-range">400–1600</span></span>
+          <input id="mySat" type="number" min="400" max="1600" step="10" inputmode="numeric" placeholder="400–1600" aria-label="SAT">
+        </label>
+      </div>
+      <p class="match-hint" data-key="matchHint"></p>
     </div>
     <p class="muted small" data-key="moneyNote"></p>
     <div class="filters">
@@ -369,20 +557,24 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
     <div class="grid" id="courseGrid"></div>
   </section>
 
-  <section id="costs" class="section">
-    <h2 data-key="costsTitle"></h2>
-    <p class="muted small" data-key="costsNote"></p>
-    <div class="grid" id="costGrid"></div>
-    <div class="calc">
-      <b data-key="calcTitle"></b>
-      <div class="calc-row">
-        <label><span data-key="calcIelts"></span><input id="calcI" type="number" min="0" max="10" value="1"></label>
-        <label><span data-key="calcSat"></span><input id="calcS" type="number" min="0" max="10" value="1"></label>
-        <label><span data-key="calcRate"></span><input id="calcR" type="number" min="0" step="0.1" placeholder="—"></label>
-      </div>
-      <div id="calcOut" class="calc-out"></div>
+  <section id="costs" class="section rail">
+    <div class="rail-main">
+      <h2 data-key="costsTitle"></h2>
+      <p class="muted small" data-key="costsNote"></p>
+      <div class="grid" id="costGrid"></div>
     </div>
-    </section>
+    <aside class="rail-side reveal">
+      <div class="calc">
+        <b data-key="calcTitle"></b>
+        <div class="calc-row">
+          <label><span data-key="calcIelts"></span><input id="calcI" type="number" min="0" max="10" value="1"></label>
+          <label><span data-key="calcSat"></span><input id="calcS" type="number" min="0" max="10" value="1"></label>
+          <label><span data-key="calcRate"></span><input id="calcR" type="number" min="0" step="0.1" placeholder="—"></label>
+        </div>
+        <div id="calcOut" class="calc-out"></div>
+      </div>
+    </aside>
+  </section>
 
   <section id="articles" class="section">
     <h2 data-key="articlesTitle"></h2>
@@ -391,18 +583,26 @@ body[data-page]:not([data-page="home"]) .hero,body[data-page]:not([data-page="ho
     <div id="articleList"></div>
   </section>
 
-  <section id="letters" class="section">
-    <h2 data-key="lettersTitle"></h2>
-    <p class="muted small" data-key="lettersNote"></p>
-    <div id="lettersWrap" class="tbl" hidden></div>
-    <p id="lettersEmpty" class="muted small"></p>
+  <section id="letters" class="section rail cards-rail">
+    <div class="rail-main">
+      <h2 data-key="lettersTitle"></h2>
+      <p class="muted small" data-key="lettersNote"></p>
+      <div id="lettersBody" class="article-body"></div>
+      <div id="lettersWrap" class="tbl" hidden></div>
+      <p id="lettersEmpty" class="muted small" hidden></p>
+      <p id="lettersSources" class="muted small rail-links"></p>
+    </div>
+    <aside class="rail-cards" id="lettersCards"></aside>
   </section>
 
-  <section id="commonapp" class="section">
-    <h2 data-key="commonappTitle"></h2>
-    <p class="muted small" data-key="commonappNote"></p>
-    <div id="commonappBody" class="article-body"></div>
-    <p id="commonappSources" class="muted small"></p>
+  <section id="commonapp" class="section rail cards-rail">
+    <div class="rail-main">
+      <h2 data-key="commonappTitle"></h2>
+      <p class="muted small" data-key="commonappNote"></p>
+      <div id="commonappBody" class="article-body"></div>
+      <p id="commonappSources" class="muted small rail-links"></p>
+    </div>
+    <aside class="rail-cards" id="commonappCards"></aside>
   </section>
 </main>
 
@@ -514,11 +714,20 @@ const MONEY={
 };
 
 const COURSES=[
- {n:"British Council Kazakhstan",city:"Алматы, Астана, Атырау и др.",official:true,tags:["IELTS","Официальный партнёр IELTS"],d:"Официальный экзаменационный партнёр IELTS в Казахстане; тестовые центры в нескольких городах и подготовительные материалы.",u:"https://kazakhstan.britishcouncil.org/exam/ielts"},
- {n:"IDP IELTS Kazakhstan",city:"Алматы",official:true,tags:["IELTS","Официальный партнёр IELTS"],d:"Второй официальный оператор экзамена IELTS в Казахстане (совладелец теста наравне с British Council); собственный тестовый центр в Алматы.",u:"https://ielts.org/test-centres/idp-ielts-kazakhstan-almaty-test-room"},
+ {n:"British Council Kazakhstan",city:"Алматы, Астана, Атырау и др.",official:true,tags:["Официальный партнёр IELTS"],d:"Официальный экзаменационный партнёр IELTS в Казахстане; тестовые центры в нескольких городах и подготовительные материалы.",u:"https://kazakhstan.britishcouncil.org/exam/ielts"},
+ {n:"IDP IELTS Kazakhstan",city:"Алматы",official:true,tags:["Официальный партнёр IELTS"],d:"Второй официальный оператор экзамена IELTS в Казахстане (совладелец теста наравне с British Council); собственный тестовый центр в Алматы.",u:"https://ielts.org/test-centres/idp-ielts-kazakhstan-almaty-test-room"},
  {n:"Manhattan Review",city:"Алматы, Астана",official:false,tags:["IELTS","SAT","ACT"],d:"Международная сеть подготовки к стандартизированным экзаменам с офисами в Алматы и Астане; групповые курсы и индивидуальные занятия по IELTS, SAT, ACT.",u:"https://www.manhattanreview.com/almaty/"},
- {n:"GSC Study",city:"Астана",official:true,tags:["IELTS","Официальный партнёр IELTS"],d:"Официальный региональный партнёр British Council по регистрации и подготовке к IELTS в Астане.",u:"https://gscstudy.kz/"},
- {n:"Crimson Education",city:"Алматы (+ офисы в 20+ странах)",official:false,tags:["Поступление в топ-вузы","Менторство","SAT/эссе"],d:"Международная консалтинговая компания по поступлению в элитные университеты (включая Лигу плюща); есть офис в Алматы, сопровождение от выбора вузов до эссе и подготовки к экзаменам.",u:"https://www.crimsoneducation.org/"}
+ {n:"GSC Study",city:"Астана",official:true,tags:["Официальный партнёр IELTS"],d:"Официальный региональный партнёр British Council по регистрации и подготовке к IELTS в Астане.",u:"https://gscstudy.kz/"},
+ {n:"Crimson Education",city:"Алматы (+ офисы в 20+ странах)",official:false,tags:["Поступление в топ-вузы","Менторство","SAT/эссе"],d:"Международная консалтинговая компания по поступлению в элитные университеты (включая Лигу плюща); есть офис в Алматы, сопровождение от выбора вузов до эссе и подготовки к экзаменам.",u:"https://www.crimsoneducation.org/"},
+ {n:"EducationUSA Kazakhstan",city:"Казахстан",official:true,tags:["Поступление в США","Эссе"],d:"Официальный консультационный центр Госдепартамента США по высшему образованию: информация об американских вузах, поступлении, тестах и эссе.",u:"https://educationusakazakhstan.kz/"},
+ {n:"Ivy League Education",city:"",official:false,tags:["SAT"],d:"Подготовка к международному тесту SAT вместе с Ivy League Education.",u:"https://ivyleague.kz/sat_main"},
+ {n:"IvyCourse",city:"Алматы",official:false,tags:["IELTS","SAT"],d:"Подготовка к IELTS и SAT, в том числе курс IELTS в Алматы.",u:"https://ivycourse.kz/ielts/gotovim-k-ielts-almaty"},
+ {n:"School Bolashak",city:"Алматы, Астана",official:false,tags:["SAT"],d:"Подготовка к SAT в Алматы и Астане.",u:"https://schoolbolashak.kz/programmyi/dlya-vzroslyix/podgotovka-k-sat-set/"},
+ {n:"Studyroom",city:"Алматы",official:false,tags:["SAT"],d:"Курсы подготовки к SAT в Алматы: знания, методики и материалы для экзамена.",u:"https://studyroom.kz/services/podgotovka-k-sat/"},
+ {n:"InterPress",city:"Алматы",official:false,tags:["IELTS"],d:"Школа InterPress: курсы подготовки к IELTS в Алматы.",u:"https://www.interpress.kz/language_centre/english_language/ielts_preparation/"},
+ {n:"MIA Education",city:"Алматы",official:false,tags:["IELTS"],d:"Курсы к IELTS Academic и General Training в Алматы, включая пробные тесты Speaking, Reading, Writing и Listening.",u:"https://miaeducation.kz/podgotovka-k-ielts"},
+ {n:"MentorMe",city:"",official:false,tags:["Поступление в топ-вузы","Менторство","Эссе"],d:"Индивидуальное сопровождение при поступлении в Лигу плюща и топ-100 вузов мира: подготовка, стипендии и эссе.",u:"https://mentorme.kz/"},
+ {n:"SelfStart Global",city:"",official:false,tags:["Менторство","Поступление за рубеж"],d:"Менторство и помощь с поступлением в университеты США, Европы и мира.",u:"https://selfstartglobal.com/services/mentorship/"}
 ];
 
 const UNIS=[
@@ -681,8 +890,8 @@ const T={
   trustText:"Баллы и требования собраны вручную с официальных страниц приёма и могут отличаться по программе. Перед подачей всегда сверяйтесь с сайтом вуза — ссылка есть на каждой карточке.",
   favOnly:"Только избранное",
   matchTitle:"Проверь себя по всем вузам разом",
-  matchSubtitle:"Введи свой балл IELTS и/или SAT — карточки покажут, куда ты уже проходишь",
-  matchPh:"IELTS",matchSatPh:"SAT",
+  matchSubtitle:"Введи свой балл IELTS, TOEFL и/или SAT — карточки покажут, куда ты уже проходишь",
+  matchPh:"IELTS",matchSatPh:"SAT",matchReset:"Сбросить",
   matchHint:"SAT — ориентировочный конкурентный балл, а не жёсткий проходной минимум: многие вузы США рассматривают заявки комплексно.",
   mYes:"Обычно хватает",mClose:"Близко, реально дотянуть",mNo:"Нужно подтянуть балл",mUnknown:"Нет данных по этому критерию — см. теги",
   coursesTitle:"Курсы подготовки в Казахстане",
@@ -724,8 +933,8 @@ const T={
   trustText:"Баллдар мен талаптар ресми қабылдау беттерінен қолмен жиналған және бағдарлама бойынша өзгеше болуы мүмкін. Құжат тапсырар алдында әрқашан университет сайтын тексеріңіз — сілтеме әр карточкада бар.",
   favOnly:"Тек таңдаулылар",
   matchTitle:"Барлық университет бойынша өзіңді тексер",
-  matchSubtitle:"IELTS және/немесе SAT балыңды енгіз — карточкалар қайда өтетініңді көрсетеді",
-  matchPh:"IELTS",matchSatPh:"SAT",
+  matchSubtitle:"IELTS, TOEFL және/немесе SAT балыңды енгіз — карточкалар қайда өтетініңді көрсетеді",
+  matchPh:"IELTS",matchSatPh:"SAT",matchReset:"Тазарту",
   matchHint:"SAT — бағдарлық бәсекелестік балл, қатаң өту шегі емес: АҚШ университеттерінің көбі өтінімді кешенді қарайды.",
   mYes:"Әдетте жеткілікті",mClose:"Жақын, жетуге болады",mNo:"Балды көтеру керек",mUnknown:"Бұл критерий бойынша деректер жоқ — тегтерді қара",
   coursesTitle:"Қазақстандағы дайындық курстары",
@@ -767,8 +976,8 @@ const T={
   trustText:"Scores and requirements are collected by hand from official admissions pages and can vary by programme. Always double-check with the university before applying — the link is on every card.",
   favOnly:"Favourites only",
   matchTitle:"Check yourself against every university at once",
-  matchSubtitle:"Enter your IELTS and/or SAT score — cards show where you already qualify",
-  matchPh:"IELTS",matchSatPh:"SAT",
+  matchSubtitle:"Enter your IELTS, TOEFL and/or SAT score — cards show where you already qualify",
+  matchPh:"IELTS",matchSatPh:"SAT",matchReset:"Reset",
   matchHint:"SAT is an indicative competitive score, not a hard cutoff — most US schools review applications holistically.",
   mYes:"Usually enough",mClose:"Close, doable",mNo:"Need a higher score",mUnknown:"No data for this metric — see tags",
   coursesTitle:"Prep courses in Kazakhstan",
@@ -804,15 +1013,15 @@ const T={
 Object.assign(T.ru,{fFacts:"Ключевые факты",fAcc:"Приём",fCost:"Стоимость в год",fStudents:"Студенты",fFounded:"Основан",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Помощь",aidShortBf:"Need-blind",aidShortAware:"Need-aware",matchTitle:"Подбор по баллам",matchSubtitle:"Введите IELTS, TOEFL и/или SAT",heroSubtitle:"Требования университетов, экзамены и план подачи.",trustTitle:"Справочная информация.",navHome:"Главная",mySource:"Источник: myedline",accShort:"Приём",modalAreas:"Специальности",ctaA:"Подобрать университет",ctaB:"Читать гайды",navChat:"Помощник",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"Ранги QS (топ-200), опубликованы 18 июня 2026. Карточки с требованиями открываются в разделе «Университеты».",qsScore:"Балл QS",qsOpen:"Открыть карточку →"});
 Object.assign(T.kk,{fFacts:"Негізгі фактілер",fAcc:"Қабылдау",fCost:"Жылына құны",fStudents:"Студенттер",fFounded:"Құрылған",fRank:"Рейтинг",fDeadline:"Дедлайн",fAid:"Көмек",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Басты бет",mySource:"Дереккөз: myedline",accShort:"Қабылдау",modalAreas:"Мамандықтар",ctaA:"Университет таңдау",ctaB:"Гайдтарды оқу",navChat:"Көмекші",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — топ-200",qsNote:"QS рейтингі, 2026 жылғы 18 маусымда жарияланды. Талаптары бар карточкалар «Университеттер» бөлімінде ашылады.",qsScore:"QS балы",qsOpen:"Карточканы ашу →"});
 Object.assign(T.en,{fFacts:"Key facts",fAcc:"Acceptance",fCost:"Cost per year",fStudents:"Students",fFounded:"Founded",fRank:"Ranking",fDeadline:"Deadline",fAid:"Aid",aidShortBf:"Need-blind",aidShortAware:"Need-aware",navHome:"Home",mySource:"Source: myedline",accShort:"Acceptance",modalAreas:"Majors",ctaA:"Find a university",ctaB:"Read the guides",navChat:"Assistant",navQs:"QS 2027",qsTitle:"QS World University Rankings 2027 — top 200",qsNote:"QS ranks published on 18 June 2026. Cards with requirements open in the Universities tab.",qsScore:"QS score",qsOpen:"Open card →"});
-Object.assign(T.ru,{navLetters:"Письма и рекомендации",lettersTitle:"Мотивационные письма и рекомендации",lettersNote:"Примеры мотивационных эссе и писем: объём, рекомендации и источник. Данные добавляются постепенно.",lettersEmpty:"Пока нет данных. Таблица заполняется.",lettersType:"Эссе или письмо",lettersWords:"Слов",lettersRecs:"Рекомендации и от кого",lettersSource:"Источник",lettersEssay:"Эссе",lettersLetter:"Письмо",lettersOpen:"Открыть →",lettersError:"Не удалось загрузить таблицу. Обновите страницу."});
-Object.assign(T.kk,{navLetters:"Мотивациялық хаттар мен ұсыныстар",lettersTitle:"Мотивациялық хаттар мен ұсыныстар",lettersNote:"Мотивациялық эссе мен хаттардың мысалдары: көлемі, ұсыныстар және дереккөз. Деректер біртіндеп қосылады.",lettersEmpty:"Әзірге деректер жоқ. Кесте толығып жатыр.",lettersType:"Эссе немесе хат",lettersWords:"Сөз саны",lettersRecs:"Ұсыныстар және кімнен",lettersSource:"Дереккөз",lettersEssay:"Эссе",lettersLetter:"Хат",lettersOpen:"Ашу →",lettersError:"Кестені жүктеу мүмкін болмады. Бетті жаңартыңыз."});
-Object.assign(T.en,{navLetters:"Letters & recommendations",lettersTitle:"Motivation letters & recommendations",lettersNote:"Examples of motivation essays and letters: length, recommendations and source. The data is added gradually.",lettersEmpty:"No data yet. The table is being filled in.",lettersType:"Essay or letter",lettersWords:"Words",lettersRecs:"Recommendations & writers",lettersSource:"Source",lettersEssay:"Essay",lettersLetter:"Letter",lettersOpen:"Open →",lettersError:"Could not load the table. Please reload the page."});
+Object.assign(T.ru,{navLetters:"Письма и рекомендации",lettersTitle:"Мотивационные письма и рекомендации",lettersNote:"Что такое мотивационное письмо и рекомендация, как их писать, что такое GPA и с какого класса его смотрят, кого просить о рекомендации по каждому направлению.",lettersEmpty:"Пока нет данных. Таблица заполняется.",lettersType:"Эссе или письмо",lettersWords:"Объём",lettersRecs:"Рекомендации и от кого",lettersSource:"Источник",lettersEssay:"Эссе",lettersLetter:"Письмо",lettersOpen:"Открыть →",lettersError:"Не удалось загрузить таблицу. Обновите страницу.",lettersSources:"Официальные источники:"});
+Object.assign(T.kk,{navLetters:"Мотивациялық хаттар мен ұсыныстар",lettersTitle:"Мотивациялық хаттар мен ұсыныстар",lettersNote:"Мотивациялық хат пен ұсыныс деген не, оларды қалай жазу керек, GPA деген не және қай сыныптан қаралады, әр бағыт бойынша кімнен ұсыныс сұрау керек.",lettersEmpty:"Әзірге деректер жоқ. Кесте толығып жатыр.",lettersType:"Эссе немесе хат",lettersWords:"Көлемі",lettersRecs:"Ұсыныстар және кімнен",lettersSource:"Дереккөз",lettersEssay:"Эссе",lettersLetter:"Хат",lettersOpen:"Ашу →",lettersError:"Кестені жүктеу мүмкін болмады. Бетті жаңартыңыз.",lettersSources:"Ресми дереккөздер:"});
+Object.assign(T.en,{navLetters:"Letters & recommendations",lettersTitle:"Motivation letters & recommendations",lettersNote:"What a motivation letter and a recommendation are, how to write them, what GPA is and from which grade it counts, whom to ask for a reference in each field.",lettersEmpty:"No data yet. The table is being filled in.",lettersType:"Essay or letter",lettersWords:"Length",lettersRecs:"Recommendations & writers",lettersSource:"Source",lettersEssay:"Essay",lettersLetter:"Letter",lettersOpen:"Open →",lettersError:"Could not load the table. Please reload the page.",lettersSources:"Official sources:"});
 Object.assign(T.ru,{navCommonapp:"Common App",commonappTitle:"Common App: заявка, портфолио и fee waiver",commonappNote:"Как устроена общая заявка, как собрать профиль и творческое портфолио, как просить освобождение от взноса. Правила меняются — проверяйте сайт вуза.",commonappSources:"Официальные источники:"});
 Object.assign(T.kk,{navCommonapp:"Common App",commonappTitle:"Common App: өтінім, портфолио және fee waiver",commonappNote:"Жалпы өтінім қалай құрылған, профиль мен шығармашылық портфолионы қалай жинау керек, төлемнен босатуды қалай сұрау керек. Ережелер өзгереді — вуз сайтын тексеріңіз.",commonappSources:"Ресми дереккөздер:"});
 Object.assign(T.en,{navCommonapp:"Common App",commonappTitle:"Common App: application, portfolio and fee waiver",commonappNote:"How the shared application works, how to build your application profile and creative portfolio, and how to request a fee waiver. Rules change — check the college website.",commonappSources:"Official sources:"});
-Object.assign(T.ru,{homePlat:"Платформа",feat1T:"Университеты",feat1D:"Требования, стоимость и помощь по каждому вузу.",feat2T:"План поступления",feat2D:"Шаги от выбора страны до визы.",feat3T:"Экзамены",feat3D:"IELTS, TOEFL, SAT: что сдавать и сколько стоит.",feat4T:"Гайды",feat4D:"Статьи о поступлении, деньгах и стипендиях.",homeUniTitle:"Университеты",btnAllUnis:"Все университеты",homeGuidesTitle:"Гайды",ctaTitle:"Начать поиск",ctaBtn:"Смотреть университеты",footAbout:"Помогаем школьникам из Казахстана и СНГ разобраться в поступлении на бакалавриат за рубежом.",footPlat:"Платформа",footRes:"Ресурсы",footUnis:"Университеты",footSteps:"Пошагово",footExams:"Экзамены",footGuides:"Гайды",footTips:"Советы",footResLink:"Полезные ресурсы",footCourses:"Курсы",footCosts:"Стоимость",heroLi1:"Требования IELTS и SAT по каждому вузу",heroLi2:"Стоимость, доля иностранцев и финансовая помощь",heroLi3:"Фильтр по стране и специальности",statLine:"{u} вузов · {c} стран",majorAll:"Все специальности",allMajors:"Все направления",more:"Подробнее →",modalMajors:"Направления",modalReqs:"Требования",modalMoney:"Стоимость и помощь",pilotNote:"Лётная подготовка для иностранных студентов в США требует проверки TSA (Alien Flight Student Program) и медицинского сертификата FAA. Условия уточняйте в приёмной комиссии.",theme:"Тема",closeAria:"Закрыть",langAria:"Язык",pageTitle:"ivypath.io — поступление за рубеж"});
-Object.assign(T.kk,{homePlat:"Платформа",feat1T:"Университеттер",feat1D:"Әр университеттің талаптары, құны және көмегі.",feat2T:"Түсу жоспары",feat2D:"Ел таңдаудан визаға дейінгі қадамдар.",feat3T:"Емтихандар",feat3D:"IELTS, TOEFL, SAT: не тапсыру керек және қанша тұрады.",feat4T:"Гайдтар",feat4D:"Түсу, ақша және стипендиялар туралы мақалалар.",homeUniTitle:"Университеттер",btnAllUnis:"Барлық университеттер",homeGuidesTitle:"Гайдтар",ctaTitle:"Іздеуді бастау",ctaBtn:"Университеттерді қарау",footAbout:"Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсуді түсінуге көмектесеміз.",footPlat:"Платформа",footRes:"Ресурстар",footUnis:"Университеттер",footSteps:"Қадамдар",footExams:"Емтихандар",footGuides:"Гайдтар",footTips:"Кеңестер",footResLink:"Пайдалы ресурстар",footCourses:"Курстар",footCosts:"Құны",heroLi1:"Әр университеттің IELTS және SAT талаптары",heroLi2:"Құны, шетелдіктер үлесі және қаржылық көмек",heroLi3:"Ел және мамандық бойынша сүзгі",statLine:"{u} университет · {c} ел",majorAll:"Барлық мамандықтар",allMajors:"Барлық бағыттар",more:"Толығырақ →",modalMajors:"Бағыттар",modalReqs:"Талаптар",modalMoney:"Құны және көмек",pilotNote:"АҚШ-та шетелдік студенттер үшін ұшу дайындығы TSA (Alien Flight Student Program) тексеруін және FAA медициналық сертификатын талап етеді. Шарттарын қабылдау комиссиясынан нақтылаңыз.",theme:"Тақырып",closeAria:"Жабу",langAria:"Тіл",pageTitle:"ivypath.io — шетелге түсу"});
-Object.assign(T.en,{homePlat:"Platform",feat1T:"Universities",feat1D:"Requirements, cost and aid for every university.",feat2T:"Application plan",feat2D:"Steps from choosing a country to the visa.",feat3T:"Exams",feat3D:"IELTS, TOEFL, SAT: what to take and what it costs.",feat4T:"Guides",feat4D:"Articles on applying, money and scholarships.",homeUniTitle:"Universities",btnAllUnis:"All universities",homeGuidesTitle:"Guides",ctaTitle:"Start your search",ctaBtn:"Browse universities",footAbout:"We help school students from Kazakhstan and the CIS make sense of applying for a bachelor's abroad.",footPlat:"Platform",footRes:"Resources",footUnis:"Universities",footSteps:"Step by step",footExams:"Exams",footGuides:"Guides",footTips:"Tips",footResLink:"Useful resources",footCourses:"Courses",footCosts:"Costs",heroLi1:"IELTS and SAT requirements for every university",heroLi2:"Cost, share of international students and financial aid",heroLi3:"Filter by country and major",statLine:"{u} universities · {c} countries",majorAll:"All majors",allMajors:"All fields",more:"Details →",modalMajors:"Fields",modalReqs:"Requirements",modalMoney:"Cost and aid",pilotNote:"Flight training for international students in the US requires TSA clearance (Alien Flight Student Program) and an FAA medical certificate. Confirm the conditions with the admissions office.",theme:"Theme",closeAria:"Close",langAria:"Language",pageTitle:"ivypath.io — study abroad"});
+Object.assign(T.ru,{homePlat:"Платформа",feat1T:"Университеты",feat1D:"Требования, стоимость и помощь по каждому вузу.",feat2T:"План поступления",feat2D:"Шаги от выбора страны до визы.",feat3T:"Экзамены",feat3D:"IELTS, TOEFL, SAT: что сдавать и сколько стоит.",feat4T:"Гайды",feat4D:"Статьи о поступлении, деньгах и стипендиях.",homeUniTitle:"Университеты",btnAllUnis:"Все университеты",homeGuidesTitle:"Гайды",ctaTitle:"Начать поиск",ctaBtn:"Смотреть университеты",footAbout:"Помогаем школьникам из Казахстана и СНГ разобраться в поступлении на бакалавриат за рубежом.",footPlat:"Платформа",footRes:"Ресурсы",footUnis:"Университеты",footSteps:"Пошагово",footExams:"Экзамены",footGuides:"Гайды",footTips:"Советы",footResLink:"Полезные ресурсы",footCourses:"Курсы",footCosts:"Стоимость",heroLi1:"Требования IELTS и SAT по каждому вузу",heroLi2:"Стоимость, доля иностранцев и финансовая помощь",heroLi3:"Фильтр по стране и специальности",statLine:"{u} вузов · {c} стран",majorAll:"Все специальности",myMajorsLabel:"Мои специальности",areasLabel:"Направления",allMajors:"Все направления",more:"Подробнее →",modalMajors:"Направления",modalReqs:"Требования",modalMoney:"Стоимость и помощь",pilotNote:"Лётная подготовка для иностранных студентов в США требует проверки TSA (Alien Flight Student Program) и медицинского сертификата FAA. Условия уточняйте в приёмной комиссии.",theme:"Тема",closeAria:"Закрыть",langAria:"Язык",pageTitle:"ivypath.io — поступление за рубеж"});
+Object.assign(T.kk,{homePlat:"Платформа",feat1T:"Университеттер",feat1D:"Әр университеттің талаптары, құны және көмегі.",feat2T:"Түсу жоспары",feat2D:"Ел таңдаудан визаға дейінгі қадамдар.",feat3T:"Емтихандар",feat3D:"IELTS, TOEFL, SAT: не тапсыру керек және қанша тұрады.",feat4T:"Гайдтар",feat4D:"Түсу, ақша және стипендиялар туралы мақалалар.",homeUniTitle:"Университеттер",btnAllUnis:"Барлық университеттер",homeGuidesTitle:"Гайдтар",ctaTitle:"Іздеуді бастау",ctaBtn:"Университеттерді қарау",footAbout:"Қазақстан мен ТМД оқушыларына шетелде бакалавриатқа түсуді түсінуге көмектесеміз.",footPlat:"Платформа",footRes:"Ресурстар",footUnis:"Университеттер",footSteps:"Қадамдар",footExams:"Емтихандар",footGuides:"Гайдтар",footTips:"Кеңестер",footResLink:"Пайдалы ресурстар",footCourses:"Курстар",footCosts:"Құны",heroLi1:"Әр университеттің IELTS және SAT талаптары",heroLi2:"Құны, шетелдіктер үлесі және қаржылық көмек",heroLi3:"Ел және мамандық бойынша сүзгі",statLine:"{u} университет · {c} ел",majorAll:"Барлық мамандықтар",myMajorsLabel:"Менің мамандықтарым",areasLabel:"Бағыттар",allMajors:"Барлық бағыттар",more:"Толығырақ →",modalMajors:"Бағыттар",modalReqs:"Талаптар",modalMoney:"Құны және көмек",pilotNote:"АҚШ-та шетелдік студенттер үшін ұшу дайындығы TSA (Alien Flight Student Program) тексеруін және FAA медициналық сертификатын талап етеді. Шарттарын қабылдау комиссиясынан нақтылаңыз.",theme:"Тақырып",closeAria:"Жабу",langAria:"Тіл",pageTitle:"ivypath.io — шетелге түсу"});
+Object.assign(T.en,{homePlat:"Platform",feat1T:"Universities",feat1D:"Requirements, cost and aid for every university.",feat2T:"Application plan",feat2D:"Steps from choosing a country to the visa.",feat3T:"Exams",feat3D:"IELTS, TOEFL, SAT: what to take and what it costs.",feat4T:"Guides",feat4D:"Articles on applying, money and scholarships.",homeUniTitle:"Universities",btnAllUnis:"All universities",homeGuidesTitle:"Guides",ctaTitle:"Start your search",ctaBtn:"Browse universities",footAbout:"We help school students from Kazakhstan and the CIS make sense of applying for a bachelor's abroad.",footPlat:"Platform",footRes:"Resources",footUnis:"Universities",footSteps:"Step by step",footExams:"Exams",footGuides:"Guides",footTips:"Tips",footResLink:"Useful resources",footCourses:"Courses",footCosts:"Costs",heroLi1:"IELTS and SAT requirements for every university",heroLi2:"Cost, share of international students and financial aid",heroLi3:"Filter by country and major",statLine:"{u} universities · {c} countries",majorAll:"All majors",myMajorsLabel:"My majors",areasLabel:"Fields of study",allMajors:"All fields",more:"Details →",modalMajors:"Fields",modalReqs:"Requirements",modalMoney:"Cost and aid",pilotNote:"Flight training for international students in the US requires TSA clearance (Alien Flight Student Program) and an FAA medical certificate. Confirm the conditions with the admissions office.",theme:"Theme",closeAria:"Close",langAria:"Language",pageTitle:"ivypath.io — study abroad"});
 const TAGMAP={
 "Entrance exam":["Вступительный экзамен","Кіру емтиханы","Entrance exam"],
 "Essays":["Эссе","Эссе","Essays"],
@@ -845,8 +1054,9 @@ const TAGMAP={
 "Менторство":["Менторство","Менторлық","Mentoring"]
 };
 Object.assign(TAGMAP,{"Need-blind":["Приём без учёта финансов","Қаржыға қарамай қабылдау","Need-blind"],"Need-aware":["Приём с учётом финансов","Қаржыны ескере отырып қабылдау","Need-aware"],"Merit aid only":["Только стипендии за заслуги","Тек еңбегі үшін стипендиялар","Merit aid only"],"Government funding only":["Только госфинансирование","Тек мемлекеттік қаржыландыру","Government funding only"],"No need-based aid":["Нет помощи по нужде","Мұқтаждық бойынша көмек жоқ","No need-based aid"],"Branch campus":["Филиал кампуса","Кампус филиалы","Branch campus"],"English test required":["Английский тест обязателен","Ағылшын тесті міндетті","English test required"],"IELTS no minimum":["IELTS без минимума","IELTS минимумы жоқ","IELTS no minimum"],"TOEFL no minimum":["TOEFL без минимума","TOEFL минимумы жоқ","TOEFL no minimum"],"IELTS recommended":["IELTS рекомендуют","IELTS ұсынылады","IELTS recommended"],"TOEFL recommended":["TOEFL рекомендуют","TOEFL ұсынылады","TOEFL recommended"],"IELTS varies":["IELTS зависит от программы","IELTS бағдарламаға байланысты","IELTS varies by programme"],"TOEFL varies":["TOEFL зависит от программы","TOEFL бағдарламаға байланысты","TOEFL varies by programme"],"French B2":["Французский B2","Француз тілі B2","French B2"],"German C1":["Немецкий C1","Неміс тілі C1","German C1"],"HSK required":["Нужен HSK","HSK қажет","HSK required"],"TOEFL not accepted":["TOEFL не принимают","TOEFL қабылданбайды","TOEFL not accepted"],"English or Korean test":["Английский или корейский тест","Ағылшын немесе корей тілі тесті","English or Korean test"],"Danish required":["Нужен датский","Дат тілі қажет","Danish required"],"IELTS: see note":["IELTS: см. пояснение","IELTS: түсіндірмені қараңыз","IELTS: see note"],"TOEFL: see note":["TOEFL: см. пояснение","TOEFL: түсіндірмені қараңыз","TOEFL: see note"],"SAT: see note":["SAT: см. пояснение","SAT: түсіндірмені қараңыз","SAT: see note"]});
-Object.assign(TAGMAP,{"HSK not required":["HSK не требуется","HSK қажет емес","HSK not required"],"HSK: see note":["HSK: см. пояснение","HSK: түсіндірмені қараңыз","HSK: see note"],"AP credit":["AP — кредит","AP — кредит","AP credit"],"AP required":["Нужен AP","AP қажет","AP required"],"AP not required":["AP не требуется","AP қажет емес","AP not required"],"AP recommended":["AP рекомендуют","AP ұсынылады","AP recommended"],"AP: see note":["AP: см. пояснение","AP: түсіндірмені қараңыз","AP: see note"]});
+Object.assign(TAGMAP,{"HSK not required":["HSK не требуется","HSK қажет емес","HSK not required"],"HSK: see note":["HSK: см. пояснение","HSK: түсіндірмені қараңыз","HSK: see note"],"AP credit":["AP — кредит","AP — кредит","AP credit"],"AP required":["Нужен AP","AP қажет","AP required"],"AP not required":["AP не требуется","AP қажет емес","AP not required"],"AP recommended":["AP рекомендуют","AP ұсынылады","AP recommended"],"AP: see note":["AP: см. пояснение","AP: түсіндірмені қараңыз","AP: see note"],"IB credit":["IB — кредит","IB — кредит","IB credit"],"IB required":["Нужен IB","IB қажет","IB required"],"IB not required":["IB не требуется","IB қажет емес","IB not required"],"IB recommended":["IB рекомендуют","IB ұсынылады","IB recommended"],"IB: see note":["IB: см. пояснение","IB: түсіндірмені қараңыз","IB: see note"]});
 Object.assign(TAGMAP,{"Merit scholarships":["Стипендии вуза","Университет стипендиялары","University scholarships"],"Government + university scholarships":["Госстипендии + вуза","Мемлекеттік + университет стипендиялары","Government + university scholarships"],"Government scholarships only":["Только госстипендии","Тек мемлекеттік стипендиялар","Government scholarships only"],"No scholarships":["Стипендий нет","Стипендия жоқ","No scholarships"],"Aid not published":["Помощь не опубликована","Көмек жарияланбаған","Aid not published"],"Aid: see note":["Финансирование: см. пояснение","Қаржыландыру: түсіндірмені қараңыз","Aid: see note"]});
+Object.assign(TAGMAP,{"Поступление в США":["Поступление в США","АҚШ-қа түсу","U.S. admissions"],"Поступление за рубеж":["Поступление за рубеж","Шетелге түсу","Study abroad"],"Эссе":["Эссе","Эссе","Essays"]});
 function tagLabel(x,l){const m=TAGMAP[x];return m?m[LI[l||lang]]:x;}
 function reqTagRank(t){
   if(/IELTS/i.test(t))return 0;
@@ -855,12 +1065,13 @@ function reqTagRank(t){
   if(/English test|French|Français|German|Deutsch|HSK|Danish|Korean|DET|Duolingo|PTE/i.test(t))return 3;
   if(/Entrance exam|Interview|Portfolio|Audition/i.test(t))return 4;
   if(/^AP\b/.test(t))return 5;
+  if(/^IB\b/.test(t))return 5;
   if(/^(Need-blind|Need-aware|Merit scholarships|Government \+ university scholarships|Government scholarships only|No scholarships|Aid not published|Aid: see note)$/.test(t))return 6;
   return 9;
 }
 const COURSE_T={
-kk:[{city:"Алматы, Астана, Атырау және т.б.",d:"Қазақстандағы IELTS ресми емтихан серіктесі; бірнеше қалада тест орталықтары және дайындық материалдары."},{city:"Алматы",d:"Қазақстандағы IELTS емтиханының екінші ресми операторы (British Council-мен қатар тесттің тең иесі); Алматыда өз тест орталығы бар."},{city:"Алматы, Астана",d:"Алматы мен Астанада кеңселері бар стандартталған емтихандарға дайындықтың халықаралық желісі; IELTS, SAT, ACT бойынша топтық курстар және жеке сабақтар."},{city:"Астана",d:"Астанада IELTS-ке тіркелу және дайындалу бойынша British Council-дың ресми аймақтық серіктесі."},{city:"Алматы (+20-дан астам елде кеңсе)",d:"Элиталық университеттерге (оның ішінде Ivy League) түсу бойынша халықаралық консалтингтік компания; Алматыда кеңсесі бар, университет таңдаудан эссе мен емтихан дайындығына дейін сүйемелдейді."}],
-en:[{city:"Almaty, Astana, Atyrau and more",d:"Official IELTS exam partner in Kazakhstan; test centres in several cities and preparation materials."},{city:"Almaty",d:"The second official IELTS operator in Kazakhstan (co-owner of the test alongside the British Council); its own test centre in Almaty."},{city:"Almaty, Astana",d:"International test-prep network with offices in Almaty and Astana; group courses and one-to-one lessons for IELTS, SAT and ACT."},{city:"Astana",d:"Official British Council regional partner for IELTS registration and preparation in Astana."},{city:"Almaty (+ offices in 20+ countries)",d:"International consulting company for admission to elite universities (including the Ivy League); an Almaty office, support from shortlisting to essays and exam prep."}]
+kk:[{city:"Алматы, Астана, Атырау және т.б.",d:"Қазақстандағы IELTS ресми емтихан серіктесі; бірнеше қалада тест орталықтары және дайындық материалдары."},{city:"Алматы",d:"Қазақстандағы IELTS емтиханының екінші ресми операторы (British Council-мен қатар тесттің тең иесі); Алматыда өз тест орталығы бар."},{city:"Алматы, Астана",d:"Алматы мен Астанада кеңселері бар стандартталған емтихандарға дайындықтың халықаралық желісі; IELTS, SAT, ACT бойынша топтық курстар және жеке сабақтар."},{city:"Астана",d:"Астанада IELTS-ке тіркелу және дайындалу бойынша British Council-дың ресми аймақтық серіктесі."},{city:"Алматы (+20-дан астам елде кеңсе)",d:"Элиталық университеттерге (оның ішінде Ivy League) түсу бойынша халықаралық консалтингтік компания; Алматыда кеңсесі бар, университет таңдаудан эссе мен емтихан дайындығына дейін сүйемелдейді."},{city:"Қазақстан",d:"АҚШ Мемлекеттік департаментінің жоғары білім бойынша ресми кеңес беру орталығы: американдық университеттер, қабылдау, тесттер және эссе туралы ақпарат."},{city:"",d:"Ivy League Education-мен бірге SAT халықаралық тестіне дайындық."},{city:"Алматы",d:"IELTS және SAT-қа дайындық, оның ішінде Алматыдағы IELTS курсы."},{city:"Алматы, Астана",d:"Алматы мен Астанада SAT-қа дайындық."},{city:"Алматы",d:"Алматыда SAT-қа дайындық курстары: емтиханға қажет білім, әдістеме және материалдар."},{city:"Алматы",d:"InterPress мектебі: Алматыда IELTS-ке дайындық курстары."},{city:"Алматы",d:"Алматыда IELTS Academic және General Training курстары, Speaking, Reading, Writing және Listening сынақ тесттерімен."},{city:"",d:"Ivy League және әлемнің топ-100 университеттеріне түсуде жеке сүйемелдеу: дайындық, стипендиялар және эссе."},{city:"",d:"АҚШ, Еуропа және әлем университеттеріне түсуге менторлық және көмек."}],
+en:[{city:"Almaty, Astana, Atyrau and more",d:"Official IELTS exam partner in Kazakhstan; test centres in several cities and preparation materials."},{city:"Almaty",d:"The second official IELTS operator in Kazakhstan (co-owner of the test alongside the British Council); its own test centre in Almaty."},{city:"Almaty, Astana",d:"International test-prep network with offices in Almaty and Astana; group courses and one-to-one lessons for IELTS, SAT and ACT."},{city:"Astana",d:"Official British Council regional partner for IELTS registration and preparation in Astana."},{city:"Almaty (+ offices in 20+ countries)",d:"International consulting company for admission to elite universities (including the Ivy League); an Almaty office, support from shortlisting to essays and exam prep."},{city:"Kazakhstan",d:"The official U.S. Department of State higher-education advising centre: information about U.S. colleges, admissions, tests and essays."},{city:"",d:"SAT preparation with Ivy League Education."},{city:"Almaty",d:"IELTS and SAT preparation, including an IELTS course in Almaty."},{city:"Almaty, Astana",d:"SAT preparation in Almaty and Astana."},{city:"Almaty",d:"SAT prep courses in Almaty: knowledge, methods and resources for the exam."},{city:"Almaty",d:"InterPress school: IELTS preparation courses in Almaty."},{city:"Almaty",d:"IELTS Academic and General Training courses in Almaty, including mock Speaking, Reading, Writing and Listening tests."},{city:"",d:"One-to-one support for applying to the Ivy League and top-100 universities: preparation, scholarships and essays."},{city:"",d:"Mentoring and help with applying to universities in the USA, Europe and worldwide."}]
 };
 const GUIDE_T={
  "kk": [
@@ -1293,7 +1504,7 @@ const GUIDE_T={
  ]
 };
 
-const SECTIONS=["home","universities","qs","guide","exams","articles","letters","commonapp"];
+const SECTIONS=["home","universities","qs","guide","exams","courses","articles","letters","commonapp"];
 const ICONS={home:"",universities:"",guide:"",exams:"",tips:"",resources:"",courses:"",costs:"",articles:""};
 const LI={ru:0,kk:1,en:2};
 let lang="ru";try{lang=localStorage.getItem("an_lang")||"ru";}catch(e){}
@@ -1321,11 +1532,14 @@ function show(id){
   document.querySelectorAll(".section").forEach(s=>s.classList.toggle("active",s.id===id));
   document.querySelectorAll("#nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.target===id));
   window.scrollTo({top:0,behavior:"smooth"});
+  slideCards();
 }
 
 function buildFilters(){
   const t=T[lang],i=LI[lang];
-  $("#majorFilter").innerHTML=`<option value="all">${esc(t.majorAll)}</option>`+Object.keys(MAJ).map(k=>`<option value="${k}">${esc(MAJ[k][i])}</option>`).join("");
+  $("#majorFilter").innerHTML=`<option value="all">${esc(t.majorAll)}</option>`
+    +`<optgroup label="${esc(t.myMajorsLabel)}">`+Object.keys(MAJ).map(k=>`<option value="${k}">${esc(MAJ[k][i])}</option>`).join("")+`</optgroup>`
+    +`<optgroup label="${esc(t.areasLabel)}">`+FILTER_AREAS.filter(k=>!MAJ[k]).map(k=>`<option value="${k}">${esc(AREAS[k][i])}</option>`).join("")+`</optgroup>`;
   $("#countryFilter").innerHTML=`<option value="all">${esc(t.countryAll)}</option>`+
     Object.keys(COUNTRIES).map(k=>`<option value="${k}">${esc(COUNTRIES[k][i])}</option>`).join("");
 }
@@ -1386,10 +1600,34 @@ function parseCsv(text){
 let LETTERS=null,LETTERS_ERROR=false;
 function letterValue(row,i){return i>=0&&row[i]!=null?String(row[i]).trim():"";}
 function letterType(value,t){
-  const s=String(value||"").trim().toLowerCase();
+  const raw=String(value||"").trim();
+  const m=/^(essay|letter)\s*[|·—:]\s*(.+)$/i.exec(raw);
+  if(m)return (m[1].toLowerCase()==="essay"?t.lettersEssay:t.lettersLetter)+" · "+m[2];
+  const s=raw.toLowerCase();
   if(["essay","эссе","motivation essay"].includes(s))return t.lettersEssay;
   if(["letter","письмо","хат","recommendation","recommendation letter","rec letter","reference","ұсыныс"].includes(s))return t.lettersLetter;
   return value||"—";
+}
+const LETTER_TERMS={
+  ca250_650:{ru:"250–650 слов",kk:"250–650 сөз",en:"250–650 words"},
+  ucas4000:{ru:"4 000 знаков на 3 вопроса",kk:"3 сұраққа 4 000 таңба",en:"4,000 characters across 3 questions"},
+  uni_limit:{ru:"лимит указывает вуз",kk:"шектеуді ЖОО белгілейді",en:"limit set by the university"},
+  prog_limit:{ru:"лимит указывает программа",kk:"шектеуді бағдарлама белгілейді",en:"limit set by the programme"},
+  school_limit:{ru:"лимит указывает школа",kk:"шектеуді мектеп белгілейді",en:"limit set by the school"},
+  none:{ru:"не нужны",kk:"қажет емес",en:"not required"},
+  usually_none:{ru:"обычно не нужны",kk:"әдетте қажет емес",en:"usually not required"},
+  teachers12:{ru:"1–2 учителя",kk:"1–2 мұғалім",en:"1–2 teachers"},
+  counsellor1:{ru:"1 counsellor",kk:"1 counsellor",en:"1 counsellor"},
+  must1:{ru:"1 рекомендация",kk:"1 ұсыныс",en:"1 reference"},
+  self:{ru:"вы пишете сами",kk:"сіз өзіңіз жазасыз",en:"you write it yourself"},
+  subject_teachers:{ru:"учителя профильных предметов",kk:"бейіндік пән мұғалімдері",en:"subject teachers"},
+  school_counsellor:{ru:"школьный counsellor",kk:"мектеп counsellor-ы",en:"school counsellor"},
+  school_adviser:{ru:"школа или adviser",kk:"мектеп немесе adviser",en:"school or adviser"}
+};
+function letterTerm(value){
+  const key=String(value||"").trim().toLowerCase();
+  const term=LETTER_TERMS[key];
+  return term?(term[lang]||term.ru):String(value||"").trim();
 }
 function sourceCell(value,t){
   const s=String(value||"").trim();
@@ -1403,11 +1641,11 @@ function renderLetters(){
   const t=T[lang],box=$("#lettersWrap"),empty=$("#lettersEmpty");
   if(!box||!empty)return;
   if(LETTERS_ERROR){box.hidden=true;box.innerHTML="";empty.hidden=false;empty.textContent=t.lettersError;return;}
-  if(!LETTERS||!LETTERS.length){box.hidden=true;box.innerHTML="";empty.hidden=false;empty.textContent=t.lettersEmpty;return;}
+  if(!LETTERS||!LETTERS.length){box.hidden=true;box.innerHTML="";empty.hidden=true;empty.textContent="";return;}
   box.hidden=false;empty.hidden=true;
   box.innerHTML="<table><thead><tr>"+[t.lettersType,t.lettersWords,t.lettersRecs,t.lettersSource].map(h=>`<th>${esc(h)}</th>`).join("")+"</tr></thead><tbody>"+LETTERS.map(r=>{
-    const rec=[r.recommendations,r.recommenders].filter(Boolean).join(" — ");
-    return `<tr><td>${esc(letterType(r.type,t))}</td><td>${esc(r.words||"—")}</td><td>${esc(rec||"—")}</td><td>${sourceCell(r.source,t)}</td></tr>`;
+    const rec=[letterTerm(r.recommendations),letterTerm(r.recommenders)].filter(Boolean).join(" — ");
+    return `<tr><td>${esc(letterType(r.type,t))}</td><td>${esc(letterTerm(r.words)||"—")}</td><td>${esc(rec||"—")}</td><td>${sourceCell(r.source,t)}</td></tr>`;
   }).join("")+"</tbody></table>";
 }
 async function loadLetters(){
@@ -1459,7 +1697,9 @@ function addCsvReqTags(u){
     else if(/корейск/.test(note))add("English or Korean test");
     else if(/обязателен|тест нужен/.test(note))add("English test required");
     else if(/не требуется|optional|не обязателен/.test(note))add("English test optional");
-    else if(/нет минимума/.test(note))add("IELTS no minimum");
+    else if(/нет минимума|минимума нет|минимум не/.test(note))add("IELTS no minimum");
+    else if(/не указан|не упомянут/.test(note))add("IELTS not listed");
+    else if(/принимается|принимают/.test(note))add("IELTS accepted");
     else if(/зависит|варьируется|concordance|пересч/.test(note))add("IELTS varies");
     else if(/рекоменд|ориентир|совету/.test(note))add("IELTS recommended");
     else if(note)add("IELTS: see note");
@@ -1477,7 +1717,9 @@ function addCsvReqTags(u){
     else if(fresh)add("TOEFL "+fresh[1]+" (new)");
     else if(/обязателен|тест нужен/.test(note))add("English test required");
     else if(/не требуется|optional|не обязателен/.test(note))add("English test optional");
-    else if(/нет минимума/.test(note))add("TOEFL no minimum");
+    else if(/нет минимума|минимума нет|минимум не/.test(note))add("TOEFL no minimum");
+    else if(/не указан|не упомянут/.test(note))add("TOEFL not listed");
+    else if(/принимается|принимают/.test(note))add("TOEFL accepted");
     else if(/зависит|варьируется|concordance|пересч/.test(note))add("TOEFL varies");
     else if(/рекоменд|ориентир|совету|обычно/.test(note))add("TOEFL recommended");
     else if(note)add("TOEFL: see note");
@@ -1489,8 +1731,8 @@ function addCsvReqTags(u){
     if(v&&c.sat_checked)add("SAT "+scoreText(v,false));
     else if(ebrw)add("SAT EBRW "+ebrw[1]);
     else if(target)add("SAT ~"+target[1]+" (optional)");
-    else if(/национальной системе|не рассматриваются|test-free|не учитывают/.test(note))add("SAT not used");
-    else if(/не обязателен|не требуется|optional|можно не/.test(note))add("SAT optional");
+    else if(/национальной системе|не рассматрива|test[- ]blind|test-free|не учитыва/.test(note))add("SAT not used");
+    else if(/не обязательн|не требуется|optional|можно не/.test(note))add("SAT optional");
     else if(/нужен|нужна|обязателен|ожидается/.test(note))add("SAT/ACT required");
     else if(/рекоменд/.test(note))add("SAT recommended");
     else if(note)add("SAT: see note");
@@ -1510,6 +1752,15 @@ function addCsvReqTags(u){
     else if(/обязателен|нужен|требуется|требует/.test(note))add("AP required");
     else if(/рекоменд/.test(note))add("AP recommended");
     else if(note)add("AP: see note");
+  }
+  if(!hasReqTag(u,/^IB\b/)){
+    const v=c.ib,note=(c.ib_note||"").toLowerCase();
+    if(v&&c.ib_checked)add("IB "+scoreText(v,false));
+    else if(/не применя|не используется|не требуется|не нужен|не учитыва|not used|not required/.test(note))add("IB not required");
+    else if(/кредит|credit|advanced standing/.test(note))add("IB credit");
+    else if(/обязателен|нужен|требуется|требует/.test(note))add("IB required");
+    else if(/рекоменд/.test(note))add("IB recommended");
+    else if(note)add("IB: see note");
   }
   if(c.aid_checked){
     for(const old of ["Need-blind","Need-aware","Merit aid only","Government funding only","No need-based aid"]){
@@ -1537,8 +1788,15 @@ function applyUniRows(rows){
   let changed=0;
   rows.forEach(r=>{
     const name=(r[ix.name]||"").trim();
-    const u=UNIS.find(x=>x.n===name);
-    if(!u)return;
+    let u=UNIS.find(x=>x.n===name);
+    if(!u){
+      const cc=(r[ix.country]||"").trim();
+      const url=["admissions_url","ielts_source","toefl_source","sat_source","deadline_source","cost_source","hsk_source","ap_source","aid_source"]
+        .map(k=>ix[k]!=null?(r[ix[k]]||"").trim():"")
+        .find(Boolean)||"";
+      u={n:name,c:COUNTRIES[cc]?cc:"usa",ielts:null,toefl:null,tags:[],u:url};
+      UNIS.push(u);
+    }
     u.csv={};
     head.forEach((h,i)=>u.csv[h]=(r[i]||"").trim());
     if(u.csv.ielts_checked&&u.csv.ielts){const n=csvNum(u.csv.ielts);if(n!=null){u.ielts=n;changed++;}}
@@ -1574,8 +1832,10 @@ function render(){
   UNIS.forEach(u=>{if(u.tags&&u.tags.length>1)u.tags.sort((a,b)=>reqTagRank(a)-reqTagRank(b));});
   const c=$("#countryFilter").value||"all", q=($("#q").value||"").trim().toLowerCase();
   const myI=parseFloat($("#myScore").value), myS=parseFloat($("#mySat").value), myT=parseFloat($("#myToefl").value);
+  const mv=$("#majorFilter").value||"all";
+  const majorOk=u=>mv==="all"||(MAJ[mv]?majorsOf(u).includes(mv):(u.a||EXTRA_AREAS[u.n]||[]).includes(mv));
   let list=UNIS.filter(u=>
-    (c==="all"||u.c===c) && (($("#majorFilter").value||"all")==="all"||majorsOf(u).includes($("#majorFilter").value)) &&
+    (c==="all"||u.c===c) && majorOk(u) &&
     (!q||qHay(u,q,i)) &&
     (!favOnly||favs.has(u.n)) &&
     (!aidOnly||(MONEY[u.n]&&MONEY[u.n].aid==="bf")));
@@ -1603,26 +1863,49 @@ function render(){
     saveFavs(); render();
   }));
 }
-const AREAS={"architecture":["Архитектура","Сәулет","Architecture"],"biological_life_sciences":["Биология и науки о жизни","Биология және өмір туралы ғылымдар","Biology & life sciences"],"business_marketing":["Бизнес и маркетинг","Бизнес және маркетинг","Business & marketing"],"computer_info_science":["Информатика и компьютерные науки","Информатика және компьютерлік ғылымдар","Computer & information sciences"],"engineering":["Инженерия","Инженерия","Engineering"],"engineering_technologies":["Инженерные технологии","Инженерлік технологиялар","Engineering technologies"],"english":["Английский язык","Ағылшын тілі","English"],"health_professions_related_programs":["Медицинские специальности","Медициналық мамандықтар","Health professions"],"history":["История","Тарих","History"],"law_legal_studies":["Право и юриспруденция","Құқық және заңтану","Law & legal studies"],"mathematics_statistics":["Математика и статистика","Математика және статистика","Mathematics & statistics"],"natural_resources_conservation":["Природные ресурсы и охрана природы","Табиғи ресурстар және табиғатты қорғау","Natural resources & conservation"],"philosophy_religious_studies":["Философия и религиоведение","Философия және дінтану","Philosophy & religious studies"],"physical_sciences":["Естественные науки","Жаратылыстану ғылымдары","Physical sciences"],"psychology":["Психология","Психология","Psychology"],"public_administration_social_services":["Госуправление и социальные службы","Мемлекеттік басқару және әлеуметтік қызметтер","Public administration & social services"],"social_sciences":["Социальные науки","Әлеуметтік ғылымдар","Social sciences"],"visual_performing_arts":["Изобразительное и исполнительское искусство","Бейнелеу және орындаушылық өнер","Visual & performing arts"],"foreign_languages_literatures_linguistics":["Иностранные языки и лингвистика","Шет тілдері және лингвистика","Foreign languages & linguistics"],"interdisciplinary_studies":["Междисциплинарные исследования","Пәнаралық зерттеулер","Interdisciplinary studies"],"area_ethnic_gender_studies":["Регионоведение, этнические и гендерные исследования","Аймақтану, этникалық және гендерлік зерттеулер","Area, ethnic & gender studies"],"communication_journalism":["Коммуникации и журналистика","Коммуникациялар және журналистика","Communication & journalism"],"education":["Образование","Білім беру","Education"],"liberal_arts_general_studies":["Liberal arts и общие дисциплины","Liberal arts және жалпы пәндер","Liberal arts & general studies"],"parks_recreation":["Парки, рекреация и фитнес","Саябақтар, рекреация және фитнес","Parks, recreation & fitness"],"family_consumer_sciences":["Семья и потребительские науки","Отбасы және тұтыну ғылымдары","Family & consumer sciences"],"agriculture":["Сельское хозяйство","Ауыл шаруашылығы","Agriculture"],"homeland_security_law_enforcement":["Безопасность и правоохранительная деятельность","Қауіпсіздік және құқық қорғау","Homeland security & law enforcement"],"communication_technologies":["Коммуникационные технологии","Коммуникациялық технологиялар","Communication technologies"],"other":["Другое","Басқа","Other"],"theology_religious_vocations":["Теология и религиозное служение","Теология және діни қызмет","Theology & religious vocations"],"construction_trades":["Строительные специальности","Құрылыс мамандықтары","Construction trades"],"transportation_materials_moving":["Транспорт и логистика","Көлік және логистика","Transportation & logistics"],"foreign_languages_literatures":["Иностранные языки и литература","Шет тілдері және әдебиет","Foreign languages & literature"],"personal_culinary_services":["Кулинария и сервис","Аспаздық және сервис","Personal & culinary services"],"military_science_technologies":["Военные науки и технологии","Әскери ғылымдар және технологиялар","Military science & technologies"]};
+const AREAS={"architecture":["Архитектура","Сәулет","Architecture"],"biological_life_sciences":["Биология и науки о жизни","Биология және өмір туралы ғылымдар","Biology & life sciences"],"business_marketing":["Бизнес и маркетинг","Бизнес және маркетинг","Business & marketing"],"computer_info_science":["Информатика и компьютерные науки","Информатика және компьютерлік ғылымдар","Computer & information sciences"],"engineering":["Инженерия","Инженерия","Engineering"],"engineering_technologies":["Инженерные технологии","Инженерлік технологиялар","Engineering technologies"],"english":["Английский язык","Ағылшын тілі","English"],"health_professions_related_programs":["Медицинские специальности","Медициналық мамандықтар","Health professions"],"history":["История","Тарих","History"],"law_legal_studies":["Право и юриспруденция","Құқық және заңтану","Law & legal studies"],"mathematics_statistics":["Математика и статистика","Математика және статистика","Mathematics & statistics"],"natural_resources_conservation":["Природные ресурсы и охрана природы","Табиғи ресурстар және табиғатты қорғау","Natural resources & conservation"],"philosophy_religious_studies":["Философия и религиоведение","Философия және дінтану","Philosophy & religious studies"],"physical_sciences":["Естественные науки","Жаратылыстану ғылымдары","Physical sciences"],"psychology":["Психология","Психология","Psychology"],"public_administration_social_services":["Государственное управление и социальные службы","Мемлекеттік басқару және әлеуметтік қызметтер","Public administration & social services"],"social_sciences":["Социальные науки","Әлеуметтік ғылымдар","Social sciences"],"visual_performing_arts":["Изобразительное и исполнительское искусство","Бейнелеу және орындаушылық өнер","Visual & performing arts"],"foreign_languages_literatures_linguistics":["Иностранные языки и лингвистика","Шет тілдері және лингвистика","Foreign languages & linguistics"],"interdisciplinary_studies":["Междисциплинарные исследования","Пәнаралық зерттеулер","Interdisciplinary studies"],"area_ethnic_gender_studies":["Регионоведение, этнические и гендерные исследования","Аймақтану, этникалық және гендерлік зерттеулер","Area, ethnic & gender studies"],"communication_journalism":["Коммуникации и журналистика","Коммуникациялар және журналистика","Communication & journalism"],"education":["Образование","Білім беру","Education"],"liberal_arts_general_studies":["Liberal arts и общие дисциплины","Liberal arts және жалпы пәндер","Liberal arts & general studies"],"parks_recreation":["Парки, рекреация и фитнес","Саябақтар, рекреация және фитнес","Parks, recreation & fitness"],"family_consumer_sciences":["Семья и потребительские науки","Отбасы және тұтыну ғылымдары","Family & consumer sciences"],"agriculture":["Сельское хозяйство","Ауыл шаруашылығы","Agriculture"],"homeland_security_law_enforcement":["Безопасность и правоохранительная деятельность","Қауіпсіздік және құқық қорғау","Homeland security & law enforcement"],"communication_technologies":["Коммуникационные технологии","Коммуникациялық технологиялар","Communication technologies"],"other":["Другое","Басқа","Other"],"theology_religious_vocations":["Теология и религиозное служение","Теология және діни қызмет","Theology & religious vocations"],"construction_trades":["Строительные специальности","Құрылыс мамандықтары","Construction trades"],"transportation_materials_moving":["Транспорт и логистика","Көлік және логистика","Transportation & logistics"],"foreign_languages_literatures":["Иностранные языки и литература","Шет тілдері және әдебиет","Foreign languages & literature"],"personal_culinary_services":["Кулинария и сервис","Аспаздық және сервис","Personal & culinary services"],"military_science_technologies":["Военные науки и технологии","Әскери ғылымдар және технологиялар","Military science & technologies"]};
+// Список направлений из фильтра на myedline.com/ru/universities (18 областей, порядок как там).
+const FILTER_AREAS=["architecture","biological_life_sciences","business_marketing","computer_info_science","engineering","engineering_technologies","english","health_professions_related_programs","history","law_legal_studies","mathematics_statistics","natural_resources_conservation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts"];
 const EXTRA_AREAS={"Massachusetts Institute of Technology":["architecture","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","social_sciences","visual_performing_arts","business_marketing","history"],"Harvard University":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Princeton University":["architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Yale University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Stanford University":["area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"California Institute of Technology":["computer_info_science","engineering","biological_life_sciences","mathematics_statistics","physical_sciences","business_marketing"],"University of Pennsylvania":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Duke University":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Brown University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"Columbia University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Amherst College":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Dartmouth College":["area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history","other"],"Williams College":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"University of Chicago":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","theology_religious_vocations","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Cornell University":["agriculture","natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Northwestern University":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","law_legal_studies","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Notre Dame University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","theology_religious_vocations","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Bowdoin College":["natural_resources_conservation","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Vanderbilt University":["architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Swarthmore College":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","history"],"Johns Hopkins University":["natural_resources_conservation","area_ethnic_gender_studies","communication_technologies","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","history"],"Rice University":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Pomona College":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","history"],"Wellesley College":["natural_resources_conservation","architecture","area_ethnic_gender_studies","computer_info_science","education","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","history"],"Washington and Lee University":["natural_resources_conservation","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","english","biological_life_sciences","mathematics_statistics","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"University of California, Berkeley":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","law_legal_studies","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"New York University":["area_ethnic_gender_studies","communication_journalism","communication_technologies","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","law_legal_studies","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of California, Los Angeles":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of Michigan":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"Georgia Institute of Technology":["natural_resources_conservation","architecture","communication_journalism","computer_info_science","engineering","foreign_languages_literatures_linguistics","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","business_marketing","history"],"Carnegie Mellon University":["architecture","communication_journalism","computer_info_science","engineering","engineering_technologies","foreign_languages_literatures_linguistics","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","business_marketing","history"],"Purdue University":["agriculture","natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","communication_technologies","computer_info_science","education","engineering","engineering_technologies","foreign_languages_literatures_linguistics","family_consumer_sciences","english","liberal_arts_general_studies","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","philosophy_religious_studies","physical_sciences","psychology","public_administration_social_services","social_sciences","construction_trades","transportation_materials_moving","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of California, San Diego":["natural_resources_conservation","architecture","area_ethnic_gender_studies","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","philosophy_religious_studies","physical_sciences","psychology","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"],"University of Illinois Urbana-Champaign":["agriculture","natural_resources_conservation","architecture","communication_journalism","computer_info_science","education","engineering","foreign_languages_literatures_linguistics","family_consumer_sciences","english","biological_life_sciences","mathematics_statistics","interdisciplinary_studies","parks_recreation","physical_sciences","psychology","public_administration_social_services","social_sciences","visual_performing_arts","health_professions_related_programs","business_marketing","history"]};
 function openUni(u){const t=T[lang],i=LI[lang];
-  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div>${factsHtml(t,u)}<h4>${esc(t.modalMajors)}</h4><div class="chips">${majorsOf(u).map(k=>`<span>${esc(MAJ[k][i])}</span>`).join("")}</div>${(u.a||EXTRA_AREAS[u.n]||[]).length?`<h4>${esc(t.modalAreas)}</h4><div class="chips">${(u.a||EXTRA_AREAS[u.n]).map(k=>AREAS[k]?`<span>${esc(AREAS[k][i])}</span>`:"").join("")}</div>`:""}${PILOT.includes(u.n)?`<p class="muted small">${esc(t.pilotNote)}</p>`:""}<h4>${esc(t.modalReqs)}</h4> <div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>${lang==="ru"&&u.csv?(()=>{const rn=[u.csv.ielts_note,u.csv.toefl_note,u.csv.sat_note,u.csv.hsk_note,u.csv.ap_note,u.csv.aid_note].filter(Boolean);return rn.length?`<div class="muted small" style="margin-top:8px;line-height:1.45">${rn.map(x=>esc(x)).join("<br>")}</div>`:"";})():""}<h4>${esc(t.modalMoney)}</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(u.src==="my"?t.mySource:t.site)}</a></p>`;
+  $("#modalBody").innerHTML=`<h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])}</div>${factsHtml(t,u)}<h4>${esc(t.modalMajors)}</h4><div class="chips">${majorsOf(u).map(k=>`<span>${esc(MAJ[k][i])}</span>`).join("")}</div>${(u.a||EXTRA_AREAS[u.n]||[]).length?`<h4>${esc(t.modalAreas)}</h4><div class="chips">${(u.a||EXTRA_AREAS[u.n]).map(k=>AREAS[k]?`<span>${esc(AREAS[k][i])}</span>`:"").join("")}</div>`:""}${PILOT.includes(u.n)?`<p class="muted small">${esc(t.pilotNote)}</p>`:""}<h4>${esc(t.modalReqs)}</h4> <div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>${lang==="ru"&&u.csv?(()=>{const rn=[u.csv.ielts_note,u.csv.toefl_note,u.csv.sat_note,u.csv.hsk_note,u.csv.ap_note,u.csv.ib_note,u.csv.aid_note].filter(Boolean);return rn.length?`<div class="muted small" style="margin-top:8px;line-height:1.45">${rn.map(x=>esc(x)).join("<br>")}</div>`:"";})():""}<h4>${esc(t.modalMoney)}</h4>${moneyHtml(t,u)}<p style="margin-top:22px"><a class="btn primary" href="${u.u}" target="_blank" rel="noopener">${esc(u.src==="my"?t.mySource:t.site)}</a></p>`;
   $("#modal").hidden=false;}
 const _rh=renderHome;renderHome=function(){_rh();const N=["MIT","Stanford University","Harvard University"];document.querySelectorAll("#homeUnis .ucard").forEach((el,k)=>{el.style.cursor="pointer";el.addEventListener("click",ev=>{if(!ev.target.closest("a"))openUni(UNIS.find(x=>x.n===N[k]));});});};
 const COMMONAPP_INTRO={
  ru:[
   {p:"Common App — это не один общий конкурс, а платформа, через которую вы отправляете заявки в разные вузы. Общую анкету заполняют один раз, но у каждого вуза остаются свои вопросы, дедлайны и взносы. Ниже — маршрут для новичка: что делать по порядку и где проверять требования."},
   {table:[["Шаг","Что сделать"],["1","Создать аккаунт и добавить 8–12 вузов"],["2","Заполнить Profile, Family, Education"],["3","Добавить тесты, Activities и Honors"],["4","Написать эссе и попросить рекомендации"],["5","Проверить требования каждого вуза"],["6","Отправить заявку и следить за порталом"]]},
+  {h:"Что подготовить заранее"},
+  {ul:["Транскрипт за 9–11 классы на английском: попросите школу заранее, перевод занимает время.",
+   "Контакты школьного counsellor и двух учителей, которые напишут рекомендации.",
+   "Даты и баллы тестов: IELTS/TOEFL, SAT/ACT, если они есть.",
+   "Сумма, которую семья реально может платить в год: без неё список вузов будет случайным."]},
+  {h:"Примерный календарь"},
+  {table:[["Когда","Что сделать"],["Лето до 12 класса","Список вузов, черновики эссе, подготовка к тестам"],["Сентябрь","Аккаунт Common App, просьбы о рекомендациях, транскрипт"],["Октябрь","Основное эссе, проверка требований каждого вуза"],["1 ноября","Дедлайны Early Action и Early Decision"],["Декабрь","Regular Decision: дополнительные эссе и формы"],["1–15 января","Основные дедлайны Regular Decision"],["Март–апрель","Ответы вузов, сравнение финансовой помощи"],["1 мая","Депозит в один вуз"]]},
   {p:"Главное правило: требования вуза важнее советов из интернета. Всё, что ниже, проверяйте в My Colleges и Requirements Grid на своём аккаунте."}
  ],
  kk:[
   {p:"Common App — бір жалпы конкурс емес, әртүрлі вуздарға өтінім жіберетін платформа. Жалпы сауалнаманы бір рет толтырады, бірақ әр вуздың өз сұрақтары, дедлайндары мен төлемдері қалады. Төменде — жаңадан бастағанға арналған рет: не істеу керек және талаптарды қайдан тексеру керек."},
   {table:[["Қадам","Не істеу керек"],["1","Аккаунт ашып, 8–12 вуз қосу"],["2","Profile, Family, Education толтыру"],["3","Тесттер, Activities және Honors қосу"],["4","Эссе жазып, ұсыныстар сұрау"],["5","Әр вуздың талаптарын тексеру"],["6","Өтінім жіберіп, порталды бақылау"]]},
+  {h:"Алдын ала дайындау керек"},
+  {ul:["9–11 сынып транскрипті ағылшын тілінде: мектептен ертерек сұраңыз, аударма уақыт алады.",
+   "Ұсыныс жазатын мектеп counsellor-інің және екі мұғалімнің байланыстары.",
+   "Тест күндері мен балдары: IELTS/TOEFL, SAT/ACT (бар болса).",
+   "Отбасы жылына шынымен төлей алатын сома: онсыз вуздар тізімі кездейсоқ болады."]},
+  {h:"Шамамен кесте"},
+  {table:[["Қашан","Не істеу керек"],["12 сыныпқа дейінгі жаз","Вуздар тізімі, эссе жобалары, тестке дайындық"],["Қыркүйек","Common App аккаунты, ұсыныс сұрау, транскрипт"],["Қазан","Негізгі эссе, әр вуздың талаптарын тексеру"],["1 қараша","Early Action және Early Decision дедлайндары"],["Желтоқсан","Regular Decision: қосымша эсселер мен формалар"],["1–15 қаңтар","Regular Decision негізгі дедлайндары"],["Наурыз–сәуір","Вуздардың жауаптары, қаржылық көмекті салыстыру"],["1 мамыр","Бір вузға депозит"]]},
   {p:"Басты ереже: вуз талабы интернеттегі кеңестен маңызды. Төмендегінің бәрін өз аккаунтыңыздағы My Colleges және Requirements Grid-тен тексеріңіз."}
  ],
  en:[
   {p:"Common App is not one shared competition; it is a platform for sending applications to different colleges. You fill in the shared form once, but each college keeps its own questions, deadlines and fees. Below is a beginner route: what to do in order and where to check the requirements."},
   {table:[["Step","What to do"],["1","Create an account and add 8–12 colleges"],["2","Fill in Profile, Family, Education"],["3","Add tests, Activities and Honors"],["4","Write the essay and ask for recommendations"],["5","Check each college's requirements"],["6","Submit and track the college portals"]]},
+  {h:"What to prepare in advance"},
+  {ul:["Transcripts for grades 9–11 in English: ask the school early, translation takes time.",
+   "Contacts of your school counsellor and two teachers who will write recommendations.",
+   "Test dates and scores: IELTS/TOEFL, SAT/ACT if you have them.",
+   "The amount your family can really pay per year: without it the college list is random."]},
+  {h:"Approximate calendar"},
+  {table:[["When","What to do"],["Summer before grade 12","College list, essay drafts, test preparation"],["September","Common App account, recommendation requests, transcript"],["October","Main essay, check each college's requirements"],["November 1","Early Action and Early Decision deadlines"],["December","Regular Decision: supplemental essays and forms"],["January 1–15","Main Regular Decision deadlines"],["March–April","Admission decisions, compare financial aid"],["May 1","Deposit at one college"]]},
   {p:"Main rule: the college's requirements matter more than advice from the internet. Check everything below in My Colleges and the Requirements Grid inside your own account."}
  ]
 };
@@ -1793,6 +2076,148 @@ const COMMONAPP_GUIDE={
   ]}
  ]
 };
+const LETTERS_INTRO={
+ ru:[
+  {p:"Мотивационное письмо (motivation letter, personal statement, эссе) — это текст, где вы сами объясняете вузу: почему выбрали эту программу, что уже умеете и зачем вам это место. Рекомендация (recommendation letter, reference) — письмо о вас от другого человека: учителя, куратора, тренера или руководителя. Вы её не пишете сами: вы просите человека и даёте ему материал."},
+  {p:"Письма нужны почти везде, но по-разному: в США — общее эссе Common App плюс рекомендации учителей и школьного counsellor; в Великобритании — personal statement в UCAS и одна рекомендация от школы; в Германии и Нидерландах — motivation letter на конкретную программу; для стипендий — отдельное письмо под вопросы фонда."},
+  {table:[["Куда подаёте","Мотивационное письмо","Рекомендации"],["США","Эссе Common App, до 650 слов, плюс эссе вуза","Counsellor (обязательно) + 1–2 учителя"],["Великобритания","UCAS personal statement: 3 вопроса, 4000 знаков всего","1 рекомендация от школы (adviser)"],["Германия, Нидерланды","Motivation letter на программу, обычно 1–2 страницы","Часто не нужны, но проверьте требования"],["Стипендии","Своё письмо под вопросы фонда","1–2 рекомендации, часто с печатью"]]},
+  {p:"Главное правило: требования вуза и системы важнее любых шаблонов. Всё, что ниже, проверяйте на официальном сайте программы."}
+ ],
+ kk:[
+  {p:"Мотивациялық хат (motivation letter, personal statement, эссе) — вузға өзіңізді таныстыратын мәтін: неге осы бағдарламаны таңдадыңыз, не білесіз және бұл орын не үшін керек. Ұсыныс хат (recommendation letter, reference) — сіз туралы басқа адамның хаты: мұғалім, куратор, жаттықтырушы немесе жетекші. Оны өзіңіз жазбайсыз: адамнан сұрап, оған материал бересіз."},
+  {p:"Хаттар барлық жерде дерлік керек, бірақ түрліше: АҚШ-та — Common App жалпы эссесі және мұғалімдер мен counsellor ұсыныстары; Ұлыбританияда — UCAS personal statement және мектептен бір ұсыныс; Германия мен Нидерландыда — нақты бағдарламаға motivation letter; стипендияларға — қордың талабына сай жеке хат."},
+  {table:[["Қайда түсесіз","Мотивациялық хат","Ұсыныстар"],["АҚШ","Common App эссесі, 650 сөзге дейін, және вуз эссесі","Counsellor (міндетті) + 1–2 мұғалім"],["Ұлыбритания","UCAS personal statement: 3 сұрақ, барлығы 4000 таңба","Мектептен 1 ұсыныс (adviser)"],["Германия, Нидерланды","Бағдарламаға motivation letter, әдетте 1–2 бет","Көбіне керек емес, бірақ талапты тексеріңіз"],["Стипендиялар","Қордың сұрақтарына сай жеке хат","1–2 ұсыныс, көбіне мөрмен"]]},
+  {p:"Басты ереже: вуз мен жүйенің талабы кез келген үлгіден маңызды. Төмендегінің бәрін бағдарламаның ресми сайтынан тексеріңіз."}
+ ],
+ en:[
+  {p:"A motivation letter (personal statement, essay) is a text where you explain to the university why you chose this programme, what you can already do and why you need this place. A recommendation letter (reference) is a letter about you written by someone else: a teacher, counsellor, coach or supervisor. You do not write it yourself: you ask the person and give them material."},
+  {p:"Letters are needed almost everywhere, but in different forms: in the US — the Common App essay plus teacher and counsellor recommendations; in the UK — the UCAS personal statement and one school reference; in Germany and the Netherlands — a motivation letter for a specific programme; for scholarships — a separate letter answering the fund's questions."},
+  {table:[["Where you apply","Motivation letter","Recommendations"],["USA","Common App essay, up to 650 words, plus a college essay","Counsellor (required) + 1–2 teachers"],["UK","UCAS personal statement: 3 questions, 4,000 characters in total","1 reference from the school (adviser)"],["Germany, Netherlands","Motivation letter for the programme, usually 1–2 pages","Often not required, but check the rules"],["Scholarships","Your own letter answering the fund's questions","1–2 references, often stamped"]]},
+  {p:"Main rule: the requirements of the university and the system matter more than any template. Check everything below on the official programme website."}
+ ]
+};
+const LETTERS_GUIDE={
+ ru:[
+  {t:"1. Три разных письма — не путайте",sub:"Эссе, motivation letter и рекомендация решают разные задачи.",b:[
+   {p:"Эссе (personal essay) — про вас как человека: характер, опыт, ценности. Мотивационное письмо (motivation letter) — про программу: почему именно она, почему вы подходите, что будете делать. Рекомендация — взгляд со стороны: как вы работаете и учитесь."},
+   {ul:["Эссе отвечает на вопрос «кто вы?».","Motivation letter отвечает на вопрос «почему эта программа и этот вуз?».","Рекомендация отвечает на вопрос «какой вы в работе и учёбе?».","Один текст нельзя отправлять во все вузы: хотя бы последний абзац должен быть про конкретную программу."]}
+  ]},
+  {t:"2. GPA: что это и с какого класса",sub:"Средний балл успеваемости; в каждой стране считают по-своему.",b:[
+   {p:"GPA (Grade Point Average) — средний балл школьных оценок. В США его обычно считают по шкале 4.0: A = 4, B = 3, C = 2, D = 1, F = 0. Есть unweighted GPA (без надбавки за сложные курсы) и weighted GPA (с надбавкой за AP, IB, honors — может быть выше 4.0)."},
+   {p:"В Казахстане оценки 2–5, и GPA считает сам вуз по своим правилам. Не переводите «5 = 4.0» на глаз: приложите официальный транскрипт, а пересчёт оставьте приёмной комиссии. Если в школе есть ranking (место в классе), попросите справку."},
+   {p:"Важно, с какого класса смотрят: в США через Common App Courses & Grades вносят оценки 9, 10, 11 и 12 классов — то есть счёт идёт с 9 класса. В Великобритании GPA вообще нет: смотрят A-level, IB или аттестат и predicted grades."},
+   {ul:["Начинайте следить за оценками с 9 класса, а лучше с 8-го: исправить 9 класс в 11-м уже нельзя.","Плохая оценка в одном предмете не приговор, если по профильным предметам высокие баллы.","Рост оценок иногда важнее самого среднего балла.","Не придумывайте GPA: если школа его не считает, отправляйте оценки как есть."]}
+  ]},
+  {t:"3. В каких странах смотрят GPA",sub:"Короткая карта: что именно смотрит вуз.",b:[
+   {table:[["Страна","На что смотрят","С какого класса / что важно"],["США","GPA 4.0, сложность курсов, ranking","9–12 классы; GPA — главный академический показатель"],["Великобритания","A-level / IB / аттестат, predicted grades","GPA как такого нет; важны профильные предметы"],["Канада","оценки за старшие классы, часто top six предметов","обычно 11–12 классы; проверьте сайт вуза"],["Германия","средний балл аттестата и его признание (anabin)","аттестат должен давать доступ в вуз (HZB)"],["Нидерланды","диплом, профильные предметы, иногда средний балл","проверьте требования программы и numerus fixus"],["Другие страны","аттестат + вступительные экзамены вуза","правила у каждой страны свои — проверяйте сайт"]]},
+   {p:"Вывод: GPA важен в США и часто в Канаде. В Великобритании вместо него решают экзамены и predicted grades. В Германии важен средний балл аттестата вместе с его признанием. В Нидерландах — диплом и предметы. Для Турции, Кореи и других стран правила разные: смотрите сайт конкретного вуза."},
+   {p:"Если вуз не требует GPA, оценки всё равно важны: стипендии и конкурсные программы часто смотрят именно на них."}
+  ]},
+  {t:"4. Как писать мотивационное письмо",sub:"Структура, объём и примеры.",b:[
+   {p:"Хорошее письмо — это не список достижений, а ответ на вопрос «почему». Каждый абзац должен двигать мысль: интерес → подготовка → конкретная программа → план."},
+   {h:"Структура из 5 частей"},
+   {ul:["1. Начало: конкретный момент или вопрос, с которого начался интерес. Не «с детства мечтал».","2. Подготовка: 2–3 предмета, проекта или олимпиады, которые показывают, что вы уже делали в этой области.","3. Почему эта программа: назовите 1–2 курса, лабораторию, преподавателя или стажировку и объясните, зачем они вам.","4. Ваша польза: что вы принесёте вузу — навык, проект, опыт, язык, сообщество.","5. План: кем или чем хотите заниматься после учёбы и как программа к этому ведёт."]},
+   {h:"Объём и правила"},
+   {ul:["США, Common App: эссе до 650 слов.","Великобритания, UCAS 2026: 3 вопроса, всего 4000 знаков, минимум 350 знаков на ответ.","Германия и Нидерланды: обычно 1–2 страницы, требования у программы.","Стипендии: строго по вопросам фонда, лимит часто указан в заявке."]},
+   {h:"Плохо и хорошо"},
+   {table:[["Плохо","Хорошо"],["«Я всегда мечтал изучать экономику, потому что это интересно»","«В 10 классе я посчитал, что школьная столовая тратит на выбросы еды больше, чем зарабатывает буфет, и сделал проект по сокращению отходов»"],["«Ваш университет — лучший в мире»","«Курс по эконометрике и работа с реальными данными — то, чего нет в моей школе»"],["«Я трудолюбивый и ответственный»","«Три месяца я вёл таблицу расходов семейного бизнеса и нашёл ошибку в расчётах, из-за которой бизнес терял деньги»"]]},
+   {p:"Проверка: если этот же абзац можно отправить в другой вуз без изменений — он слишком общий. Уберите общие слова и добавьте факт, цифру или название."}
+  ]},
+  {t:"5. Рекомендации: кого просить",sub:"Зависит от направления и от того, кто вас действительно знает.",b:[
+   {p:"Правило одно: просите того, кто видел вашу работу вблизи и может привести пример. Известное имя без примеров хуже обычного учителя, который помнит ваши проекты."},
+   {table:[["Направление","Кого просить в первую очередь","Что попросить подчеркнуть"],["STEM (инженерия, IT, математика, физика)","Учитель математики/физики/информатики, руководитель олимпиады или кружка","Как вы решаете задачи, доводите проект до конца, работаете в команде"],["Медицина и биология","Учитель химии/биологии, руководитель волонтёрства в клинике или лаборатории","Ответственность, аккуратность, работа с людьми"],["Бизнес, экономика","Учитель математики/экономики, руководитель школьной компании или дебатов","Аналитическое мышление, инициатива, лидерство"],["Гуманитарные науки, право","Учитель истории/литературы/языка, руководитель дебатов или редакции","Аргументация, письмо, любознательность"],["Искусство и дизайн","Учитель искусства или руководитель студии, куратор портфолио","Творческий процесс, рост за 2–3 года, дисциплина"],["Спорт и общественные проекты","Тренер, координатор волонтёров, куратор клуба","Дисциплина, командная работа, влияние на других"]]},
+   {h:"Кто ещё участвует"},
+   {ul:["Counsellor (США): обязательный School Report, его отправляет школа.","Учителя (США): обычно 1–2 рекомендации, их приглашают в Common App и распределяют по вузам.","Великобритания: одну рекомендацию пишет школа (adviser) в UCAS.","Германия/Нидерланды: рекомендации часто не нужны — проверьте программу."]},
+   {h:"Как просить правильно"},
+   {ul:["За 4–6 недель до дедлайна, лично или письмом, без «можно завтра?».","Дайте brag sheet: список проектов, оценок, олимпиад и того, куда подаёте.","Скажите, что важно подчеркнуть, но не диктуйте текст.","Откажитесь от права читать письмо (waiver) — так рекомендация весит больше.","Через неделю после дедлайна поблагодарите письмом."]}
+  ]},
+  {t:"6. Частые ошибки и чек-лист",sub:"Проверьте перед отправкой.",b:[
+   {ul:["Одно письмо для всех вузов, без названия программы.","Пересказ резюме вместо объяснения «почему».","Общие слова: «трудолюбивый», «целеустремлённый», «с детства мечтал».","Копирование чужих эссе: проверки на плагиат есть везде.","Рекомендация от человека, который вас почти не знает.","Просьба за неделю до дедлайна.","Ошибки в названии вуза или программы.","Файл назван «essay_final_final.docx»."]},
+   {h:"Чек-лист"},
+   {ul:["Есть название программы и 1–2 конкретные причины выбрать её.","Есть 2–3 факта о вас с деталями, а не только прилагательные.","Соблюдён лимит слов или знаков.","Нет ошибок; текст прочитал другой человек.","Рекомендатели согласились и знают дедлайн.","Проверено требование вуза: письмо, рекомендации, waiver."]}
+  ]}
+ ],
+ kk:[
+  {t:"1. Үш түрлі хат — шатастырмаңыз",sub:"Эссе, motivation letter және ұсыныс хат әртүрлі міндет шешеді.",b:[
+   {p:"Эссе (personal essay) — адам ретінде сіз туралы: мінез, тәжірибе, құндылықтар. Мотивациялық хат (motivation letter) — бағдарлама туралы: неге дәл осы, неге сіз сай келесіз, не істейсіз. Ұсыныс хат — сырт көз: сіз қалай оқисыз және жұмыс істейсіз."},
+   {ul:["Эссе «сіз кімсіз?» деген сұраққа жауап береді.","Мотивациялық хат «неге осы бағдарлама және осы вуз?» дегенге жауап береді.","Ұсыныс хат «сіз оқуда және жұмыста қандайсыз?» дегенге жауап береді.","Бір мәтінді барлық вузға жіберуге болмайды: кемінде соңғы абзац нақты бағдарлама туралы болуы керек."]}
+  ]},
+  {t:"2. GPA: бұл не және қай сыныптан",sub:"Орташа үлгерім балы; әр ел оны өзінше есептейді.",b:[
+   {p:"GPA (Grade Point Average) — мектеп бағаларының орташа балы. АҚШ-та оны 4.0 шкаласымен есептейді: A = 4, B = 3, C = 2, D = 1, F = 0. Unweighted GPA (күрделі курстар үшін қосымшасыз) және weighted GPA (AP, IB, honors үшін қосымшамен — 4.0-ден жоғары болуы мүмкін) болады."},
+   {p:"Қазақстанда бағалар 2–5, ал GPA-ны вуз өз ережесімен қайта есептейді. «5 = 4.0» деп көзбен аудармаңыз: ресми транскриптті жіберіңіз, қайта есептеуді қабылдау комиссиясы жасасын. Мектепте ranking (сыныптағы орын) болса, анықтама сұраңыз."},
+   {p:"Қай сыныптың бағалары маңызды: АҚШ-та Common App Courses & Grades арқылы 9, 10, 11 және 12 сынып бағалары енгізіледі. Ұлыбританияда GPA жоқ: A-level, IB немесе аттестат және predicted grades қаралады."},
+   {ul:["Бағаларды 9 сыныптан, тіпті 8-ден бақылаңыз: 9 сыныпты 11-де түзету мүмкін емес.","Бір пәндегі төмен баға үкім емес, егер бейінді пәндерде жоғары болса.","Бағаның өсу үрдісі орташа балдан маңыздырақ болуы мүмкін.","GPA ойдан шығармаңыз: мектеп есептемесе, бағаларды қалдындай жіберіңіз."]}
+  ]},
+  {t:"3. GPA қай елдерде қаралады",sub:"Қысқа карта: вуз нақты неге қарайды.",b:[
+   {table:[["Ел","Неге қарайды","Қай сыныптан / не маңызды"],["АҚШ","GPA 4.0, курстардың күрделілігі, ranking","9–12 сыныптар; GPA — негізгі академиялық көрсеткіш"],["Ұлыбритания","A-level / IB / аттестат, predicted grades","GPA жоқ; бейінді пәндер маңызды"],["Канада","жоғары сынып бағалары, көбіне top six пән","әдетте 11–12 сыныптар; вуз сайтын тексеріңіз"],["Германия","аттестаттың орташа балы және оның танылуы (anabin)","аттестат вузға кіруге құқық беруі керек (HZB)"],["Нидерланды","диплом, бейінді пәндер, кейде орташа бал","бағдарлама талабын және numerus fixus-ты тексеріңіз"],["Басқа елдер","аттестат + вуздың кіру емтихандары","әр елдің ережесі бөлек — вуз сайтын тексеріңіз"]]},
+   {p:"Қорытынды: GPA АҚШ-та және көбіне Канадада маңызды. Ұлыбританияда оның орнына емтихандар мен predicted grades шешеді. Германияда аттестаттың орташа балы және оның танылуы маңызды. Нидерландыда — диплом мен пәндер. Түркия, Корея және басқа елдерде ереже бөлек: нақты вуздың сайтын қараңыз."},
+   {p:"Вуз GPA талап етпесе де, бағалар маңызды: стипендиялар мен конкурстық бағдарламалар көбіне соған қарайды."}
+  ]},
+  {t:"4. Мотивациялық хатты қалай жазу керек",sub:"Құрылымы, көлемі және мысалдар.",b:[
+   {p:"Жақсы хат — жетістіктер тізімі емес, «неге» деген сұраққа жауап. Әр абзац ойды ілгері жылжытуы керек: қызығушылық → дайындық → нақты бағдарлама → жоспар."},
+   {h:"5 бөліктен тұратын құрылым"},
+   {ul:["1. Кіріспе: қызығушылық басталған нақты сәт немесе сұрақ. «Бала кезімнен армандадым» емес.","2. Дайындық: осы салада не істегеніңізді көрсететін 2–3 пән, жоба немесе олимпиада.","3. Неге осы бағдарлама: 1–2 курс, зертхана, оқытушы немесе тағылымдама атап, олар не үшін керек екенін түсіндіріңіз.","4. Сіздің пайдаңыз: вузға не әкелесіз — дағды, жоба, тәжірибе, тіл, қауымдастық.","5. Жоспар: оқудан кейін кім болып, немен айналысқыңыз келеді және бағдарлама бұған қалай жеткізеді."]},
+   {h:"Көлемі мен ережелері"},
+   {ul:["АҚШ, Common App: эссе 650 сөзге дейін.","Ұлыбритания, UCAS 2026: 3 сұрақ, барлығы 4000 таңба, әр жауап кемінде 350 таңба.","Германия мен Нидерланды: әдетте 1–2 бет, талапты бағдарламадан қараңыз.","Стипендиялар: қордың сұрақтарына қатаң сай, лимит өтінімде жазылады."]},
+   {h:"Нашар және жақсы"},
+   {table:[["Нашар","Жақсы"],["«Мен экономиканы әрқашан қызығушылықпен оқығым келді»","«10-сыныпта мектеп асханасы тамақты тастауға буфет табысынан көп жұмсайтынын есептеп, қалдықты азайту жобасын жасадым»"],["«Сіздің университетіңіз әлемдегі ең жақсы»","«Эконометрика курсы мен нақты деректермен жұмыс — менің мектебімде жоқ нәрсе»"],["«Мен еңбекқор және жауаптымын»","«Отбасылық бизнестің шығыс кестесін үш ай жүргізіп, есептегі қатені таптым, сол себепті бизнес ақша жоғалтып жүрген»"]]},
+   {p:"Тексеру: осы абзацты өзгертпей басқа вузға жіберуге болса — ол тым жалпы. Жалпы сөздерді алып, факт, сан немесе атау қосыңыз."}
+  ]},
+  {t:"5. Ұсыныстар: кімнен сұрау керек",sub:"Бағытқа және сізді шынымен білетін адамға байланысты.",b:[
+   {p:"Ереже бір: жұмысыңызды жақын көрген және мысал келтіре алатын адамнан сұраңыз. Мысалсыз атақты есім — жобаларыңызды есте сақтайтын қарапайым мұғалімнен нашар."},
+   {table:[["Бағыт","Бірінші кезекте кімнен сұрау","Нені атап көрсетуді сұрау"],["STEM (инженерия, IT, математика, физика)","Математика/физика/информатика мұғалімі; олимпиада немесе үйірме жетекшісі","Есепті қалай шығарасыз, жобаны соңына дейін жеткізесіз бе, командада қалай жұмыс істейсіз"],["Медицина және биология","Химия/биология мұғалімі; клиникадағы немесе зертханадағы волонтёрлік жетекшісі","Жауапкершілік, ұқыптылық, адамдармен жұмыс"],["Бизнес, экономика","Математика/экономика мұғалімі; мектеп компаниясы немесе дебат жетекшісі","Аналитикалық ойлау, бастамашылдық, көшбасшылық"],["Гуманитарлық ғылымдар, құқық","Тарих/әдебиет/тіл мұғалімі; дебат немесе редакция жетекшісі","Дәлелдеу, жазу, қызығушылық"],["Өнер және дизайн","Өнер мұғалімі немесе студия жетекшісі, портфолио кураторы","Шығармашылық үдеріс, 2–3 жылдағы өсім, тәртіп"],["Спорт және қоғамдық жобалар","Жаттықтырушы, волонтёрлер координаторы, клуб кураторы","Тәртіп, командалық жұмыс, басқаларға әсері"]]},
+   {h:"Кім тағы қатысады"},
+   {ul:["Counsellor (АҚШ): міндетті School Report, оны мектеп жібереді.","Мұғалімдер (АҚШ): әдетте 1–2 ұсыныс, оларды Common App-та шақырып, вуздарға бөледі.","Ұлыбритания: бір ұсынысты мектеп (adviser) UCAS-та жазады.","Германия/Нидерланды: ұсыныстар көбіне керек емес — бағдарламаны тексеріңіз."]},
+   {h:"Дұрыс сұрау жолы"},
+   {ul:["Дедлайнға 4–6 апта бұрын, жеке немесе хатпен, «ертеңге бола ма?» деп емес.","Brag sheet беріңіз: жобалар, бағалар, олимпиадалар және қайда түсетініңіз.","Нені атап көрсету керегін айтыңыз, бірақ мәтінді тапсырмаңыз.","Хатты оқу құқығынан бас тартыңыз (waiver) — сонда ұсыныс салмақтырақ.","Дедлайннан бір апта өткен соң алғыс хат жазыңыз."]}
+  ]},
+  {t:"6. Жиі кездесетін қателер және чек-лист",sub:"Жібермес бұрын тексеріңіз.",b:[
+   {ul:["Барлық вузға бір хат, бағдарлама атауынсыз.","«Неге» дегенді түсіндірудің орнына түйіндемені қайталау.","Жалпы сөздер: «еңбекқор», «мақсатты», «бала кезімнен армандадым».","Бөтен эсселерді көшіру: плагиат тексерісі барлық жерде бар.","Сізді дерлік білмейтін адамның ұсынысы.","Дедлайнға бір апта қалғанда сұрау.","Вуз немесе бағдарлама атауындағы қате.","Файл «essay_final_final.docx» деп аталған."]},
+   {h:"Чек-лист"},
+   {ul:["Бағдарлама атауы және оны таңдаудың 1–2 нақты себебі бар.","Сіз туралы тек сын есім емес, 2–3 нақты факт бар.","Сөз немесе таңба лимиті сақталған.","Қате жоқ; мәтінді басқа адам оқыған.","Ұсыныс берушілер келісті және дедлайын біледі.","Вуз талабы тексерілді: хат, ұсыныстар, waiver."]}
+  ]}
+ ],
+ en:[
+  {t:"1. Three different letters — do not mix them",sub:"The essay, the motivation letter and the reference do different jobs.",b:[
+   {p:"A personal essay is about you as a person: character, experience, values. A motivation letter is about the programme: why this one, why you fit, what you will do. A reference is an outside view: how you study and work."},
+   {ul:["The essay answers “who are you?”.","The motivation letter answers “why this programme and this university?”.","The reference answers “what are you like to study and work with?”.","One text cannot go to every university: at least the last paragraph must be about the specific programme."]}
+  ]},
+  {t:"2. GPA: what it is and from which grade",sub:"A grade average; every country counts it its own way.",b:[
+   {p:"GPA (Grade Point Average) is the average of your school grades. In the US it is usually on a 4.0 scale: A = 4, B = 3, C = 2, D = 1, F = 0. There is an unweighted GPA (no bonus for hard courses) and a weighted GPA (with a bonus for AP, IB or honors courses — it can be above 4.0)."},
+   {p:"In Kazakhstan grades run from 2 to 5, and the university recalculates them by its own rules. Do not convert “5 = 4.0” by eye: send the official transcript and let admissions do the conversion. If your school has a class rank, ask for a document that confirms it."},
+   {p:"Which grades count matters: through Common App Courses & Grades, US colleges see grades from 9th, 10th, 11th and 12th grade. The UK has no GPA: universities look at A-level, IB or your school certificate and predicted grades."},
+   {ul:["Start watching your grades in 9th grade, ideally in 8th: a weak 9th grade cannot be fixed in 11th.","One weak subject is not fatal if your grades in the subjects that matter for the major are high.","An upward trend can matter more than the average itself.","Never invent a GPA: if your school does not calculate one, send your grades as they are."]}
+  ]},
+  {t:"3. Which countries look at GPA",sub:"A short map: what the university actually checks.",b:[
+   {table:[["Country","What they look at","From which grade / what matters"],["USA","GPA 4.0, course rigour, class rank","Grades 9–12; GPA is the main academic measure"],["UK","A-level / IB / school certificate, predicted grades","No GPA as such; subject grades matter"],["Canada","senior grades, often the top six subjects","usually grades 11–12; check the university site"],["Germany","average certificate grade and its recognition (anabin)","the certificate must give university access (HZB)"],["Netherlands","diploma, subject requirements, sometimes an average","check the programme rules and numerus fixus"],["Other countries","school certificate + university entrance exams","rules differ by country — check the university site"]]},
+   {p:"Bottom line: GPA matters in the US and often in Canada. In the UK exams and predicted grades take its place. In Germany the average certificate grade matters together with its recognition. In the Netherlands it is the diploma and subjects. Turkey, Korea and other countries have their own rules: check the specific university site."},
+   {p:"If a university does not require a GPA, grades still matter: scholarships and competitive programmes often look at them."}
+  ]},
+  {t:"4. How to write a motivation letter",sub:"Structure, length and examples.",b:[
+   {p:"A good letter is not a list of achievements but an answer to “why”. Each paragraph should move the idea forward: interest → preparation → the specific programme → plan."},
+   {h:"A five-part structure"},
+   {ul:["1. Opening: a concrete moment or question where the interest started. Not “I have dreamed since childhood”.","2. Preparation: 2–3 subjects, projects or olympiads that show what you have already done in the field.","3. Why this programme: name 1–2 courses, a lab, a lecturer or an internship and explain why they matter to you.","4. What you bring: a skill, project, experience, language or community you will add.","5. Plan: what you want to do after graduation and how the programme leads there."]},
+   {h:"Length and rules"},
+   {ul:["USA, Common App: essay up to 650 words.","UK, UCAS 2026: 3 questions, 4,000 characters in total, at least 350 characters per answer.","Germany and the Netherlands: usually 1–2 pages, the programme sets the rules.","Scholarships: strictly the fund's questions, the limit is usually given in the form."]},
+   {h:"Weak vs strong"},
+   {table:[["Weak","Strong"],["“I have always dreamed of studying economics because it is interesting”","“In 10th grade I calculated that our school canteen spends more on food waste than the buffet earns, and built a project to cut the waste”"],["“Your university is the best in the world”","“A course in econometrics and work with real data is what my school does not offer”"],["“I am hard-working and responsible”","“For three months I kept the expense sheet of our family business and found a calculation error that was costing it money”"]]},
+   {p:"Test: if the same paragraph can go to another university unchanged, it is too general. Remove the generic words and add a fact, a number or a name."}
+  ]},
+  {t:"5. Recommendations: whom to ask",sub:"It depends on the field and on who really knows you.",b:[
+   {p:"One rule: ask someone who has seen your work up close and can give an example. A famous name without examples is worse than an ordinary teacher who remembers your projects."},
+   {table:[["Field","Ask first","What to ask them to highlight"],["STEM (engineering, IT, maths, physics)","Maths/physics/CS teacher, olympiad or club leader","How you solve problems, finish projects and work in a team"],["Medicine and biology","Chemistry/biology teacher, volunteering lead at a clinic or lab","Responsibility, care, working with people"],["Business, economics","Maths/economics teacher, school company or debate lead","Analytical thinking, initiative, leadership"],["Humanities, law","History/literature/language teacher, debate or school paper lead","Argument, writing, curiosity"],["Art and design","Art teacher or studio lead, portfolio mentor","Creative process, growth over 2–3 years, discipline"],["Sport and community projects","Coach, volunteering coordinator, club mentor","Discipline, teamwork, impact on others"]]},
+   {h:"Who else is involved"},
+   {ul:["Counsellor (USA): the compulsory School Report, sent by the school.","Teachers (USA): usually 1–2 recommendations, invited in Common App and assigned per college.","UK: the school (adviser) writes one reference in UCAS.","Germany/Netherlands: recommendations are often not required — check the programme."]},
+   {h:"How to ask properly"},
+   {ul:["4–6 weeks before the deadline, in person or by letter, not “can you do it tomorrow?”.","Give a brag sheet: projects, grades, olympiads and where you are applying.","Say what matters to highlight, but do not dictate the text.","Waive your right to read the letter (waiver) — it carries more weight.","Send a thank-you note a week after the deadline."]}
+  ]},
+  {t:"6. Common mistakes and a checklist",sub:"Check before you submit.",b:[
+   {ul:["The same letter for every university, with no programme name.","Retelling a CV instead of explaining “why”.","Generic words: “hard-working”, “motivated”, “dreamed since childhood”.","Copying someone else's essay: plagiarism checks are everywhere.","A reference from someone who barely knows you.","Asking a week before the deadline.","A mistake in the university or programme name.","The file is called “essay_final_final.docx”."]},
+   {h:"Checklist"},
+   {ul:["The programme is named and there are 1–2 concrete reasons for choosing it.","There are 2–3 facts about you with detail, not just adjectives.","The word or character limit is met.","There are no errors; someone else has read it.","Recommenders agreed and know the deadline.","The university's rules are checked: letter, references, waiver."]}
+  ]}
+ ]
+};
 const COMMONAPP_LINKS=[["First-year guide","https://www.commonapp.org/apply/first-year-students/"],["Activities (PDF)","https://www.commonapp.org/static/a5d59a915bdc2031e62c468ad35e0de9/Resource_FY_Activities_ENG_2025.06.25_0.pdf"],["Fees & fee waivers (PDF)","https://www.commonapp.org/static/653ded5d8d0d5d685e10ae814a7b2c85/Understanding-App-Fees-and-Waivers.pdf"],["2026–27 Requirements Grid","https://content.commonapp.org/Files/ReqGrid.pdf"],["Essay prompts","https://www.commonapp.org/apply/essay-prompts"]];
 
 function blockHtml(b){
@@ -1802,16 +2227,38 @@ function blockHtml(b){
   if(b.table)return `<div class="tbl"><table><thead><tr>${b.table[0].map(x=>`<th>${esc(x)}</th>`).join("")}</tr></thead><tbody>${b.table.slice(1).map(r=>`<tr>${r.map(x=>`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
   return "";
 }
+/* long texts: every heading starts a new rounded box, so the text
+   before the first heading keeps its own box too */
+function blocksHtml(list){
+  const out=[]; let cur=[];
+  const flush=()=>{ if(cur.length) out.push(`<div class="info-panel">${cur.join("")}</div>`); cur=[]; };
+  list.forEach(b=>{ if(b.h) flush(); cur.push(blockHtml(b)); });
+  flush();
+  return out.join("");
+}
 function renderArticles(){
   $("#langNote").textContent="";
-  $("#articleList").innerHTML=GUIDES.map((a,i)=>{const g=(GUIDE_T[lang]||[])[i]||[a.t,a.l],bb=g[2]||a.b;return `<details class="article"${i===0?" open":""}><summary><b>${esc(g[0])}</b><span>${esc(g[1])}</span></summary><div class="article-body">${bb.map(blockHtml).join("")}</div></details>`;}).join("");
+  $("#articleList").innerHTML=GUIDES.map((a,i)=>{const g=(GUIDE_T[lang]||[])[i]||[a.t,a.l],bb=g[2]||a.b;return `<details class="article"${i===0?" open":""}><summary><b>${esc(g[0])}</b><span>${esc(g[1])}</span></summary><div class="article-body">${blocksHtml(bb)}</div></details>`;}).join("");
 }
 function renderCommonApp(){
   const t=T[lang];
-  const intro=(COMMONAPP_INTRO[lang]||COMMONAPP_INTRO.ru).map(blockHtml).join("");
-  const guide=(COMMONAPP_GUIDE[lang]||COMMONAPP_GUIDE.ru).map((g,i)=>`<details class="article"${i===0?" open":""}><summary><b>${esc(g.t)}</b><span>${esc(g.sub)}</span></summary><div class="article-body">${g.b.map(blockHtml).join("")}</div></details>`).join("");
-  $("#commonappBody").innerHTML=intro+`<div id="commonappSections" class="articles-wrap">${guide}</div>`;
-  $("#commonappSources").innerHTML=esc(t.commonappSources)+" "+COMMONAPP_LINKS.map(([l,u])=>`<a class="link" href="${u}" target="_blank" rel="noopener">${esc(l)}</a>`).join(" · ");
+  const intro=blocksHtml(COMMONAPP_INTRO[lang]||COMMONAPP_INTRO.ru);
+  $("#commonappBody").innerHTML=intro;
+  $("#commonappCards").innerHTML=cardsHtml(COMMONAPP_GUIDE[lang]||COMMONAPP_GUIDE.ru);
+  $("#commonappSources").innerHTML=esc(t.commonappSources)+" "+COMMONAPP_LINKS.map(([l,u])=>`<a class="link" href="${u}" target="_blank" rel="noopener">${esc(l)}</a>`).join("");
+  slideCards();
+}
+const LETTERS_LINKS=[["UCAS personal statement","https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/how-to-write-your-personal-statement"],["UCAS references","https://www.ucas.com/advisers/help-and-training/guides-resources-and-training/references"],["Common App essay prompts","https://www.commonapp.org/apply/essay-prompts"],["Common App recommender guide","https://www.commonapp.org/counselors-and-recommenders/recommender-guide/"],["Common App Courses & Grades","https://appsupport.commonapp.org/applicantsupport/s/topic/0TO0V000001QRLFWA4/courses-grades"],["anabin (Germany)","https://anabin.kmk.org/"]];
+function cardsHtml(list){
+  return list.map((g,i)=>`<details class="rail-card"${i===0?" open":""}><summary><b>${esc(g.t)}</b><span>${esc(g.sub)}</span></summary><div class="article-body">${g.b.map(blockHtml).join("")}</div></details>`).join("");
+}
+function renderLettersGuide(){
+  const t=T[lang];
+  const intro=blocksHtml(LETTERS_INTRO[lang]||LETTERS_INTRO.ru);
+  const body=$("#lettersBody"); if(body) body.innerHTML=intro;
+  const cards=$("#lettersCards"); if(cards) cards.innerHTML=cardsHtml(LETTERS_GUIDE[lang]||LETTERS_GUIDE.ru);
+  const src=$("#lettersSources"); if(src) src.innerHTML=esc(t.lettersSources)+" "+LETTERS_LINKS.map(([l,u])=>`<a class="link" href="${u}" target="_blank" rel="noopener">${esc(l)}</a>`).join("");
+  slideCards();
 }
 function calcUpdate(){
   const t=T[lang];
@@ -1834,12 +2281,16 @@ function renderCosts(){
   calcUpdate();
 }
 function renderCourses(){
-  $("#courseGrid").innerHTML=COURSES.map((c,k)=>{const ct=(COURSE_T[lang]||[])[k]||{};return `
+  $("#courseGrid").innerHTML=COURSES.map((c,k)=>{
+    const ct=(COURSE_T[lang]||[])[k]||{};
+    const isIeltsPartner=c.tags.includes("Официальный партнёр IELTS");
+    const tags=c.tags.filter(x=>x!=="Официальный партнёр IELTS");
+    return `
     <article class="card course-card">
-      ${c.official?`<span class="badge-official">${esc(T[lang].officialPartner)}</span>`:""}
+      ${isIeltsPartner?`<span class="badge-official">${esc(T[lang].officialPartner)}</span>`:""}
       <h3>${esc(c.n)}</h3>
-      <div class="city">${esc(ct.city||c.city)}</div>
-      <div class="tags">${c.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>
+      ${(ct.city||c.city)?`<div class="city">${esc(ct.city||c.city)}</div>`:""}
+      ${tags.length?`<div class="tags">${tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>`:""}
       <p>${esc(ct.d||c.d)}</p>
       <a class="link" href="${c.u}" target="_blank" rel="noopener">${esc(T[lang].courseSite)}</a>
     </article>`;}).join("");
@@ -2074,8 +2525,6 @@ function applyLang(){
   document.documentElement.lang=lang;
   document.querySelectorAll("[data-key]").forEach(el=>{const v=t[el.dataset.key]; if(typeof v==="string")el.textContent=v;});
   $("#q").placeholder=t.searchPh;
-  $("#myScore").placeholder=t.matchPh;
-  $("#mySat").placeholder=t.matchSatPh;
   $("#steps").innerHTML=t.steps.map(([a,b])=>`<li><b>${esc(a)}</b><span>${esc(b)}</span></li>`).join("");
   $("#examGrid").innerHTML=t.exams.map(([a,b])=>`<article class="card"><h3>${esc(a)}</h3><p style="margin-top:10px">${esc(b)}</p></article>`).join("");
   $("#tipsList").innerHTML=t.tips.map(x=>`<li>${esc(x)}</li>`).join("");
@@ -2084,6 +2533,7 @@ function applyLang(){
   renderCosts();
   renderArticles();
   renderLetters();
+  renderLettersGuide();
   renderCommonApp();
   $("#statLine").textContent=t.statLine.replace("{u}",UNIS.length).replace("{c}",new Set(UNIS.map(u=>u.c)).size);
   document.title=t.pageTitle;
@@ -2093,6 +2543,52 @@ function applyLang(){
   buildFilters(); render(); renderHome(); renderQs();
   updateChatLang();
 }
+function initRails(){
+  const sides=[...document.querySelectorAll(".rail-side")];
+  if(!("IntersectionObserver" in window)){sides.forEach(el=>el.classList.add("in"));return;}
+  const io=new IntersectionObserver(es=>{
+    for(const e of es) if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}
+  },{threshold:.15});
+  sides.forEach(el=>io.observe(el));
+}
+/* the numbered subsection cards in the right column: a card that is still
+   below the screen peeks out from the right wall, comes fully out as soon as
+   it enters the reading band, and slides partly back behind the wall once it
+   has scrolled past the top. A tall opened card stays fully out while it is
+   on screen, so its text is never cut. */
+const CARD_PEEK=62, CARD_IN=0.70, CARD_OUT=0.30, CARD_SPAN=0.30;
+let cardsFrame=0;
+function cardsTick(){
+  cardsFrame=0;
+  const still=innerWidth<=960||matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const vh=innerHeight||1;
+  /* full slide = the empty strip to the screen edge + about 45% of the card,
+     so a card ends up cut by the screen edge at any window width */
+  const bleed=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--bleed"))||0;
+  document.querySelectorAll(".rail-card").forEach(c=>{
+    if(still||!c.closest(".section.active")){c.style.transform="";c.style.opacity="";return;}
+    const r=c.getBoundingClientRect();
+    let t=0;
+    if(r.top>vh*CARD_IN) t=Math.min(1,(r.top-vh*CARD_IN)/(vh*CARD_SPAN));
+    else if(r.bottom<vh*CARD_OUT) t=Math.min(1,(vh*CARD_OUT-r.bottom)/(vh*CARD_SPAN));
+    c.style.transform="translateX("+(t*(bleed+r.width*CARD_PEEK/100)).toFixed(1)+"px)";
+    c.style.opacity=(1-t*0.3).toFixed(3);
+  });
+}
+function slideCards(){ if(!cardsFrame) cardsFrame=requestAnimationFrame(cardsTick); }
+/* exact width of the empty strip between the text column and the screen edge
+   (a scrollbar makes 100vw wider than the real page, so measure instead) */
+function setBleed(){
+  const main=document.querySelector("main");
+  if(!main) return;
+  const pad=parseFloat(getComputedStyle(main).paddingRight)||0;
+  const textRight=main.getBoundingClientRect().right-pad;
+  const bleed=Math.max(0,Math.round(document.documentElement.clientWidth-textRight));
+  document.documentElement.style.setProperty("--bleed",bleed+"px");
+}
+addEventListener("scroll",()=>{ if(document.querySelector(".section.rail.active")) slideCards(); },{passive:true});
+addEventListener("resize",()=>{setBleed();slideCards();});
+document.addEventListener("toggle",e=>{ if(e.target.classList&&e.target.classList.contains("rail-card")) slideCards(); },true);
 function renderHome(){
   const t=T[lang],i=LI[lang];
   $("#homeUnis").innerHTML=["MIT","Stanford University","Harvard University"].map(n=>{const u=UNIS.find(x=>x.n===n);return `<article class="ucard"><h3>${esc(u.n)}</h3><div class="place">${esc(COUNTRIES[u.c][i])} · ${esc(majorLabel(u))}</div><div class="tags">${u.tags.map(x=>`<span class="tag">${esc(tagLabel(x))}</span>`).join("")}</div>${moneyHtml(t,u)}<a class="link" href="${u.u}" target="_blank" rel="noopener">${esc(t.site)}</a></article>`;}).join("");
@@ -2127,6 +2623,10 @@ $("#countryFilter").addEventListener("change",render);
 $("#q").addEventListener("input",render);
 $("#myScore").addEventListener("input",render);
 $("#mySat").addEventListener("input",render);
+$("#matchReset").addEventListener("click",()=>{
+  ["#myScore","#myToefl","#mySat"].forEach(x=>{$(x).value="";});
+  render();
+});
 ["#calcI","#calcS","#calcR"].forEach(x=>$(x).addEventListener("input",calcUpdate));
 $("#aidToggle").addEventListener("click",()=>{aidOnly=!aidOnly;$("#aidToggle").setAttribute("aria-pressed",aidOnly);render();});
 $("#favToggle").addEventListener("click",()=>{
@@ -2623,7 +3123,9 @@ function initChat(){
 initChat();
 
 document.body.dataset.page="home";
+setBleed();
 applyLang();
+initRails();
 loadUniData();
 loadLetters();
 </script>

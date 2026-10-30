@@ -1,0 +1,40 @@
+[1/26] University of Oxford: start failed
+[2/26] UBC: no target
+[3/26] TU Delft: no target
+  search 429
+[4/26] Lund University: no target
+[5/26] Charles University: no target
+[6/26] University of Stuttgart: start failed
+[7/26] UNSW Sydney: no target
+  University of Malaya: https://medicine.um.edu.my/msat ConnectTimeout
+  University of Malaya: https://msat.um.edu.my/ ConnectTimeout
+  University of Malaya: https://aasd.um.edu.my/faq-ug-international-admission ConnectTimeout
+[8/26] University of Malaya: start failed
+[9/26] Rice University: SAT ~1580 (sections) https://ideas.rice.edu/wp-content/uploads/2025/10/2017-18-2.-CDS_2017-2018_WEBSITE.pdf
+[10/26] LMU Munich: no target
+  University of North Dakota: https://admissions.und.edu ConnectionError
+[11/26] University of North Dakota: no target
+[12/26] Pomona College: SAT ~1530 (sections) https://www.pomona.edu/sites/default/files/cds-2015-2016.pdf
+[13/26] Yeshiva University: no target
+[14/26] Hofstra University: no target
+  The College of Wooster: https://inside.wooster.edu/consumer-and-accreditation-information/common-data-sets/ SSLError
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/PPZBWT+BasicSans-SemiBold', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 32, '/FontDescriptor': IndirectObject(123, 0, 139795005308032), '/LastChar': 120, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [211, 0, 0, 0, 0, 0, 609, 0, 0, 0, 0, 0, 246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 623, 0, 0, 0, 550, 0, 0, 0, 0, 0, 0, 520, 0, 0, 0, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 540, 0, 0, 585, 526, 0, 530, 0, 244, 0, 0, 243, 0, 564, 0, 585, 0, 369, 478, 417, 0, 528, 0, 501]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+fontTools is required to fully parse the encoding of a CFF Type1 font in font dictionary {'/BaseFont': '/PPZBWT+BasicSans-SemiBold', '/Encoding': '/WinAnsiEncoding', '/FirstChar': 32, '/FontDescriptor': IndirectObject(123, 0, 139795005308032), '/LastChar': 120, '/Subtype': '/Type1', '/Type': '/Font', '/Widths': [211, 0, 0, 0, 0, 0, 609, 0, 0, 0, 0, 0, 246, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 623, 0, 0, 0, 550, 0, 0, 0, 0, 0, 0, 520, 0, 0, 0, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 540, 0, 0, 585, 526, 0, 530, 0, 244, 0, 0, 243, 0, 564, 0, 585, 0, 369, 478, 417, 0, 528, 0, 501]}, but is not installed. Consider installing fontTools if you encounter encoding problems.
+  The College of Wooster: https://inside.wooster.edu/consumer-and-accreditation-information/internal-information/faculty-profile/ SSLError
+[15/26] The College of Wooster: no target
+[16/26] DePaul University: no target
+  Elon University: https://www.elon.edu/u/administration/institutional-effectiveness/cds/ ConnectTimeout
+  Elon University: https://www.elon.edu/u/admissions/undergraduate/explore/first-year-class-profile/ ConnectTimeout
+  Elon University: https://www.elon.edu/u/law/admissions/entering-class-student-body-profile/ ConnectTimeout
+  Elon University: https://www.elon.edu/u/admissions/undergraduate/meet-us/west-students/alumni-and-student-profiles/ ConnectTimeout
+  Elon University: https://www.elon.edu/u/admissions/undergraduate/international-admissions/admissions-requirements/ ConnectTimeout
+[17/26] Elon University: start failed
+[18/26] Barnard College: SAT ~1530 (range) https://barnard.edu/sites/default/files/inline-files/20230622_CommonDataSet_Barnard.pdf
+[19/26] University of Richmond: SAT ~1510 (range) https://ifx.richmond.edu/pdfs/CDS2024-25.pdf
+[20/26] Pitzer College: no target
+[21/26] Union College: SAT ~1480 (range) https://www.union.edu/sites/default/files/institutional-research/202505/common-data-set-2024-2025-final-website-march-2025.pdf
+[22/26] skip University of Connecticut
+[23/26] University of Delaware: SAT ~1260 (sections) https://www1.udel.edu/IR/cds/cds0001.pdf
+[24/26] University of New Mexico: SAT ~1150 (range) https://oia.unm.edu/facts-and-figures/cds-2023-24.pdf
+[25/26] Webster Vienna Private University: start failed
+[26/26] Pratt Institute: SAT ~1410 (range) https://www.pratt.edu/wp-content/uploads/2024/04/Pratt-Institute-Commom-Data-Set-2023-2024.pdf

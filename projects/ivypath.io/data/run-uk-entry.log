@@ -1,0 +1,65 @@
+FAIL University of Leicester home: HTTP Error 403: Forbidden
+  skip https://le.ac.uk HTTP Error 403: Forbidden
+NOPAGE University of Leicester
+OK Cardiff University https://www.cardiff.ac.uk/study/undergraduate/courses/a-to-z
+NOPAGE University of Birmingham
+NOPAGE University of East Anglia
+FAIL Royal Holloway, University of London home: <urlopen error timed out>
+  skip http://www.rhbnc.ac.uk/ <urlopen error timed out>
+NOPAGE Royal Holloway, University of London
+OK City St George's, University of London https://citystgeorges.ac.uk
+NOPAGE Goldsmiths, University of London
+NOPAGE Heriot-Watt University
+FAIL University of Dundee home: HTTP Error 403: Forbidden
+  skip http://www.dundee.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Dundee
+NOPAGE Robert Gordon University
+FAIL Glasgow Caledonian University home: <urlopen error [Errno -2] Name or service not known>
+  skip http://www.gcal.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+NOPAGE Glasgow Caledonian University
+OK Ulster University https://www.ulster.ac.uk/courses?query=&f.Entry_year_u|entryyear=202728
+OK Nottingham Trent University https://www.ntu.ac.uk/study-and-courses/open-days/undergraduate-open-days
+  sat mentioned: https://www.keele.ac.uk/
+  sat mentioned: https://www.keele.ac.uk/study/opendays/undergraduateopendays/
+  sat mentioned: https://www.keele.ac.uk/study/undergraduate/undergraduatecourses
+  skip https://www.keele.ac.uk/study/undergraduate-2026/undergraduatecourses/ HTTP Error 404: Not Found
+  sat mentioned: https://www.keele.ac.uk/study/undergraduate/
+  sat mentioned: https://www.keele.ac.uk/study/undergraduate/undergraduatecourses/
+NOPAGE Keele University
+FAIL Bournemouth University home: HTTP Error 403: Forbidden
+  skip http://www.bournemouth.ac.uk HTTP Error 403: Forbidden
+NOPAGE Bournemouth University
+  sat mentioned: http://www.falmouth.ac.uk/study/apply
+  sat mentioned: http://www.falmouth.ac.uk/research/phd-mphil/how-to-apply
+  sat mentioned: https://www.falmouth.ac.uk/study/apply
+NOPAGE Falmouth University
+FAIL University of Chichester home: HTTP Error 403: Forbidden
+  skip https://www.chi.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Chichester
+FAIL Kingston University home: HTTP Error 403: Forbidden
+  skip https://www.kingston.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Kingston University
+  skip https://www.herts.ac.uk/ HTTP Error 403: Forbidden
+  sat mentioned: https://www.herts.ac.uk/international/apply/application-requirements
+  sat mentioned: https://www.herts.ac.uk/courses/undergraduate-courses
+  sat mentioned: https://www.herts.ac.uk/study/how-to-apply
+  skip https://www.herts.ac.uk/life/accommodation/apply-for-accommodation HTTP Error 403: Forbidden
+  sat mentioned: https://www.herts.ac.uk/life/accommodation/support-for-students-living-on-campus
+  skip https://www.herts.ac.uk/international/apply HTTP Error 403: Forbidden
+  sat mentioned: https://www.herts.ac.uk/international/apply/make-an-application
+  sat mentioned: https://www.herts.ac.uk/courses
+NOPAGE University of Hertfordshire
+OK London South Bank University https://www.lsbu.ac.uk/study/undergraduate/entry-requirements
+FAIL University of Bedfordshire home: HTTP Error 403: Forbidden
+  skip https://beds.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Bedfordshire
+  sat mentioned: https://aru.ac.uk/international/entry-requirements
+  sat mentioned: https://aru.ac.uk/study/undergraduate/how-to-apply
+NOPAGE Anglia Ruskin University
+  skip http://www.bucks.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Buckinghamshire New University
+NOPAGE Canterbury Christ Church University
+FAIL Birmingham Newman University home: HTTP Error 403: Forbidden
+  skip http://www.newman.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Birmingham Newman University
+OK University of the Arts London https://www.arts.ac.uk/study-at-ual/pre-degree-and-undergraduate-prospectus

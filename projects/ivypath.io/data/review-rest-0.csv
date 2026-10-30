@@ -1,0 +1,8 @@
+name,fact,status,value,quote,source,reason
+Lawrence University,sat,not_required,,Standardized test scores are optional.,https://www.lawrence.edu/admissions-aid/apply/direct-admissions/,уже есть ориентир
+Franklin & Marshall College,sat,not_required,,"when you apply to F&M, you choose whether or not to submit your standardized test (SAT or ACT) scores with your application.",https://www.fandm.edu/apply/international-student-admission/,цитата не подтверждает not required
+Franklin & Marshall College,ap,value,4,Credit will be given to students who have received a 4 or a 5 on Advanced Placement (AP) examinations.,https://www.fandm.edu/apply/international-student-admission/,поле уже заполнено
+Franklin & Marshall College,ib,value,30,International Baccalaureate (IB) Diploma recipients with a total score of 30 or more are awarded 8 course credits (one full year) toward a degree at F&M.,https://www.fandm.edu/apply/international-student-admission/,поле уже заполнено
+University of Massachusetts Lowell,sat,not_required,,1316 Average SAT,https://www.uml.edu/admissions/apply/standards.aspx,цитата не подтверждает not required
+American University in Bulgaria,sat,not_required,,"Although taking SAT is not mandatory, you can still choose to submit electronically your SAT results through the College Board website.",https://www.aubg.edu/aubg-today/how-to-guide-english-proficiency/,цитата не подтверждает not required
+University of Ottawa,sat,not_required,,achieving a score of 550 in the Reading and Writing section of the SAT Digital version,https://www.uottawa.ca/study/undergraduate-studies/language-requirements,цитата не подтверждает not required

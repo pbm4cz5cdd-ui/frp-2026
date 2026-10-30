@@ -1,0 +1,59 @@
+[1/41] skip Colorado College
+[2/41] skip Villanova University
+[3/41] skip University of California, Davis
+[4/41] skip Temple University
+[5/41] skip Agnes Scott College
+[6/41] skip University of Massachusetts Lowell
+[7/41] skip SUNY New Paltz
+[8/41] West Virginia University: homepage failed
+[8/41] West Virginia University: 0 facts
+[9/41] skip University of Alabama
+[10/41] University of South Florida: 3 facts
+  University of Illinois Chicago: https://www.uic.edu/ SSLError
+[11/41] University of Illinois Chicago: homepage failed
+[11/41] University of Illinois Chicago: 0 facts
+[12/41] University of Oklahoma: 3 facts
+[13/41] Brigham Young University: 1 facts
+  Montana State University: https://www.www.montana.edu/admissions/apply/ ConnectionError
+[14/41] Montana State University: 3 facts
+[15/41] California State Polytechnic University, Pomona: 2 facts
+[16/41] Pratt Institute: 3 facts
+[17/41] The Juilliard School: homepage failed
+[17/41] The Juilliard School: 0 facts
+[18/41] University of Alaska Fairbanks: 3 facts
+[19/41] University of Leeds: 2 facts
+  Royal Holloway, University of London: http://www.rhbnc.ac.uk/ ConnectTimeout
+[20/41] Royal Holloway, University of London: homepage failed
+[20/41] Royal Holloway, University of London: 0 facts
+  Glasgow Caledonian University: http://www.gcal.ac.uk/ ConnectionError
+[21/41] Glasgow Caledonian University: homepage failed
+[21/41] Glasgow Caledonian University: 0 facts
+[22/41] Nottingham Trent University: homepage failed
+[22/41] Nottingham Trent University: 0 facts
+[23/41] University of Lancashire: 2 facts
+[24/41] University of Portsmouth: 2 facts
+[25/41] Anglia Ruskin University: 0 facts
+[26/41] University of the Arts London: homepage failed
+[26/41] University of the Arts London: 0 facts
+[27/41] The Royal Central School of Speech and Drama: homepage failed
+[27/41] The Royal Central School of Speech and Drama: 0 facts
+[28/41] Jinan University: 0 facts
+[29/41] Nankai University: 0 facts
+[30/41] Dalian University of Technology: 0 facts
+[31/41] Jiangnan University: 0 facts
+  China Medical University: http://www.cmu.edu.cn/ ConnectTimeout
+[32/41] China Medical University: homepage failed
+[32/41] China Medical University: 0 facts
+[33/41] Beijing Normal-Hong Kong Baptist University United International College: 4 facts
+[34/41] Harbin Engineering University: 0 facts
+[35/41] American University of Central Asia: 0 facts
+[36/41] RIT Croatia: 0 facts
+[37/41] University of Saskatchewan: 0 facts
+[38/41] Wilfrid Laurier University: 0 facts
+  Université du Québec en Outaouais: http://www.uqo.ca ConnectTimeout
+[39/41] Université du Québec en Outaouais: homepage failed
+[39/41] Université du Québec en Outaouais: 0 facts
+[40/41] Douglas College: 0 facts
+  Education University of Hong Kong: http://www.ied.edu.hk SSLError
+[41/41] Education University of Hong Kong: homepage failed
+[41/41] Education University of Hong Kong: 0 facts

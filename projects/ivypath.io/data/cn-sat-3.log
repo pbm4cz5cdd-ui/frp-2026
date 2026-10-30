@@ -1,0 +1,43 @@
+NONE Xi'an Jiaotong University 0 facts
+NONE Beijing Institute of Technology 0 facts
+NONE Beijing Language and Culture University 0 facts
+NONE Beijing University of Chemical Technology 0 facts
+OK Northeast Normal University sat
+OK China Pharmaceutical University sat
+OK East China Normal University sat
+  skip http://www.sysu.edu.cn/Admissions.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Admissions/Scholarship_Programs.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/Undergraduate.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/Exchange_Programs.htm HTTP Error 404: Not Found
+  skip http://www.sysu.edu.cn/Academics/SYSU_Scholars/SYSU_Scholars.htm HTTP Error 404: Not Found
+NONE Sun Yat-sen University 0 facts
+  skip https://admission.whu.edu.cn/info/1581/4661.htm The read operation timed out
+NONE Wuhan University 0 facts
+  skip http://www.lib.cug.edu.cn/english/index.html HTTP Error 404: Not Found
+OK China University of Geosciences (Wuhan) sat
+OK Tianjin University sat
+  skip http://www.njnu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Nanjing Normal University 0 facts
+NONE University of Electronic Science and Technology of China 0 facts
+  skip http://dutdice.dlut.edu.cn/gjhzyjlcyw/Research/Visiting_Scholar_Programs.htm HTTP Error 404: Not Found
+  skip http://dli.dlut.edu.cn/indexEn.htm HTTP Error 404: Not Found
+NONE Dalian University of Technology 0 facts
+  skip https://sfl.csu.edu.cn/english HTTP Error 404: 
+OK Central South University sat
+  skip http://international.zzu.edu.cn/en/course?cid=4&pid=4 <urlopen error [Errno 101] Network is unreachable>
+  skip http://international.zzu.edu.cn/scholarship?cid=5&pid=5 <urlopen error [Errno 101] Network is unreachable>
+NONE Zhengzhou University 0 facts
+  skip https://admission5.jiangnan.edu.cn/chat/index HTTP Error 483: 
+OK Jiangnan University sat
+  skip http://admission.snnu.edu.cn/ HTTP Error 403: Forbidden
+NONE Shaanxi Normal University 0 facts
+NONE Inner Mongolia University 0 facts
+  skip http://www.cmu.edu.cn/ <urlopen error timed out>
+NONE China Medical University 0 facts
+  skip http://www.bfa.edu.cn HTTP Error 412: Precondition Failed
+NONE Beijing Film Academy 0 facts
+OK Shenzhen MSU-BIT University sat
+OK Beijing Forestry University sat
+  skip https://yanzhen.hrbeu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://studyheu.hrbeu.edu.cn/en/Scholarship/Chinese_Government_Scholarship.htm HTTP Error 404: Not Found
+NONE Harbin Engineering University 0 facts

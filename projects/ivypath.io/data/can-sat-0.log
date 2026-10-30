@@ -1,0 +1,127 @@
+  skip http://iso.uottawa.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uottawa.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.uottawa.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://admission.uottawa.ca/ <urlopen error [Errno -5] No address associated with hostname>
+NONE University of Ottawa 0 facts
+  skip http://iso.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.usask.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.usask.ca/english/ HTTP Error 403: Forbidden
+  skip https://www.usask.ca/english/index.htm HTTP Error 403: Forbidden
+NONE University of Saskatchewan 0 facts
+  skip http://iso.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.ulaval.ca/en/admission/track-your-application/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://en.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ulaval.ca/ <urlopen error [Errno -3] Temporary failure in name resolution>
+  skip https://international.ulaval.ca/ <urlopen error [Errno -3] Temporary failure in name resolution>
+  skip https://www.ulaval.ca/english/ HTTP Error 404: Not Found
+  skip https://www.ulaval.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ulaval.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE Université Laval 0 facts
+  skip http://iso.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.usherbrooke.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.usherbrooke.ca/english/ HTTP Error 404: Not Found
+  skip https://www.usherbrooke.ca/english/index.htm HTTP Error 404: Not Found
+NONE Université de Sherbrooke 0 facts
+  skip http://iso.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.etsmtl.ca/ HTTP Error 503: Service Unavailable
+  skip https://en.etsmtl.ca/ HTTP Error 503: Service Unavailable
+  skip http://english.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.etsmtl.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://international.etsmtl.ca/ <urlopen error [Errno -5] No address associated with hostname>
+  skip https://www.etsmtl.ca/english/ HTTP Error 404: Not Found
+  skip https://www.etsmtl.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.etsmtl.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.etsmtl.ca/en/index.htm HTTP Error 404: Not Found
+NONE École de technologie supérieure 0 facts
+  skip http://iso.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.hec.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.hec.ca/english/index.htm HTTP Error 404: Not Found
+NONE HEC Montréal 0 facts
+  skip http://iso.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqac.ca/english/ HTTP Error 404: Not Found
+  skip http://www.uqac.ca/english/index.htm HTTP Error 404: Not Found
+  skip https://international.uqac.ca/etudier-a-luqac/ The read operation timed out
+  skip http://study.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.uqac.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqac.ca/en/index.htm HTTP Error 404: Not Found
+  skip https://www.uqac.ca/icmt The read operation timed out
+NONE Université du Québec à Chicoutimi 0 facts
+  skip http://iso.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqar.ca/english/ HTTP Error 404: Not Found
+  skip http://www.uqar.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.uqar.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.uqar.ca/en/index.htm HTTP Error 404: Not Found
+NONE Université du Québec à Rimouski 0 facts
+  skip http://iso.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.douglascollege.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.douglascollege.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.douglascollege.ca/en/ HTTP Error 404: Not Found
+  skip https://www.douglascollege.ca/en/index.htm HTTP Error 404: Not Found
+NONE Douglas College 0 facts
+  skip http://www.nscad.ns.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE NSCAD University 0 facts

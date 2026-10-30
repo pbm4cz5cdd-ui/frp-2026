@@ -1,0 +1,55 @@
+  skip http://en.lib.ustc.edu.cn/ <urlopen error timed out>
+NONE University of Science and Technology of China 0 facts
+  skip http://apply.bnu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+OK Beijing Normal University sat
+  skip http://admissions.bjut.edu.cn/ The read operation timed out
+  skip http://english.bjut.edu.cn/ The read operation timed out
+NONE Beijing University of Technology 0 facts
+  skip http://sice.cufe.edu.cn/ywb/index_english.htm HTTP Error 404: Not Found
+  skip http://int.cufe.edu.cn/Elish/index.htm HTTP Error 404: Not Found
+OK Central University of Finance and Economics sat
+  skip http://www.bupt.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Beijing University of Posts and Telecommunications 0 facts
+OK University of Nottingham Ningbo China sat
+  skip http://www.cafa.edu.cn/ <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+NONE Central Academy of Fine Arts 0 facts
+  skip https://apply.shu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://en.shu.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Shanghai University 0 facts
+  skip https://www.szu.edu.cn <urlopen error [Errno -3] Temporary failure in name resolution>
+NONE Shenzhen University 0 facts
+NONE Central China Normal University 0 facts
+  skip http://www.apply.sdu.edu.cn/--><!--/student/apply_accommodation HTTP Error 400: Bad Request
+NONE Shandong University 0 facts
+NONE Southeast University 0 facts
+NONE Nanjing Agricultural University 0 facts
+  skip http://english.cqu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://study.cqu.edu.cn/ HTTP Error 412: Precondition Failed
+NONE Chongqing University 0 facts
+  skip http://jwgl.nwsuaf.edu.cn/academic/index.html <urlopen error [Errno -2] Name or service not known>
+NONE Northwest A&F University 0 facts
+OK Nanchang University sat
+  skip http://iso.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ahu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://en.ahu.edu.cn/ HTTP Error 412: Precondition Failed
+  skip http://english.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ahu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.ahu.edu.cn/english/ HTTP Error 502: Bad Gateway
+  skip http://www.ahu.edu.cn/english/index.htm HTTP Error 502: Bad Gateway
+NONE Anhui University 0 facts
+OK Xidian University sat
+NONE Xinjiang University 0 facts
+NONE Yunnan University 0 facts
+NONE Nanjing Medical University 0 facts
+  skip https://en.ccmusic.edu.cn/ HTTP Error 403: Forbidden
+NONE China Conservatory of Music 0 facts
+  skip http://www.znufe.edu.cn <urlopen error [Errno -2] Name or service not known>
+NONE Zhongnan University of Economics and Law 0 facts
+  skip http://cie.upc.edu.cn/admission_cn/ timed out
+  skip http://cie.upc.edu.cn/admission_en/ timed out
+  skip http://cie.upc.edu.cn/en/index.htm timed out
+  skip http://cie.upc.edu.cn/en/CONFUCIUS__INSTITUTE/Introduction_of_CI.htm timed out
+  skip http://cie.upc.edu.cn/en/ timed out
+  skip http://cie.upc.edu.cn/_t15/main.htm timed out
+  skip http://cie.upc.edu.cn/_t15/1142/list.htm timed out
+NONE China University of Petroleum 0 facts

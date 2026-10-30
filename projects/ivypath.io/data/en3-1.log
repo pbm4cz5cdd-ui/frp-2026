@@ -1,0 +1,137 @@
+  skip https://citystgeorges.ac.uk HTTP Error 403: Forbidden
+NONE City St George's, University of London 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://gold.ac.uk/english/ HTTP Error 404: Not Found
+  skip https://gold.ac.uk/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://gold.ac.uk/en/ HTTP Error 404: Not Found
+  skip https://gold.ac.uk/en/index.htm HTTP Error 404: Not Found
+OK Goldsmiths, University of London ielts
+  skip http://www.dundee.ac.uk/ HTTP Error 403: Forbidden
+NONE University of Dundee 0 facts
+  skip http://www.gcal.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+NONE Glasgow Caledonian University 0 facts
+  skip https://www.ulster.ac.uk/ HTTP Error 403: Forbidden
+NONE Ulster University 0 facts
+  skip https://www.ntu.ac.uk HTTP Error 403: Forbidden
+NONE Nottingham Trent University 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.northumbria.ac.uk/international-students/ HTTP Error 404: Page not found
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip http://www.northumbria.ac.uk/english/ HTTP Error 404: Page not found
+  skip http://www.northumbria.ac.uk/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.northumbria.ac.uk/en/ HTTP Error 404: Page not found
+  skip http://www.northumbria.ac.uk/en/index.htm HTTP Error 404: Not Found
+  skip http://www.northumbria.ac.uk/courses/study-levels/ HTTP Error 404: Page not found
+  skip http://www.northumbria.ac.uk/courses/finance/dates-and-fees/ HTTP Error 404: Page not found
+OK Northumbria University ielts
+  skip https://www.keele.ac.uk/study/undergraduate-2026/undergraduatecourses/ HTTP Error 404: Not Found
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.keele.ac.uk/study/opendays/undergraduateopendays/Autumn 2026 Open Days Programme.pdf URL can't contain control characters. '/study/opendays/undergraduateopendays/Autumn 2026 Open Days Programme.pdf' (found at least ' ')
+OK Keele University ielts,toefl
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+NONE University of Wolverhampton 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+OK Falmouth University ielts,toefl
+  skip https://www.chi.ac.uk/ HTTP Error 403: Forbidden
+NONE University of Chichester 0 facts
+  skip https://www.kingston.ac.uk/ HTTP Error 403: Forbidden
+NONE Kingston University 0 facts
+  skip https://www.herts.ac.uk/ HTTP Error 403: Forbidden
+NONE University of Hertfordshire 0 facts
+  skip https://beds.ac.uk/ HTTP Error 403: Forbidden
+NONE University of Bedfordshire 0 facts
+  skip http://www.bucks.ac.uk/ HTTP Error 403: Forbidden
+NONE Buckinghamshire New University 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip http://www.yorksj.ac.uk/english/ HTTP Error 404: Not Found
+  skip http://www.yorksj.ac.uk/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://www.yorksj.ac.uk/en/ HTTP Error 404: Not Found
+  skip http://www.yorksj.ac.uk/en/index.htm HTTP Error 404: Not Found
+NONE York St John University 0 facts
+  skip http://www.newman.ac.uk/ HTTP Error 403: Forbidden
+NONE Birmingham Newman University 0 facts
+  skip https://www.arts.ac.uk/ HTTP Error 403: Forbidden
+NONE University of the Arts London 0 facts
+  skip http://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://international.ac.uk/ HTTP Error 403: Forbidden
+  skip https://www.gsa.ac.uk/english/index.htm HTTP Error 404: Not Found
+  skip http://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.gsa.ac.uk/en/ HTTP Error 404: Not Found
+  skip https://www.gsa.ac.uk/en/index.htm HTTP Error 404: Not Found
+OK The Glasgow School of Art ielts
+  skip https://www.nua.ac.uk/ <urlopen error timed out>
+NONE Norwich University of the Arts 0 facts
+  skip https://ram.ac.uk HTTP Error 403: Forbidden
+NONE Royal Academy of Music 0 facts
+  skip https://www.cssd.ac.uk/ HTTP Error 403: Forbidden
+NONE The Royal Central School of Speech and Drama 0 facts
+  skip https://lamda.ac.uk/ HTTP Error 403: Forbidden
+NONE LAMDA 0 facts

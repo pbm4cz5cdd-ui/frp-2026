@@ -1,0 +1,10 @@
+name,fact,status,value,quote,source,reason
+Binghamton University,ielts,value,6.5,IELTS 6.5-7.0,https://www.binghamton.edu/admissions/undergraduate/apply/international/first-year.html,поле уже заполнено
+Binghamton University,toefl,value,80,"Before Jan. 21, 2026: Jan. 21, 2026 or later: 80-95 4.0-5.0",https://www.binghamton.edu/admissions/undergraduate/apply/international/first-year.html,поле уже заполнено
+Binghamton University,sat,not_required,,SAT (EBRW) 530-640,https://www.binghamton.edu/admissions/undergraduate/apply/international/first-year.html,ориентир меньше 800: похоже на секцию
+The Glasgow School of Art,ielts,value,6.0,Award CertHE and IELTS equivalent of minimum 6.0.,https://www.gsa.ac.uk/undergraduate-degrees/international-foundation,поле уже заполнено
+American University of Armenia,ielts,accepted,,"If granted the waiver, you will be exempted from the TOEFL iBT or IELTS Academic exams.",https://admissions.aua.am/ugrad/faqs/,цитата не подтверждает: тест принимается
+American University of Armenia,toefl,accepted,,"If granted the waiver, you will be exempted from the TOEFL iBT or IELTS Academic exams.",https://admissions.aua.am/ugrad/faqs/,цитата не подтверждает: тест принимается
+American University of Armenia,sat,not_required,,Present valid and official results confirming English language proficiency typically through the following options: TOEFL iBT IELTS Academic SAT English or ACT English,https://admissions.aua.am/ugrad/application-requirements/,цитата не подтверждает not required
+Wilfrid Laurier University,ielts,value,6.5,"IELTS Academic or IELTS Online Minimum score of 6.5, with a minimum of 6.0 in each band.",https://www.wlu.ca/future-students/undergraduate/admissions/requirements/english-proficiency.html,поле уже заполнено
+Wilfrid Laurier University,toefl,value,83,Tests written prior to January 2026: an overall score of 83 or higher with a minimum score of 20 in each component.,https://www.wlu.ca/future-students/undergraduate/admissions/requirements/english-proficiency.html,поле уже заполнено

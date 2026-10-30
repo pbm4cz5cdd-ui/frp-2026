@@ -1,0 +1,54 @@
+start 05:10:31, waiting for: 1664866 1664867 1664868 and 1664558
+all finished 05:52:01
+--- merge 05:52:01
+merged 7 proposals from 3 files -> data/proposals-cnsat3.csv
+--- verify 05:52:01
+verified 7 of 7
+--- apply 05:52:30
+applied 7, skipped 0
+APPLY Northeast Normal University
+APPLY University of Nottingham Ningbo China
+APPLY East China Normal University
+APPLY Dalian University of Technology
+APPLY Xidian University
+APPLY Shihezi University
+APPLY Beijing Forestry University
+--- coverage 05:52:30
+country	rows	IELTS	TOEFL	SAT	HSK	AP	AID
+usa	344	325/344	325/344	344/344	0/344	44/344	0/344
+uk	124	103/124	97/124	95/124	0/124	10/124	0/124
+china	107	39/107	38/107	29/107	34/107	2/107	20/107
+canada	56	43/56	44/56	36/56	0/56	10/56	0/56
+hongkong	11	7/11	7/11	6/11	0/11	2/11	0/11
+germany	7	7/7	7/7	7/7	0/7	0/7	0/7
+korea	7	7/7	7/7	7/7	0/7	0/7	0/7
+netherlands	7	7/7	7/7	7/7	0/7	0/7	0/7
+qatar	6	4/6	4/6	4/6	0/6	1/6	0/6
+uae	6	5/6	5/6	4/6	0/6	1/6	0/6
+australia	5	5/5	5/5	5/5	0/5	0/5	0/5
+switzerland	5	5/5	5/5	5/5	0/5	0/5	0/5
+turkey	5	5/5	5/5	5/5	0/5	1/5	0/5
+france	4	4/4	4/4	4/4	0/4	0/4	0/4
+italy	4	3/4	3/4	3/4	0/4	0/4	0/4
+japan	4	4/4	4/4	4/4	0/4	0/4	0/4
+sweden	4	4/4	4/4	4/4	0/4	0/4	0/4
+czech	3	3/3	3/3	3/3	0/3	1/3	0/3
+singapore	3	3/3	3/3	3/3	0/3	0/3	0/3
+austria	2	2/2	2/2	2/2	0/2	0/2	0/2
+denmark	2	2/2	2/2	2/2	0/2	0/2	0/2
+finland	2	2/2	2/2	2/2	0/2	0/2	0/2
+hungary	2	2/2	2/2	2/2	0/2	0/2	0/2
+ireland	2	2/2	2/2	2/2	0/2	0/2	0/2
+nz	2	2/2	2/2	2/2	0/2	0/2	0/2
+armenia	1	1/1	1/1	0/1	0/1	0/1	0/1
+bulgaria	1	1/1	1/1	1/1	0/1	0/1	0/1
+croatia	1	1/1	1/1	0/1	0/1	0/1	0/1
+kosovo	1	1/1	1/1	1/1	0/1	0/1	0/1
+kyrgyzstan	1	0/1	0/1	0/1	0/1	0/1	0/1
+malaysia	1	1/1	1/1	1/1	0/1	0/1	0/1
+panama	1	1/1	1/1	1/1	0/1	0/1	0/1
+poland	1	1/1	1/1	1/1	0/1	0/1	0/1
+spain	1	1/1	1/1	1/1	0/1	1/1	0/1
+uzbekistan	1	1/1	1/1	1/1	0/1	0/1	0/1
+TOTAL	734	604/734	598/734	594/734	34/734	73/734	20/734
+--- done 05:52:30

@@ -1,0 +1,53 @@
+  skip http://iso.ucalgary.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.ucalgary.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.ucalgary.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.ucalgary.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.ucalgary.ca/future-students/admissions/future-contacts HTTP Error 404: Not Found
+  skip https://www.ucalgary.ca/future-students/graduate/admissions/visiting-student-researchers HTTP Error 404: Not Found
+  skip https://www.ucalgary.ca/awards-and-funding/applying-accepting-and-managing-awards HTTP Error 404: Not Found
+  skip https://grad.ucalgary.ca/future-students/international-students/china-scholarship-council The read operation timed out
+  skip https://grad.ucalgary.ca/future-students/how-apply/transcript-faq-applicants The read operation timed out
+  skip https://www.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs HTTP Error 404: Not Found
+NONE University of Calgary 0 facts
+  skip http://iso.umontreal.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.umontreal.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE Université de Montréal 0 facts
+  skip https://brocku.ca HTTP Error 403: Forbidden
+NONE Brock University 0 facts
+  skip http://iso.uqam.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqam.ca/ <urlopen error [Errno -2] Name or service not known>
+NONE Université du Québec à Montréal 0 facts
+  skip http://www.polymtl.ca/ HTTP Error 403: Forbidden
+NONE Polytechnique Montréal 0 facts
+  skip http://iso.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://iso.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://admission.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://en.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://english.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://international.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.uqtr.ca/english/index.htm HTTP Error 404: Not Found
+  skip http://study.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://study.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip http://lxs.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://lxs.uqtr.ca/ <urlopen error [Errno -2] Name or service not known>
+  skip https://www.uqtr.ca/en/ HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/en/index.htm HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&amp;owa_no_fiche=45 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&amp;owa_no_fiche=76 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&owa_no_fiche=74 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw031?owa_no_site=1200&amp;owa_no_fiche=75 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw030?owa_no_site=2007 HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/docs/GSC133/O0006641246_POLITIQUE_EN_MATI_RE_DE_PROTECTION_DE_L_INT_GRIT____Juin_2025.pdf HTTP Error 404: Not Found
+  skip https://www.uqtr.ca/gscw030?owa_no_site=960 HTTP Error 404: Not Found
+NONE Université du Québec à Trois-Rivières 0 facts
+  skip http://www.uqo.ca <urlopen error timed out>
+NONE Université du Québec en Outaouais 0 facts
+  skip https://www.humber.ca/ HTTP Error 403: Forbidden
+NONE Humber Polytechnic 0 facts
+OK Southern Alberta Institute of Technology sat
+  skip http://www.nipissingu.ca/ HTTP Error 403: Forbidden
+NONE Nipissing University 0 facts

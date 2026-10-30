@@ -1,0 +1,48 @@
+OK Harbin Institute of Technology sat
+NONE Beihang University 0 facts
+  skip https://osao.bfsu.edu.cn/Admission/Programs.htm HTTP Error 404: Not Found
+  skip https://osao.bfsu.edu.cn/Admission/Application_Process.htm HTTP Error 404: Not Found
+NONE Beijing Foreign Studies University 0 facts
+  skip https://www.cupl.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE China University of Political Science and Law 0 facts
+  skip https://en.bsu.edu.cn/ HTTP Error 502: Bad Gateway
+NONE Beijing Sport University 0 facts
+NONE Beijing Normal-Hong Kong Baptist University United International College 0 facts
+  skip http://open.tongji.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Tongji University 0 facts
+NONE East China University of Science and Technology 0 facts
+  skip http://en.fin.sustech.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+NONE Southern University of Science and Technology 0 facts
+  skip http://iso.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://admission.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://english.hut.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.hut.edu.cn/ <urlopen error [Errno 101] Network is unreachable>
+  skip http://www.whut.edu.cn/english/ HTTP Error 404: Not Found
+  skip http://www.whut.edu.cn/english/index.htm HTTP Error 404: Not Found
+  skip http://www.whut.edu.cn/en/ HTTP Error 404: Not Found
+  skip http://www.whut.edu.cn/en/index.htm HTTP Error 404: Not Found
+NONE Wuhan University of Technology 0 facts
+  skip http://xinwen.ouc.edu.cn/Index.html <urlopen error [Errno 101] Network is unreachable>
+NONE Ocean University of China 0 facts
+  skip http://iso.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://en.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+  skip http://international.njust.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Nanjing University of Science and Technology 0 facts
+OK Sichuan University sat
+  skip http://apply.jlu.edu.cn/member/login.do HTTP Error 404: Not Found
+OK Jilin University sat
+  skip http://www.hunu.edu.cn/ <urlopen error [Errno -2] Name or service not known>
+NONE Hunan University 0 facts
+  skip https://en.fzu.edu.cn/html/internationalstudents/contactus HTTP Error 404: Not Found
+OK Fuzhou University sat
+NONE Ningbo University 0 facts
+  skip https://lib.chd.edu.cn/en/ HTTP Error 400: 
+NONE Chang'an University 0 facts
+OK Shihezi University sat
+  skip https://admissions.ccmu.edu.cn/ <urlopen error timed out>
+NONE Capital Medical University 0 facts
+NONE Communication University of China 0 facts
+OK Xi'an Jiaotong-Liverpool University sat
+NONE Southwestern University of Finance and Economics 0 facts
+NONE Nanjing University of Aeronautics and Astronautics 0 facts

@@ -1,0 +1,9 @@
+name,country,fact,status,value,note,quote,source,checked
+University of Illinois Chicago,usa,ielts,value,6.5,"минимум; зависит от программы, до X",Overall Score 6.5,https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements,2026-10-29
+University of Illinois Chicago,usa,toefl,value,80,"минимум; зависит от программы, до X",Total Score 80,https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements,2026-10-29
+University of Illinois Chicago,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,SAT Critical Reading score of 530 or higher (SAT prior to March 2016) or SAT Evidence-Based Reading and Writing score of 570 or higher (SAT taken March 2016 or later),https://admissions.uic.edu/undergraduate/requirements-deadlines/international-requirements,2026-10-29
+San Francisco State University,usa,ielts,value,6.0,минимум; IELTS Indicator также 6.0,IELTS Overall Score 6.0,https://future.sfsu.edu/admissions/intl-transfers,2026-10-29
+San Francisco State University,usa,toefl,value,61,минимум; TOEFL iBT Special Home Edition также 61,TOEFL iBT Total Score 61,https://future.sfsu.edu/admissions/intl-transfers,2026-10-29
+San Francisco State University,usa,sat,not_required,,SAT не требуется; используется для английского (EBRW 550),SAT Evidence Based Reading and Writing 550,https://future.sfsu.edu/admissions/intl-transfers,2026-10-29
+San Francisco State University,usa,ap,value,3,AP English Language/Literature and Composition минимум 3,AP English Language/Literature and Composition 3,https://future.sfsu.edu/admissions/intl-transfers,2026-10-29
+San Francisco State University,usa,ib,value,4,IB English A – Language and Literature HL минимум 4,IB English A – Language and Literature HL 4,https://future.sfsu.edu/admissions/intl-transfers,2026-10-29

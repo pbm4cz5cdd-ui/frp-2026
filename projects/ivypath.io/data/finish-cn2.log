@@ -1,0 +1,51 @@
+start 16:34:31, waiting for: 1498753 1498761 1498793 1498819
+start 16:34:54, waiting for: 1498753 1498761 1498793 1498819
+all crawlers finished 16:53:24
+--- headers 16:53:24
+fixed data/proposals-cn2-0.csv 10 rows
+fixed data/proposals-cn2-1.csv 7 rows
+fixed data/proposals-cn2-2.csv 9 rows
+fixed data/proposals-cn2-3.csv 8 rows
+--- merge 16:53:24
+merged 34 proposals from 4 files -> data/proposals-cn2.csv
+--- apply 16:53:24
+applied 24 rows, review 10 rows, csv 734 rows
+--- coverage 16:53:25
+country	rows	IELTS	TOEFL	SAT	HSK	AP	AID
+usa	344	325/344	325/344	344/344	0/344	44/344	0/344
+uk	124	103/124	97/124	94/124	0/124	10/124	0/124
+china	107	35/107	37/107	11/107	32/107	2/107	20/107
+canada	56	43/56	44/56	36/56	0/56	10/56	0/56
+hongkong	11	7/11	7/11	6/11	0/11	2/11	0/11
+germany	7	7/7	7/7	7/7	0/7	0/7	0/7
+korea	7	7/7	7/7	7/7	0/7	0/7	0/7
+netherlands	7	7/7	7/7	7/7	0/7	0/7	0/7
+qatar	6	4/6	4/6	4/6	0/6	1/6	0/6
+uae	6	5/6	5/6	4/6	0/6	1/6	0/6
+australia	5	5/5	5/5	5/5	0/5	0/5	0/5
+switzerland	5	5/5	5/5	5/5	0/5	0/5	0/5
+turkey	5	5/5	5/5	5/5	0/5	1/5	0/5
+france	4	4/4	4/4	4/4	0/4	0/4	0/4
+italy	4	3/4	3/4	3/4	0/4	0/4	0/4
+japan	4	4/4	4/4	4/4	0/4	0/4	0/4
+sweden	4	4/4	4/4	4/4	0/4	0/4	0/4
+czech	3	3/3	3/3	3/3	0/3	1/3	0/3
+singapore	3	3/3	3/3	3/3	0/3	0/3	0/3
+austria	2	2/2	2/2	2/2	0/2	0/2	0/2
+denmark	2	2/2	2/2	2/2	0/2	0/2	0/2
+finland	2	2/2	2/2	2/2	0/2	0/2	0/2
+hungary	2	2/2	2/2	2/2	0/2	0/2	0/2
+ireland	2	2/2	2/2	2/2	0/2	0/2	0/2
+nz	2	2/2	2/2	2/2	0/2	0/2	0/2
+armenia	1	1/1	1/1	0/1	0/1	0/1	0/1
+bulgaria	1	1/1	1/1	1/1	0/1	0/1	0/1
+croatia	1	1/1	1/1	0/1	0/1	0/1	0/1
+kosovo	1	1/1	1/1	1/1	0/1	0/1	0/1
+kyrgyzstan	1	0/1	0/1	0/1	0/1	0/1	0/1
+malaysia	1	1/1	1/1	1/1	0/1	0/1	0/1
+panama	1	1/1	1/1	1/1	0/1	0/1	0/1
+poland	1	1/1	1/1	1/1	0/1	0/1	0/1
+spain	1	1/1	1/1	1/1	0/1	1/1	0/1
+uzbekistan	1	1/1	1/1	1/1	0/1	0/1	0/1
+TOTAL	734	600/734	597/734	575/734	32/734	73/734	20/734
+--- done 16:53:25

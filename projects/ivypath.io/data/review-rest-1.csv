@@ -1,0 +1,11 @@
+name,fact,status,value,quote,source,reason
+New York Institute of Technology Abu Dhabi,ielts,value,6.0,IELTS score: 6.0,https://www.nyit.edu/admissions/international/,поле уже заполнено
+New York Institute of Technology Abu Dhabi,toefl,value,79,TOEFL (iBT) score: 4.0 (new); 79 (old),https://www.nyit.edu/admissions/international/,поле уже заполнено
+New York Institute of Technology Abu Dhabi,ib,value,4,IB English Literature A HL (Higher Level): 4,https://www.nyit.edu/admissions/international/,IB вне шкалы 24–45
+Pace University,ielts,not_required,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,цитата не подтверждает not required
+Pace University,toefl,not_required,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,цитата не подтверждает not required
+University of Maine,sat,not_required,,SAT Reading/Writing score is 550 or higher;,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,цитата не подтверждает not required
+Brooklyn College,sat,not_required,,CUNY has revised its testing policy to test optional effective fall 2023 through spring 2027.,https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/,уже есть примечание
+University of Nebraska at Omaha,sat,not_required,,SAT Reading Sub Score 520 555 520,https://www.unomaha.edu/undergraduate-admissions/international-students/english-proficiency.php,цитата не подтверждает not required
+Colorado School of Mines,sat,not_required,,1372 AVERAGE SAT COMPOSITE SCORE (FOR THOSE WHO CHOSE TO SUBMIT SCORES),https://undergraduate-admissions.mines.edu/,цитата не подтверждает not required
+University of Calgary,ib,value,5,English A (Literature or Language & Literature) HL or SL,https://www.ucalgary.ca/future-students/undergraduate/admissions/how-to-apply/english-language-requirements,IB вне шкалы 24–45

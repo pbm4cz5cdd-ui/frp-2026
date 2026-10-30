@@ -1,0 +1,6 @@
+name,fact,status,value,quote,source,reason
+Tulane University,ielts,accepted,,"Recognized English language test (Ex: TOEFL, IELTS, OPI, recognized country specific tests, etc.)",https://oiss.tulane.edu/english-language-verification,цитата не подтверждает: тест принимается
+Tulane University,toefl,accepted,,"Recognized English language test (Ex: TOEFL, IELTS, OPI, recognized country specific tests, etc.)",https://oiss.tulane.edu/english-language-verification,цитата не подтверждает: тест принимается
+Pace University,sat,not_required,,"No standardized admissions test is required (i.e. GMAT, GRE, Miller Analogy)",https://www.pace.edu/college-health-professions/faculty-and-departments/departments/master-of-public-health/admission,цитата не подтверждает not required
+University of Colorado Colorado Springs,sat,not_required,,SAT I ERWS (UCCS code: 4874) 400,https://www.uccs.edu/admissionsenrollment/english-language-proficiency,цитата не подтверждает not required
+University of Colorado Colorado Springs,ib,value,4,IB Higher Level English A Literature 4,https://www.uccs.edu/admissionsenrollment/english-language-proficiency,IB вне шкалы 24–45

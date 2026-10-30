@@ -1,0 +1,11 @@
+name,country,fact,status,value,note,quote,source,checked
+Pace University,usa,ielts,not_required,,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,2026-10-29
+Pace University,usa,toefl,not_required,,,The ELI at Pace University does not use TOEFL/ IELTS/Pearson scores or High School/ College transcripts for admission.,https://www.pace.edu/eli/apply-now,2026-10-29
+University of Maine,usa,ielts,value,6.5,минимум,IELTS — minimum score of 6.5.,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,2026-10-29
+University of Maine,usa,toefl,value,79,"минимум; iBT 79 до 2026, 4.5 после",TOEFL iBT — minimum score of 79 (pre-January 2026) or 4.5 (post-January 2026).,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,2026-10-29
+University of Maine,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,SAT Reading/Writing score is 550 or higher;,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,2026-10-29
+University of Pittsburgh,usa,ielts,accepted,,IELTS принимается; минимальный балл не опубликован,"Always use your full legal name as it appears on your passport when completing your admissions, TOEFL/IELTS/Duolingo, and SAT/ACT applications.",https://admissions.pitt.edu/international/,2026-10-29
+University of Pittsburgh,usa,toefl,accepted,,TOEFL принимается; минимальный балл не опубликован,"Always use your full legal name as it appears on your passport when completing your admissions, TOEFL/IELTS/Duolingo, and SAT/ACT applications.",https://admissions.pitt.edu/international/,2026-10-29
+Northumbria University,uk,ielts,accepted,,IELTS принимается; минимальный балл не опубликован,IELTS Academic,https://www.northumbria.ac.uk/international/english-language-centre/acceptable-english-qualifications-1/,2026-10-29
+Northumbria University,uk,toefl,accepted,,TOEFL принимается; минимальный балл не опубликован,TOEFL IBT (test centre only),https://www.northumbria.ac.uk/international/english-language-centre/acceptable-english-qualifications-1/,2026-10-29
+Université Laval,canada,toefl,value,64,"минимум; зависит от программы, до 78",Examen TOEFL - version IBT avec résultat de 064 à 078,https://www.ulaval.ca/etudes/cours/anl-3010-advanced-english-i,2026-10-29

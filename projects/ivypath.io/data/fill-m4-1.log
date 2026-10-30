@@ -1,0 +1,48 @@
+[1/33] New York Institute of Technology Abu Dhabi: 2 facts
+  Connecticut College: http://www.connecticutcollege.edu ConnectTimeout
+[2/33] Connecticut College: homepage failed
+[2/33] Connecticut College: 0 facts
+[3/33] Tulane University: 0 facts
+[4/33] Pace University: 2 facts
+[5/33] University of Massachusetts Lowell: 1 facts
+[6/33] City College of New York: homepage failed
+[6/33] City College of New York: 0 facts
+[7/33] West Virginia University: homepage failed
+[7/33] West Virginia University: 0 facts
+  University of Kentucky: https://uky.edu SSLError
+[8/33] University of Kentucky: homepage failed
+[8/33] University of Kentucky: 0 facts
+[9/33] Kansas State University: https://www.k-state.edu/admissions/undergrad/manhattan/apply/international/english-proficiency.html JSONDecodeError Expecting ',' delimiter: line 1 column 282 (char 281)
+[9/33] Kansas State University: 4 facts
+[10/33] Brigham Young University: 2 facts
+[11/33] California State University, Fullerton: 0 facts
+[12/33] Parsons School of Design (The New School): homepage failed
+[12/33] Parsons School of Design (The New School): 0 facts
+[13/33] The Juilliard School: homepage failed
+[13/33] The Juilliard School: 0 facts
+[14/33] University of Colorado Colorado Springs: 0 facts
+[15/33] University of York: 2 facts
+[16/33] University of East Anglia: 0 facts
+[17/33] Brunel University of London: 0 facts
+[18/33] Robert Gordon University: 2 facts
+[19/33] Northumbria University: 2 facts
+[20/33] Bournemouth University: homepage failed
+[20/33] Bournemouth University: 0 facts
+[21/33] Kingston University: homepage failed
+[21/33] Kingston University: 0 facts
+[22/33] Anglia Ruskin University: 3 facts
+[23/33] Birmingham Newman University: homepage failed
+[23/33] Birmingham Newman University: 0 facts
+[24/33] Royal Academy of Music: homepage failed
+[24/33] Royal Academy of Music: 0 facts
+[25/33] New York University Abu Dhabi: 0 facts
+[26/33] American University of Central Asia: 0 facts
+[27/33] RIT Croatia: 0 facts
+[28/33] University of Calgary: 4 facts
+[29/33] University of Guelph: 5 facts
+[30/33] Université de Sherbrooke: 0 facts
+[31/33] HEC Montréal: 0 facts
+[32/33] Université du Québec à Rimouski: 0 facts
+  NSCAD University: http://www.nscad.ns.ca/ ConnectionError
+[33/33] NSCAD University: homepage failed
+[33/33] NSCAD University: 0 facts

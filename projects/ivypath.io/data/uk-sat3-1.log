@@ -1,0 +1,37 @@
+FAIL University of Chichester home: HTTP Error 403: Forbidden
+  skip https://www.chi.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Chichester
+FAIL Kingston University home: HTTP Error 403: Forbidden
+  skip https://www.kingston.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Kingston University
+FAIL University of Hertfordshire home: HTTP Error 403: Forbidden
+  skip https://www.herts.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Hertfordshire
+FAIL London South Bank University home: HTTP Error 403: Forbidden
+  skip https://www.lsbu.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE London South Bank University
+FAIL University of Bedfordshire home: HTTP Error 403: Forbidden
+  skip https://beds.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Bedfordshire
+NOPAGE Anglia Ruskin University
+  skip http://www.bucks.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Buckinghamshire New University
+NOPAGE Canterbury Christ Church University
+FAIL Birmingham Newman University home: HTTP Error 403: Forbidden
+  skip http://www.newman.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Birmingham Newman University
+FAIL University of the Arts London home: HTTP Error 403: Forbidden
+  skip https://www.arts.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of the Arts London
+FAIL Norwich University of the Arts home: <urlopen error timed out>
+  skip https://www.nua.ac.uk/ <urlopen error timed out>
+NOPAGE Norwich University of the Arts
+FAIL Royal Academy of Music home: HTTP Error 403: Forbidden
+  skip https://ram.ac.uk HTTP Error 403: Forbidden
+NOPAGE Royal Academy of Music
+FAIL The Royal Central School of Speech and Drama home: HTTP Error 403: Forbidden
+  skip https://www.cssd.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE The Royal Central School of Speech and Drama
+FAIL LAMDA home: HTTP Error 403: Forbidden
+  skip https://lamda.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE LAMDA

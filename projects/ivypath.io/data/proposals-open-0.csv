@@ -1,0 +1,8 @@
+name,country,fact,status,value,note,quote,source,checked
+Lawrence University,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,Standardized test scores are optional.,https://www.lawrence.edu/admissions-aid/apply/direct-admissions/,2026-10-29
+Lawrence University,usa,toefl,value,65,"минимум для Pathway; зависит от программы, до 79",TOEFL iBT 65-79; meets all other academic requirements for LU admissions,https://inside.lawrence.edu/offices/center-academic-success/english-second-language/pathway-program,2026-10-29
+University of Massachusetts Lowell,usa,sat,not_required,,SAT не требуется; ориентир ~1316 (средний балл),1316 Average SAT,https://www.uml.edu/admissions/apply/standards.aspx,2026-10-29
+University of Massachusetts Lowell,usa,ap,varies,,Кредит за AP возможен при проходных баллах,"AP credit may be awarded for qualifying scores, and IB credit is awarded for Higher Level (HL) exams.",https://www.uml.edu/international-applicants/,2026-10-29
+University of Massachusetts Lowell,usa,ib,varies,,Кредит только за HL; до 30 кредитов суммарно,"AP credit may be awarded for qualifying scores, and IB credit is awarded for Higher Level (HL) exams.",https://www.uml.edu/international-applicants/,2026-10-29
+"Goldsmiths, University of London",uk,ielts,value,6.0,"минимум; зависит от программы, до 6.5",IELTS requirement for undergraduate study: 6.0 overall with 6.0 in writing and no element lower than 5.5,https://www.gold.ac.uk/studyabroad/apply/,2026-10-29
+Université Laval,canada,toefl,value,64,минимум; диапазон 64–78 для предварительного условия,Examen TOEFL - version IBT avec résultat de 064 à 078,https://www.ulaval.ca/etudes/cours/anl-3010-advanced-english-i,2026-10-29

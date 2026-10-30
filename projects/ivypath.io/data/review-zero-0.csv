@@ -1,0 +1,6 @@
+name,fact,status,value,quote,source,reason
+Cornell College,sat,not_required,,You may apply with or without ACT or SAT scores.,https://www.cornellcollege.edu/admissions/apply-to-cornell/index.shtml,цитата не подтверждает not required
+Michigan State University,ib,value,5,Completion of International Baccalaureate Diploma Program Higher or Standard Level exams with a 5 or higher in English A: Literature or English A: Language and Literature.,https://admissions.msu.edu/apply/international/language-requirements,IB вне шкалы 24–45
+American University of Armenia,ielts,accepted,,"If granted the waiver, you will be exempted from the TOEFL iBT or IELTS Academic exams.",https://admissions.aua.am/ugrad/faqs/,цитата не подтверждает: тест принимается
+American University of Armenia,toefl,accepted,,"If granted the waiver, you will be exempted from the TOEFL iBT or IELTS Academic exams.",https://admissions.aua.am/ugrad/faqs/,цитата не подтверждает: тест принимается
+American University of Armenia,sat,not_required,,Present valid and official results confirming English language proficiency typically through the following options: TOEFL iBT IELTS Academic SAT English or ACT English,https://admissions.aua.am/ugrad/application-requirements/,цитата не подтверждает not required

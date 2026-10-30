@@ -1,0 +1,15 @@
+name,country,fact,status,value,note,quote,source,checked
+Agnes Scott College,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,Optional : SAT or ACT scores.,https://www.agnesscott.edu/admission/undergraduate-admission/high-school-students/index.html,2026-10-27
+Whittier College,usa,ielts,value,6.5,минимум,IELTS minimum: 6.5,https://www.whittier.edu/admission/applying/international,2026-10-27
+Whittier College,usa,toefl,value,80,минимум,TOEFL minimum: 80,https://www.whittier.edu/admission/applying/international,2026-10-27
+Whittier College,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,A score of 550 or higher on the verbal section of the SAT,https://www.whittier.edu/admission/applying/international,2026-10-27
+University of Maine,usa,sat,not_required,,SAT не требуется; используется для waiver при Reading/Writing 550+,SAT Reading/Writing score is 550 or higher;,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,2026-10-27
+SUNY New Paltz,usa,ielts,value,6.5,минимум,TOEFL score of 80 iBT OR IELTS score of 6.5 OR SAT Verbal score of 480 (old SAT format),https://www.newpaltz.edu/admissions/intern_academic.html,2026-10-27
+SUNY New Paltz,usa,toefl,value,80,минимум,TOEFL score of 80 iBT OR IELTS score of 6.5 OR SAT Verbal score of 480 (old SAT format),https://www.newpaltz.edu/admissions/intern_academic.html,2026-10-27
+SUNY New Paltz,usa,sat,value,480,SAT Verbal 480 (старый формат); требуется для учившихся в школе США,SAT score required for those applicants who have attended a U.S. high school,https://www.newpaltz.edu/admissions/intern_academic.html,2026-10-27
+James Madison University,usa,ielts,value,6.5,"минимум; суб-баллы: 3 по 6.5+, 1 по 6.0+",IELTS - Minimum Overall score of 6.5,https://www.jmu.edu/admissions/apply/international/admissions-process.shtml,2026-10-27
+James Madison University,usa,toefl,value,81,минимум; для экзаменов после 21.01.2026 также 4.5 по новой шкале,"TOEFL exams taken before January 21, 2026, a minimum TOEFL score of 81 on the internet-based TOEFL exam will continue to remain in effect.",https://www.jmu.edu/admissions/apply/international/admissions-process.shtml,2026-10-27
+James Madison University,usa,sat,not_required,,SAT не требуется; ориентир ~1370 (75-й перцентиль),SAT mid-50% range*: 1210-1370,https://www.jmu.edu/about/fact-and-figures.shtml,2026-10-27
+University of Alabama,usa,ielts,value,6.0,минимум,IELTS score of 6.0 or above,https://admissions.ua.edu/international/english-language-proficiency/,2026-10-27
+University of Alabama,usa,toefl,value,79,минимум; iBT до 21.01.2026,"TOEFL iBT score of 79 or above (test dates before January 21, 2026)",https://admissions.ua.edu/international/english-language-proficiency/,2026-10-27
+University of Alabama,usa,sat,not_required,,SAT не требуется; ориентир не опубликован,SAT Evidence-Based Reading and Writing of 550 or above,https://admissions.ua.edu/international/english-language-proficiency/,2026-10-27

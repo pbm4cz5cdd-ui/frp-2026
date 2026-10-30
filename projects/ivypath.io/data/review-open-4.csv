@@ -1,0 +1,7 @@
+name,fact,status,value,quote,source,reason
+Brooklyn College,sat,not_required,,CUNY has revised its testing policy to test optional effective fall 2023 through spring 2027.,https://www.brooklyn.edu/admissions-aid/first-year/how-to-apply/requirements-and-deadlines/,уже есть примечание
+Kansas State University,ielts,not_required,,English proficiency is not required for admission to Kansas State University.,https://www.k-state.edu/admissions/undergrad/manhattan/apply/policies-requirements/index.html,уже есть примечание
+Kansas State University,toefl,not_required,,English proficiency is not required for admission to Kansas State University.,https://www.k-state.edu/admissions/undergrad/manhattan/apply/policies-requirements/index.html,уже есть примечание
+Robert Gordon University,ielts,value,6.0,Undergraduate courses normally require an IELTS score of 6.0 with a minimum of 5.5 in all 4 components.,https://www.rgu.ac.uk/study/international-students/english-language-requirements/undergraduate-study-accepted-english-qualifications,поле уже заполнено
+Robert Gordon University,toefl,value,80,TOEFL iBT - Home and Paper Edition (taken on or before 20/01/2026) 18 17 20 17 80,https://www.rgu.ac.uk/study/international-students/english-language-requirements/undergraduate-study-accepted-english-qualifications,поле уже заполнено
+Georgetown University in Qatar,sat,not_required,,We are test flexible for Fall 2027.,https://www.qatar.georgetown.edu/admissions/how-to-apply/,цитата не подтверждает not required

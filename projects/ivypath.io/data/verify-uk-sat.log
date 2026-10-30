@@ -1,0 +1,18 @@
+kept 24, dropped 17 -> data/proposals-g-uksat-verified.csv
+DROP University of Sheffield | на странице нет A-level/IB/UCAS
+DROP Swansea University | на странице нет A-level/IB/UCAS
+DROP University of Southampton | на странице нет A-level/IB/UCAS
+DROP De Montfort University | на странице нет A-level/IB/UCAS
+DROP Manchester Metropolitan University | не открылась: HTTP Error 403: Forbidden
+DROP University of Lincoln | на странице нет A-level/IB/UCAS
+DROP University of Northampton | на странице нет A-level/IB/UCAS
+DROP University of Bath | на странице упомянут SAT/ACT
+DROP University of Sussex | на странице нет A-level/IB/UCAS
+DROP Edge Hill University | не открылась: HTTP Error 403: Forbidden
+DROP University of Chester | на странице нет A-level/IB/UCAS
+DROP Aston University | на странице нет A-level/IB/UCAS
+DROP University of East London | не открылась: HTTP Error 403: Forbidden
+DROP University of Kent | на странице упомянут SAT/ACT
+DROP Leeds Trinity University | на странице нет A-level/IB/UCAS
+DROP Oxford Brookes University | на странице нет A-level/IB/UCAS
+DROP SOAS University of London | на странице упомянут SAT/ACT

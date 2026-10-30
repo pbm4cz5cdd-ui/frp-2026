@@ -1,0 +1,12 @@
+name,fact,status,value,quote,source,reason
+New York Institute of Technology Abu Dhabi,ielts,value,6.0,IELTS score: 6.0,https://www.nyit.edu/admissions/international/,поле уже заполнено
+New York Institute of Technology Abu Dhabi,toefl,value,79,TOEFL (iBT) score: 4.0 (new); 79 (old),https://www.nyit.edu/admissions/international/,поле уже заполнено
+University of Maine,sat,not_required,,SAT Reading/Writing score is 550 or higher;,https://umaine.edu/admissions/apply/international-undergraduate-admissions/,цитата не подтверждает not required
+Colorado School of Mines,sat,not_required,,1372 AVERAGE SAT COMPOSITE SCORE (FOR THOSE WHO CHOSE TO SUBMIT SCORES),https://undergraduate-admissions.mines.edu/,цитата не подтверждает not required
+Colorado School of Mines,ielts,value,6.5,Minimum overall band of 6.5 with no band below 6.0.,https://undergraduate-admissions.mines.edu/international-first-year-requirements/,поле уже заполнено
+Colorado School of Mines,toefl,value,79,Mines requires a minimum score of 79 or 4.5 Internet-based test with minimum section scores as shown below.,https://undergraduate-admissions.mines.edu/international-first-year-requirements/,поле уже заполнено
+Colorado School of Mines,ib,varies,,"The most competitive international applicants whose schools offer the IB curriculum usually present three IB exams with grades of 5, 6 or 7.",https://undergraduate-admissions.mines.edu/international-first-year-requirements/,уже есть примечание
+The Glasgow School of Art,ielts,value,6.0,Award CertHE and IELTS equivalent of minimum 6.0.,https://www.gsa.ac.uk/undergraduate-degrees/international-foundation,поле уже заполнено
+University of Guelph,ib,value,28,Present a minimum academic score of 28 (many programs may require a higher score);,https://www.uoguelph.ca/admission/undergraduate/requirements/canadian,поле уже заполнено
+University of Guelph,ielts,value,6.5,Minimum overall score of 6.5 with no band less than 6.,https://www.uoguelph.ca/admission/undergraduate/international/english-proficiency,поле уже заполнено
+University of Guelph,toefl,value,89,Minimum total score of 89 with no individual score less than 21.,https://www.uoguelph.ca/admission/undergraduate/international/english-proficiency,поле уже заполнено

@@ -1,0 +1,111 @@
+--- crawl 18:55:51
+FAIL University of Leicester home: HTTP Error 403: Forbidden
+  skip https://le.ac.uk HTTP Error 403: Forbidden
+NOPAGE University of Leicester
+NOPAGE Cardiff University
+NOPAGE University of Birmingham
+NOPAGE University of East Anglia
+FAIL Royal Holloway, University of London home: <urlopen error timed out>
+  skip http://www.rhbnc.ac.uk/ <urlopen error timed out>
+NOPAGE Royal Holloway, University of London
+OK City St George's, University of London https://www.citystgeorges.ac.uk/prospective-students/apply/alternative-entry-routes/second-year
+NOPAGE Goldsmiths, University of London
+NOPAGE Heriot-Watt University
+FAIL University of Dundee home: HTTP Error 403: Forbidden
+  skip http://www.dundee.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Dundee
+NOPAGE Robert Gordon University
+FAIL Glasgow Caledonian University home: <urlopen error [Errno -2] Name or service not known>
+  skip http://www.gcal.ac.uk/ <urlopen error [Errno -2] Name or service not known>
+NOPAGE Glasgow Caledonian University
+NOPAGE Ulster University
+NOPAGE Nottingham Trent University
+  skip https://www.keele.ac.uk/study/undergraduate-2026/undergraduatecourses/ HTTP Error 404: Not Found
+NOPAGE Keele University
+FAIL Bournemouth University home: HTTP Error 403: Forbidden
+  skip http://www.bournemouth.ac.uk HTTP Error 403: Forbidden
+NOPAGE Bournemouth University
+NOPAGE Falmouth University
+FAIL University of Chichester home: HTTP Error 403: Forbidden
+  skip https://www.chi.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Chichester
+FAIL Kingston University home: HTTP Error 403: Forbidden
+  skip https://www.kingston.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Kingston University
+  skip https://www.herts.ac.uk/ HTTP Error 403: Forbidden
+  skip https://www.herts.ac.uk/courses/undergraduate-courses HTTP Error 403: Forbidden
+  skip https://www.herts.ac.uk/life/accommodation/apply-for-accommodation HTTP Error 403: Forbidden
+  skip https://www.herts.ac.uk/international/apply HTTP Error 403: Forbidden
+  skip https://www.herts.ac.uk/international/apply/make-an-application HTTP Error 403: Forbidden
+  skip https://www.herts.ac.uk/courses HTTP Error 403: Forbidden
+NOPAGE University of Hertfordshire
+  skip https://www.lsbu.ac.uk/study/undergraduate/entry-requirements HTTP Error 403: Forbidden
+NOPAGE London South Bank University
+FAIL University of Bedfordshire home: HTTP Error 403: Forbidden
+  skip https://beds.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE University of Bedfordshire
+NOPAGE Anglia Ruskin University
+  skip http://www.bucks.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Buckinghamshire New University
+NOPAGE Canterbury Christ Church University
+FAIL Birmingham Newman University home: HTTP Error 403: Forbidden
+  skip http://www.newman.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE Birmingham Newman University
+  skip https://www.arts.ac.uk/courses/undergraduate2 HTTP Error 403: Forbidden
+NOPAGE University of the Arts London
+FAIL Norwich University of the Arts home: <urlopen error timed out>
+  skip https://www.nua.ac.uk/ <urlopen error timed out>
+NOPAGE Norwich University of the Arts
+FAIL Royal Academy of Music home: HTTP Error 403: Forbidden
+  skip https://ram.ac.uk HTTP Error 403: Forbidden
+NOPAGE Royal Academy of Music
+FAIL The Royal Central School of Speech and Drama home: HTTP Error 403: Forbidden
+  skip https://www.cssd.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE The Royal Central School of Speech and Drama
+FAIL LAMDA home: HTTP Error 403: Forbidden
+  skip https://lamda.ac.uk/ HTTP Error 403: Forbidden
+NOPAGE LAMDA
+--- verify 19:02:06
+kept 1, dropped 0 -> data/verified-uk-sat2.csv
+--- apply 19:02:08
+applied 1, skipped 0
+APPLY City St George's, University of London
+--- coverage 19:02:08
+country	rows	IELTS	TOEFL	SAT	HSK	AP	AID
+usa	344	325/344	325/344	344/344	0/344	44/344	0/344
+uk	124	103/124	97/124	95/124	0/124	10/124	0/124
+china	107	35/107	37/107	22/107	34/107	2/107	20/107
+canada	56	43/56	44/56	36/56	0/56	10/56	0/56
+hongkong	11	7/11	7/11	6/11	0/11	2/11	0/11
+germany	7	7/7	7/7	7/7	0/7	0/7	0/7
+korea	7	7/7	7/7	7/7	0/7	0/7	0/7
+netherlands	7	7/7	7/7	7/7	0/7	0/7	0/7
+qatar	6	4/6	4/6	4/6	0/6	1/6	0/6
+uae	6	5/6	5/6	4/6	0/6	1/6	0/6
+australia	5	5/5	5/5	5/5	0/5	0/5	0/5
+switzerland	5	5/5	5/5	5/5	0/5	0/5	0/5
+turkey	5	5/5	5/5	5/5	0/5	1/5	0/5
+france	4	4/4	4/4	4/4	0/4	0/4	0/4
+italy	4	3/4	3/4	3/4	0/4	0/4	0/4
+japan	4	4/4	4/4	4/4	0/4	0/4	0/4
+sweden	4	4/4	4/4	4/4	0/4	0/4	0/4
+czech	3	3/3	3/3	3/3	0/3	1/3	0/3
+singapore	3	3/3	3/3	3/3	0/3	0/3	0/3
+austria	2	2/2	2/2	2/2	0/2	0/2	0/2
+denmark	2	2/2	2/2	2/2	0/2	0/2	0/2
+finland	2	2/2	2/2	2/2	0/2	0/2	0/2
+hungary	2	2/2	2/2	2/2	0/2	0/2	0/2
+ireland	2	2/2	2/2	2/2	0/2	0/2	0/2
+nz	2	2/2	2/2	2/2	0/2	0/2	0/2
+armenia	1	1/1	1/1	0/1	0/1	0/1	0/1
+bulgaria	1	1/1	1/1	1/1	0/1	0/1	0/1
+croatia	1	1/1	1/1	0/1	0/1	0/1	0/1
+kosovo	1	1/1	1/1	1/1	0/1	0/1	0/1
+kyrgyzstan	1	0/1	0/1	0/1	0/1	0/1	0/1
+malaysia	1	1/1	1/1	1/1	0/1	0/1	0/1
+panama	1	1/1	1/1	1/1	0/1	0/1	0/1
+poland	1	1/1	1/1	1/1	0/1	0/1	0/1
+spain	1	1/1	1/1	1/1	0/1	1/1	0/1
+uzbekistan	1	1/1	1/1	1/1	0/1	0/1	0/1
+TOTAL	734	600/734	597/734	587/734	34/734	73/734	20/734
+--- done 19:02:08
